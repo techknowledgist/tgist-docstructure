@@ -1,0 +1,9 @@
+# mac OS X files
+.DS_Store
+
+# python byto code files
+*.pyc
+
+# emacs generated files
+*~
+.#*
