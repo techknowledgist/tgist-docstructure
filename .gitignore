@@ -7,3 +7,6 @@
 # emacs generated files
 *~
 .#*
+
+# document structure parser output
+data/*sections
