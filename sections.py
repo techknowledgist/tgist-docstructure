@@ -12,6 +12,7 @@ class Section(object):
         self.types = []
         self.header = ""
         self.subsumers = []
+        self.subsumer_types=set()
         self.subsumed = []
         self.filename = ""
         self.start_index = -1
@@ -135,6 +136,8 @@ def link_sections(sections):
         for other_section in sections:
             if is_subsection(section,other_section):
                 section.subsumers.append(other_section)
+                for sem_type in other_section.types:
+                    section.subsumer_types.add(sem_type)
                 other_section.subsumed.append(section)
         
 def is_subsection(section,other_section):
