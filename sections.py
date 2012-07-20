@@ -50,14 +50,33 @@ class SectionFactory(object):
         Creates a list of Section instances ion self.sections. Each subclass should implement
         this method. """
         raise UserWarning, "make_sections() not implemented for %s " % self.__class__.__name__
+
+    def section_string(self,section,section_id=None):
+        """
+        Called by print_sections. Returns a human-readable string with relevant information about
+        a particular section.
+        """
+        sec_string="SECTION"
+        if section_id is not None:
+            sec_string+=" ID="+str(section_id)
+        if len(section.types) > 0:
+            sec_string+=" TYPE=\"" + "|".join(section.types).upper() + "\""
+        if len(section.header) > 0:
+            sec_string+=" TITLE=\"" + section.header + "\""
+        if section.start_index is not -1:
+            sec_string+=" START="+str(section.start_index)
+        if section.end_index is not -1:
+            sec_string+=" END="+str(section.end_index)
+        return sec_string + "\n"
     
     def print_sections(self, fh):
         """
-        Prints section data to a file handle. """
+        Prints section data to a file handle.
+        """
+        section_id=0
         for section in self.sections:
-            fh.write("SECTION Type=\"%s\" Title=\"%s\" Start=%d End=%d\n" %
-                     ( "|".join(section.types), section.header, 
-                     section.start_index, section.end_index))
+            section_id+=1
+            fh.write(self.section_string(section,section_id))
 
             
 
@@ -183,6 +202,40 @@ class SimpleElsevierSectionFactory(SectionFactory):
     def print_lines(self):
         self.doc.print_lines()
 
+
+class PatentSectionFactory(SectionFactory):
+
+    def make_sections(self):
+        """
+        Given a list of headertag/sectiontag pairs, a list of abstract tags, and the raw text
+        of the article, converts them into a list of semantically typed sections. """
+
+        (a_text, a_tags) = pat_read.load_data(self.text_file, self.fact_file)
+    
+        for match in raw_sections:
+            section = Section()
+            section.types = normheader.header_to_types(match[0].text(a_text))
+            section.header = match[0].text(a_text)
+            section.filename = self.text_file
+            section.start_index = match[1].start_index
+            section.end_index = match[1].end_index
+            section.text = match[1].text(a_text)
+            self.sections.append(section)
+
+        for abstract in abstracts:
+            section = Section()
+            section.types = ["Abstract"]
+            section.filename = self.text_file
+            section.start_index = abstract.start_index
+            section.end_index = abstract.end_index
+            section.text = abstract.text(a_text)
+            self.sections.append(section)
+            
+        self.sections.extend(section_gaps(self.sections, a_text, self.text_file))
+        link_sections(self.sections)
+        self.sections = sorted(self.sections, key= lambda x: x.start_index)
+
+    
             
 class Document(object):
     """
