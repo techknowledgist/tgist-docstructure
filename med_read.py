@@ -40,6 +40,8 @@ def load_articles(basename_file="files.txt"):
         articles.append(load_data(basename))
     return articles
 
+
+
 def headed_sections(tags):
     headers = filter(lambda x: x.name == "title", tags)
     sections = filter(lambda x: x.name == "sec", tags)

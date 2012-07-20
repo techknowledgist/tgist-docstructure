@@ -26,7 +26,7 @@ def convert_files(file_list):
             convert_file(basename)
     else:
         for basename in file_list:
-            convert_file(basename)
+            convert_file(basename+".txt",basename+".tag",basename+".sections")
 
 def convert_all(path="."):
     """
