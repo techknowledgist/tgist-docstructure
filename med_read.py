@@ -25,7 +25,7 @@ class Tag():
 
     
 def load_data(text_file, fact_file):
-    text = open(text_file).read()
+    text = codecs.open(text_file, encoding='utf-8').read()
     sections = []
     # the following line is instead of the commented out line below, this way you do not
     # get an empty Tag for whitelines or the empty element at the end of the split

@@ -1,4 +1,4 @@
-import string
+import string,re
 
 """
 Mapping from types to strings that indicate that type. First list is list
@@ -43,8 +43,8 @@ def norm_section_head(section_head):
     is necessary?)
     """
     section_head=section_head.lower()
-    section_head=section_head.translate(None, string.punctuation +
-                                        string.whitespace + string.digits)
+    
+    section_head=re.sub(r'\W|\d', '', section_head, re.UNICODE)
     return section_head
 
 def normed_types(section_head):

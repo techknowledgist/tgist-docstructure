@@ -1,4 +1,4 @@
-import os, sys
+import os, sys, codecs
 import sections
 
 
@@ -9,7 +9,7 @@ def convert_file(text_file, fact_file, sect_file):
     section_factory = create_factory(text_file, fact_file, sect_file)
     try:
         section_factory.make_sections()
-        f = open(section_factory.sect_file, "w")
+        f = codecs.open(section_factory.sect_file, "w", encoding='utf-8')
         section_factory.print_sections(f)
         f.close()
     except UserWarning:
@@ -48,9 +48,9 @@ def create_factory(text_file, fact_file, sect_file):
 
 if __name__ == '__main__':
 
-    text_file = 'data/tmp.nxml.txt'
-    fact_file = 'data/tmp.nxml.tag'
-    sect_file = 'data/tmp.nxml.sections'
+    text_file = 'tmp.nxml.txt'
+    fact_file = 'tmp.nxml.tag'
+    sect_file = 'tmp.nxml.sections'
     if len(sys.argv) > 3:
         text_file, fact_file, sect_file = sys.argv[1:4]
     convert_file(text_file, fact_file, sect_file)
