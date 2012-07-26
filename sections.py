@@ -25,6 +25,11 @@ class Section(object):
     def __len__(self):
         return self.end_index - self.start_index
 
+class ClaimSection(Section):
+    def __init__(self):
+        Section.__init__(self)
+        self.parent_claims = []
+
     
 class SectionFactory(object):
     """
@@ -51,7 +56,7 @@ class SectionFactory(object):
         this method. """
         raise UserWarning, "make_sections() not implemented for %s " % self.__class__.__name__
 
-    def section_string(self,section,section_id=None):
+    def section_string(self,section,section_id=None, full_text=True):
         """
         Called by print_sections. Returns a human-readable string with relevant information about
         a particular section.
@@ -67,6 +72,8 @@ class SectionFactory(object):
             sec_string+=" START="+str(section.start_index)
         if section.end_index is not -1:
             sec_string+=" END="+str(section.end_index)
+        if full_text and len(section.text) > 0:
+            sec_string+="\n"+section.text
         return sec_string + "\n"
     
     def print_sections(self, fh):
@@ -78,7 +85,66 @@ class SectionFactory(object):
             section_id+=1
             fh.write(self.section_string(section,section_id))
 
-            
+
+class PatentSectionFactory(SectionFactory):
+
+    def make_sections(self):
+        """
+        Given a list of headertag/sectiontag pairs, a list of abstract tags, and the raw text
+        of the article, converts them into a list of semantically typed sections. """
+        (a_text, a_tags) = pat_read.load_data(self.text_file, self.fact_file)
+        raw_sections = pat_read.headed_sections(a_tags)
+    
+        for match in raw_sections:
+            section = Section()
+            section.types = normheader.header_to_types(match[0].text(a_text))
+            section.header = match[0].text(a_text)
+            section.filename = self.text_file
+            section.start_index = match[0].start_index
+            section.end_index = match[1][-1].end_index
+            section.text = section.header
+            for paragraph in match[1]:
+                section.text += "\n\n" + paragraph.text(a_text)
+            self.sections.append(section)
+
+        self.make_claims()
+        self.sections = sorted(self.sections, key= lambda x: x.start_index)
+
+    
+    def make_claims(self, cautious=True):
+        (text, tags) = pat_read.load_data(self.text_file, self.fact_file)
+        claim_sections = []
+        claims = filter(lambda x: x.name == "claim", tags)
+        claim_refs = filter(lambda x: x.name == "claim-ref", tags)
+        claims_sections = filter(lambda x: x.name == "claims", tags)
+        if cautious:
+            assert len(claims_sections) <= 1, "Multiple claims sections in document"
+        try:
+            claims_section = claims_sections[0]
+        except IndexError:
+            return []
+        for claim in claims:
+            section = ClaimSection()
+            section.types = ["claim"]
+            section.filename = self.text_file
+            section.start_index = claim.start_index
+            section.end_index = claim.end_index
+            section.text = claim.text(text)
+            for claim_ref in claim_refs:
+                if claim_ref.start_index >= claim.start_index and claim_ref.end_index <= claim.end_index:
+                    reffed_claim_num=claim_number(claim_ref) - 1
+                    section.parent_claims.append(claims[reffed_claim_num])
+            self.sections.append(section)
+        
+
+def claim_number(claim_ref):
+    num_string = claim_ref.attributes[-1]
+    num_string=re.sub("[^0-9]", "", num_string)
+    return int(num_string)
+    
+    
+    
+    
 
 ### Code to deal with the Biomed nxml data
             
@@ -203,37 +269,7 @@ class SimpleElsevierSectionFactory(SectionFactory):
         self.doc.print_lines()
 
 
-class PatentSectionFactory(SectionFactory):
 
-    def make_sections(self):
-        """
-        Given a list of headertag/sectiontag pairs, a list of abstract tags, and the raw text
-        of the article, converts them into a list of semantically typed sections. """
-
-        (a_text, a_tags) = pat_read.load_data(self.text_file, self.fact_file)
-    
-        for match in raw_sections:
-            section = Section()
-            section.types = normheader.header_to_types(match[0].text(a_text))
-            section.header = match[0].text(a_text)
-            section.filename = self.text_file
-            section.start_index = match[1].start_index
-            section.end_index = match[1].end_index
-            section.text = match[1].text(a_text)
-            self.sections.append(section)
-
-        for abstract in abstracts:
-            section = Section()
-            section.types = ["Abstract"]
-            section.filename = self.text_file
-            section.start_index = abstract.start_index
-            section.end_index = abstract.end_index
-            section.text = abstract.text(a_text)
-            self.sections.append(section)
-            
-        self.sections.extend(section_gaps(self.sections, a_text, self.text_file))
-        link_sections(self.sections)
-        self.sections = sorted(self.sections, key= lambda x: x.start_index)
 
     
             

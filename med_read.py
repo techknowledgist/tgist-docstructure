@@ -1,18 +1,35 @@
+import shlex, codecs
+
 
 class Tag():
     
     def __init__(self,text):
-        split_text=text.split()
+        split_text=shlex.split(text)
         try:
             self.start_index = int(split_text[0])
             self.end_index = int(split_text[1])
             self.name = split_text[2]
             self.attributes = split_text[3:]
         except IndexError:
+            #not enough stuff, assume this is a malformed tag
             self.start_index = None
             self.end_index = None
             self.name = None
             self.attributes = None
+        except ValueError:
+            #guess that this is in the second format
+            self.name = split_text[0]
+            split_text = dict(map(lambda x: str.split(x, "=", 1), split_text[1:])) 
+            try:
+                self.start_index = int(split_text["START"])
+            except (KeyError,ValueError):
+                self.start_index=-1
+            try:
+                self.end_index = int(split_text["END"])
+            except (KeyError,ValueError):
+                self.end_index=-1
+            self.attributes=split_text
+            
 
     def __str__(self):
         return "[%d %d %s]" % (self.start_index, self.end_index, self.name)
@@ -42,16 +59,31 @@ def load_articles(basename_file="files.txt"):
 
 
 
-def headed_sections(tags):
+def headed_sections(tags, max_title_lead=50):
     headers = filter(lambda x: x.name == "title", tags)
     sections = filter(lambda x: x.name == "sec", tags)
+    structures = filter(lambda x: x.name == "STRUCTURE", tags)
+    title_structures = filter(lambda x: x.attributes["TYPE"] == "TITLE", structures)
+    text_structures = filter(lambda x: x.attributes["TYPE"][:4] == "TEXT", structures)
+    doc_segments = filter(lambda x: x.name == "DOC_SEGMENT", tags)
+
+    
     matches = []
     for header in headers:
         for section in sections:
-            if header.start_index == section.start_index:
+            if (header.start_index == section.start_index):
                 matches.append((header,section))
                 break
+    for title in title_structures:
+        for doc_segment in doc_segments:
+            if (title.start_index >= doc_segment.start_index
+                and title.end_index <= doc_segment.end_index
+                and title.start_index - doc_segment.start_index < max_title_lead):
+                matches.append((title, doc_segment))
+
     return matches
 
 def find_abstracts(tags):
     return filter(lambda x: x.name == "abstract", tags)
+
+
