@@ -56,7 +56,7 @@ class SectionFactory(object):
         this method. """
         raise UserWarning, "make_sections() not implemented for %s " % self.__class__.__name__
 
-    def section_string(self,section,section_id=None, full_text=True):
+    def section_string(self,section,section_id=None, full_text=False):
         """
         Called by print_sections. Returns a human-readable string with relevant information about
         a particular section.
