@@ -48,7 +48,7 @@ class SectionFactory(object):
         self.sections = []
 
     def __str__(self):
-        return "<%s on %s>" % (self.__class__.__name__, self.filename)
+        return "<%s on %s>" % (self.__class__.__name__, self.text_file[:-4])
 
     def make_sections(self):
         """
