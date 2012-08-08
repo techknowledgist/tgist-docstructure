@@ -36,7 +36,6 @@ import os, sys, codecs, re
 import sections
 
 
-
 def process_file(text_file, fact_file, sect_file, collection):
     """
     Takes a text file and a fact file and creates a .sections file with the section data.

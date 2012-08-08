@@ -59,13 +59,12 @@ def load_articles(basename_file="files.txt"):
 
 
 
-def headed_sections(tags, max_title_lead=50):
+def headed_sections(tags, max_title_lead=30):
     headers = filter(lambda x: x.name == "title", tags)
     sections = filter(lambda x: x.name == "sec", tags)
     structures = filter(lambda x: x.name == "STRUCTURE", tags)
     title_structures = filter(lambda x: x.attributes["TYPE"] == "TITLE", structures)
     text_structures = filter(lambda x: x.attributes["TYPE"][:4] == "TEXT", structures)
-    doc_segments = filter(lambda x: x.name == "DOC_SEGMENT", tags)
 
     
     matches = []
@@ -75,12 +74,10 @@ def headed_sections(tags, max_title_lead=50):
                 matches.append((header,section))
                 break
     for title in title_structures:
-        for doc_segment in doc_segments:
-            if (title.start_index >= doc_segment.start_index
-                and title.end_index <= doc_segment.end_index
-                and title.start_index - doc_segment.start_index < max_title_lead):
-                matches.append((title, doc_segment))
-
+        for text_structure in text_structures:
+            if (title.end_index < text_structure.start_index
+                and text_structure.start_index - title.end_index < max_title_lead):
+                matches.append((title, text_structure))
     return matches
 
 def find_abstracts(tags):
