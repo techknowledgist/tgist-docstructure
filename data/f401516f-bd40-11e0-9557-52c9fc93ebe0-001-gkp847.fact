@@ -1,3 +1,4 @@
+DOCUMENT COLLECTION="PUBMED"
 DOC_SEGMENT ID="http://bae.ait.com/fuse/FuseOntology#Document111_section1" TITLE="DEVELOPMENT OF DDBJ DATABASES" START=6023 END=13386
 DOC_SEGMENT ID="http://bae.ait.com/fuse/FuseOntology#Document111_section6" TITLE="Comprehensive visualization of DDBJ entries by word cloud images" START=15139 END=17055
 DOC_SEGMENT ID="http://bae.ait.com/fuse/FuseOntology#Document111_section4" TITLE="DAILY RELEASE ANNOUNCEMENT AND COMPREHENSIVE VISUALIZATION OF DDBJ DATABASES" START=13393 END=17062
