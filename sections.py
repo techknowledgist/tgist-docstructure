@@ -20,7 +20,9 @@ class Section(object):
         self.text = ""
 
     def __str__(self):
-        return "%s \n   %s..." % (str(self.types), self.text[:80])
+        text_string = self.text[:160].encode('utf-8').strip()
+        (p1, p2) = (self.start_index, self.end_index)
+        return "<%d %d> %s\n%s...\n" % (p1, p2, str(self.types), text_string)
     
     def __len__(self):
         return self.end_index - self.start_index
@@ -86,6 +88,16 @@ class SectionFactory(object):
             fh.write(self.section_string(section,section_id))
 
 
+
+### Code to deal with Web of Science abstracts
+
+class WebOfScienceSectionFactory(SectionFactory):
+
+    pass
+
+
+### Code to deal with patents
+
 class PatentSectionFactory(SectionFactory):
 
     def make_sections(self):
@@ -142,9 +154,7 @@ def claim_number(claim_ref):
     num_string=re.sub("[^0-9]", "", num_string)
     return int(num_string)
     
-    
-    
-    
+
 
 ### Code to deal with the Biomed nxml data
             
@@ -270,9 +280,6 @@ class SimpleElsevierSectionFactory(SectionFactory):
 
 
 
-
-    
-            
 class Document(object):
     """
     Class that contains the code to deal with document structure in Elsevier articles that
