@@ -95,7 +95,7 @@ def collect_file_characteristics(text_file):
 if __name__ == '__main__':
 
     text_file = 'tmp.nxml.txt'
-    fact_file = 'tmp.nxml.tag'
+    fact_file = 'tmp.nxml.fact'
     sect_file = 'tmp.nxml.sections'
     if len(sys.argv) > 3:
         text_file, fact_file, sect_file = sys.argv[1:4]
