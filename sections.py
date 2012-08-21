@@ -41,7 +41,7 @@ class SectionFactory(object):
     code. Themain method called by outside code is make_sections(), which should be
     implemented on all subclasses."""
     
-    def __init__(self, text_file, fact_file, sect_file):
+    def __init__(self, text_file, fact_file, sect_file, verbose=False):
         """
         The first two files given are the ones that are given by the wrapper, the third is a
         file that the wrapper expects. """
@@ -49,6 +49,7 @@ class SectionFactory(object):
         self.fact_file = fact_file
         self.sect_file = sect_file
         self.sections = []
+        self.verbose = verbose
 
     def __str__(self):
         return "<%s on %s>" % (self.__class__.__name__, self.text_file[:-4])
@@ -59,7 +60,7 @@ class SectionFactory(object):
         this method. """
         raise UserWarning, "make_sections() not implemented for %s " % self.__class__.__name__
 
-    def section_string(self,section,section_id=None, full_text=True):
+    def section_string(self,section,section_id=None):
         """
         Called by print_sections. Returns a human-readable string with relevant information about
         a particular section.
@@ -82,7 +83,7 @@ class SectionFactory(object):
                 sec_string += " PARENT_CLAIMS=" + self.parent_claims_string(section.parent_claims)
         except AttributeError:
             pass   
-        if full_text and len(section.text) > 0:
+        if self.verbose and len(section.text) > 0:
             sec_string+="\n"+section.text
         return sec_string + "\n"
 

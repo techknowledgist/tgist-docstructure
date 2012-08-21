@@ -10,7 +10,7 @@ sem_types={
     "Results": (["result"],[]),
     "Background": (["background"],[]),
     "Discussion": (["discuss"],[]),
-    "Conclusion": (["conclu","summary"],[]),
+    "Conclusion": (["conclu","summary"],["invention"]),
     "Methods": (["method","procedure","studydesign","implementation","experiment"],[]),
     "Introduction": (["introduction"],[]),
     "Acknowledgements": (["acknowledg"],[]),
