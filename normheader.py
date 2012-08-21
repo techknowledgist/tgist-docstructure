@@ -18,7 +18,7 @@ sem_types={
     "Competing Interests": (["competinginterests"],[]),
     "Statistical Analysis": (["statistic"],[]),
     "Supplementary": (["supplement","supporting"],[]),
-    "Figures": (["figure"],[]),
+    "Figures": (["figure","illust","drawing"],[]),
     "Tables": (["table"],["abbreviat"]),
     "Images": (["image"],[]),
     "Abbreviations": (["abbreviat"],[]),
@@ -27,7 +27,11 @@ sem_types={
     "Prepublication History":(["prepublicationhistory"],[]),
     "Case Report": (["case"],[]),
     "Purpose": (["purpose","objective"],[]),
-    "Subjects": (["subjects","participants","patient","population"],["communication"])
+    "Subjects": (["subjects","participants","patient","population"],["communication"]),
+    "Government Interest": (["government"],[]),
+    "Operation": (["operation"],[]),
+    "Invention": (["invention"],["background"]),
+    "Preferred Embodiments": (["preferredembodiment"],[])
     }
 
 def header_to_types(section_head):
