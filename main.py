@@ -129,7 +129,7 @@ if __name__ == '__main__':
         process_file(text_file, fact_file, sect_file, collection)
 
     # processing multiple files
-    else:
+    elif len(sys.argv) > 2:
         path = sys.argv[1]
         collection = sys.argv[2] if len(sys.argv) > 2 else None
         # using directory
@@ -138,3 +138,12 @@ if __name__ == '__main__':
         # using a file that lists files to process
         elif os.path.isfile(path):
             process_files(path, collection)
+
+    #by default
+    else:
+        text_file = "doc.txt"
+        fact_file = "doc.fact"
+        sect_file = "doc.sections"
+        collection = None
+        process_file(text_file, fact_file, sect_file, collection)
+        
