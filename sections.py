@@ -20,7 +20,9 @@ class Section(object):
         self.text = ""
 
     def __str__(self):
-        return "%s \n   %s..." % (str(self.types), self.text[:80])
+        text_string = self.text[:160].encode('utf-8').strip()
+        (p1, p2) = (self.start_index, self.end_index)
+        return "<%d %d> %s\n%s...\n" % (p1, p2, str(self.types), text_string)
     
     def __len__(self):
         return self.end_index - self.start_index
@@ -101,6 +103,16 @@ class SectionFactory(object):
             fh.write(self.section_string(section,section_id))
 
 
+
+### Code to deal with Web of Science abstracts
+
+class WebOfScienceSectionFactory(SectionFactory):
+
+    pass
+
+
+### Code to deal with patents
+
 class PatentSectionFactory(SectionFactory):
 
     def make_sections(self):
@@ -158,7 +170,7 @@ class PatentSectionFactory(SectionFactory):
             for ref in claim_refs:
                 section.parent_claims.append(int(ref.split()[-1]))
             self.sections.append(section)
-    
+
 
 ### Code to deal with the Biomed nxml data
             
@@ -197,7 +209,7 @@ class BiomedNxmlSectionFactory(SectionFactory):
         link_sections(self.sections)
         self.sections = sorted(self.sections, key= lambda x: x.start_index)
 
-        
+
 def section_gaps(sections, text, filename=""):
     """
     Finds the unlabeled sections in a text and labels them "Unlabeled". """
@@ -246,7 +258,7 @@ def is_subsection(section,other_section):
         len(other_section) > len(section)):
             return True
 
-        
+
 ### Code to deal with Elsevier data
         
 class SimpleElsevierSectionFactory(SectionFactory):
@@ -284,9 +296,6 @@ class SimpleElsevierSectionFactory(SectionFactory):
 
 
 
-
-    
-            
 class Document(object):
     """
     Class that contains the code to deal with document structure in Elsevier articles that
