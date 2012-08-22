@@ -60,7 +60,7 @@ class SectionFactory(object):
         this method. """
         raise UserWarning, "make_sections() not implemented for %s " % self.__class__.__name__
 
-    def section_string(self,section,section_id=None):
+    def section_string(self,section,section_id=None, suppress_empty=True):
         """
         Called by print_sections. Returns a human-readable string with relevant information about
         a particular section.
@@ -85,6 +85,8 @@ class SectionFactory(object):
             pass   
         if self.verbose and len(section.text) > 0:
             sec_string+="\n"+section.text
+        if suppress_empty and len(section.text.strip()) < 1:
+            return None
         return sec_string + "\n"
 
     def parent_claims_string(self, parent_claims):
@@ -101,7 +103,10 @@ class SectionFactory(object):
         section_id=0
         for section in self.sections:
             section_id+=1
-            fh.write(self.section_string(section,section_id))
+            try:
+                fh.write(self.section_string(section,section_id))
+            except TypeError:
+                pass
 
 
 
