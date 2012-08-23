@@ -42,10 +42,8 @@ def norm_section_head(section_head):
     whitespace/capitalization (possibly only punctuation and capitalization
     is necessary?)
     """
-    #section_head = section_head.lower()
-    #section_head = re.sub(r'\W|\d', '', section_head, re.UNICODE)
-    section_head = re.sub(r' ', '_', section_head, re.UNICODE)
-    section_head = re.sub(r'"', '&quote;', section_head, re.UNICODE)
+    section_head = section_head.lower()
+    section_head = re.sub(r'\W|\d', '', section_head, re.UNICODE)
     return section_head
 
 def normed_types(section_head):
