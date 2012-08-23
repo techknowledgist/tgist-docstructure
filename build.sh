@@ -19,6 +19,5 @@ cp *.py $build_dir
 mkdir $build_dir/data
 cp data/f* $build_dir/data
 
-echo mv $build_dir $build_dir$version
 echo mv $build_dir ${build_dir}-${version}
 mv $build_dir ${build_dir}-${version}

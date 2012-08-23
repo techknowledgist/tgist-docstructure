@@ -15,19 +15,17 @@ output is written to STRUCTURE_FILE, which has lines like the following
    SECTION ID=1 TYPE="UNLABELED" START=0 END=3978
    SECTION ID=2 TYPE="INTRODUCTION" TITLE="INTRODUCTION" START=3978 END=6016
 
-The optional fourth argument specifies the collection that the input document was taken
-from.
-
 In the second form, the input and output files are specified in the file FILE_LIST. In the
 third form, all pairs of .txt and .fact files in DIRECTORY are processed and .sect files
 are created.
 
-The kind of document we are dealing with is specified in fact files as follows:
+The optional COLLECTION argument specifies the collection that the input document was
+taken from. This can be used to overrule the default behaviour, which is to scan the fact
+file and find the following line:
 
    DOCUMENT COLLECTION="$COLLECTION"
 
-Where $COLLECTION is in ('WEB_OF_SCIENCE', 'LEXISNEXIS', 'PUBMED', 'ELSEVIER'). Settings
-in the fact file can be overruled by using the optional COLLECTION argument.
+In this line, $COLLECTION is in ('WEB_OF_SCIENCE', 'LEXISNEXIS', 'PUBMED', 'ELSEVIER').
 
 """
 
