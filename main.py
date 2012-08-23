@@ -31,7 +31,7 @@ In this line, $COLLECTION is in ('WEB_OF_SCIENCE', 'LEXISNEXIS', 'PUBMED', 'ELSE
 
 
 import os, sys, codecs, re
-import sections
+import sections, elsevier1
 
 
 def process_file(text_file, fact_file, sect_file, collection):
@@ -100,14 +100,14 @@ def  create_elsevier_factory(text_file, fact_file, sect_file):
     text_tags = len( [l for l in fh.readlines() if l.find('TEXT') > -1] )
     fh.close()
     if text_tags < 4 :
-        return sections.SimpleElsevierSectionFactory(text_file, fact_file, sect_file)
+        return elsevier1.SimpleElsevierSectionFactory(text_file, fact_file, sect_file)
     else:
         return sections.ComplexElsevierSectionFactory(text_file, fact_file, sect_file)
 
 def determine_collection(fact_file):
     """
     Loop through the fact file in order to find the line that specifies the collection."""
-    # THIS CODE HAS NOT YET BEEN DEBUGGED
+    # THIS CODE HAS NOT YET BEEN PROPERLY TESTED
     expr = re.compile('DOCUMENT.*COLLECTION="(\S+)"')
     for line in open(fact_file):
         result = expr.search(line)
