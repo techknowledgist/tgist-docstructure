@@ -121,24 +121,42 @@ class WebOfScienceSectionFactory(SectionFactory):
 
 class PatentSectionFactory(SectionFactory):
 
-    def make_sections(self):
+    def make_sections(self,separate_headers=True):
         """
         Given a list of headertag/sectiontag pairs, a list of abstract tags, and the raw text
         of the article, converts them into a list of semantically typed sections. """
         
         (a_text, a_tags) = pat_read.load_data(self.text_file, self.fact_file)
         raw_sections = pat_read.headed_sections(a_tags)
-        for match in raw_sections:
+        text_sections = filter(lambda x: type(x) == tuple, raw_sections)
+        header_sections = filter(lambda x: type(x) != tuple, raw_sections)
+        
+        for match in text_sections:
             section = Section()
             section.types = normheader.header_to_types(match[0].text(a_text))
             section.header = match[0].text(a_text)
             section.filename = self.text_file
-            section.start_index = match[0].start_index
+            if separate_headers:
+                section.start_index = match[1][0].start_index
+            else:
+                section.start_index = match[0].start_index
             section.end_index = match[1][-1].end_index
-            section.text = section.header
+            if separate_headers:
+                section.text = ""
+            else:
+                section.text = section.header
             for paragraph in match[1]:
                 section.text += "\n\n" + paragraph.text(a_text)
             self.sections.append(section)
+            if separate_headers:
+                head_section = Section()
+                head_section.types = ["Header"]
+                head_section.filename = self.text_file
+                head_section.start_index = match[0].start_index
+                head_section.end_index = match[0].end_index
+                head_section.text = section.header
+                self.sections.append(head_section)
+                
 
         self.make_claims()
         self.sections.extend(section_gaps(self.sections, a_text, self.text_file))
@@ -189,10 +207,12 @@ class BiomedNxmlSectionFactory(SectionFactory):
         of the article, converts them into a list of semantically typed sections. """
 
         (a_text, a_tags) = med_read.load_data(self.text_file, self.fact_file)
-        raw_sections = med_read.headed_sections(a_tags)
+        raw_sections = med_read.headed_sections(a_tags, separate_headers=True)
+        text_sections = filter(lambda x: type(x) == tuple, raw_sections)
+        header_sections = filter(lambda x: type(x) != tuple, raw_sections)
         abstracts = med_read.find_abstracts(a_tags)
-    
-        for match in raw_sections:
+        
+        for match in text_sections:
             section = Section()
             section.types = normheader.header_to_types(match[0].text(a_text))
             section.header = match[0].text(a_text)
@@ -200,6 +220,15 @@ class BiomedNxmlSectionFactory(SectionFactory):
             section.start_index = match[1].start_index
             section.end_index = match[1].end_index
             section.text = match[1].text(a_text)
+            self.sections.append(section)
+
+        for header in header_sections:
+            section = Section()
+            section.types = ["Header"]
+            section.filename = self.text_file
+            section.start_index = header.start_index
+            section.end_index = header.end_index
+            section.text = header.text(a_text)
             self.sections.append(section)
 
         for abstract in abstracts:
