@@ -68,6 +68,7 @@ def headed_sections(tags, max_title_lead=30):
 
     
     matches = []
+    
     for header in headers:
         for section in sections:
             if (header.start_index == section.start_index):
@@ -78,6 +79,7 @@ def headed_sections(tags, max_title_lead=30):
             if (title.end_index < text_structure.start_index
                 and text_structure.start_index - title.end_index < max_title_lead):
                 matches.append((title, text_structure))
+                break
     return matches
 
 def find_abstracts(tags):
