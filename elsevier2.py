@@ -1,4 +1,5 @@
-### Code to deal with Elsevier data
+from sections import Section, SectionFactory
+
 
 class ComplexElsevierSectionFactory(SectionFactory):
 

@@ -82,15 +82,15 @@ def create_factory(text_file, fact_file, sect_file, collection, verbose=False):
     if collection is None:
         collection = determine_collection(fact_file)
     if collection == 'PUBMED': 
-        return pubmed.BiomedNxmlSectionFactory(text_file, fact_file, sect_file, verbose)        
+        return sections.BiomedNxmlSectionFactory(text_file, fact_file, sect_file, verbose)
     elif collection == 'WEB_OF_SCIENCE':
-        return wos.WebOfScienceSectionFactory(text_file, fact_file, sect_file, verbose)        
+        return wos.WebOfScienceSectionFactory(text_file, fact_file, sect_file, verbose) 
     elif collection == 'LEXISNEXIS':
-        return lexisnexis.PatentSectionFactory(text_file, fact_file, sect_file, verbose)        
+        return sections.PatentSectionFactory(text_file, fact_file, sect_file, verbose)
     elif collection == 'ELSEVIER':
         return create_elsevier_factory(text_file, fact_file, sect_file, verbose)
 
-def  create_elsevier_factory(text_file, fact_file, sect_file):
+def  create_elsevier_factory(text_file, fact_file, sect_file, verbose):
     """
     Since Elsevier data come in two flavours and each flavour has its own factory, check
     the file to make sure what kind of Elsevier document we are dealing with. It appears

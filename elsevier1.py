@@ -24,7 +24,7 @@ from sections import Section, SectionFactory
 
 class SimpleElsevierSectionFactory(SectionFactory):
 
-    def __init__(self, text_file, fact_file, sect_file):
+    def __init__(self, text_file, fact_file, sect_file, verbose=False):
         """
         Initialize the factory by reading segment boundaries from the fact file and the
         actual segments from the text file. """
