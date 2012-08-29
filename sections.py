@@ -116,14 +116,6 @@ class SectionFactory(object):
                 pass
 
 
-
-### Code to deal with Web of Science abstracts
-
-class WebOfScienceSectionFactory(SectionFactory):
-
-    pass
-
-
 ### Code to deal with patents
 
 class PatentSectionFactory(SectionFactory):
@@ -301,10 +293,3 @@ def is_subsection(section,other_section):
             return True
 
 
-### Code to deal with Elsevier data
-
-class ComplexElsevierSectionFactory(SectionFactory):
-
-    def make_sections(self):
-        pass
-        

@@ -31,7 +31,7 @@ In this line, $COLLECTION is in ('WEB_OF_SCIENCE', 'LEXISNEXIS', 'PUBMED', 'ELSE
 
 
 import os, sys, codecs, re
-import sections, elsevier1
+import sections, elsevier1, elsevier2, pubmed, wos, lexisnexis
 
 
 def process_file(text_file, fact_file, sect_file, collection, verbose=False):
@@ -82,11 +82,11 @@ def create_factory(text_file, fact_file, sect_file, collection, verbose=False):
     if collection is None:
         collection = determine_collection(fact_file)
     if collection == 'PUBMED': 
-        return sections.BiomedNxmlSectionFactory(text_file, fact_file, sect_file, verbose)        
+        return pubmed.BiomedNxmlSectionFactory(text_file, fact_file, sect_file, verbose)        
     elif collection == 'WEB_OF_SCIENCE':
-        return sections.WebOfScienceSectionFactory(text_file, fact_file, sect_file, verbose)        
+        return wos.WebOfScienceSectionFactory(text_file, fact_file, sect_file, verbose)        
     elif collection == 'LEXISNEXIS':
-        return sections.PatentSectionFactory(text_file, fact_file, sect_file, verbose)        
+        return lexisnexis.PatentSectionFactory(text_file, fact_file, sect_file, verbose)        
     elif collection == 'ELSEVIER':
         return create_elsevier_factory(text_file, fact_file, sect_file, verbose)
 
@@ -102,7 +102,7 @@ def  create_elsevier_factory(text_file, fact_file, sect_file):
     if text_tags < 4 :
         return elsevier1.SimpleElsevierSectionFactory(text_file, fact_file, sect_file)
     else:
-        return sections.ComplexElsevierSectionFactory(text_file, fact_file, sect_file)
+        return elsevier2.ComplexElsevierSectionFactory(text_file, fact_file, sect_file)
 
 def determine_collection(fact_file):
     """
