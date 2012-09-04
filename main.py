@@ -31,7 +31,7 @@ In this line, $COLLECTION is in ('WEB_OF_SCIENCE', 'LEXISNEXIS', 'PUBMED', 'ELSE
 
 
 import os, sys, codecs, re
-import sections, elsevier1, elsevier2, pubmed, wos, lexisnexis
+import elsevier1, elsevier2, pubmed, wos, lexisnexis
 
 
 def process_file(text_file, fact_file, sect_file, collection, verbose=False):
@@ -82,11 +82,11 @@ def create_factory(text_file, fact_file, sect_file, collection, verbose=False):
     if collection is None:
         collection = determine_collection(fact_file)
     if collection == 'PUBMED': 
-        return sections.BiomedNxmlSectionFactory(text_file, fact_file, sect_file, verbose)
+        return pubmed.BiomedNxmlSectionFactory(text_file, fact_file, sect_file, verbose)
     elif collection == 'WEB_OF_SCIENCE':
         return wos.WebOfScienceSectionFactory(text_file, fact_file, sect_file, verbose) 
     elif collection == 'LEXISNEXIS':
-        return sections.PatentSectionFactory(text_file, fact_file, sect_file, verbose)
+        return lexisnexis.PatentSectionFactory(text_file, fact_file, sect_file, verbose)
     elif collection == 'ELSEVIER':
         return create_elsevier_factory(text_file, fact_file, sect_file, verbose)
 

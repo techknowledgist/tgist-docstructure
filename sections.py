@@ -1,6 +1,4 @@
-import re
 from exceptions import UserWarning
-import med_read, pat_read, normheader
 
 
 class Section(object):
@@ -33,13 +31,6 @@ class Section(object):
         return self.end_index - self.start_index
 
 
-class ClaimSection(Section):
-    def __init__(self):
-        Section.__init__(self)
-        self.claim_number=-1
-        self.parent_claims = []
-
-    
 class SectionFactory(object):
     """
     Abstract class that contains shared code for the section factories for all data
@@ -67,7 +58,6 @@ class SectionFactory(object):
         raise UserWarning, "make_sections() not implemented for %s " % self.__class__.__name__
 
     def section_string(self,section,section_id=None, suppress_empty=True):
-
         """
         Called by print_sections. Returns a human-readable string with relevant information about
         a particular section.
@@ -91,13 +81,13 @@ class SectionFactory(object):
         except AttributeError:
             pass   
         if self.verbose and len(section.text) > 0:
-            sec_string+="\n"+section.text
+            sec_string += "\n"+section.text
         if suppress_empty and len(section.text.strip()) < 1:
             return None
         return sec_string + "\n"
 
     def parent_claims_string(self, parent_claims):
-        ret_string=str(parent_claims[0])
+        ret_string = str(parent_claims[0])
         for claim in parent_claims[1:]:
             ret_string += ","
             ret_string += str(claim)
@@ -107,189 +97,10 @@ class SectionFactory(object):
         """
         Prints section data to a file handle.
         """
-        section_id=0
+        section_id = 0
         for section in self.sections:
             section_id+=1
             try:
                 fh.write(self.section_string(section,section_id))
             except TypeError:
                 pass
-
-
-### Code to deal with patents
-
-class PatentSectionFactory(SectionFactory):
-
-    def make_sections(self,separate_headers=True):
-        """
-        Given a list of headertag/sectiontag pairs, a list of abstract tags, and the raw text
-        of the article, converts them into a list of semantically typed sections. """
-        
-        (a_text, a_tags) = pat_read.load_data(self.text_file, self.fact_file)
-        raw_sections = pat_read.headed_sections(a_tags)
-        text_sections = filter(lambda x: type(x) == tuple, raw_sections)
-        header_sections = filter(lambda x: type(x) != tuple, raw_sections)
-        
-        for match in text_sections:
-            section = Section()
-            section.types = normheader.header_to_types(match[0].text(a_text))
-            section.header = match[0].text(a_text)
-            section.filename = self.text_file
-            if separate_headers:
-                section.start_index = match[1][0].start_index
-            else:
-                section.start_index = match[0].start_index
-            section.end_index = match[1][-1].end_index
-            if separate_headers:
-                section.text = ""
-            else:
-                section.text = section.header
-            for paragraph in match[1]:
-                section.text += "\n\n" + paragraph.text(a_text)
-            self.sections.append(section)
-            if separate_headers:
-                head_section = Section()
-                head_section.types = ["Header"]
-                head_section.filename = self.text_file
-                head_section.start_index = match[0].start_index
-                head_section.end_index = match[0].end_index
-                head_section.text = section.header
-                self.sections.append(head_section)
-                
-
-        self.make_claims()
-        self.sections.extend(section_gaps(self.sections, a_text, self.text_file))
-        self.sections = sorted(self.sections, key= lambda x: x.start_index)
-
-    
-    def make_claims(self, cautious=True):
-        (text, tags) = pat_read.load_data(self.text_file, self.fact_file)
-        structures = filter(lambda x: x.name == "STRUCTURE", tags)
-        claim_sections = []
-        claims = filter(lambda x: x.name == "claim", tags)
-        claims_sections = filter(lambda x: x.name == "claims", tags)
-        claims_sections.extend(filter(lambda x: x.attributes["TYPE"] == "CLAIMS", structures))
-        if cautious:
-            assert len(claims_sections) <= 1, "Multiple claims sections in document"
-        try:
-            claims_section = claims_sections[0]
-        except IndexError:
-            return []
-        claims.extend(filter(lambda x: x.attributes["TYPE"] == "TEXT"
-                             and x.start_index >= claims_section.start_index
-                             and x.end_index <= claims_section.end_index, structures))
-        claims=sorted(claims, key = lambda x: x.start_index)
-        claim_index=1
-        for claim in claims:
-            section = ClaimSection()
-            section.types = ["claim"]
-            section.filename = self.text_file
-            section.start_index = claim.start_index
-            section.end_index = claim.end_index
-            section.text = claim.text(text)
-            section.claim_number = claim_index
-            claim_index += 1
-            claim_refs=re.findall(r"claim \d+", section.text)
-            for ref in claim_refs:
-                section.parent_claims.append(int(ref.split()[-1]))
-            self.sections.append(section)
-
-
-### Code to deal with the Biomed nxml data
-            
-class BiomedNxmlSectionFactory(SectionFactory):
-
-
-    def make_sections(self):
-        """
-        Given a list of headertag/sectiontag pairs, a list of abstract tags, and the raw text
-        of the article, converts them into a list of semantically typed sections. """
-
-        (a_text, a_tags) = med_read.load_data(self.text_file, self.fact_file)
-        raw_sections = med_read.headed_sections(a_tags, separate_headers=True)
-        text_sections = filter(lambda x: type(x) == tuple, raw_sections)
-        header_sections = filter(lambda x: type(x) != tuple, raw_sections)
-        abstracts = med_read.find_abstracts(a_tags)
-        
-        for match in text_sections:
-            section = Section()
-            section.types = normheader.header_to_types(match[0].text(a_text))
-            section.header = match[0].text(a_text)
-            section.filename = self.text_file
-            section.start_index = match[1].start_index
-            section.end_index = match[1].end_index
-            section.text = match[1].text(a_text)
-            self.sections.append(section)
-
-        for header in header_sections:
-            section = Section()
-            section.types = ["Header"]
-            section.filename = self.text_file
-            section.start_index = header.start_index
-            section.end_index = header.end_index
-            section.text = header.text(a_text)
-            self.sections.append(section)
-
-        for abstract in abstracts:
-            section = Section()
-            section.types = ["Abstract"]
-            section.filename = self.text_file
-            section.start_index = abstract.start_index
-            section.end_index = abstract.end_index
-            section.text = abstract.text(a_text)
-            self.sections.append(section)
-            
-        self.sections.extend(section_gaps(self.sections, a_text, self.text_file))
-        link_sections(self.sections)
-        self.sections = sorted(self.sections, key= lambda x: x.start_index)
-
-
-def section_gaps(sections, text, filename=""):
-    """
-    Finds the unlabeled sections in a text and labels them "Unlabeled". """
-    
-    gaps = []
-    end = len(text)
-    sections = sorted(sections, key= lambda x: x.start_index)
-    covered = 0
-    for section in sections:
-        start_index = section.start_index
-        end_index=section.end_index
-        if start_index > covered:
-            ul_section = Section()
-            ul_section.types = ["Unlabeled"]
-            ul_section.filename = filename
-            ul_section.start_index = covered
-            ul_section.end_index = start_index
-            ul_section.text = text[covered:start_index]
-            gaps.append(ul_section)
-        if end_index > covered:
-            covered = end_index
-    if end > covered:
-        ul_section=Section()
-        ul_section.types = ["Unlabeled"]
-        ul_section.filename = filename
-        ul_section.start_index = covered
-        ul_section.end_index = end
-        ul_section.text = text[covered:end]
-        gaps.append(ul_section)
-    return gaps
-
-def link_sections(sections):
-    """ Links subsections to their parent sections. """
-    for section in sections:
-        for other_section in sections:
-            if is_subsection(section,other_section):
-                section.subsumers.append(other_section)
-                for sem_type in other_section.types:
-                    section.subsumer_types.add(sem_type)
-                other_section.subsumed.append(section)
-        
-def is_subsection(section,other_section):
-    """ Returns true if the first section is a subsection of the second. """
-    if (other_section.start_index <= section.start_index and
-        other_section.end_index >= section.end_index and
-        len(other_section) > len(section)):
-            return True
-
-
