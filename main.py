@@ -15,25 +15,23 @@ output is written to STRUCTURE_FILE, which has lines like the following
    SECTION ID=1 TYPE="UNLABELED" START=0 END=3978
    SECTION ID=2 TYPE="INTRODUCTION" TITLE="INTRODUCTION" START=3978 END=6016
 
-The optional fourth argument specifies the collection that the input document was taken
-from.
-
 In the second form, the input and output files are specified in the file FILE_LIST. In the
 third form, all pairs of .txt and .fact files in DIRECTORY are processed and .sect files
 are created.
 
-The kind of document we are dealing with is specified in fact files as follows:
+The optional COLLECTION argument specifies the collection that the input document was
+taken from. This can be used to overrule the default behaviour, which is to scan the fact
+file and find the following line:
 
    DOCUMENT COLLECTION="$COLLECTION"
 
-Where $COLLECTION is in ('WEB_OF_SCIENCE', 'LEXISNEXIS', 'PUBMED', 'ELSEVIER'). Settings
-in the fact file can be overruled by using the optional COLLECTION argument.
+In this line, $COLLECTION is in ('WEB_OF_SCIENCE', 'LEXISNEXIS', 'PUBMED', 'ELSEVIER').
 
 """
 
 
 import os, sys, codecs, re
-import sections, elsevier2
+import sections, elsevier1, elsevier2, pubmed, wos, lexisnexis
 
 
 def process_file(text_file, fact_file, sect_file, collection, verbose=False):
@@ -84,15 +82,16 @@ def create_factory(text_file, fact_file, sect_file, collection, verbose=False):
     if collection is None:
         collection = determine_collection(fact_file)
     if collection == 'PUBMED': 
-        return sections.BiomedNxmlSectionFactory(text_file, fact_file, sect_file, verbose)        
+        return sections.BiomedNxmlSectionFactory(text_file, fact_file, sect_file, verbose)
     elif collection == 'WEB_OF_SCIENCE':
-        return sections.WebOfScienceSectionFactory(text_file, fact_file, sect_file, verbose)        
+        return wos.WebOfScienceSectionFactory(text_file, fact_file, sect_file, verbose) 
     elif collection == 'LEXISNEXIS':
-        return sections.PatentSectionFactory(text_file, fact_file, sect_file, verbose)        
+        return sections.PatentSectionFactory(text_file, fact_file, sect_file, verbose)
     elif collection == 'ELSEVIER':
         return create_elsevier_factory(text_file, fact_file, sect_file, verbose)
     elif collection == 'C_ELSEVIER':
         return elsevier2.ComplexElsevierSectionFactory(text_file, fact_file, sect_file, verbose)
+
 
 def  create_elsevier_factory(text_file, fact_file, sect_file, verbose=False):
     """
@@ -104,14 +103,14 @@ def  create_elsevier_factory(text_file, fact_file, sect_file, verbose=False):
     text_tags = len( [l for l in fh.readlines() if l.find('TEXT') > -1] )
     fh.close()
     if text_tags < 4 :
-        return sections.SimpleElsevierSectionFactory(text_file, fact_file, sect_file)
+        return elsevier1.SimpleElsevierSectionFactory(text_file, fact_file, sect_file)
     else:
         return elsevier2.ComplexElsevierSectionFactory(text_file, fact_file, sect_file, verbose)
 
 def determine_collection(fact_file):
     """
     Loop through the fact file in order to find the line that specifies the collection."""
-    # THIS CODE HAS NOT YET BEEN DEBUGGED
+    # THIS CODE HAS NOT YET BEEN PROPERLY TESTED
     expr = re.compile('DOCUMENT.*COLLECTION="(\S+)"')
     for line in open(fact_file):
         result = expr.search(line)

@@ -1,4 +1,4 @@
-import codecs, re
+import re
 from exceptions import UserWarning
 import med_read, pat_read, normheader
 
@@ -6,13 +6,15 @@ import med_read, pat_read, normheader
 class Section(object):
     """
     Represents a semantically-typed section in a document. Should be used by all
-    SectionFactories because the code to write to the poutput uses this class. """
+    SectionFactories because the code to write to the output uses this class. The section
+    does not include the header, but self.header does contain the string of the header, if
+    there is one. """
 
     def __init__(self):
         self.types = []
         self.header = ""
         self.subsumers = []
-        self.subsumer_types=set()
+        self.subsumer_types = set()
         self.subsumed = []
         self.filename = ""
         self.start_index = -1
@@ -20,12 +22,16 @@ class Section(object):
         self.text = ""
 
     def __str__(self):
-        text_string = self.text[:160].encode('utf-8').strip()
+        text_string = self.text.replace("\n", '\\n').encode('utf-8')[:80]
         (p1, p2) = (self.start_index, self.end_index)
-        return "<%d %d> %s\n%s...\n" % (p1, p2, str(self.types), text_string)
+        (BLUE, GREEN, END) = ('\033[34m', '\033[32m', '\033[0m')
+        offsets = "%s<%d %d>%s" % (GREEN, p1, p2, END)
+        types= "%s%s%s" % (BLUE, str(self.types), END)
+        return "%s %s\n%s...\n" % (types, offsets, text_string)
     
     def __len__(self):
         return self.end_index - self.start_index
+
 
 class ClaimSection(Section):
     def __init__(self):
@@ -43,8 +49,8 @@ class SectionFactory(object):
     
     def __init__(self, text_file, fact_file, sect_file, verbose=False):
         """
-        The first two files given are the ones that are given by the wrapper, the third is a
-        file that the wrapper expects. """
+        The first two files given are the ones that are given by the wrapper, the third is
+        a file that the wrapper expects."""
         self.text_file = text_file
         self.fact_file = fact_file
         self.sect_file = sect_file
@@ -56,11 +62,12 @@ class SectionFactory(object):
 
     def make_sections(self):
         """
-        Creates a list of Section instances ion self.sections. Each subclass should implement
+        Creates a list of Section instances in self.sections. Each subclass should implement
         this method. """
         raise UserWarning, "make_sections() not implemented for %s " % self.__class__.__name__
 
     def section_string(self,section,section_id=None, suppress_empty=True):
+
         """
         Called by print_sections. Returns a human-readable string with relevant information about
         a particular section.
@@ -107,14 +114,6 @@ class SectionFactory(object):
                 fh.write(self.section_string(section,section_id))
             except TypeError:
                 pass
-
-
-
-### Code to deal with Web of Science abstracts
-
-class WebOfScienceSectionFactory(SectionFactory):
-
-    pass
 
 
 ### Code to deal with patents
@@ -294,153 +293,3 @@ def is_subsection(section,other_section):
             return True
 
 
-### Code to deal with Elsevier data
-        
-class SimpleElsevierSectionFactory(SectionFactory):
-
-    def __init__(self, text_file, fact_file, sect_file):
-        SectionFactory.__init__(self, text_file, fact_file, sect_file)
-        self.doc = Document(text_file)
-        self.sections = []
-        
-    def make_sections(self):
-        self.text = codecs.open(self.text_file, encoding='utf-8').read()
-        self.read_lines()
-        self.doc.connect_lines()
-        self.doc.set_doc_features()
-        self.doc.mark_headers()
-        self.doc.mark_header_hierarchy()
-        #self.print_lines()
-        
-    def read_lines(self):
-        line, i, max = '', 0, len(self.text)
-        begin, end = i, i
-        while i < max:
-            char = self.text[i]
-            if self.text[i] == "\n":
-                l = Line(line, begin, end)
-                self.doc.lines.append(l)
-                line, begin, end = '', i, i
-            else:
-                line += char
-                end += 1
-            i += 1
-            
-    def print_lines(self):
-        self.doc.print_lines()
-
-
-
-class Document(object):
-    """
-    Class that contains the code to deal with document structure in Elsevier articles that
-    do not have the extended XML structure. Contains instance variables for the lines in
-    the documents and the sections. Also has variables to store document-level
-    characteristics, these all start with 'f_'. """
-    
-    def __init__(self, filename):
-        self.filename = filename
-        self.lines = []
-        self.sections = []
-        self.f_size_in_lines = None
-        self.f_size_in_characters = None
-        self.f_average_line_length = None
-        self.f_whiteline_ratio = None
-        
-    def set_doc_features(self):
-        line_count = len(self.lines)
-        whitelines = len([line for line in self.lines if line.length == 0])
-        char_count = sum([line.length + 1 for line in self.lines])
-        self.f_size_in_lines = line_count
-        self.f_size_in_characters = char_count
-        if line_count != 0:
-            self.f_average_line_length = char_count / float(line_count)
-            self.f_whiteline_ratio = whitelines / float(line_count)
-        self.print_features()
-
-    def connect_lines(self):
-        """Turn the self.lines list into a linked list."""
-        for i in range(len(self.lines)-1):
-            line = self.lines[i]
-            next_line = self.lines[i+1]
-            line.next = next_line
-            next_line.previous = line
-
-    def mark_headers(self):
-        for line in self.lines:
-            if line.is_header():
-                line.header = True
-
-    def mark_header_hierarchy(self):
-        """
-        previous_header = null
-        for h in header
-	   if not previous_header
-		previous_header = h.info()
-
-       class header
-           def info
-
-        """
-        for line in self.lines:
-            if line.header == True:
-                header = Header(line)
-                print header
-                
-    def print_features(self):
-        print "\nDocument Features"
-        for feature in sorted([f for f in self.__dict__.keys() if f.startswith('f_')]):
-            print "   %-25s %s" % (feature, self.__dict__[feature])
-        print
-
-    def print_lines(self):
-        for l in self.lines:
-            print l
-
-
-class Line(object):
-    """
-    Object to represent a line in the text. It holds the following information: (1) the
-    text string, (2) the begin and end offsets, (3) the length, (4) pointers to previous
-    and next lines, and (5) a boolean that indicates that the line is a header, set to
-    false by default. A line is a string of characters bordered by newlines, so the
-    newline is not part of the line itself. """
-
-    re_prefix = re.compile('\d\.(\d\.)?')
-    
-    def __init__(self, line, p1, p2):
-        self.line = line
-        self.begin = p1
-        self.end = p2
-        self.length = p2 - p1
-        self.previous = None
-        self.next = None
-        self.header = False
-
-    def __str__(self):
-        l = self.line
-        line = self.line if len(l) < 75 else "%s ... %s" % (l[:38], l[-37:])
-        return "<Line %d %d %s '%s'>" % (self.begin, self.end, self.header, line)
-
-    def is_header(self):
-        if 0 < self.length < 50:
-            return True
-        return False
-
-    def numbering_prefix(self):
-        match = self.re_prefix.match(self.line)
-        if match is not None:
-            return match.group(0)
-        return ''
-    
-
-class Header(Line):
-
-    def __init__(self, line):
-        for f in line.__dict__.keys():
-            self.__dict__[f] = line.__dict__[f]
-        prefix = line.numbering_prefix()
-        self.embedding = [p for p in prefix.split('.') if p]
-            
-    def __str__(self):
-        return "<Header %d %d [%s] '%s'>" % (self.begin, self.end, '.'.join(self.embedding), self.line)

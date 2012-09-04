@@ -46,23 +46,22 @@ def norm_section_head(section_head):
     whitespace/capitalization (possibly only punctuation and capitalization
     is necessary?)
     """
-    section_head=section_head.lower()
-    
-    section_head=re.sub(r'\W|\d', '', section_head, re.UNICODE)
+    section_head = section_head.lower()
+    section_head = re.sub(r'\W|\d', '', section_head, re.UNICODE)
     return section_head
 
 def normed_types(section_head):
     """
     Takes a normalized section header string, returns semantic types.
     """
-    head_types=[]
+    head_types = []
     for sem_type in sem_types:
         for ch_string in sem_types[sem_type][0]:
             if ch_string in section_head:
-                excluded=False
+                excluded = False
                 for ex_string in sem_types[sem_type][1]:
                     if ex_string in section_head:
-                        excluded=True
+                        excluded = True
                 if not excluded:
                     head_types.append(sem_type)
                     break
