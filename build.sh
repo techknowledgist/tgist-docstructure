@@ -1,24 +1,31 @@
 #!/bin/csh -f
 
-# Shell script to create a directory that can be sent off to users like BAE.
-# 
-# Usage example:
-#
-#  % ./build.sh docstructure
-#
-# This will create a directory docstructure/YYYYMMDD with all python scripts and some of
-# the example data.
+# Shell script to create a directory that can be sent off to users like BAE. Running it
+# will create a directory docstructure-YYYYMMDD with all python scripts, some of the
+# example data, and housekeeping data in the info directory (with git-related stuff). It
+# prints the directory created and the git status on the working directory, the latter to
+# kame it easy for the user to relaize that what you are packagng is not versioned.
 
-set build_dir = $1 
 set version = `date +"%Y%m%d"`
+set x = "docstructure-${version}"
 
-echo "CREATING DIRECTORY $build_dir-$version"
+echo; echo "CREATING DIRECTORY docstructure-$version"
+echo; echo "GIT STATUS"; echo
+git status -bs
+echo
 
-mkdir $build_dir
-cp *.py $build_dir
-mkdir $build_dir/data
-cp data/f* $build_dir/data
-cp data/e* $build_dir/data
+mkdir $x
+cp *.py $x
 
-echo mv $build_dir ${build_dir}-${version}
-mv $build_dir ${build_dir}-${version}
+mkdir $x/utils
+cp utils/*py $x/utils
+
+mkdir $x/data
+cp data/f* $x/data
+cp data/e* $x/data
+
+mkdir $x/info
+git status > $x/info/git-status.txt
+git diff > $x/info/git-diff-working.txt
+git diff --cached > $x/info/git-diff-cached.txt
+git log --decorate --graph --all > $x/info/git-log.txt
