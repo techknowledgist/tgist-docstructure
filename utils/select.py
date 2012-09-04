@@ -3,7 +3,13 @@
 Module that gives access to individual sections in a file that was processed by the
 document structure parser.
 
-Note that different types can refer to the same stretch of text.
+Usage:
+
+   % python select.py elsevier-simple.txt elsevier-simple.sect INTRDDUCTION
+
+   this selects all sections whose type is INTRODUCTION
+   
+   Note that different types can refer to the same stretch of text.
 
 The main limitation is that this script does not take embedding into consideration. So a
 section is basically defined as a stretch of text between two headers. This is due to
@@ -39,7 +45,7 @@ class SectionReader(object):
                 self.sections.setdefault(label, []).append((int(start), int(end)))
 
     def get_sections(self, sectiontype):
-        """Return a list of strings, where each strng is the text content of a section of
+        """Return a list of strings, where each string is the text content of a section of
         the prescribed type."""
         return [self.text[x:y] for (x,y) in self.sections.get(sectiontype,[])]
 
@@ -53,8 +59,9 @@ class SectionReader(object):
 
         
 if __name__ == '__main__':
+
     text_file, sect_file, sectiontype = sys.argv[1:4]
     reader = SectionReader(text_file, sect_file)
-    print reader.section_types()
-    reader.print_sections()
+    #print reader.section_types()
+    #reader.print_sections()
     print reader.get_sections(sectiontype)

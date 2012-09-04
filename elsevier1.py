@@ -1,6 +1,32 @@
 """
 
-This module contains code that deals with the unstructured Elsevier data.
+This module contains code that deals with the unstructured Elsevier data. The only classes
+and methods intended to be public are SimpleElsevierSectionFactory and its make_sections()
+method.
+
+The general approach is as follows:
+
+1. Split the text in lines
+
+2. Collect document-level characteristics like size in lines, tokens and characters,
+   average line lenght, white line ration and sparseness.
+
+3. Collect characteriztics for each line, like size, prefix, emptyness, and orphanage. The
+   orphanage characteristics are all about the emptyness of preceding and following lines.
+
+4. Given these characteristics, decide line by line whether it is a section header or not,
+   using a a simple decision tree like process.
+
+5. Generate the type of the header.
+
+6. Combine non-header lines into segments.
+
+7. Assign the header types to all embedded segments.
+
+This code is written to work for the unstructured ELsevier data, which can be recognized
+by its dp:raw-text xml tag. Unfortunately, this tag is not available to the document
+structure parser so instead we have used the number of structure facts with the TEXT type
+(see comment in main.py).
 
 """
 
@@ -10,16 +36,12 @@ This module contains code that deals with the unstructured Elsevier data.
 #   uses what looks like numbering on the headers, if this is set to True, then you
 #   need a bit more evidence to promote a line to a segment, for example you could
 #   only allow References and Acknowledgements as section headers without a number.
-#
-    
 
 
 import codecs, re
-from exceptions import UserWarning
 
 import normheader
 from sections import Section, SectionFactory
-
 
 
 class SimpleElsevierSectionFactory(SectionFactory):
@@ -29,11 +51,11 @@ class SimpleElsevierSectionFactory(SectionFactory):
         Initialize the factory by reading segment boundaries from the fact file and the
         actual segments from the text file. """
         SectionFactory.__init__(self, text_file, fact_file, sect_file)
-        self.segment_boundaries = self.read_fact_file()
-        self.segments = self.read_segments()
+        self.segment_boundaries = self._read_fact_file()
+        self.segments = self._read_segments()
         self.sections = []
 
-    def read_fact_file(self):
+    def _read_fact_file(self):
         """
         Reads the fact file and retrieves the start and end offsets of all strucutre tags
         with type TEXT. Returns a list of tuples with start and end offset for each TEXT
@@ -49,7 +71,7 @@ class SimpleElsevierSectionFactory(SectionFactory):
                     boundaries.append((int(start), int(end)))
         return boundaries
 
-    def read_segments(self):
+    def _read_segments(self):
         """
         Create an ElsevierSegment for each pair of segment boundaries and return a list of
         those segments."""
