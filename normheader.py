@@ -31,7 +31,8 @@ sem_types={
     "Government Interest": (["government"],[]),
     "Operation": (["operation"],[]),
     "Invention": (["invention"],["background"]),
-    "Preferred Embodiments": (["preferredembodiment"],[])
+    "Preferred Embodiments": (["preferredembodiment"],[]),
+    "Abstract": (["abstract"],["ion","e"])
     }
 
 def header_to_types(section_head):
