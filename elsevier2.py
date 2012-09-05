@@ -4,7 +4,7 @@ import else_read, sections, normheader
 class ComplexElsevierSectionFactory(sections.SectionFactory):
 
 
-    def make_sections(self):
+    def make_sections(self,separate_headers=True):
         """
         Given a list of headertag/sectiontag pairs, a list of abstract tags, and the raw text
         of the article, converts them into a list of semantically typed sections. """
@@ -20,9 +20,14 @@ class ComplexElsevierSectionFactory(sections.SectionFactory):
             section.types = normheader.header_to_types(match[0].text(a_text))
             section.header = match[0].text(a_text)
             section.filename = self.text_file
-            section.start_index = match[1].start_index
-            section.end_index = match[1].end_index
-            section.text = match[1].text(a_text)
+            section.start_index = match[1][0].start_index
+            section.end_index = match[1][-1].end_index
+            if separate_headers:
+                section.text = ""
+            else:
+                section.text = section.header
+            for paragraph in match[1]:
+                section.text += "\n\n" + paragraph.text(a_text)
             self.sections.append(section)
 
         for header in header_sections:

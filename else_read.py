@@ -78,33 +78,39 @@ def headed_sections(tags, max_title_lead=30, separate_headers=True):
     their text subsumed in the section.
     """
     
-    headers = filter(lambda x: x.name == "title", tags)
-    sections = filter(lambda x: x.name == "sec", tags)
     structures = filter(lambda x: x.name == "STRUCTURE", tags)
     title_structures = filter(lambda x: x.attributes["TYPE"] == "TITLE", structures)
     text_structures = filter(lambda x: x.attributes["TYPE"][:4] == "TEXT", structures)
 
     
     matches = []
-    header_matches = []
-    for header in headers:
-        for section in sections:
-            if (header.start_index == section.start_index):
-                if separate_headers:
-                    section.start_index = header.end_index + 1
-                    header_matches.append(header)
-                matches.append((header,section))
-                break
-    for title in title_structures:
+    header_matches=[]
+    
+    title_structures = sorted(title_structures, key=lambda x: x.start_index)
+    text_structures = sorted(text_structures, key=lambda x: x.start_index)
+
+    """OK so guesswork on what paragraphs go to what header.  We assume that if there is a period
+    of unlabeled text in among labeled text it really should have gone with the previous label.
+    Unlabeled text at the beginning and end is assumed to be properly unlabeled."""
+    
+    for index in range(len(title_structures)-1):
+        title = title_structures[index]
+        next_title = title_structures[index+1]
+        titled_paras =[]
         for text_structure in text_structures:
             if (title.end_index < text_structure.start_index
-                and text_structure.start_index - title.end_index < max_title_lead):
-                if separate_headers:
+                and text_structure.end_index < next_title.start_index):
+                immediate_follower=False
+                if text_structure.start_index - title.end_index < max_title_lead and len(titled_paras) < 1:
+                    immediate_follower=True
+                if separate_headers and immediate_follower:
                     header_matches.append(title)
-                else:
+                elif immediate_follower:
                     text_structure.start_index = title.start_index
-                matches.append((title, text_structure))
-                break
+                if immediate_follower or len(titled_paras) > 0:
+                    titled_paras.append(text_structure)
+        if len(titled_paras) > 0:
+            matches.append((title, titled_paras))
     matches.extend(header_matches)
     return matches
 
