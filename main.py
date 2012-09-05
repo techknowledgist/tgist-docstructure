@@ -89,8 +89,11 @@ def create_factory(text_file, fact_file, sect_file, collection, verbose=False):
         return lexisnexis.PatentSectionFactory(text_file, fact_file, sect_file, verbose)
     elif collection == 'ELSEVIER':
         return create_elsevier_factory(text_file, fact_file, sect_file, verbose)
+    elif collection == 'C_ELSEVIER':
+        return elsevier2.ComplexElsevierSectionFactory(text_file, fact_file, sect_file, verbose)
 
-def  create_elsevier_factory(text_file, fact_file, sect_file, verbose):
+
+def  create_elsevier_factory(text_file, fact_file, sect_file, verbose=False):
     """
     Since Elsevier data come in two flavours and each flavour has its own factory, check
     the file to make sure what kind of Elsevier document we are dealing with. It appears
@@ -102,7 +105,7 @@ def  create_elsevier_factory(text_file, fact_file, sect_file, verbose):
     if text_tags < 4 :
         return elsevier1.SimpleElsevierSectionFactory(text_file, fact_file, sect_file)
     else:
-        return elsevier2.ComplexElsevierSectionFactory(text_file, fact_file, sect_file)
+        return elsevier2.ComplexElsevierSectionFactory(text_file, fact_file, sect_file, verbose)
 
 def determine_collection(fact_file):
     """
@@ -124,7 +127,7 @@ if __name__ == '__main__':
     if len(sys.argv) > 3:
         text_file, fact_file, sect_file = sys.argv[1:4]
         collection = sys.argv[4] if len(sys.argv) > 4 else None
-        process_file(text_file, fact_file, sect_file, collection)
+        process_file(text_file, fact_file, sect_file, collection, verbose=True)
 
     # processing multiple files
     elif len(sys.argv) > 2:

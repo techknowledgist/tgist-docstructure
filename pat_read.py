@@ -110,6 +110,7 @@ def headed_sections(tags, cautious=False):
             if paragraph.start_index >= head_start and paragraph.end_index <= head_end:
                 headed_paragraphs.append(paragraph)
         matches.append((header,sorted(headed_paragraphs, key= lambda x: x.end_index)))
+        
     return matches
 
 def find_abstracts(tags):
