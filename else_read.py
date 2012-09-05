@@ -109,6 +109,7 @@ def headed_sections(tags, max_title_lead=30, separate_headers=True):
     return matches
 
 def find_abstracts(tags):
-    return filter(lambda x: x.name == "abstract", tags)
+    structures = filter(lambda x: x.name == "STRUCTURE", tags)
+    return filter(lambda x: x.attributes["TYPE"] == "ABSTRACT", structures)
 
 
