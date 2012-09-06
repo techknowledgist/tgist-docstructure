@@ -7,7 +7,8 @@ Usage:
    % python main.py TEXT_FILE FACT_FILE STRUCTURE_FILE COLLECTION?
    % python main.py FILE_LIST COLLECTION?
    % python main.py DIRECTORY COLLECTION?
-
+   % python main.py -t
+   
 In the first form, input is taken from TEXT_FILE, which contains the bare text, and
 FACT_FILE, which contains some structural tags taken from the low-level input parser. The
 output is written to STRUCTURE_FILE, which has lines like the following
@@ -26,6 +27,10 @@ file and find the following line:
    DOCUMENT COLLECTION="$COLLECTION"
 
 In this line, $COLLECTION is in ('WEB_OF_SCIENCE', 'LEXISNEXIS', 'PUBMED', 'ELSEVIER').
+
+Finally, in the fourth form, a simple sanity check is run, where three files (one pubmed,
+one mockup ELsevier and one patent) are processed and the section files are printed to the
+standard output.
 
 """
 
@@ -92,7 +97,6 @@ def create_factory(text_file, fact_file, sect_file, collection, verbose=False):
     elif collection == 'C_ELSEVIER':
         return elsevier2.ComplexElsevierSectionFactory(text_file, fact_file, sect_file, verbose)
 
-
 def  create_elsevier_factory(text_file, fact_file, sect_file, verbose=False):
     """
     Since Elsevier data come in two flavours and each flavour has its own factory, check
@@ -121,13 +125,23 @@ def determine_collection(fact_file):
     
 if __name__ == '__main__':
 
-    #collection = None
-
+    # when called to run some simple tests
+    if len(sys.argv) == 2 and sys.argv[1] == '-t':
+        files = ( 'f401516f-bd40-11e0-9557-52c9fc93ebe0-001-gkp847',
+                  'elsevier-simple', 'US4192770A' )
+        for f in files:
+            print f, "\n"
+            text_file = "data/%s.txt" % f
+            fact_file = "data/%s.fact" % f
+            sect_file = "data/%s.sect" % f
+            process_file(text_file, fact_file, sect_file, None, verbose=False)
+            print open(sect_file).read()
+            
     # when called to process one file
-    if len(sys.argv) > 3:
+    elif len(sys.argv) > 3:
         text_file, fact_file, sect_file = sys.argv[1:4]
         collection = sys.argv[4] if len(sys.argv) > 4 else None
-        process_file(text_file, fact_file, sect_file, collection, verbose=True)
+        process_file(text_file, fact_file, sect_file, collection, verbose=False)
 
     # processing multiple files
     elif len(sys.argv) > 2:
@@ -140,7 +154,7 @@ if __name__ == '__main__':
         elif os.path.isfile(path):
             process_files(path, collection)
 
-    #by default
+    # by default
     else:
         text_file = "doc.txt"
         fact_file = "doc.fact"

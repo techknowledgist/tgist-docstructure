@@ -1,5 +1,5 @@
 import med_read, normheader
-from sections import Section, SectionFactory
+from sections import Section, SectionFactory, section_gaps
 
 class BiomedNxmlSectionFactory(SectionFactory):
 
@@ -47,37 +47,6 @@ class BiomedNxmlSectionFactory(SectionFactory):
         link_sections(self.sections)
         self.sections = sorted(self.sections, key= lambda x: x.start_index)
 
-
-def section_gaps(sections, text, filename=""):
-    """
-    Finds the unlabeled sections in a text and labels them "Unlabeled". """
-    
-    gaps = []
-    end = len(text)
-    sections = sorted(sections, key= lambda x: x.start_index)
-    covered = 0
-    for section in sections:
-        start_index = section.start_index
-        end_index=section.end_index
-        if start_index > covered:
-            ul_section = Section()
-            ul_section.types = ["Unlabeled"]
-            ul_section.filename = filename
-            ul_section.start_index = covered
-            ul_section.end_index = start_index
-            ul_section.text = text[covered:start_index]
-            gaps.append(ul_section)
-        if end_index > covered:
-            covered = end_index
-    if end > covered:
-        ul_section=Section()
-        ul_section.types = ["Unlabeled"]
-        ul_section.filename = filename
-        ul_section.start_index = covered
-        ul_section.end_index = end
-        ul_section.text = text[covered:end]
-        gaps.append(ul_section)
-    return gaps
 
 def link_sections(sections):
     """ Links subsections to their parent sections. """

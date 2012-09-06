@@ -57,7 +57,7 @@ class SectionFactory(object):
         this method. """
         raise UserWarning, "make_sections() not implemented for %s " % self.__class__.__name__
 
-    def section_string(self,section,section_id=None, suppress_empty=True):
+    def section_string(self, section, section_id=None, suppress_empty=True):
         """
         Called by print_sections. Returns a human-readable string with relevant information about
         a particular section.
@@ -104,3 +104,36 @@ class SectionFactory(object):
                 fh.write(self.section_string(section,section_id))
             except TypeError:
                 pass
+
+
+def section_gaps(sections, text, filename=""):
+    """
+    Finds the unlabeled sections in a text and labels them "Unlabeled". """
+    
+    gaps = []
+    end = len(text)
+    sections = sorted(sections, key= lambda x: x.start_index)
+    covered = 0
+    for section in sections:
+        start_index = section.start_index
+        end_index=section.end_index
+        if start_index > covered:
+            ul_section = Section()
+            ul_section.types = ["Unlabeled"]
+            ul_section.filename = filename
+            ul_section.start_index = covered
+            ul_section.end_index = start_index
+            ul_section.text = text[covered:start_index]
+            gaps.append(ul_section)
+        if end_index > covered:
+            covered = end_index
+    if end > covered:
+        ul_section=Section()
+        ul_section.types = ["Unlabeled"]
+        ul_section.filename = filename
+        ul_section.start_index = covered
+        ul_section.end_index = end
+        ul_section.text = text[covered:end]
+        gaps.append(ul_section)
+    return gaps
+

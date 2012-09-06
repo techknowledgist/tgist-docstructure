@@ -1,6 +1,6 @@
 import re
 import pat_read, normheader
-from sections import Section, SectionFactory
+from sections import Section, SectionFactory, section_gaps
 
 
 class ClaimSection(Section):
@@ -9,7 +9,6 @@ class ClaimSection(Section):
         Section.__init__(self)
         self.claim_number = -1
         self.parent_claims = []
-
     
 
 class PatentSectionFactory(SectionFactory):

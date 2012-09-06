@@ -23,6 +23,7 @@ cp utils/*py $x/utils
 mkdir $x/data
 cp data/f* $x/data
 cp data/e* $x/data
+cp data/US* $x/data
 
 mkdir $x/info
 git status > $x/info/git-status.txt
