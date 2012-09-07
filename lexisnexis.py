@@ -1,5 +1,6 @@
 import re
-import pat_read, normheader
+import normheader
+import readers.lexisnexis
 from sections import Section, SectionFactory, section_gaps
 
 
@@ -13,13 +14,17 @@ class ClaimSection(Section):
 
 class PatentSectionFactory(SectionFactory):
 
-    def make_sections(self,separate_headers=True):
+    def make_sections(self, separate_headers=True):
         """
         Given a list of headertag/sectiontag pairs, a list of abstract tags, and the raw text
         of the article, converts them into a list of semantically typed sections. """
         
-        (a_text, a_tags) = pat_read.load_data(self.text_file, self.fact_file)
-        raw_sections = pat_read.headed_sections(a_tags)
+        (a_text, a_tags) = readers.lexisnexis.load_data(self.text_file, self.fact_file)
+        #for t in a_tags: print t
+        raw_sections = readers.lexisnexis.headed_sections(a_tags)
+        #print
+        #for s in raw_sections: print s[0], s[1][0]
+        #print raw_sections
         text_sections = filter(lambda x: type(x) == tuple, raw_sections)
         header_sections = filter(lambda x: type(x) != tuple, raw_sections)
         
@@ -56,7 +61,7 @@ class PatentSectionFactory(SectionFactory):
 
     
     def make_claims(self, cautious=True):
-        (text, tags) = pat_read.load_data(self.text_file, self.fact_file)
+        (text, tags) = readers.lexisnexis.load_data(self.text_file, self.fact_file)
         structures = filter(lambda x: x.name == "STRUCTURE", tags)
         claim_sections = []
         claims = filter(lambda x: x.name == "claim", tags)
