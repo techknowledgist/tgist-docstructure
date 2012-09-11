@@ -21,6 +21,7 @@ sem_types={
     "Figures": (["figure","illust","drawing"],[]),
     "Tables": (["table"],["abbreviat"]),
     "Images": (["image"],[]),
+    "Examples": (["example"],[]),
     "Abbreviations": (["abbreviat"],[]),
     "Analysis": (["analysis", "analyses"],["statistic"]),
     "Materials":(["material"],["supplement"]),
