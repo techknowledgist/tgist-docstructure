@@ -8,7 +8,11 @@ class Section(object):
     does not include the header, but self.header does contain the string of the header, if
     there is one. """
 
+    SECTION_ID = 0
+    
     def __init__(self):
+        Section.SECTION_ID += 1
+        self.id = Section.SECTION_ID
         self.types = []
         self.header = ""
         self.subsumers = []
@@ -23,7 +27,7 @@ class Section(object):
         text_string = self.text.replace("\n", '\\n').encode('utf-8')[:80]
         (p1, p2) = (self.start_index, self.end_index)
         (BLUE, GREEN, END) = ('\033[34m', '\033[32m', '\033[0m')
-        offsets = "%s<%d %d>%s" % (GREEN, p1, p2, END)
+        offsets = "%s<id=%d start=%d end=%d>%s" % (GREEN, self.id, p1, p2, END)
         types= "%s%s%s" % (BLUE, str(self.types), END)
         return "%s %s\n%s...\n" % (types, offsets, text_string)
     
@@ -57,14 +61,12 @@ class SectionFactory(object):
         this method. """
         raise UserWarning, "make_sections() not implemented for %s " % self.__class__.__name__
 
-    def section_string(self, section, section_id=None, suppress_empty=True):
+    def section_string(self, section, suppress_empty=True):
         """
         Called by print_sections. Returns a human-readable string with relevant information about
         a particular section.
         """
-        sec_string="SECTION"
-        if section_id is not None:
-            sec_string += " ID="+str(section_id)
+        sec_string = "SECTION ID=%d" % section.id
         if len(section.types) > 0:
             sec_string += " TYPE=\"" + "|".join(section.types).upper() + "\""
         if len(section.header) > 0:
@@ -97,11 +99,9 @@ class SectionFactory(object):
         """
         Prints section data to a file handle.
         """
-        section_id = 0
         for section in self.sections:
-            section_id+=1
             try:
-                fh.write(self.section_string(section,section_id))
+                fh.write(self.section_string(section))
             except TypeError:
                 pass
 
