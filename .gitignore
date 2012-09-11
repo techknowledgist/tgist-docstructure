@@ -9,6 +9,6 @@
 .#*
 
 # document structure parser output
-data/*sections
-data/*sect
-data/*html
+data/*.sections
+data/*.sect
+data/*.html

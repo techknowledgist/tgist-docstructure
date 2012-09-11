@@ -7,7 +7,7 @@ Usage:
    % python main.py [-h] TEXT_FILE FACT_FILE STRUCTURE_FILE [COLLECTION]
    % python main.py FILE_LIST [COLLECTION]
    % python main.py DIRECTORY [COLLECTION]
-   % python main.py -t
+   % python main.py -t [-v]
    
 In the first form, input is taken from TEXT_FILE, which contains the bare text, and
 FACT_FILE, which contains some structural tags taken from the low-level input parser. The
@@ -31,14 +31,21 @@ file and find the following line:
 
 In this line, $COLLECTION is in ('WEB_OF_SCIENCE', 'LEXISNEXIS', 'PUBMED', 'ELSEVIER').
 
-Finally, in the fourth form, a simple sanity check is run, where three files (one pubmed,
-one mockup Elsevier and one patent) are processed and the section files are printed to the
-standard output.
+Finally, in the fourth form, a simple sanity check is run, where four files (one pubmed,
+one mockup Elsevier, one mockup WOS and one patent) are processed and the diffs between
+the resulting .sect files and the regression files are printed to the standard
+output. With the -v option, more verbose utput is printed, which adds the content of all
+the generated .sect files.
+
+If the code fails the regression test, the coder is responsible for checking why that
+happened and do on eof two things: (i) change the code if a bug was introduced, (ii)
+update the files in data/regression if code changes introduced legitimate changes to the
+output.
 
 """
 
 
-import os, sys, codecs, re, getopt
+import os, sys, codecs, re, getopt, difflib
 import elsevier1, elsevier2, pubmed, wos, lexisnexis, utils.view
 
 
@@ -128,27 +135,47 @@ def determine_collection(fact_file):
             return result.group(1)
     return None
 
+def run_tests(verbose=False):
+    """Runs a test on four files: a pubmed file, a mockup WOS file, a mockup unstructured
+    Elsevier file, and a LexisNexis patent. Prints the output of the document parser as
+    well as a diff of that output relative to a file in the data/regression directory."""
+    files = ( 'f401516f-bd40-11e0-9557-52c9fc93ebe0-001-gkp847',
+              'elsevier-simple', 'US4192770A', 'wos' )
+    results = []
+    for f in files:
+        if verbose:
+            print "==> %s\n" % f
+        text_file = "data/%s.txt" % f
+        fact_file = "data/%s.fact" % f
+        sect_file = "data/%s.sect" % f
+        key_file ="data/regression/%s.sect" % f
+        process_file(text_file, fact_file, sect_file, None, verbose=False)
+        response = open(sect_file).readlines()
+        key = open(key_file).readlines()
+        if verbose:
+            print ''.join(response)
+        results.append((f, response, key))
+    if verbose:
+        print
+    for filename, response, key in results:
+        print "\n==> %s (diff)" % filename
+        for line in difflib.unified_diff(response, key, fromfile=sect_file, tofile=key_file):
+            sys.stdout.write(line)
+                
     
 if __name__ == '__main__':
 
-    (opts, args) = getopt.getopt(sys.argv[1:], 'ht')
-    test_mode, html_mode = False, False
+    (opts, args) = getopt.getopt(sys.argv[1:], 'htv')
+    test_mode, html_mode, verbose = False, False, False
     for opt, val in opts:
         if opt == '-t': test_mode = True
         if opt == '-h': html_mode = True
+        if opt == '-v': verbose = True
 
     # when called to run some simple tests
     if test_mode:
-        files = ( 'f401516f-bd40-11e0-9557-52c9fc93ebe0-001-gkp847',
-                  'elsevier-simple', 'US4192770A' )
-        for f in files:
-            print f, "\n"
-            text_file = "data/%s.txt" % f
-            fact_file = "data/%s.fact" % f
-            sect_file = "data/%s.sect" % f
-            process_file(text_file, fact_file, sect_file, None, verbose=False)
-            print open(sect_file).read()
-
+        run_tests(verbose)
+            
     # when called to process one file
     elif len(args) >= 3:
         text_file, fact_file, sect_file = args[:3]

@@ -53,7 +53,6 @@ class PatentSectionFactory(SectionFactory):
                 head_section.end_index = match[0].end_index
                 head_section.text = section.header
                 self.sections.append(head_section)
-                
 
         self.make_claims()
         self.sections.extend(section_gaps(self.sections, a_text, self.text_file))

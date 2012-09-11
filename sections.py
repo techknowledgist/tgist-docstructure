@@ -44,8 +44,11 @@ class SectionFactory(object):
     
     def __init__(self, text_file, fact_file, sect_file, verbose=False):
         """
-        The first two files given are the ones that are given by the wrapper, the third is
-        a file that the wrapper expects."""
+        The first two files are the ones that are given by the wrapper, the third is
+        the file that the wrapper expects."""
+        # reset the SECTION_ID class variable so that ids start at 1 for each file, this
+        # is important because it makes the regression test much more robust.
+        Section.SECTION_ID = 0
         self.text_file = text_file
         self.fact_file = fact_file
         self.sect_file = sect_file
@@ -66,7 +69,7 @@ class SectionFactory(object):
         Called by print_sections. Returns a human-readable string with relevant information about
         a particular section.
         """
-        sec_string = "SECTION ID=%d" % section.id
+        sec_string = "SECTION ID=%d" % (section.id)
         if len(section.types) > 0:
             sec_string += " TYPE=\"" + "|".join(section.types).upper() + "\""
         if len(section.header) > 0:
