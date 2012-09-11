@@ -18,24 +18,17 @@
 """
 
 from common import Tag, load_data
+from common import tags_with_name, tags_with_type, tags_with_matching_type
 
     
 def headed_sections(tags, cautious=False):
 
-    structures = filter(lambda x: x.name == "STRUCTURE", tags)
-    title_structures = filter(lambda x: x.attributes["TYPE"] == "SECTITLE", structures)
-    text_structures = filter(lambda x: x.attributes["TYPE"] == "TEXT", structures)
-    text_chunks = filter(lambda x: x.attributes["TYPE"] == "TEXT_CHUNK", structures)
-    headers = filter(lambda x: x.name == "heading", tags)
-    headers.extend(title_structures)
-    paragraphs = filter(lambda x: x.name == "p", tags)
-    paragraphs.extend(text_structures)
-    descriptions = filter(lambda x: x.name == "description", tags)
-    descriptions.extend(text_chunks) 
-    try:
-        description = descriptions[0] #first text_chunk guaranteed description?
-    except IndexError:
+    (headers, paragraphs, descriptions) = read_sections(tags)
+
+    if not descriptions:
         return []
+
+    description = descriptions[0] # first text_chunk is always (?) the description
     matches = []
     desc_start = description.start_index
     desc_end = description.end_index
@@ -60,4 +53,26 @@ def headed_sections(tags, cautious=False):
     return matches
 
 
+def read_sections(tags):
+
+    """Returns lists of headers, paragraphs and descriptions from the list of Tags."""
+    
+    structures = tags_with_name(tags, 'STRUCTURE')
+    title_structures = tags_with_type(structures, 'SECTITLE')
+    text_structures = tags_with_type(structures, 'TEXT')
+    text_chunks = tags_with_type(structures, 'TEXT_CHUNK')
+    # these three are doing nothing with input from the BAE fact file, but are still needed if we use
+    # the output of create_standoff.pl, shoul dprobably hve some setting somewhere that
+    # encodes what input tyoe we are dealing with
+    headers = tags_with_name(tags, 'heading')
+    paragraphs = tags_with_name(tags, 'p')
+    descriptions = tags_with_name(tags, 'description')
+    # and these three make sure there are headers etcetera when we have a BAE fact file
+    headers.extend(title_structures)
+    paragraphs.extend(text_structures)
+    descriptions.extend(text_chunks)
+
+    #print len(structures), len(title_structures), len(text_structures), len(text_chunks), \
+    #    len(headers), len(paragraphs), len(descriptions)
+    return (headers, paragraphs, descriptions)
 
