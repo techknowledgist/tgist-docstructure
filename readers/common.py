@@ -51,19 +51,26 @@ class Tag():
     def text(self, doc):
         return doc[self.start_index:self.end_index]
 
+    def is_abstract(self):
+        """Return True if self is an abstract, False otherwise. Can deal with BAE fact
+        files and output of utils/create_standoff.pl."""
+        if self.name.lower() == 'abstract':
+            return True
+        if self.name == 'STRUCTURE' and self.attributes['TYPE'] == 'ABSTRACT':
+            return True
+        return False
 
+    
 def load_data(text_file, fact_file):
-    """
-    Returns a tuple of the text as a unicode string and a list of Tag instances created
+    """Returns a tuple of the text as a unicode string and a list of Tag instances created
     from the fact file."""
     text = codecs.open(text_file, encoding="utf-8").read()
     tags = [ Tag(line) for line in open(fact_file) if line.strip() != '' ]
     return (text, tags)
 
 def find_abstracts(tags):
-    """ 
-    Returns all tags that are abstract tags."""
-    return filter(lambda x: x.name == "abstract", tags)
+    """Returns all tags that are abstract tags."""
+    return [ t for t in tags if t.is_abstract()]
 
 def load_articles(basename_file="files.txt"):
     articles = []

@@ -1,25 +1,25 @@
 
+"""
 
-# TODO: this code fails to find the abstracts
- 
+Module with code to create sections for Pubmed data. 
 
+"""
 
 
 import normheader
 import readers.pubmed
 from sections import Section, SectionFactory, section_gaps
 
-class BiomedNxmlSectionFactory(SectionFactory):
 
+class BiomedNxmlSectionFactory(SectionFactory):
 
     def make_sections(self):
         """
-        Given a list of headertag/sectiontag pairs, a list of abstract tags, and the raw text
-        of the article, converts them into a list of semantically typed sections. """
+        Given a list of headertag/sectiontag pairs, a list of abstract tags, and the raw
+        text of the article, converts them into a list of semantically typed sections."""
 
         (a_text, a_tags) = readers.pubmed.load_data(self.text_file, self.fact_file)
         raw_sections = readers.pubmed.headed_sections(a_tags, separate_headers=True)
-        #for rs in raw_sections: print rs
         text_sections = filter(lambda x: type(x) == tuple, raw_sections)
         header_sections = filter(lambda x: type(x) != tuple, raw_sections)
         abstracts = readers.pubmed.find_abstracts(a_tags)
@@ -73,6 +73,3 @@ def is_subsection(section,other_section):
         other_section.end_index >= section.end_index and
         len(other_section) > len(section)):
             return True
-
-
-

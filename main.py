@@ -139,8 +139,12 @@ def run_tests(verbose=False):
     """Runs a test on four files: a pubmed file, a mockup WOS file, a mockup unstructured
     Elsevier file, and a LexisNexis patent. Prints the output of the document parser as
     well as a diff of that output relative to a file in the data/regression directory."""
-    files = ( 'f401516f-bd40-11e0-9557-52c9fc93ebe0-001-gkp847',
-              'elsevier-simple', 'US4192770A', 'wos' )
+    files = (
+        'f401516f-bd40-11e0-9557-52c9fc93ebe0-001-gkp847',
+        'elsevier-simple',
+        'US4192770A',
+        'wos'
+        )
     results = []
     for f in files:
         if verbose:
@@ -154,10 +158,10 @@ def run_tests(verbose=False):
         key = open(key_file).readlines()
         if verbose:
             print ''.join(response)
-        results.append((f, response, key))
+        results.append((f, sect_file, response, key_file, key))
     if verbose:
         print
-    for filename, response, key in results:
+    for filename, sect_file, response, key_file, key in results:
         print "\n==> %s (diff)" % filename
         for line in difflib.unified_diff(response, key, fromfile=sect_file, tofile=key_file):
             sys.stdout.write(line)
