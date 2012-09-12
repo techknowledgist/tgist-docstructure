@@ -20,6 +20,9 @@ cp *.py $x
 mkdir $x/utils
 cp utils/*py $x/utils
 
+mkdir $x/readers
+cp readers/*py $x/readers
+
 mkdir $x/data
 cp data/f* $x/data
 cp data/e* $x/data

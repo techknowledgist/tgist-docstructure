@@ -24,15 +24,22 @@ class Section(object):
         self.text = ""
 
     def __str__(self):
+        (p1, p2) = (self.start_index, self.end_index)
+        offsets = "id=%d start=%d end=%d" % (self.id, p1, p2)
+        types = "types='%s'" % '|'.join(self.types)
+        return "<%s %s>" % (offsets, types)
+    
+    def __len__(self):
+        return self.end_index - self.start_index
+
+    def pp(self):
         text_string = self.text.replace("\n", '\\n').encode('utf-8')[:80]
         (p1, p2) = (self.start_index, self.end_index)
         (BLUE, GREEN, END) = ('\033[34m', '\033[32m', '\033[0m')
         offsets = "%s<id=%d start=%d end=%d>%s" % (GREEN, self.id, p1, p2, END)
-        types= "%s%s%s" % (BLUE, str(self.types), END)
+        types = "%s%s%s" % (BLUE, str(self.types), END)
         return "%s %s\n%s...\n" % (types, offsets, text_string)
     
-    def __len__(self):
-        return self.end_index - self.start_index
 
 
 class SectionFactory(object):

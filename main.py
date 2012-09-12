@@ -187,7 +187,7 @@ if __name__ == '__main__':
         process_file(text_file, fact_file, sect_file, collection, verbose=False, html=html_mode)
 
     # processing multiple files
-    elif len(sys.argv) > 2:
+    elif len(sys.argv) >= 2:
         path = sys.argv[1]
         collection = sys.argv[2] if len(sys.argv) > 2 else None
         # using directory
