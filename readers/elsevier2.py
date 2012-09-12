@@ -1,7 +1,18 @@
+"""
+
+Source reading code for Elsevier structured documents.
+
+"""
+    
+
 import shlex, codecs
+from common import load_data, load_articles
 
 
 class Tag():
+
+    # TODO: should really use common.Tag, but the differences are big enough to hold off
+    # on that for now.
     
     def __init__(self,text):
         try:
@@ -14,13 +25,13 @@ class Tag():
             self.name = split_text[2]
             self.attributes = split_text[3:]
         except IndexError:
-            #not enough stuff, assume this is a malformed tag
+            # not enough stuff, assume this is a malformed tag
             self.start_index = None
             self.end_index = None
             self.name = None
             self.attributes = None
         except ValueError:
-            #guess that this is in the second format
+            # guess that this is in the second format
             self.name = split_text[0]
             try:
                 split_text = dict(map(lambda x: str.split(x, "=", 1), split_text[1:]))
@@ -52,23 +63,6 @@ class Tag():
         return doc[self.start_index:self.end_index]
 
     
-def load_data(text_file, fact_file):
-    text = codecs.open(text_file,encoding="utf-8").read()
-    sections = []
-    # the following line is instead of the commented out line below, this way you do not
-    # get an empty Tag for whitelines or the empty element at the end of the split
-    tags = [Tag(line) for line in open(fact_file) if line.strip() != '']
-    # tags=map(Tag,open(tagname).read().split("\n"))
-    return (text,tags)
-
-def load_articles(basename_file="files.txt"):
-    articles = []
-    for line in open(basename_file):
-        basename = line.strip().split("/")[-1]
-        articles.append(load_data(basename))
-    return articles
-
-
 
 def headed_sections(tags, max_title_lead=30, separate_headers=True):
     """
