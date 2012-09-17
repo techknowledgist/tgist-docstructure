@@ -23,7 +23,8 @@ For example:
    STRUCTURE TYPE="TEXT" START=30901 END=30986
 
 Another limitation is that this script does not try to do anything smart about avoiding
-introduction of crossing tags.
+introduction of crossing tags. It is smart enough though (I think) to deal with correctly
+embedded tags.
 
 """
 
@@ -34,13 +35,47 @@ import html_fragments
 
 def createHTML(text_file, sect_file, html_file):
 
-    fh_html = codecs.open(html_file,'w', encoding='utf-8')
+    fh_html = codecs.open(html_file, 'w', encoding='utf-8')
     fh_text = codecs.open(text_file, encoding='utf-8')
     fh_sect = codecs.open(sect_file, encoding='utf-8')
 
+    (starts, ends) = create_offset_dictionaries(fh_sect)
+    fh_html.write(html_fragments.HTML_PREFIX)
+    text = fh_text.read()
+    p = 0
+    stack = []
+    for char in text:
+        # first try to end a tag, needs to be done in case we have a tag from position
+        # p1-p2 and another from position p2-p3, opening the latter first introduces a
+        # crossing tag
+        if ends.has_key(p) and stack and stack[-1][1] == p:
+            fh_html.write("\n<p>%d</p>\n</div>\n" % p)
+            stack.pop()
+        # check for opening tags
+        if starts.has_key(p):
+            (end, label) = starts[p]
+            stack.append((p, end))
+            fh_html.write("\n<div class=section>\n")
+            fh_html.write("\n<div class=header>%s</div>\n" % starts[p][1])
+            fh_html.write("<p>%d</p>\n" % p)
+        # write the actual character
+        fh_html.write(char)
+        # now check for closing tag again for cases where you have a tag p1-p1
+        if ends.has_key(p) and stack and stack[-1][1] == p:
+            fh_html.write("\n<p>%d</p>\n</div>\n" % p)
+            stack.pop()
+        # also preserve newlines in html
+        if char == "\n":
+            fh_html.write('</br>')
+        p += 1
+    fh_html.write(html_fragments.HTML_END)
+    fh_html.close()
+
+
+def create_offset_dictionaries(fh):
     starts = {}
     ends = {}
-    for line in fh_sect:
+    for line in fh:
         p1 = line.find('START')
         p2 = line.find('END')
         p3 = line.find('TYPE')
@@ -49,24 +84,14 @@ def createHTML(text_file, sect_file, html_file):
         start = line[p1+6:].split()[0] 
         end = line[p2+4:].split()[0]
         label = line[p3+5:p1].strip()
-        starts[int(start)]= label
-        ends[int(end)] = True
-        
-    fh_html.write(html_fragments.HTML_PREFIX)
-    text = fh_text.read()
-    p = 0
-    for char in text:
-        if starts.has_key(p):
-            fh_html.write("<p><div class=header>%s</div></p>\n" % starts[p])
-            fh_html.write("<p><div class=section></p>\n")
-        fh_html.write(char)
-        if ends.has_key(p):
-            fh_html.write('</div>')
-        if char == "\n":
-            fh_html.write('</br>')
-        p += 1
-    fh_html.write(html_fragments.HTML_END)
-    fh_html.close()
+        starts[int(start)]= (int(end), label)
+        ends[int(end)] = (int(start),)
+    return (starts, ends)
+
+def print_dict(filename, dictionary):
+    print '==', filename
+    for p in sorted(dictionary.keys()):
+        print p, "==>", dictionary[p]
 
 
 if __name__ == '__main__':
