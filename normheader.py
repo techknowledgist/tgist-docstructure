@@ -6,7 +6,7 @@ of strings that indicate the type if they are a substring of the header.
 Second list is a list of substrings that rule out that header, to protect
 against false positives.
 """
-sem_types={
+sem_types = {
     "Results": (["result"],[]),
     "Background": (["background"],[]),
     "Discussion": (["discuss"],[]),
@@ -38,24 +38,21 @@ sem_types={
 
 def header_to_types(section_head):
     """
-    Takes a section header string, returns semantic types.
-    """
+    Takes a section header string, returns semantic types. """
     return normed_types(norm_section_head(section_head))
 
 def norm_section_head(section_head):
     """
     Normalizes a section header string, stripping punctuation/numbers/
     whitespace/capitalization (possibly only punctuation and capitalization
-    is necessary?)
-    """
+    is necessary?)"""
     section_head = section_head.lower()
     section_head = re.sub(r'\W|\d', '', section_head, re.UNICODE)
     return section_head
 
 def normed_types(section_head):
     """
-    Takes a normalized section header string, returns semantic types.
-    """
+    Takes a normalized section header string, returns semantic types. """
     head_types = []
     for sem_type in sem_types:
         for ch_string in sem_types[sem_type][0]:
@@ -68,5 +65,6 @@ def normed_types(section_head):
                     head_types.append(sem_type)
                     break
     if len(head_types) < 1:
-        head_types.append("Other:"+section_head)
+        #head_types.append("Other:"+section_head)
+        head_types.append("Other")
     return head_types
