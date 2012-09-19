@@ -27,7 +27,8 @@ class Section(object):
         (p1, p2) = (self.start_index, self.end_index)
         offsets = "id=%d start=%d end=%d" % (self.id, p1, p2)
         types = "types='%s'" % '|'.join(self.types)
-        return "<%s %s>" % (offsets, types)
+        header = " header='%s'" % self.header if self.header else ''
+        return "<%s %s%s>" % (offsets, types, header)
     
     def __len__(self):
         return self.end_index - self.start_index
@@ -106,15 +107,23 @@ class SectionFactory(object):
         return ret_string
     
     def print_sections(self, fh):
-        """
-        Prints section data to a file handle.
-        """
+        """ Prints section data to a file handle. """
         for section in self.sections:
             try:
                 fh.write(self.section_string(section))
             except TypeError:
                 pass
 
+    def print_hierarchy(self):
+        print len(self.sections)
+        for s in self.sections:
+            self.print_hierarchy_tree(s)
+
+    def print_hierarchy_tree(self, section, indent=0):
+        print "%s%s" % (' '*indent, section)
+        for subsection in section.subsumed:
+            self.print_hierarchy_tree(subsection, indent+3)
+            
 
 def section_gaps(sections, text, filename=""):
     """
