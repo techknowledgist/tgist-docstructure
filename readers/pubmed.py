@@ -32,7 +32,7 @@ def headed_sections(tags, max_title_lead=30, separate_headers=True, max_title_fo
     for title in title_structures:
         matching_structures=[]
         for text_structure in text_structures:
-            if (title.end_index < text_structure.start_index + max_title_follow
+            if (title.start_index < text_structure.start_index + max_title_follow
                 and text_structure.start_index - title.end_index < max_title_lead):
                 matching_structures.append(text_structure)
         #multiple things can map to a single title so we need to pick the best one
