@@ -1,6 +1,6 @@
 import sections, normheader
 import readers.elsevier2
-from sections import Section, SectionFactory, section_gaps
+from sections import Section, SectionFactory, section_gaps, link_sections
 
 
 class ComplexElsevierSectionFactory(SectionFactory):
@@ -86,19 +86,3 @@ def section_gaps(labeled_sections, text, filename=""):
         gaps.append(ul_section)
     return gaps
 
-def link_sections(labeled_sections):
-    """ Links subsections to their parent sections. """
-    for section in labeled_sections:
-        for other_section in labeled_sections:
-            if is_subsection(section,other_section):
-                section.subsumers.append(other_section)
-                for sem_type in other_section.types:
-                    section.subsumer_types.add(sem_type)
-                other_section.subsumed.append(section)
-        
-def is_subsection(section,other_section):
-    """ Returns true if the first section is a subsection of the second. """
-    if (other_section.start_index <= section.start_index and
-        other_section.end_index >= section.end_index and
-        len(other_section) > len(section)):
-            return True

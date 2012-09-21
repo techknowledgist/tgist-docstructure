@@ -26,7 +26,7 @@ class Section(object):
 
     def __str__(self):
         (p1, p2) = (self.start_index, self.end_index)
-        offsets = "id=%d start=%d end=%d" % (self.id, p1, p2)
+        offsets = "id=%d pid=%s start=%d end=%d" % (self.id, self.parent_id, p1, p2)
         types = "types='%s'" % '|'.join(self.types)
         header = " header='%s'" % self.header if self.header else ''
         return "<%s %s%s>" % (offsets, types, header) # + str(self.subsumers)
@@ -97,8 +97,8 @@ class SectionFactory(object):
         a particular section.
         """
         sec_string = "SECTION ID=%d" % (section.id)
-        #if section.parent_id is not None:
-        #    sec_string += " PARENT_ID=%d" % section.parent_id
+        if section.parent_id is not None:
+            sec_string += " PARENT_ID=%d" % section.parent_id
         if len(section.types) > 0:
             sec_string += " TYPE=\"" + "|".join(section.types).upper() + "\""
         if len(section.header) > 0:
@@ -180,6 +180,31 @@ def section_gaps(sections, text, filename=""):
     return gaps
 
 
+
+def link_sections(sections):
+    """ Links sections where one is subsuming the other. This does not quite build a tree,
+    rather, for each section it creates a list of subsuming and subsumed sections. The
+    subsumers list is ordered though so that the parent is always the last element."""
+    for section in sections:
+        for other_section in sections:
+            if is_subsection(section, other_section):
+                section.subsumers.append(other_section)
+                for sem_type in other_section.types:
+                    section.subsumer_types.add(sem_type)
+                other_section.subsumed.append(section)
+    # make sure that the subsumers are ordered so that the parent is always the last in
+    # the list, this is also where the parent_id gets set
+    for section in sections:
+        section.subsumers.sort(key= lambda x: x.start_index)
+        if section.subsumers:
+            section.parent_id = section.subsumers[-1].id
+            
+def is_subsection(section, other_section):
+    """ Returns true if the first section is included in the second."""
+    if (other_section.start_index <= section.start_index and
+        other_section.end_index >= section.end_index and
+        len(other_section) > len(section)):
+            return True
 
 def make_section(text_file, tag, text, section_type=None):
     """Utility method to create a Section given a filename, a unicode string that contains

@@ -7,7 +7,7 @@ Usage:
    % python main.py [-h] TEXT_FILE FACT_FILE STRUCTURE_FILE [COLLECTION]
    % python main.py FILE_LIST [COLLECTION]
    % python main.py DIRECTORY [COLLECTION]
-   % python main.py -t [-v]
+   % python main.py -t
    
 In the first form, input is taken from TEXT_FILE, which contains the bare text, and
 FACT_FILE, which contains some structural tags taken from the low-level input parser. The
@@ -34,8 +34,7 @@ In this line, $COLLECTION is in ('WEB_OF_SCIENCE', 'LEXISNEXIS', 'PUBMED', 'ELSE
 Finally, in the fourth form, a simple sanity check is run, where four files (one pubmed,
 one mockup Elsevier, one mockup WOS and one patent) are processed and the diffs between
 the resulting .sect files and the regression files are printed to the standard
-output. With the -v option, more verbose utput is printed, which adds the content of all
-the generated .sect files.
+output.
 
 If the code fails the regression test, the coder is responsible for checking why that
 happened and do on eof two things: (i) change the code if a bug was introduced, (ii)
@@ -108,8 +107,8 @@ def create_factory(text_file, fact_file, sect_file, collection, verbose=False):
         return lexisnexis.PatentSectionFactory(text_file, fact_file, sect_file, verbose)
     elif collection == 'ELSEVIER':
         return create_elsevier_factory(text_file, fact_file, sect_file, verbose)
-    elif collection == 'C_ELSEVIER':
-        return elsevier2.ComplexElsevierSectionFactory(text_file, fact_file, sect_file, verbose)
+    #elif collection == 'C_ELSEVIER':
+    #    return elsevier2.ComplexElsevierSectionFactory(text_file, fact_file, sect_file, verbose)
 
 def  create_elsevier_factory(text_file, fact_file, sect_file, verbose=False):
     """
@@ -136,7 +135,7 @@ def determine_collection(fact_file):
             return result.group(1)
     return None
 
-def run_tests(verbose=False):
+def run_tests():
     """
     Runs a test on four files: a pubmed file, a mockup WOS file, a mockup unstructured
     Elsevier file, and a LexisNexis patent. Prints the output of the document parser as
@@ -145,13 +144,12 @@ def run_tests(verbose=False):
         'f401516f-bd40-11e0-9557-52c9fc93ebe0-001-gkp847',
         'pubmed-mm-test',
         'elsevier-simple',
+        'elsevier-complex',
         'US4192770A',
         'wos'
         )
     results = []
     for f in files:
-        if verbose:
-            print "==> %s\n" % f
         text_file = "data/%s.txt" % f
         fact_file = "data/%s.fact" % f
         sect_file = "data/%s.sect" % f
@@ -159,29 +157,25 @@ def run_tests(verbose=False):
         process_file(text_file, fact_file, sect_file, None, verbose=False, html=True)
         response = open(sect_file).readlines()
         key = open(key_file).readlines()
-        if verbose:
-            print ''.join(response)
         results.append((f, sect_file, response, key_file, key))
-    if verbose:
-        print
     for filename, sect_file, response, key_file, key in results:
         print "\n==> %s (diff)" % filename
         for line in difflib.unified_diff(response, key, fromfile=sect_file, tofile=key_file):
             sys.stdout.write(line)
-                
+    print 
+
     
 if __name__ == '__main__':
 
-    (opts, args) = getopt.getopt(sys.argv[1:], 'htv')
-    test_mode, html_mode, verbose = False, False, False
+    (opts, args) = getopt.getopt(sys.argv[1:], 'ht')
+    test_mode, html_mode = False, False
     for opt, val in opts:
         if opt == '-t': test_mode = True
         if opt == '-h': html_mode = True
-        if opt == '-v': verbose = True
 
     # when called to run some simple tests
     if test_mode:
-        run_tests(verbose)
+        run_tests()
             
     # when called to process one file
     elif len(args) >= 3:

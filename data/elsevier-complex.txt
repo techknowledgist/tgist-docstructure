@@ -1,0 +1,4857 @@
+
+   
+      
+         application/xml
+         Microgels: From responsive polymer colloids to biomaterials
+         
+            
+               Brian R. Saunders
+               Nadiah Laajam
+               Emma Daly
+               Stephanie Teow
+               Xinhua Hu
+               Robert Stepto
+            
+         
+         Advances in Colloid and Interface Science 147 (2009) 251-262. doi:10.1016/j.cis.2008.08.008
+         journal
+         Advances in Colloid and Interface Science
+         Copyright © 2008 Elsevier B.V. All rights reserved.
+         Elsevier B.V.
+         0001-8686
+         147
+         2009
+         2009
+         Colloids, polymers and surfactants.Special Issue in honour of Brian Vincent 
+         251-262
+         251
+         262
+         10.1016/j.cis.2008.08.008
+         http://dx.doi.org/10.1016/j.cis.2008.08.008
+         doi:10.1016/j.cis.2008.08.008
+      
+   
+   
+      Journals
+      S300.1
+   
+   
+      
+         CIS
+         983
+         S0001-8686(08)00140-1
+         10.1016/j.cis.2008.08.008
+         Elsevier B.V.
+      
+      
+         
+            Fig. 1
+            
+               Structures for some of the most frequently used co-monomers for the preparation of microgels for biomaterial investigations. The meanings of the abbreviations appear in 
+						Table 1.
+					
+            
+            
+         
+         
+            Fig. 2
+            
+               Two possible morphologies for microgels (see text).
+            
+            
+         
+         
+            Fig. 3
+            
+               (a) Scattering profiles for poly(NIPAM/BA) microgel particles in D
+						2O as a function of temperature and (b) variation of correlation length with hydrodynamic diameter.
+					
+            
+            
+         
+         
+            Fig. 4
+            
+               SEM of poly(NIPAM/BA) microgel particles.
+            
+            
+         
+         
+            Fig. 5
+            
+               Variation of swelling ratio in ethylbenzene for poly(styrene/DVB) microgel particles prepared using EP as a function of DVB mole fraction. The theoretical swelling ratios calculated using Eq. 
+						(2) and 
+						χ
+                  =
+						0.40 are also shown.
+					
+            
+            
+         
+         
+            Fig. 6
+            
+               Variation of hydrodynamic diameter in water with temperature for poly(NIPAM/5BA) (open squares) and poly(DEA/5BA) (closed squares) microgel dispersions. The parameter 5 represents the nominal wt.% of crosslinking monomer used with respect to the total mass of monomers. The arrows show the LCSTs for the respective linear polymers.
+            
+            
+         
+         
+            Fig. 7
+            
+               Variation of swelling ratio with pH for Microgel 3 (circles) and Microgel 4 (squares) particles dispersed in water 
+						[57] (see 
+						Table 3.) The degree of neutralisation calculated using Eq. 
+						(3) and a p
+						K
+                  a of 6.7 is also shown.
+					
+            
+            
+         
+         
+            Fig. 8
+            
+               Variation of hydrodynamic diameter with pH for selected microgels containing carboxylic acid groups. (see 
+						Table 3) The poly(NIPAM/AA) microgel was prepared using 5 wt.% AA with respect to the total monomer content using the same procedure as that reported elsewhere 
+						[38]. The arrows show the positions of the p
+						K
+                  a's of 
+						[47] monomeric AA (4.26) and MAA (4.66).
+					
+            
+            
+         
+         
+            Fig. 9
+            
+               (a) Fluid-to-gel phase diagrams and (b) Variation of shear modulus (
+						G′) with oscillation frequency (
+						ω) for dispersions of Microgel 1 (
+						Table 3). The compositions and pH values used are shown as circles in (a).
+					
+            
+            
+         
+         
+            Fig. 10
+            
+               Variation of G′ with pH for Microgels 1 to 4. The polymer volume fraction used was ca. 0.10. The data were measured at an oscillation frequency of 10 rad s
+						−
+							1
+						. The curve is a guide to the eye. The description of each of the microgels is given in 
+						Table 3.
+					
+            
+            
+         
+         
+            Fig. 11
+            
+               (a) IVD containing gelled microgel dispersion. (b) Depiction of compression geometry. (c) Relative height vs. cycle number for a degenerated intervertebral disc containing microgel. Published with permission from the Royal Society of Chemistry.
+            
+            
+         
+         
+            Fig. 12
+            
+               Depiction of load support and regeneration within a degenerated IVD containing a biodegradable responsive microgel that undergoes a fluid-to-gel transition 
+						in vivo. A portion of degenerated IVD is shown in (a). A microgel dispersion in the fluid state is injected in (b). The fluid-to-gel transition is triggered 
+						in vivo (c) causing gelation of the microgel dispersion and expansion within the damaged region, which corrects the local load distribution and prevents further tissue degradation. Biologics may be released to aid prevention of degeneration. In the presence of new cells tissue regrowth occurs and replaces the slowly degrading microgel particles in (d) and (e). Published with permission from the Royal Society of Chemistry.
+					
+            
+            
+         
+         
+            Table 1
+            
+               Abbreviations and symbols
+            
+            
+               
+               
+               
+                  
+                     Abbreviations
+                     
+                  
+               
+               
+                  
+                     AA
+                     Acrylic acid
+                  
+                  
+                     ACM
+                     Acrylamide
+                  
+                  
+                     AM
+                     Allyl methacrylate
+                  
+                  
+                     BA
+                     
+                        N, 
+								N′-methylene bisacrylamide
+							
+                  
+                  
+                     BDDA
+                     Butanediol diacrylate
+                  
+                  
+                     BSA
+                     Bovine serum albumin
+                  
+                  
+                     DAP
+                     Diallyl phthalate
+                  
+                  
+                     DEA
+                     Diethyl acrylamide
+                  
+                  
+                     DIVD
+                     Degeneration of the intervertebral disc
+                  
+                  
+                     DVB
+                     Divinyl benzene
+                  
+                  
+                     EA
+                     Ethyl acrylate
+                  
+                  
+                     EGDMA
+                     Ethyleneglycol dimethacrylate
+                  
+                  
+                     EP
+                     Emulsion polymerisation
+                  
+                  
+                     FA
+                     Fumaric acid
+                  
+                  
+                     HA
+                     Hyaluronic acid
+                  
+                  
+                     HEMA
+                     Hydroxyethyl methacrylate
+                  
+                  
+                     HTCC
+                     
+                        N-[(2-hydroxy-3-trimethylammonium)propyl]chitosan chloride
+							
+                  
+                  
+                     IEP
+                     Inverse emulsion polymerisation
+                  
+                  
+                     IVD
+                     Intervertebral disc
+                  
+                  
+                     LCST
+                     Lower critical solution temperature
+                  
+                  
+                     MAA
+                     Methacrylic acid
+                  
+                  
+                     MAn
+                     Maleic acide
+                  
+                  
+                     MMA
+                     Methyl methacrylate
+                  
+                  
+                     NIPAM
+                     
+                        N-isopropylacrylamide
+							
+                  
+                  
+                     NP
+                     Nucleus pulposus
+                  
+                  
+                     NR
+                     Nanorod
+                  
+                  
+                     PEGDA
+                     Poly(ethylene glycol) diacrylate
+                  
+                  
+                     PP
+                     Precipitation polymerisation
+                  
+                  
+                     RES
+                     Reticuleo endothelial system
+                  
+                  
+                     SFEP
+                     Surfactant-free emulsion polymerisation
+                  
+                  
+                     SFPP
+                     Surfactant-free precipitation polymerisation
+                  
+                  
+                     SP
+                     Suspension polymerisation
+                  
+                  
+                     TPP
+                     Sodium tripolyphosphate
+                  
+                  
+                     VCL
+                     Vinyl caprolactam
+                  
+                  
+                     VPTT
+                     Volume phase transition temperature
+                  
+                  
+                     
+                        
+                     
+                  
+                  
+                     Symbols
+                     
+                  
+                  
+                     
+                        A
+                        1
+                     
+                     Hamaker constant for solvent
+                  
+                  
+                     
+                        A
+                        2
+                     
+                     Hamaker constant for the polymer
+                  
+                  
+                     
+                        A
+                        eff
+                     
+                     Effective Hamaker constant
+                  
+                  
+                     
+                        A
+                        m
+                     
+                     Hamaker constant for microgel particles
+                  
+                  
+                     
+                        G(
+								h)
+							
+                     Two particle interaction energy
+                  
+                  
+                     
+                        G
+                        A(
+								h)
+							
+                     van der Waals attraction term
+                  
+                  
+                     
+                        G
+                        E(
+								h)
+							
+                     Electrostatic repulsion term
+                  
+                  
+                     
+                        G
+                        S(
+								h)
+							
+                     Steric interaction term
+                  
+                  
+                     
+                        I(
+								Q)
+							
+                     Scattered intensity
+                  
+                  
+                     
+                        Q
+                     
+                     Scattering vector
+                  
+                  
+                     
+                        α
+                     
+                     Degree of neutralisation
+                  
+                  
+                     
+                        ϕ
+                        2
+                     
+                     Volume fraction of polymer in particle
+                  
+                  
+                     
+                        ϕ
+                        2(disp)
+                     
+                     Volume fraction of polymer in dispersion
+                  
+                  
+                     
+                        ϕ
+                        m(eff)
+                     
+                     Volume fraction occupied by microgel particles
+                  
+               
+            
+         
+         
+            Table 2
+            
+               Parameters for selected microgels reported in the contexts of drug release or regenerative medicine
+						
+                     a
+                  
+               
+            
+            
+               
+               
+               
+               
+               
+               
+               
+               
+               
+                  
+                     Principle monomers
+								
+                           b
+                        
+                     
+                     crosslinker
+                     Method
+								
+                           c
+                        
+                     
+                     Potential application
+                     Biocompatibility
+                     Responsiveness
+                     d/μm
+								
+                           d
+                        
+                     
+                     Reference
+                  
+               
+               
+                  
+                     NIPAM/AA
+                     BA
+                     PP
+                     Controlled release
+                     Mild inflammation
+                     pH and temperature
+                     0.085
+                     
+                        [55]
+                     
+                  
+                  
+                     NIPAM/AA
+                     BA
+                     PP
+                     Targeted release
+                     –
+                     pH
+                     0.15
+                     
+                        [30]
+                     
+                  
+                  
+                     NIPAM/AA, MAA, FA
+                     BA
+                     PP
+                     Release or uptake
+                     –
+                     pH
+                     0.15–0.36
+                     
+                        [17]
+                     
+                  
+                  
+                     HEMA (degradable)
+                     acetal
+                     IEP
+                     Controlled release
+                     –
+                     pH
+								
+                           e
+                        
+                     
+                     0.15–0.50
+                     
+                        [65]
+                     
+                  
+                  
+                     EA/MAA
+                     DAP
+                     EP
+                     Controlled release
+                     –
+                     pH
+                     0.16
+                     
+                        [74]
+                     
+                  
+                  
+                     HTCC
+                     TPP
+                     solution
+                     Controlled release
+                     –
+                     pH
+                     0.18
+                     
+                        [75]
+                     
+                  
+                  
+                     VCL
+                     BA
+                     EP
+                     Controlled release
+                     –
+                     Temperature
+                     0.20
+                     
+                        [76]
+                     
+                  
+                  
+                     NIPAM/ACM
+                     BA
+                     PP
+                     Controlled release
+                     –
+                     Temperature
+                     0.22–0.30
+                     
+                        [77]
+                     
+                  
+                  
+                     EA or MMA/MAA
+                     BDDA, EGDMA
+                     EP
+                     IVD regeneration
+                     Good (preliminary)
+                     pH
+                     0.30–1.40
+                     
+                        [54,57]
+                     
+                  
+                  
+                     NIPAM
+                     PEGDA
+                     PP
+                     Protein release
+                     Adsorption resistant
+                     Temperature
+                     0.40–0.50
+                     
+                        [18]
+                     
+                  
+                  
+                     NIPAM/MAA
+                     BA
+                     SFPP
+                     Controlled release
+                     –
+                     pH and temperature
+                     0.46
+                     
+                        [78]
+                     
+                  
+                  
+                     NIPAM/MAn/Au NR
+                     BA
+                     SFPP
+                     Controlled release
+                     –
+                     Light and temperature
+                     0.60
+                     
+                        [67]
+                     
+                  
+                  
+                     ACM (degradable)
+                     acetal
+                     IEP
+                     Protein release
+                     –
+                     pH
+								
+                           e
+                        
+                     
+                     1–10
+                     
+                        [64]
+                     
+                  
+                  
+                     MAA/lipid coated
+                     BA
+                     SP
+                     Controlled release
+                     –
+                     pH
+                     6–7
+                     
+                        [66]
+                     
+                  
+                  
+                     HA
+                     Built in
+                     IEP
+                     Vocal fold regeneration
+                     Non-toxic
+                     –
+                     10–13
+                     
+                        [24]
+                     
+                  
+               
+            
+            
+               a
+               The abbreviations are given in 
+						Table 1. Potential application and biocompatibility are summarised from descriptions given in the respective paper to which the reader is directed for a precise description of the extent of biocompatibility and conditions used.
+					
+            
+            
+               b
+               Degradable means the network could be cleaved using environmental conditions.
+            
+            
+               c
+               Preparation method. The abbreviations are shown in 
+						Table 1.
+					
+            
+            
+               d
+               Approximate values. In some cases the diameters are estimated from the data presented in the original paper. The diameters taken as the swollen diameter wherever possible.
+            
+            
+               e
+               These systems show pH-dependent degradation rates.
+            
+         
+         
+            Table 3
+            
+               Composition and size data for pH-responsive microgels of the type poly(A/MAA/B) where A and B are the principle non-ionic co-monomer and crosslinking monomer, respectively
+            
+            
+               
+               
+               
+               
+               
+               
+               
+                  
+                     No.
+                     MAA/wt.%
+                     Co-monomer/wt.%
+                     Crosslinking monomer/wt.%
+                     
+                        d
+                        c
+                        
+                           a
+                        /nm
+							
+                     
+                        q
+                        
+                           b
+                        
+                     
+                  
+               
+               
+                  
+                     1
+                     36
+                     MMA
+                     EGDMA (0.4)
+                     82 (9)
+                     210
+                  
+                  
+                     2
+                     36
+                     MMA
+                     EGDMA (1.0)
+                     210 (23)
+                     250
+                  
+                  
+                     3
+                     33
+                     EA
+                     BDDA (1.0)
+                     65 (7)
+                     105
+                  
+                  
+                     4
+                     33
+                     EA
+                     AM (1.0)
+                     52 (17)
+                     89
+                  
+               
+            
+            
+               a
+               Particle size from SEM data. The coefficient of variation is shown in the brackets.
+            
+            
+               b
+               Calculated using PCS data measured at pH
+						=
+						9.
+					
+            
+         
+      
+      
+         Microgels: From responsive polymer colloids to biomaterials
+         
+            
+               Brian R.
+               Saunders
+               
+                  a
+               
+               
+                  ⁎
+               
+               brian.saunders@manchester.ac.uk
+            
+            
+               Nadiah
+               Laajam
+               
+                  a
+               
+            
+            
+               Emma
+               Daly
+               
+                  b
+               
+            
+            
+               Stephanie
+               Teow
+               
+                  a
+               
+            
+            
+               Xinhua
+               Hu
+               
+                  c
+               
+            
+            
+               Robert
+               Stepto
+               
+                  a
+               
+            
+            
+               a
+               Polymer Science and Engineering Group, School of Materials, The University of Manchester, Grosvenor Street, Manchester, M1 7HS, UK
+            
+            
+               b
+               Department of Chemistry, Adelaide University, North Terrace, Adelaide, 5005, Australia
+            
+            
+               c
+               Chengdu Institute of Organic Chemistry, CAS; No.9, 4th Section of South Renmin Road, Chengdu, Sichuan, 610041, People's Republic of China
+            
+            
+               ⁎
+               Corresponding author.
+            
+         
+         
+            Abstract
+            
+               Microgels are network polymer colloid particles that can swell in a good solvent or as a result of electrostatic repulsion between charged groups produced by pH-triggered neutralisation. They have attracted considerable interest as both model colloids and for their potential applications. This discussion reviews the properties of microgel particles and the current understanding of their structure. The review concentrates on the period after an earlier microgel review by Saunders and Vincent [
+						Adv. Coll. Interf. Sci., 1999, 80, 1]. A key challenge for microgel research has involved elucidation of the internal particle structure. Most microgels prepared by emulsion or precipitation polymerisation have a core-shell structure. The segment density is usually highest in the core. Here, we discuss relationships between microgel structure and dispersion stability. The reasons for the exceptional stability of microgel dispersions are considered. There are a number of favourable structural features that make microgels candidates for biomaterial applications and these are discussed. The main potential biomaterial applications that have been investigated for microgels to date are drug delivery and regenerative medicine. Poly(NIPAM) (
+						N-isopropylacrylamide) microgels have been extensively studied in the context of drug delivery. Regenerative medicine research for microgels is an emerging area. Recent work involving the use of gelled microgel dispersions to support biomechanically meaningful loads is considered. We conclude with a discussion of promising directions for microgel research as biomaterials.
+					
+            
+         
+      
+      
+         
+            
+               1
+               Introduction
+               This review is dedicated to Prof. Brian Vincent on the occasion of his retirement. Brian Vincent's insights and ideas underpin most of the seminal papers that have been published on the structure–property relationships of microgels 
+						[1–10]. At the time of writing a SciFinder Scholar search revealed that he had published 55 papers on microgels. Many of the new concepts that underpinned those papers were inspired by theory. Brian Vincent has also made valuable contributions to the understanding of microgel dispersion stability, heteroaggregation and interactions with solutes. At a time when mainstream microgel research focussed on temperature-triggered microgel collapse he designed microgel particles that exhibited temperature-triggered swelling using an elegant manipulation of their architecture 
+						[11]. He was also the first to prepare polyampholyte microgels 
+						[12]. This review follows on from an earlier one by Saunders and Vincent 
+						[13] published in 1999. It concentrates on the period of 1999 to April 2008. 
+						Table 1
+                   lists the abbreviations used in this review.
+					
+               A microgel is a polymer colloid particle which swells in a good solvent. Ionic microgels contain at least one co-monomer that becomes charged when the pH approaches the p
+						K
+                  a for that species. In that case swelling occurs primarily as a result of inter-segment electrostatic repulsion. To be classified as a microgel in this review the size range of the swollen particles must reside within the generally accepted colloid range of 1 nm to 10 μm.
+					
+               The first microgel particles were prepared by Staudinger and Husemann 
+						[14] over 70 years ago. The term 
+						microgel was introduced by Baker 
+						[15] in 1949. The first microgels were poly(DVB) particles prepared in organic solvents at high dilution. Microgel research expanded considerably during the 1990s after the discovery by Pelton and Chibante 
+						[16] in 1986 that poly(NIPAM) microgel particles could be prepared. (NIPAM is 
+						N-isopropylacrylamide) Since then a great deal of work has been published on that microgel 
+						[2,8,17–22], some of which is discussed in this review.
+					
+               Microgels often have structural and property features that make them attractive from the viewpoint of drug delivery. They tend to have good biocompatibility if they contain mostly water in the swollen state. It is straightforward to prepare particles which are negative or neutral, which is also beneficial for biocompatibility. Microgels offer some advantages compared to normal particulate drug carrier dispersions; such as superior colloid stability, ease of preparation, fine control over particle size and convenient functionalisation 
+						[23]. They can be readily prepared to give responsive behaviour to pH, temperature or ionic strength. 
+						Table 2
+                   gives a selection of the microgels investigated in the context of biomaterial applications. The primary interest has been for controlled release to date. Although, their potential for regenerative medical use has also been investigated.
+					
+               
+                  Fig. 1
+                   shows some of the structures of the co-monomers that have been frequently employed to prepare microgels for biomaterial studies. The common feature is that the co-monomers are amenable to free-radical polymerisation. There are examples where microgels have been prepared using non-free-radical approaches 
+						[24,25]. The acrylamide-based microgels (especially poly(NIPAM)) have received considerable attention due to the water-solubility of the respective polymers at room temperature and the tendency of the particle to collapse at body temperature. BA (
+						N,
+						N′-methylene bisacrylamide) has been the most commonly used polyfunctional co-monomer for NIPAM-based microgels. EGDMA and also poly(ethylene glycol) dimethacrylate polyfunctional monomers have been used not only for acrylamide-based microgels, but for non-acrylamide versions.
+					
+               There has been a large amount of work reported for drug delivery using poly(NIPAM) microgels (
+						Table 2). The potential for poly(NIPAM) microgels to be used as an injectable delivery system for drugs was first shown by Snowden 
+						[26]. However, its use as a biomaterial may be limited because NIPAM has been shown to be a neurotoxin 
+						[27,28]. Therefore, for this review we will use selected examples of work involving poly(NIPAM) microgels in order to examine key principles and show what can be achieved for that model system. The development of non-acrylamide containing microgels that have similar temperature-responsive properties to poly(NIPAM) is a worthwhile pursuit for future biomaterial applications.
+					
+            
+            
+               2
+               Microgel structure and properties
+               
+                  2.1
+                  Microgel preparation
+                  Microgels are usually prepared by (surfactant-free) emulsion polymerisation, precipitation polymerisation or inverse emulsion polymerisation (
+							Table 2). The mechanism for surfactant-free emulsion polymerisation (SFEP) in the context of microgels was described in detail earlier 
+							[13]. Colloid stability has its origins in charged initiator fragments that reside at the particle surface. Strictly, SFEP applies to the case where emulsion droplets (of monomer-in-water) are present during polymerisation. An example is the preparation of polystyrene microgel 
+							[9]. In the case of poly(NIPAM) microgel preparation the monomer is water soluble but the polymer is insoluble over the polymerisation temperature range usually used. The polymerisation is termed surfactant-free precipitation polymerisation (SFPP) when no added surfactant is present 
+							[19]. In each case (SFEP or SFPP) an aggregation step occurs during particle growth and this results in a larger average particle size compared to what would have been achieved if added surfactant were present. The case where surfactant is added corresponds to emulsion polymerisation (EP) or precipitation polymerisation (PP). The microgels of lowest dispersity are usually prepared by SFPP or SFEP. Another general type of polymerisation used to prepare microgels is inverse emulsion polymerisation (IEP). In this case polymerisation occurs within water droplets dispersed in an oil phase (as a water-in-oil emulsion). The advantage of this method is that it enables water-soluble (or water-dispersible) species to be encapsulated by the microgel network during particle formation. Because the particle size obtained from IEP is related to the size of the emulsion droplets formed this technique tends to give a broad distribution of particle sizes in the region of micrometers.
+						
+                  It can be seen from 
+							Table 2 that the size of the particles is determined by the preparation method. The Vincent group have also shown 
+							[29] that micrometer-sized poly(NIPAM/BA) particles can be prepared using inverse suspension polymerisation. PP or EP generally gives the smallest microgel particle sizes. Inverse microemulsion polymerisation is another technique that is capable of preparing water-swellable particles with a diameter of less than 100 nm although aggregation can be a problem. This technique was used by Neyret and Vincent 
+							[12] to prepare polyampholyte microgels. Bouillot and Vincent 
+							[11] also used it to prepare interpenetrating network particles which swelled when heated. Polyampholyte microgels have also been prepared by Das et al. 
+							[30].
+						
+               
+               
+                  2.2
+                  Microgel particle structure
+                  There has been a concerted effort in the literature to determine the structure of poly(NIPAM) microgel particles. One of the earliest and most cited papers in this regard is that by Wu and Pelton 
+							[20]. They reported that, during the formation of poly(NIPAM/BA) particles, BA was consumed the faster and therefore preferentially incorporated into the particles. Because poly(NIPAM) microgel particles are prepared by SFPP at above the LCST (lower critical solution temperature) of the linear polymer it is reasonable to expect the central regions of the final particles to contain a relatively high proportion of the monomers consumed in the early stages of the polymerisation. There is considerable opportunity for the development of an inhomogeneous structure within the interior of poly(NIPAM/BA) microgel particles.
+						
+                  Two structures for poly(NIPAM/BA) microgels that are considered to be likely are depicted in 
+							Fig. 2
+                     . These general structures take into account aggregation and growth during SFPP. The general concept for structure (a) was proposed by Brian Vincent during a discussion with BRS in 2004. It consists of a core-shell structure in which aggregated nanoparticles comprise the core and have a higher segment density than particles comprising the shell. It takes into account the aggregation step that occurs during SFPP. Structure (b) is a core-shell model in which the core and shell each has uniform (but different) structures and mesh sizes. The boundaries between core and shell regions shown for structures (a) and (b) are probably more diffuse than shown here. The difference between (a) and (b) would disappear if the nanoparticle size for (a) approached very small values.
+						
+                  A number of groups have investigated the structure of poly(NIPAM/BA) microgels using scattering techniques. Varga et al. 
+							[31] used static light scattering to investigate the structure of poly(NIPAM/BA) microgel particles and suggested a core-shell structure for their most highly crosslinked particles. Small-angle neutron scattering (SANS) has also been used to probe poly(NIPAM/BA) structure 
+							[19,32,33]. A complete description of SANS is beyond the scope of this review and can be found elsewhere 
+							[34]. The key advantage of SANS is that neutrons are deeply penetrating and the scattering contrast can be enhanced by dispersing the particles in D
+							2O. SANS provides information about the whole particle structure. In contrast PCS only provides information about the particle periphery which includes extended chains (the hydrodynamic diameter).
+						
+                  
+                     Fig. 3a
+							 shows 
+							[19] the variation of the scattered intensity, 
+							I(
+							Q), with scattering vector, 
+							Q, for poly(NIPAM/BA) particles dispersed in D
+							2O. The particles were prepared by SFPP. The VPTT (volume phase transition temperature) for these particles was ca. 34 °C. (The temperature at which transition occurs for temperature-responsive microgels is the VPTT. The VPTT is similar to the LCST for the linear copolymer of the same composition). The data show a change from Porod scattering (
+							I
+								
+                     ∝
+							
+                        Q
+							
+                     −
+								4
+							) to Ornstein–Zernike scattering (
+							I
+								
+                     ∝
+							
+                        Q
+							
+                     −
+								2
+							) as the temperature decreases to below the VPTT. The Porod scattering components enabled the calculation of a particle size (
+							d
+                     SANS) and comparison with the hydrodynamic diameters 
+							[19] (
+							d
+                     h). Evidence was found for a low segment density shell at the surface of the particles. Analysis of the Ornstein–Zernike component enabled estimation of a mesh size (
+							ξ) for the network that comprises the particles at temperatures below the VPTT. The 
+							ξ values varied linearly 
+							[19] with 
+							d
+                     h (
+							Fig. 3b) providing evidence of uniform, affine, swelling for the microgel particles. Taken together the data led to the conclusion that the poly(NIPAM/BA) particles had a core-shell structure with a low segment density shell. A thickness of ca. 20 nm for this shell was estimated. The conclusion of a core-shell structure for poly(NIPAM/BA) particles is generally consistent with SANS studies for comparable microgels 
+							[32,33]. The key differences between the work discussed above and the other related studies 
+							[32,33] are the microgel preparation methods and the relative thicknesses of the lower density shells. The data available do not allow a clear distinction to be made between structures (a) and (b) of 
+							Fig. 2. Structure (b) is often assumed to apply. A high resolution SEM of poly(NIPAM/BA) microgel particles is shown in 
+							Fig. 4
+                      that reveals a clear nodular morphology. This is generally consistent with the aggregation of nanoparticles depicted for structure (a) of 
+							Fig. 2.
+						
+                  The general core-shell structure discussed above (Structure (b) of 
+							Fig. 2) was shown to apply 
+							[35] for poly(EA/MAA/BDDA) (ethyl acrylate, methacrylic acid and butanediol diacrylate) microgel particles from a static light scattering study. Indeed, it appears to be difficult to prepare microgels that have a completely uniform structure using (SF)EP or (SF)PP. Presumably, this is because differences in reactivity ratios or hydrophobicity/hydrophilicity between the co-monomers perturb the co-monomer distribution away from the ideal, uniform distribution. IEP is a better method for achieving a uniform co-monomer concentration because the polymerisation does not involve diffusion between phases and occurs under good solvency conditions.
+						
+               
+               
+                  2.3
+                  Particle swelling and theory
+                  One of the most interesting aspects of microgel dispersions is that their interparticle interactions are functions of 
+							ϕ
+                     2, the volume fraction of polymer within the particles, and hence the swelling ratio, 
+							q. (Note that 
+							q
+                     =
+							1
+							/
+							
+                     ϕ
+                     2.) Because 
+							q can be changed by environmental stimuli (pH or temperature) low polydispersity microgels are considered as ideal model systems for studying interparticle interactions. The value for 
+							q is therefore of considerable importance for understanding the behaviour of microgel dispersions. Flory's theories of network swelling were developed for macroscopic gels. However, they remain good models for predicting 
+							q values for microgels. More recent models have also been applied 
+							[36]. We first consider the case of non-ionic particles using solvent-swellable poly(styrene/DVB) microgels. 
+							Fig. 5
+                      shows the variation of 
+							q for poly(st/DVB) particles prepared using a range of mole fractions (
+							x
+                     B) of the polyfunctional (crosslinking) monomer, divinylbenzene. Calculation of the 
+							q values requires an accurate value for the collapsed particle diameter (
+							d
+                     c).
+							
+                        
+                           (1)
+                           
+                              
+                                 q
+                                 =
+                                 
+                                    
+                                       
+                                          (
+                                          
+                                             
+                                                d
+                                                
+                                                   
+                                                      d
+                                                      c
+                                                   
+                                                
+                                             
+                                          
+                                          )
+                                       
+                                    
+                                    3
+                                 
+                              
+                           
+                        
+                     
+                  
+                  For the above equation 
+							d is the swollen particle size, which is invariably measured using PCS. It is preferable to measure 
+							d and 
+							d
+                     c using the same technique. However, this is not always possible for microgels. Obtaining an accurate value for 
+							d
+                     c is difficult for poly(NIPAM) microgels because the collapsed particles, measured at temperatures greater than the VPTT, still contain significant amounts of water 
+							[19,33]. If SEM is used in order to measure 
+							d
+                     c there is significant risk of particle deformation (into pancake structures) if the microgel particles are deposited from the swollen state 
+							[9]. A test to assess the ability of SEM to give 
+							d
+                     c values is to compare the values to those obtained by PCS under conditions which favour deswelling, e.g., particles dispersed in water for poly(styrene/DVB). The value for 
+							d
+                     SEM should be less than 
+							d
+                     h. Tilting the SEM stage to check for deformation (flattening) of the particles is also advisable.
+						
+                  The swelling ratio for non-ionic microgel particles can be estimated using Flory's theory for network swelling. Useful approximations were suggested earlier 
+							[9] that gave the following equation.
+							
+                        
+                           (2)
+                           
+                              
+                                 q
+                                 ≈
+                                 
+                                    
+                                       
+                                          [
+                                          
+                                             
+                                                (
+                                                
+                                                   
+                                                      
+                                                         
+                                                            M
+                                                            A
+                                                         
+                                                      
+                                                      
+                                                         f
+                                                         
+                                                            ρ
+                                                            A
+                                                         
+                                                         
+                                                            x
+                                                            B
+                                                         
+                                                      
+                                                   
+                                                
+                                                )
+                                             
+                                             
+                                                
+                                                   
+                                                      (
+                                                      
+                                                         
+                                                            
+                                                               1
+                                                               /
+                                                               2
+                                                            
+                                                         
+                                                         −
+                                                         
+                                                            χ
+                                                            
+                                                               12
+                                                            
+                                                         
+                                                      
+                                                      )
+                                                   
+                                                
+                                                
+                                                   
+                                                      v
+                                                      1
+                                                   
+                                                
+                                             
+                                          
+                                          ]
+                                       
+                                    
+                                    
+                                       
+                                          3
+                                          /
+                                          5
+                                       
+                                    
+                                 
+                              
+                           
+                        
+                     
+                  
+                  For the above equation 
+							M
+                     A and 
+							ρ
+                     A are the molar mass and density of monomer A, which is the monomer of highest weight fraction in the microgel. The parameters 
+							f, 
+							x
+                     B, 
+							χ
+                     12 and 
+							v
+                     1 are the nominal number of effective chains formed per crosslinking monomer (two for DVB), mole fraction of polyfunctional monomer, polymer–solvent interaction parameter and molar volume of solvent, respectively 
+							[9].
+						
+                  The values of 
+							q shown in 
+							Fig. 5 were determined from PCS data using Eq. 
+							(1). Values for 
+							d
+                     c were obtained for the particles dispersed in water. It can be seen that 
+							q increases with 
+							x
+                     B and then reaches a maximum value and decreases slightly. The small 
+							q values (at 
+							x
+                     B less than 0.0024) show the result of using insufficient polyfunctional monomer to form network particles. Hence, the particles partially dissolve on swelling, resulting in loss of mass and, therefore, lower values of 
+							q. Above a critical value of 
+							x
+                     B, the network becomes complete and maximum particle molar mass is achieved. The general behaviour of 
+							q can then be described by Eq. 
+							(2). For the fit shown in 
+							Fig. 5 the values of 
+							f and 
+							χ
+                     12 used were 2 and 0.40 
+							[37], respectively. The equation fits the data reasonably well although inconsistencies are present at higher 
+							x
+                     
+                        B
+                      values. The most important point is that the equation can provide an estimate of 
+							q for solvent-swellable non-ionic microgel particle swelling provided sufficient polyfunctional monomer has been used to give a particle of maximum molar mass.
+						
+                  Temperature-triggered particle collapse for water-swellable microgels is of course an important mechanism. The VPTT depends on a number of factors including particle composition. 
+							Fig. 6
+                      shows the variation of 
+							d
+                     h in water with temperature for poly(NIPAM/5BA) and poly(DEA/5BA) (diethyl acrylamide) microgel particles. The 
+							q values could not be estimated for these systems because of difficulties in establishing the 
+							d
+                     c values. The poly(DEA/5BA) particles were prepared using an identical method to that reported earlier 
+							[38] for poly(NIPAM/5BA). The LCSTs for the linear poly(NIPAM) and poly(DEA) are about 32 and 28 °C, respectively. Unfortunately, a theory that unambiguously relates the swelling of water-swellable non-ionic microgel particles to temperature has not yet been developed. Generally, particle collapse occurs as the temperature approaches the LCST of the linear component because of temperature-triggered dehydration of the polymer chains that comprise the network. The data from 
+							Fig. 6 show that the transition temperature is tunable.
+						
+                  In the case of ionic microgels the particle swelling is dominated by electrostatic repulsion between neighbouring segments. We consider anionic microgels containing carboxylate groups here. (Equivalent equations can be easily derived for cationic microgels.) The degree of neutralisation of the acid groups, 
+							α, is then
+							
+                        
+                           (3)
+                           
+                              
+                                 α
+                                 =
+                                 
+                                    (
+                                    
+                                       
+                                          1
+                                          
+                                             1
+                                             +
+                                             
+                                                
+                                                   10
+                                                
+                                                
+                                                   
+                                                      (
+                                                      
+                                                         p
+                                                         
+                                                            K
+                                                            a
+                                                         
+                                                         −
+                                                         p
+                                                         H
+                                                      
+                                                      )
+                                                   
+                                                
+                                             
+                                          
+                                       
+                                    
+                                    )
+                                 
+                                 .
+                              
+                           
+                        
+                     
+                  
+                  Note that 
+							α is the fraction of the original RCOOH groups that exist in the anionic, RCOO
+							−, form. 
+							Fig. 7
+                      shows 
+							q vs. pH data for Microgels 3 and 4 particles (
+							Table 3
+                     ) 
+							[39]. Comparison of the swelling data for the ionic microgels (
+							Fig. 7) to poly(styrene/DVB) microgels in ethylbenzene (
+							Fig. 5) shows clearly the much larger swelling that occurs in the former. The maximum 
+							q value obtained for Microgel 3 (using 
+							x
+                     B
+                     =
+							0.01, 
+							Fig. 5) is ca. 25 times that of the equivalent poly(styrene/DVB) microgel (
+							x
+                     B
+                     =
+							0.01). Although, the co-monomers and solvents are not identical the data do show the expected differences. Electrostatic repulsion is clearly a very strong swelling force.
+						
+                  The following general equation has been derived by Flory 
+							[40] and applies in the limit of low electrolyte concentration. It is shown here because it provides useful design criteria for modifying microgel structure to alter swelling.
+							
+                        
+                           (4)
+                           
+                              
+                                 q
+                                 ≈
+                                 
+                                    
+                                       
+                                          [
+                                          
+                                             
+                                                (
+                                                
+                                                   
+                                                      
+                                                         
+                                                            M
+                                                            A
+                                                         
+                                                      
+                                                      
+                                                         f
+                                                         
+                                                            ρ
+                                                            A
+                                                         
+                                                         
+                                                            x
+                                                            B
+                                                         
+                                                      
+                                                   
+                                                
+                                                )
+                                             
+                                             
+                                                α
+                                                
+                                                   
+                                                      v
+                                                      u
+                                                   
+                                                
+                                             
+                                          
+                                          ]
+                                       
+                                    
+                                    
+                                       
+                                          3
+                                          /
+                                          2
+                                       
+                                    
+                                 
+                              
+                           
+                        
+                     
+                  
+                  For the above equation 
+							v
+                     u is the molar volume of the structural unit. The latter can be approximated to 
+							v
+                     A
+                     /
+							
+                     x
+                     i, where 
+							v
+                     A is the molar volume of the monomer of highest mole fraction in the particles and 
+							x
+                     i is the mole fraction of the ionic co-monomer. Application of Eq. 
+							(4) requires an accurate knowledge of the p
+							K
+                     a (for 
+							α) and particle composition (for 
+							x
+                     i and 
+							x
+                     B). The important points from a particle design perspective are that 
+							q will increase with increasing 
+							x
+                     i and decreasing 
+							x
+                     B. The equation shows clearly the importance of the p
+							K
+                     a in particle swelling.
+						
+                  It has been difficult to obtain a good quantitative agreement between predictions from Eq. 
+							(4) and swelling data obtained for poly(EA/MAA) microgels. However, qualitative predictions are followed. The data shown in 
+							Fig. 7 show a strong dependence on polyfunctional monomer type. The microgels were prepared using the same weight fraction of crosslinking monomer. However, AM (allyl methacrylate) in Microgel 4 has about half the molar mass of BDDA in Microgel 3 and a much higher junction-point density is expected, which is consistent with the data (
+							Fig. 7 and 
+							Table 3). A slight complication for this comparison is that the reaction efficiency for AM is expected to be lower than for BDDA because of the presence of the allyl group. 
+							Fig. 7 also shows the variation of 
+							α with pH. The p
+							K
+                     a of 6.7 was determined by titration. The data show the importance of the p
+							K
+                     a in the pH-triggered swelling transition for microgels, as expected from Eqs. 
+							(3) and (4).
+						
+               
+               
+                  2.4
+                  Stability of microgel dispersions
+                  Microgel dispersions have several factors that favour stability that are all linked to their swellable nature. It is their inherent colloidal stability that makes them good candidates for drug delivery 
+							in vivo. The two-particle interaction energy (
+							G(
+							h)) between neighbouring microgel particles with an interparticle separation of 
+							h can be described by the following equation.
+							
+                        
+                           (5)
+                           
+                              
+                                 G
+                                 
+                                    (
+                                    h
+                                    )
+                                 
+                                 =
+                                 
+                                    G
+                                    E
+                                 
+                                 
+                                    (
+                                    h
+                                    )
+                                 
+                                 +
+                                 
+                                    G
+                                    A
+                                 
+                                 
+                                    (
+                                    h
+                                    )
+                                 
+                                 +
+                                 
+                                    G
+                                    S
+                                 
+                                 
+                                    (
+                                    h
+                                    )
+                                 
+                                 +
+                                 
+                                    G
+                                    D
+                                 
+                                 
+                                    (
+                                    h
+                                    )
+                                 
+                              
+                           
+                        
+                     where 
+							G
+                     E(
+							h) is the electrostatic repulsion term. Although well understood for aqueous dispersions of hard spheres this term is not well understood for swollen microgel particles. This is principally due to the difficulty of assessing the electrostatic equivalent of the surface potential for a swollen, diffuse, network. It is of course reasonable to expect that 
+							G
+                     E(
+							h)
+							>
+							0 (repulsive) for neighbouring microgel particles containing the same sign charge. Oppositely charged microgels undergo heteroaggregation to give space-filling structures 
+							[41] because 
+							G
+                     E(
+							h)
+							<
+							0. Heteroaggregation has been reviewed elsewhere 
+							[42].
+						
+                  The parameter 
+							G
+                     A(
+							h) is the van der Waals attraction term. 
+							G
+                     A(
+							h) is negative for hard-sphere particles with a diameter, 
+							d, and is described by 
+							[43] Eq. 
+							(6).
+							
+                        
+                           (6)
+                           
+                              
+                                 
+                                    G
+                                    A
+                                 
+                                 
+                                    (
+                                    h
+                                    )
+                                 
+                                 =
+                                 −
+                                 
+                                    
+                                       
+                                          A
+                                          
+                                             eff
+                                          
+                                       
+                                    
+                                    
+                                       12
+                                    
+                                 
+                                 
+                                    (
+                                    
+                                       
+                                          1
+                                          
+                                             x
+                                             
+                                                (
+                                                
+                                                   x
+                                                   +
+                                                   2
+                                                
+                                                )
+                                             
+                                          
+                                       
+                                       +
+                                       
+                                          1
+                                          
+                                             
+                                                
+                                                   
+                                                      (
+                                                      
+                                                         x
+                                                         +
+                                                         1
+                                                      
+                                                      )
+                                                   
+                                                
+                                                2
+                                             
+                                          
+                                       
+                                       +
+                                       2
+                                       ln
+                                       
+                                          (
+                                          
+                                             
+                                                
+                                                   x
+                                                   
+                                                      (
+                                                      
+                                                         x
+                                                         +
+                                                         2
+                                                      
+                                                      )
+                                                   
+                                                
+                                                
+                                                   
+                                                      
+                                                         
+                                                            (
+                                                            
+                                                               x
+                                                               +
+                                                               1
+                                                            
+                                                            )
+                                                         
+                                                      
+                                                      2
+                                                   
+                                                
+                                             
+                                          
+                                          )
+                                       
+                                    
+                                    )
+                                 
+                              
+                           
+                        
+                     where
+							
+                        
+                           (7)
+                           
+                              
+                                 x
+                                 =
+                                 
+                                    h
+                                    d
+                                 
+                                 .
+                              
+                           
+                        
+                     
+                  
+                  The parameter 
+							A
+                     eff, is the effective Hamaker constant for the dispersed microgel particles. This is a function of 
+							ϕ
+                     2. and
+							
+                        
+                           (8)
+                           
+                              
+                                 
+                                    A
+                                    
+                                       eff
+                                    
+                                 
+                                 =
+                                 
+                                    
+                                       
+                                          (
+                                          
+                                             
+                                                A
+                                                1
+                                                
+                                                   0.5
+                                                
+                                             
+                                             −
+                                             
+                                                A
+                                                m
+                                                
+                                                   0.5
+                                                
+                                             
+                                          
+                                          )
+                                       
+                                    
+                                    2
+                                 
+                              
+                           
+                        
+                     where
+							
+                        
+                           (9)
+                           
+                              
+                                 
+                                    A
+                                    m
+                                 
+                                 =
+                                 
+                                    
+                                       
+                                          [
+                                          
+                                             
+                                                ϕ
+                                                2
+                                             
+                                             
+                                                A
+                                                2
+                                                
+                                                   0.5
+                                                
+                                             
+                                             +
+                                             
+                                                (
+                                                
+                                                   1
+                                                   −
+                                                   
+                                                      ϕ
+                                                      2
+                                                   
+                                                
+                                                )
+                                             
+                                             
+                                                A
+                                                1
+                                                
+                                                   0.5
+                                                
+                                             
+                                          
+                                          ]
+                                       
+                                    
+                                    2
+                                 
+                                 .
+                              
+                           
+                        
+                     
+                  
+                  For the above equations 
+							A
+                     1, 
+							A
+                     2 and 
+							A
+                     m are the Hamaker constants for the solvent, polymer and microgel particle, respectively. Eq. 
+							(9) was derived by Vincent et al. 
+							[4]. As the particle swells 
+							ϕ
+                     2 approaches zero and hence 
+							A
+                     eff approaches zero. Therefore, 
+							G
+                     A(
+							h) also approaches zero which is why fully swollen microgel particles have weak attractive interactions. This can be expected to be most pronounced for ionic microgel because they have larger maximum 
+							q values (smaller 
+							ϕ
+                     2).
+						
+                  
+                     G
+                     S(
+							h) is the steric repulsion interaction energy. In the fully swollen state the surface of water-swellable microgel particles will contain extended hydrophilic chains, which are attached to the network that comprises the microgel particle. These chains provide steric repulsion whilst the polymer chains are expanded (e.g., in a good solvent). It follows that 
+							G
+                     S(
+							h)
+							>
+							0 for dispersions of swollen microgel particles. As the particles collapse, however, 
+							G
+                     S(
+							h) approaches zero. Therefore, in the collapsed state (under poor solvency conditions) dispersion stability depends on 
+							G
+                     E(
+							h). However, in this regime particle collapse generally causes an increase in the effective surface charge density and hence 
+							G
+                     E(
+							h). Providing the ionic strength is not high, dilute microgel dispersions will remain colloidally stable when heated to above the VPTT in water. Otherwise, temperature-triggered aggregation will occur upon heating.
+							
+                  The term 
+							G
+                     D(
+							h) in Eq. 
+							(5) represents the attractive interparticle interaction due to depletion effects, i.e., the exclusion of free polymer chains from the region between two neighbouring particles upon close approach of the particles 
+							[44]. 
+							G
+                     D(
+							h), is less than zero if non-adsorbing polymer is present. This results in an attractive interaction when 
+							h is smaller than the polymer coil size because of the higher osmotic pressure of the polymer solution compared to that of the polymer depleted region between the particles. The solvent between the particles spontaneously diffuses from the depleted zone to the polymer solution. The strength of the interaction increases with 
+							d. An additional effect, that was predicted theoretically for microgels by Brian Vincent in the mid 1990s, is osmotic deswelling 
+							[9]. This occurs when the non-adsorbing polymer is excluded from the microgel particle interior and results in partial particle collapse. That topic was discussed in detail earlier 
+							[13].
+						
+                  In addition to 
+							G(
+							h) an entropic contribution originates from the combinations possible for the dispersed microgel particles 
+							[45] (Δ
+							G
+                     ent). Flocculation results in a decrease in the number of combinations available in the system and is not thermodynamically favourable. The Δ
+							G
+                     ent term opposes flocculation (Δ
+							G
+                     ent
+                     >
+							0) most strongly at low 
+							ϕ
+                     p values because the dispersion entropy is higher. The magnitude of Δ
+							G
+                     ent decreases with increasing 
+							ϕ
+                     p. Hence, this term will become insignificant for concentrated microgel dispersions. It follows that if the Δ
+							G
+                     ent term dominates stability a concentrated microgel dispersion will be less stable than a dilute one. This is because as 
+							ϕ
+                     p increases the change in the number of combinations on passing from a dispersed to an aggregate phase becomes less due to the excluded volume of the particles present.
+						
+               
+               
+                  2.5
+                  Factors affecting the p
+							K
+                     a for ionic microgels
+						
+                  As was evident from Eqs. 
+							(3) and (4) the value of p
+							K
+                     a is of major importance for determining the pH for the onsets of swelling transitions for ionic microgels. The value of p
+							K
+                     a for poly(NIPAM) microgels containing carboxylic acid co-monomers has been shown to be dependent on the distribution of these groups throughout the particles 
+							[46]. The p
+							K
+                     a for anionic polyelectrolytes are larger than for the respective free monomers because of the 
+							polyelectrolyte effect. This term refers to the increase in 
+							K
+                     a for the following equilibrium that occurs due to RCOOH groups being located on nearby segments of a polymer chain.
+							
+                        
+                           (10)
+                           
+                              
+                                 
+                                    
+                                       
+                                          
+                                             R
+                                             C
+                                             O
+                                             O
+                                             H
+                                          
+                                          
+                                             
+                                                (
+                                                m
+                                                )
+                                             
+                                          
+                                       
+                                       +
+                                       
+                                          H
+                                          2
+                                       
+                                       
+                                          O
+                                          
+                                             
+                                                (
+                                                1
+                                                )
+                                             
+                                          
+                                       
+                                       ⇌
+                                       
+                                          
+                                             R
+                                             C
+                                             O
+                                             O
+                                          
+                                          
+                                             
+                                                (
+                                                m
+                                                )
+                                             
+                                          
+                                          −
+                                       
+                                       +
+                                       
+                                          H
+                                          3
+                                       
+                                       
+                                          O
+                                          
+                                             
+                                                (
+                                                
+                                                   aq
+                                                
+                                                )
+                                             
+                                          
+                                          +
+                                       
+                                    
+                                 
+                                 
+                                    
+                                       
+                                          K
+                                          a
+                                       
+                                       =
+                                       
+                                          
+                                             
+                                                [
+                                                
+                                                   R
+                                                   C
+                                                   O
+                                                   O
+                                                   H
+                                                
+                                                ]
+                                             
+                                             
+                                                [
+                                                
+                                                   
+                                                      H
+                                                      3
+                                                   
+                                                   
+                                                      O
+                                                      +
+                                                   
+                                                
+                                                ]
+                                             
+                                          
+                                          
+                                             
+                                                [
+                                                
+                                                   
+                                                      
+                                                         R
+                                                         C
+                                                         O
+                                                         O
+                                                      
+                                                      −
+                                                   
+                                                
+                                                ]
+                                             
+                                          
+                                       
+                                       .
+                                    
+                                 
+                              
+                           
+                        
+                     
+                  
+                  For the above equilibrium RCOOH
+							(m) represents carboxylic acid groups located on the microgel network. Note that related equations of the same form as those above also apply for other acid groups. A high segment density of RCOO
+							− groups opposes formation of more RCOO
+							− groups within the particle due to electrostatic repulsion. Hoare and Pelton 
+							[46] suggested that the effective p
+							K
+                     a increased with formation of blocks of carboxylic acid containing monomers within their microgels. Block formation was favoured by the reactivity ratios present.
+						
+                  Although the p
+							K
+                     a for a microgel can only be properly inferred from titration measurements useful information can still be discerned from PCS measurements as a function of pH. 
+							Fig. 8
+                      shows data for three microgels. The data for the poly(NIPAM/AA) (acrylic acid) microgel are similar to those reported by Morris et al. 
+							[7] (The crosslinking monomer used was BA.) A major increase in 
+							d occurs when the pH exceeds the p
+							K
+                     a for the AA monomer (of ca. 4.3 
+							[47]). This indicates that for this microgel a polyelectrolyte effect may be present, which is consistent with the conclusions of Hoare and Pelton for a similar microgel 
+							[46].
+						
+                  The data for Microgels 1 and 3 (
+							Fig. 8 and 
+							Table 3) are different from poly(NIPAM/AA/BA) in that the pH values at which the swelling transitions occur are much higher than the p
+							K
+                     a for the monomer (of ca. 4.66 
+							[47]). This could be attributed to a very strong polyelectrolyte effect in the first instance. Titration data 
+							[39] gave a p
+							K
+                     a of 6.7 for Microgel 3. However, the apparent p
+							K
+                     a for linear poly(MAA) has been reported at 6.0 by Pinprayoon et al. 
+							[48] The microgel contained far fewer MAA groups than poly(MAA). Thus, polyelectrolyte effect is not the only explanation for the p
+							K
+                     a shift observed for these microgels.
+						
+                  Three other mechanisms have been invoked to explain positive p
+							K
+                     a shifts for anionic systems. Creager and Clarke 
+							[49] used ion-solvation energetics arguments to explain the large positive p
+							K
+                     a shifts for their hydrophobic mercaptoalkanoic acid/alkanethiol monolayers. A hydrophobic micro-environment results in a low dielectric constant which hinders formation of RCOO
+							−. An alternative mechanism invokes the surface potential which is known to prevent formation of RCOO
+							− species for anionic latex particles 
+							[50] through electrostatic repulsion. This is the two-dimensional analogue of the polyelectrolyte effect. Another possible contribution to a positive p
+							K
+                     a shift is through associative crosslinking. Philippova et al. 
+							[51] found this effect for hydrophobically modified AA copolymers. According to this idea associative crosslinks between hydrophobic domains oppose deprotonation.
+						
+                  In pH-responsive polymer colloids such as Microgel 1 or 3 (
+							Table 3), which contain a major fraction of a hydrophobic segments, surface potential, associative crosslinking and ion-solvation effects could all contribute to the positive p
+							K
+                     a shift. Titration experiments can be performed in the presence of different electrolyte concentrations to discern surface potential effects 
+							[48]. An ion-solvation mechanism would suggest an increase in p
+							K
+                     a with increasing MMA content. However, it would seem a challenging problem to differentiate between ion-solvation and associative crosslinking effects because both would have the same qualitative effects with respect to hydrophobic segment content. This is an area that requires further work.
+						
+               
+               
+                  2.6
+                  Triggered gelation and rheological behaviour for concentrated dispersions
+                  The viscosity of a microgel dispersion is a strongly increasing function of 
+							[52]
+                     q. The effective volume fraction of a dispersion occupied by the microgel particles (
+							ϕ
+                     m(eff)) is given by the following equation.
+							
+                        
+                           (11)
+                           
+                              
+                                 
+                                    ϕ
+                                    
+                                       m
+                                       
+                                          (
+                                          
+                                             eff
+                                          
+                                          )
+                                       
+                                    
+                                 
+                                 =
+                                 q
+                                 
+                                    ϕ
+                                    
+                                       2
+                                       
+                                          (
+                                          
+                                             disp
+                                          
+                                          )
+                                       
+                                    
+                                 
+                              
+                           
+                        
+                     
+                  
+                  For the above equation 
+							ϕ
+                     2(disp) is the polymer volume fraction present in the dispersion. PCS studies have shown that at low 
+							ϕ
+                     2(disp) values (less than 10
+							−
+								4
+							) 
+							q is independent of 
+							ϕ
+                     2(disp). (It should be noted that the validity of using PCS to measure hydrodynamic diameters for swollen microgels has been verified theoretically by Routh and Zimmerman. 
+							[53]) A decrease in 
+							q with increasing 
+							ϕ
+                     2(disp) has been shown to occur at higher 
+							ϕ
+                     2(disp) values using 
+							[33] SANS for poly(NIPAM) microgel dispersions.
+						
+                  Eq. 
+							(11) also shows that the proportion of dispersion volume occupied by microgels increases with 
+							q. Compared to polymer solutions, swollen microgel particles do not interpenetrate. The conformations of the polymer chains comprising the microgel particle cannot readily relax as is the case for linear polymers. This means that once 
+							ϕ
+                     m(eff) exceeds a critical value (
+							ϕ
+                     m(eff)
+                     ⁎), which corresponds to the jamming fraction, the particles become sterically confined by their neighbours. This results in the formation of a gelled microgel dispersion. The value for 
+							ϕ
+                     m(eff)⁎ is between 0.4 and 0.6 for 
+							[54] Microgel 1. Consideration of the 
+							q data discussed above shows that a lower value of 
+							ϕ
+                     2(disp) will be needed to obtain a gel for an ionic microgel dispersion compared to a non-ionic microgel. Indeed Steigler et al. 
+							[33] reported that poly(NIPAM/BA) microgels formed highly viscous dispersions, and presumably gels, when 
+							ϕ
+                     2(disp) exceeded 0.13. Zhou et al. 
+							[55] prepared ionic microgels containing NIPAM and AA and reported that gelled dispersions could be obtained at 
+							ϕ
+                     2(disp) values of only ca. 0.03. Dispersions of Microgel 1 form gels when 
+							ϕ
+                     2(disp) exceed 0.04 (see 
+							Fig. 9a
+							).
+						
+                  The rheological properties of gelled dispersions have been studied by a number of groups 
+							[33,54,56,57]. We have used dynamic rheology to probe their mechanical properties 
+							[57]. 
+							Fig. 9b shows shear modulus (
+							G′) vs. oscillation frequency data measured at several pH values for a dispersion of Microgel 1. The frequency dependence of the data has a low gradient and is gel-like. The tan
+							δ values are less than unity in the gel region of the phase diagram. Other work has shown that 
+							G′ reaches a maximum around pH values of 6.4 (
+							Fig. 10
+                     ). Interestingly, the behaviours are similar for the poly(EA) and poly(MAA) based microgels. Furthermore, 
+							G′ increases exponentially 
+							[54] with 
+							ϕ
+                     2(disp). Thus, pH and 
+							ϕ
+                     2(disp) provide convenient tools for modifying the mechanical properties of the gelled dispersions.
+						
+               
+            
+            
+               3
+               Microgels as biomaterials
+               
+                  3.1
+                  Potential for using microgels as biomaterials
+                  There are several criteria that a polymer must meet in order to be biocompatible 
+							[58,59]. The European Society for Biomaterials defined biocompatibility 
+							[60] as “the ability of a material to perform with an appropriate host response in a specific application”. The term biocompatible is meant to encompass the presence of beneficial effects (enabling favourable biological processes) as well as the absence of cytotoxic effects. Seven properties of polymers governing biocompatibility have been identified 
+							[59]. These are: (i) interfacial free energy, (ii) balance of hydrophilicity and hydrophobicity, (iii) nature of the functional groups, (iv) number density of charged groups and their sign, (v) molar mass, (vi) conformational flexibility and (vii) topography and roughness. Microgels can be prepared that have favourable attributes with respect to all of the above properties and have good potential for use as biomaterials. Their high degree of swelling is particularly beneficial from the viewpoints of low interfacial tension and high hydrophilicity. Functionalisation can be used to control charge density and sign of charge. The conformational flexibility of the microgel network is controllable via the junction-point density. Surface topography is inherently linked to particle composition and preparation conditions.
+						
+               
+               
+                  3.2
+                  Microgels for drug delivery
+                  Microgels have potential for application as stealth particles for drug delivery because they have inherently low 
+							A
+                     eff values (
+							Section 2.4) and are sterically stabilised. (Stealth particles are those that evade the body's immune system.) Furthermore, it is usually straightforward to graft PEO layers to the surface of the particles which could further enhance stealth behaviour.
+						
+                  There are generally two types of drug delivery strategies: active targeting and passive targeting 
+							[61]. Each approach aims to deliver a drug specifically to the site of requirement (e.g., a tumour). Active targeting of particles that carry drugs can deliver them to target cells. This approach involves functionalising the particles with ligands that bind to receptor sites of the target cells 
+							[62]. Passive targeting of tumour cells takes advantage of the natural accumulation of particles in the 100 nm size range that occurs in tumour cells due to the enhanced permeation and retention mechanism 
+							[61]. Both active and passive targeting require long particle circulation times in the blood plasma. The particles are required to evade the reticulio-endothelial system (RES). The delivery vehicle must be biocompatible, and ideally biodegradable. Microgels have characteristics that are suited to this application. Responsiveness to environmental stimuli such as pH or temperature is an additional advantage for polymer-based delivery systems 
+							[63]. These features can be incorporated into microgel particles. Microgels also benefit from their good potential for functionalisation, which is potentially useful in the context of active targeting.
+						
+                  In order to have an enhanced circulation time 
+							in vivo particles should have a very small size, preferably ca. 50 nm. Microgels can be prepared that approach this size. However, this small size is also a disadvantage from the viewpoint of controlling the release of drugs over a long time frame (days to months) for swollen microgel particles. It is easy to show that diffusion of unconstrained drug molecules from the interior of microgel particles with a swollen size of 50 nm is of the order of microseconds. The drug will rapidly leak from microgel particles of this size unless there is a physical barrier present. This could be in the form of restricted pore size. Covalent linking of actives (e.g., using cleavable bonds) or physical entrapment using crosslinking (again cleavable) are two strategies that have potential application for microgel-based drug delivery systems.
+						
+                  Hoare and Pelton 
+							[17] investigated the relationship between microgel structure and composition, drug uptake and release for a series of poly(NIPAM) microgels. They reported that the particle morphology strongly affects uptake and release of model drugs. It was concluded that, for drugs with low-to-moderate hydrophobicities, functionalisation of the microgel core was more important than that of the shell for effective drug uptake. Although not studied in detail in that work it is likely that those microgels would tend to leak because physical absorption was important for drug uptake.
+						
+                  A survey of 
+							Table 2 shows that the acrylamide-based microgels (AM and NIPAM) have featured heavily in drug delivery research involving microgels. A biocompatibility study has been done which indicated no adverse effects for microgels containing NIPAM and AA 
+							[55]. An important challenge is to replace the acrylamides (e.g., NIPAM) with biocompatible polymers which have similar properties. Some of the microgels that have been prepared approach the size 
+							[55] consistent with RES avoidance.
+						
+                  There has been significant work designing microgels with degradable crosslinks. Murthy et al. 
+							[64] developed acetal crosslinking co-monomers based on a bisacrylamide acetal which underwent acid catalysed hydrolysis. Benzaldehyde acetals were selected because of the ability to tune the pH-dependence of the hydrolysis using the substituents in the para position. This is clearly an important approach for controlling release and has excellent potential for development using biocompatible systems. Bulmus et al. 
+							[65] applied the approach of Murthy et al. 
+							[64] and produced HEMA containing microgels. Those systems should have better biocompatibility because poly(HEMA) has been used successfully as a biomaterial. Their particles had a minimum size of 150 nm and showed pH-triggered release (over periods of hours) of model biomacromolecules, including BSA. Importantly, they demonstrated that BSA was not denatured as consequence of encapsulation and subsequent release. However, the ability to retain the protein over extended time periods (days) was not demonstrated.
+						
+                  An interesting example of a potentially biocompatible ionic microgel system for drug delivery is the work of Kiser et al. 
+							[66]. They prepared MAA microgels loaded with doxorubicin. They coated the collapsed particles with a lipid bilayer that prevented them from swelling at a pH of 5. (pH-triggered swelling of uncoated particles occurred at pH values greater than 4.0.) They showed that bilayer breakdown could be triggered using an applied electric field. This enabled ingress of the water phase, with rapid particle swelling and drug release.
+						
+                  A example of a system that has potential for externally triggered release is given by the work of Das et al. 
+							[67] Their gold NR loaded microgel particles exhibited triggered collapse (due to localised heating) as a consequence of absorbing infrared irradiation. Infrared radiation is a good choice for external triggered behaviour 
+							in vivo because it is deeply penetrating for human tissue due to its long wavelength. It was the adsorbed NRs that were responsible for the photothermal behaviour of this composite microgel. A challenge for that approach is to design the microgel such that externally triggered particle collapse causes release of an active.
+						
+               
+               
+                  3.3
+                  Microgels for regenerative medicine
+                  In order for a material to be successful as an implant for tissue regeneration it must be biocompatible and satisfy other criteria. These include (i) having mechanical properties that match those of the surrounding tissue, (ii) enabling regeneration of tissue and (iii) being biodegradable. The study of microgels in regenerative medicine is in its infancy. An important study was reported by Jia et al. 
+							[24] that investigated microgels as a biomaterial for 
+							in vivo vocal fold regeneration. They constructed networks which offered the potential for independently tuning the degradation profiles and mechanical properties. The latter was able to be modified to match those of the target tissue. Internally crosslinked HA microgels were prepared which were then subsequently crosslinked using a solution polymer to give doubly crosslinked microgel networks. This crosslinked the pre-formed microgel particles within a polymer network and resulted in networks with tunable viscoelastic behaviour. The frequency-dependent elastic moduli were similar to those of vocal fold laminar propria. Their work demonstrated the good potential microgels provide in terms of using architecture to control mechanical properties.
+						
+                  At Manchester we have investigated the use of injectable microgel dispersions for improving the disc height of degenerated intervertebral discs 
+							[54,57] (IVD). Low back pain affects millions of people across the world and costs nations huge sums of money in healthcare costs and lost productivity. At least 40% of low back pain is caused by a disorder called degeneration of the intervertebral disc (DIVD). In DIVD the nucleus pulposus (NP) fails, leading to the development of voids or fissures within the NP and decreased separation 
+							[68] of the vertebrae. This is turn leads to instability of the structures around the IVD, microtrauma and pain. The first step in restoring the mechanical properties is to increase the disc height. For this potential application we selected ionic microgels because they generate high swelling pressures. The underlying hypothesis is that if a gelled microgel dispersion can recreate the natural load distribution in a degenerated IVD then progress of DIVD will be able to be prevented and pain reduced.
+						
+                  Microgels such as poly(EA/MAA/BDDA) or poly(MMA/MAA/EGDMA) can be prepared containing high concentrations of MAA 
+							[54,57] (
+							Table 3). The mechanical properties of the degenerated IVDs containing gelled microgel dispersions were studied (
+							Fig. 11
+                     ) using a servo-hydraulic testing instrument 
+							[57] which applied compressive stresses that covered the range of those experienced by human IVDs. 
+							Fig. 11a shows the cross-section of an IVD microgel containing injected microgel at a pH of 7.0. 
+							Fig. 11b shows the geometry. The IVDs used for this work were from bovine cow tails, which are well accepted models for human IVDs. The microgel dispersions were injected at low pH and neutralised by a subsequent base injection. Of course a different neutralisation procedure would be used if the technology were used with live tissue.
+						
+                  The variation of relative height as a function of compression cycle number for IVDs containing injected microgel dispersions at different pH values is shown in 
+							Fig. 11c. These data were measured at a compressive stress which corresponds to that during light exercise 
+							[69] (0.5 MPa). The relative height generally increases with pH within the IVD/microgel systems when the pH is greater than or equal to 6.5. The IVDs containing microgel with a final pH of 7.0 were remarkable in that creep stopped after the first few cycles. This is very different to that observed for the PBS (phosphate buffered saline) control injection. The differences in relative height are believed to be due to the high swelling pressures for the particles, which will increase with 
+							α. Importantly, there was no difference between the mechanical properties during cycling of degenerated IVDs containing microgel at a pH of 7 and pristine, non-degenerated IVDs.
+						
+                  
+                     Fig. 12
+                      depicts one pathway for achieving load support and complete regeneration using injectable pH-responsive microgel particles. The process envisaged relies initially upon particle swelling to correct the load distribution imbalance. This would prevent progress of the degeneration and could be combined with release of biologics designed to prevent further tissue degeneration. An important part of this proposed strategy will be the design of microgels which have the ability to biodegrade.
+						
+               
+               
+                  3.4
+                  Biologically-responsive microgels
+                  Responsive microgels have focussed almost entirely on pH or temperature as triggers. Both of these stimuli are not very specific. A much more specific, localised, triggering system for application 
+							in vivo would use biological triggering, e.g., with enzymes. Biologically-responsive microgels can be defined as microgels that exhibit a significant volume change in response to a specific chemical reaction or association with a biological molecule. Arguably the most important study in this area to date has been reported by Hoare and Pelton 
+							[70]. They showed that amphoteric poly(NIPAM) microgels containing aminophenyl boronic acid exhibited an increase in swelling in the presence of glucose, due to generation of additional negative charge. Importantly that work also demonstrated triggered release of loaded insulin from the particles.
+						
+                  An interesting example of what could be achieved with microgels can found in the literature for gel beads. Ulijn et al. 
+							[71] have prepared enzyme-responsive gel particles (with sizes of at least 100 μm). Using enzymes as triggering systems offers the advantages of not being biologically disruptive, operating under mild conditions and being selective. Their approach has focussed on incorporating enzyme-cleavable peptides flanked by oppositely charged amino acids (zwitterionic peptides). The target enzymes used include thermolysin, which migrated into the particles and selectively cleaved the peptide. This process gave a local positive charge (due to efflux of the low molar mass anionic fragment) and particle swelling as a consequence of electrostatic repulsion. They demonstrated that this selective enzyme-triggered particle swelling can be used to release biomacromolecules such as avidin 
+							[71]. If that work could be scaled down to the size range of less than 10 μm then enzyme-responsive microgels could be produced. This would provide an interesting and more selective alternative to acetal-based release systems for potential application as drug delivery systems.
+						
+               
+            
+            
+               4
+               Conclusions and outlook
+               Microgels were first reported over 70 years ago. Since then they have continued to capture significant interest. With the exception of the surface coatings industry, microgels have not been exploited commercially on a significant scale. It is interesting to note how the emphasis of research has changed from solvent-based systems to water-based responsive particles. New areas of drug delivery and also regenerative medicine are now being explored, driven in large part by the rapid growth in biomaterials science over the last 10 years. This is driven by the ageing populations in developed nations and their associated health requirements.
+               Microgels have a number of properties that fit well within the constraints for biomedical application. Their low intrinsic attraction and good steric stabilisation, injectability and high degrees of hydration are all beneficial factors. The latter also is also consistent with the transport of nutrients. Their relative ease of functionalisation and ability for architecture control are advantages. They can also be prepared with a large range of monomers and polymers which is also useful from the fundamental research perspective.
+               There are some clear challenges facing microgel research in the biological context. The first is to prepare useful dispersions comprising particles made from only components that have already been officially approved for use in medical devices. There are only a small number of polymers available and so a high degree of architectural control will be essential. The second major challenge is to incorporate controlled biodegradability within the particles. This would enable complete removal of the particles from the body without surgical procedures. A longer-term, challenge is to prepare ca. 50 nm size biocompatible and biodegradable biologically-responsive microgels for active targeted delivery in the body. In terms of regenerative medical applications the challenge is to prepare microgel dispersions which are injectable and can provide long-term mechanical stability to facilitate soft tissue repair.
+               There are also interesting implications of recent studies that are seeking to cause microgels to self-assemble 
+						[72]. In that work Janus particles were created using an emulsion route. Another emerging area of considerable interest is the covalent linking of neighbouring particles. This has excellent potential to give macroscopic gels with enhanced properties, e.g., reduced swelling transition times 
+						[73].
+					
+               The outlook for microgels in terms of biomaterials is good. With success in development of completely biocompatible, responsive, systems then applications in drug delivery and regenerative medicine should follow. They have already shown suitable mechanical properties to mimic soft tissue in the areas of vocal fold and IVD repair. There are a number of other soft tissues in which they could also have application in terms of an injectable implant. The development biologically-responsive microgels is a particularly interesting area for future microgel research and holds great promise.
+            
+         
+         
+            Acknowledgements
+            BRS is grateful to Brian Vincent for providing the opportunity of working with him on polymer colloid research at Bristol between 1994 and 1997.
+         
+      
+      
+         
+            References
+            
+               
+                  [1]
+                  
+                     
+                        
+                           
+                              M.
+                              Bradley
+                           
+                           
+                              B.
+                              Vincent
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Langmuir
+                              
+                              21
+                           
+                           2005
+                        
+                        
+                           1209
+                        
+                     
+                  
+               
+               
+                  [2]
+                  
+                     
+                        
+                           
+                              M.
+                              Bradley
+                           
+                           
+                              B.
+                              Vincent
+                           
+                           
+                              G.
+                              Burnett
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Langmuir
+                              
+                              23
+                           
+                           2007
+                        
+                        
+                           9237
+                        
+                     
+                  
+               
+               
+                  [3]
+                  
+                     
+                        
+                           
+                              J.
+                              Clarke
+                           
+                           
+                              B.
+                              Vincent
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 J Chem Soc Faraday Trans I
+                              
+                              77
+                           
+                           1981
+                        
+                        
+                           1831
+                        
+                     
+                  
+               
+               
+                  [4]
+                  
+                     
+                        
+                           
+                              A.
+                              Fernandez-Barbero
+                           
+                           
+                              F.J.
+                              De las Nieves
+                           
+                           
+                              B.
+                              Vincent
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 J Phys Condens Matter
+                              
+                              12
+                           
+                           2000
+                        
+                        
+                           3605
+                        
+                     
+                  
+               
+               
+                  [5]
+                  
+                     
+                        
+                           
+                              M.I.
+                              Goller
+                           
+                           
+                              T.M.
+                              Obey
+                           
+                           
+                              D.O.H.
+                              Teare
+                           
+                           
+                              B.
+                              Vincent
+                           
+                           
+                              M.R.
+                              Wegener
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Colloids Surf A
+                              
+                              123–124
+                           
+                           1997
+                        
+                        
+                           183
+                        
+                     
+                  
+               
+               
+                  [6]
+                  
+                     
+                        
+                           
+                              A.
+                              Loxley
+                           
+                           
+                              B.
+                              Vincent
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Colloid Polym Sci
+                              
+                              275
+                           
+                           1997
+                        
+                        
+                           1108
+                        
+                     
+                  
+               
+               
+                  [7]
+                  
+                     
+                        
+                           
+                              G.E.
+                              Morris
+                           
+                           
+                              B.
+                              Vincent
+                           
+                           
+                              M.J.
+                              Snowden
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 J Colloid Interface Sci
+                              
+                              190
+                           
+                           1997
+                        
+                        
+                           198
+                        
+                     
+                  
+               
+               
+                  [8]
+                  
+                     
+                        
+                           
+                              A.F.
+                              Routh
+                           
+                           
+                              B.
+                              Vincent
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Langmuir
+                              
+                              18
+                           
+                           2002
+                        
+                        
+                           5366
+                        
+                     
+                  
+               
+               
+                  [9]
+                  
+                     
+                        
+                           
+                              B.R.
+                              Saunders
+                           
+                           
+                              B.
+                              Vincent
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Colloid Polym Sci
+                              
+                              75
+                           
+                           1997
+                        
+                        
+                           9
+                        
+                     
+                  
+               
+               
+                  [10]
+                  
+                     
+                        
+                           
+                              M.J.
+                              Snowden
+                           
+                           
+                              M.J.
+                              Marston
+                           
+                           
+                              B.
+                              Vincent
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Colloid Polym Sci
+                              
+                              272
+                           
+                           1994
+                        
+                        
+                           1273
+                        
+                     
+                  
+               
+               
+                  [11]
+                  
+                     
+                        
+                           
+                              P.
+                              Bouillot
+                           
+                           
+                              B.
+                              Vincent
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Colloid Polym Sci
+                              
+                              278
+                           
+                           2000
+                        
+                        
+                           74
+                        
+                     
+                  
+               
+               
+                  [12]
+                  
+                     
+                        
+                           
+                              S.
+                              Neyret
+                           
+                           
+                              B.
+                              Vincent
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Polymer
+                              
+                              38
+                           
+                           1997
+                        
+                        
+                           6129
+                        
+                     
+                  
+               
+               
+                  [13]
+                  
+                     
+                        
+                           
+                              B.R.
+                              Saunders
+                           
+                           
+                              B.
+                              Vincent
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Adv Colloid Interface Sci
+                              
+                              80
+                           
+                           1999
+                        
+                        
+                           1
+                        
+                     
+                  
+               
+               
+                  [14]
+                  
+                     
+                        
+                           
+                              H.
+                              Staudinger
+                           
+                           
+                              E.
+                              Husemann
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Ber
+                              
+                              68
+                           
+                           1935
+                        
+                        
+                           1618
+                        
+                     
+                  
+               
+               
+                  [15]
+                  
+                     
+                        
+                           
+                              W.O.
+                              Baker
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Ind Eng Chem
+                              
+                              41
+                           
+                           1949
+                        
+                        
+                           511
+                        
+                     
+                  
+               
+               
+                  [16]
+                  
+                     
+                        
+                           
+                              R.H.
+                              Pelton
+                           
+                           
+                              P.
+                              Chibante
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Colloids Surf
+                              
+                              120
+                           
+                           1986
+                        
+                        
+                           247
+                        
+                     
+                  
+               
+               
+                  [17]
+                  
+                     
+                        
+                           
+                              T.
+                              Hoare
+                           
+                           
+                              R.
+                              Pelton
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Langmuir
+                              
+                              24
+                           
+                           2008
+                        
+                        
+                           1005
+                        
+                     
+                  
+               
+               
+                  [18]
+                  
+                     
+                        
+                           
+                              C.M.
+                              Nolan
+                           
+                           
+                              C.D.
+                              Reyes
+                           
+                           
+                              J.D.
+                              Debord
+                           
+                           
+                              A.J.
+                              Garcia
+                           
+                           
+                              L.A.
+                              Lyon
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Biomacromolecules
+                              
+                              6
+                           
+                           2005
+                        
+                        
+                           2032
+                        
+                     
+                  
+               
+               
+                  [19]
+                  
+                     
+                        
+                           
+                              B.R.
+                              Saunders
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Langmuir
+                              
+                              20
+                           
+                           2004
+                        
+                        
+                           3925
+                        
+                     
+                  
+               
+               
+                  [20]
+                  
+                     
+                        
+                           
+                              X.
+                              Wu
+                           
+                           
+                              R.H.
+                              Pelton
+                           
+                           
+                              A.E.
+                              Hamielec
+                           
+                           
+                              D.R.
+                              Woods
+                           
+                           
+                              W.
+                              McPhee
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Colloid Polym Sci
+                              
+                              272
+                           
+                           1994
+                        
+                        
+                           467
+                        
+                     
+                  
+               
+               
+                  [21]
+                  
+                     
+                        
+                           
+                              R.H.
+                              Pelton
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Adv Colloid Interface Sci
+                              
+                              85
+                           
+                           2000
+                        
+                        
+                           1
+                        
+                     
+                  
+               
+               
+                  [22]
+                  
+                     
+                        
+                           
+                              F.
+                              Meunier
+                           
+                           
+                              C.
+                              Pichot
+                           
+                           
+                              A.
+                              Elaissari
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Colloid Polym Sci
+                              
+                              284
+                           
+                           2006
+                        
+                        
+                           1287
+                        
+                     
+                  
+               
+               
+                  [23]
+                  
+                     
+                        
+                           
+                              G.
+                              Zhou
+                           
+                           
+                              L.
+                              Veron
+                           
+                           
+                              A.
+                              Elaissari
+                           
+                           
+                              T.
+                              Delair
+                           
+                           
+                              C.
+                              Pichot
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Polym Int
+                              
+                              53
+                           
+                           2004
+                        
+                        
+                           603
+                        
+                     
+                  
+               
+               
+                  [24]
+                  
+                     
+                        
+                           
+                              X.
+                              Jia
+                           
+                           
+                              Y.
+                              Yeo
+                           
+                           
+                              R.J.
+                              Clifton
+                           
+                           
+                              T.
+                              Jiao
+                           
+                           
+                              D.S.
+                              Kohane
+                           
+                           
+                              J.B.
+                              Kobler
+                           
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Biomacromolecules
+                              
+                              7
+                           
+                           2006
+                        
+                        
+                           3336
+                        
+                     
+                  
+               
+               
+                  [25]
+                  
+                     
+                        
+                           
+                              X.
+                              Xia
+                           
+                           
+                              S.
+                              Tang
+                           
+                           
+                              X.
+                              Lu
+                           
+                           
+                              Z.
+                              Hu
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Macromolecules
+                              
+                              36
+                           
+                           2003
+                        
+                        
+                           3695
+                        
+                     
+                  
+               
+               
+                  [26]
+                  
+                     
+                        
+                           
+                              M.J.
+                              Snowden
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 J Chem Soc Chem Commun
+                              
+                              11
+                           
+                           1992
+                        
+                        
+                           803
+                        
+                     
+                  
+               
+               
+                  [27]
+                  
+                     
+                        
+                           
+                              H.
+                              Tanii
+                           
+                           
+                              K.
+                              Hashimoto
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Toxicol Lett
+                              
+                              58
+                           
+                           1991
+                        
+                        
+                           209
+                        
+                     
+                  
+               
+               
+                  [28]
+                  
+                     
+                        
+                           
+                              I.
+                              Vyas
+                           
+                           
+                              H.E.
+                              Lowndes
+                           
+                           
+                              R.D.
+                              Howland
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Neurotoxicology
+                              
+                              6
+                           
+                           1985
+                        
+                        
+                           123
+                        
+                     
+                  
+               
+               
+                  [29]
+                  
+                     
+                        
+                           
+                              P.J.
+                              Dowding
+                           
+                           
+                              B.
+                              Vincent
+                           
+                           
+                              E.
+                              Williams
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 J Colloid Interface Sci
+                              
+                              221
+                           
+                           2000
+                        
+                        
+                           268
+                        
+                     
+                  
+               
+               
+                  [30]
+                  
+                     
+                        
+                           
+                              M.
+                              Das
+                           
+                           
+                              S.
+                              Mardyani
+                           
+                           
+                              W.C.W.
+                              Chan
+                           
+                           
+                              E.
+                              Kumacheva
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Adv Mater
+                              
+                              18
+                           
+                           2006
+                        
+                        
+                           80
+                        
+                     
+                  
+               
+               
+                  [31]
+                  
+                     
+                        
+                           
+                              I.
+                              Varga
+                           
+                           
+                              T.
+                              Gilanyi
+                           
+                           
+                              R.
+                              Meszaros
+                           
+                           
+                              G.
+                              Filipcsei
+                           
+                           
+                              M.
+                              Zrinyi
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 J Phys Chem B
+                              
+                              105
+                           
+                           2001
+                        
+                        
+                           9071
+                        
+                     
+                  
+               
+               
+                  [32]
+                  
+                     
+                        
+                           
+                              T.G.
+                              Mason
+                           
+                           
+                              M.Y.
+                              Lin
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Phys Rev E
+                              
+                              71
+                           
+                           2005
+                        
+                        
+                           040801
+                        
+                     
+                     (R)
+                  
+               
+               
+                  [33]
+                  
+                     
+                        
+                           
+                              M.
+                              Stieger
+                           
+                           
+                              J.S.
+                              Pederson
+                           
+                           
+                              P.
+                              Lidner
+                           
+                           
+                              W.
+                              Richtering
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Langmuir
+                              
+                              20
+                           
+                           2004
+                        
+                        
+                           7283
+                        
+                     
+                  
+               
+               
+                  [34]
+                  
+                     
+                        
+                           
+                              J.S.
+                              Higgins
+                           
+                           
+                              H.C.
+                              Benoit
+                           
+                        
+                        
+                           Polymers and Neutron Scattering
+                        
+                     
+                     
+                        
+                           1996
+                           
+                              Clarendon Press
+                              Oxford
+                           
+                        
+                     
+                  
+               
+               
+                  [35]
+                  
+                     
+                        
+                           
+                              B.E.
+                              Rodriguez
+                           
+                           
+                              M.S.
+                              Wolfe
+                           
+                           
+                              M.
+                              Fryd
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Macromolecules
+                              
+                              27
+                           
+                           1994
+                        
+                        
+                           6642
+                        
+                     
+                  
+               
+               
+                  [36]
+                  
+                     
+                        
+                           
+                              A.
+                              Fernandez-Nieves
+                           
+                           
+                              A.
+                              Fernandez-Barbero
+                           
+                           
+                              B.
+                              Vincent
+                           
+                           
+                              F.J.
+                              de las Nieves
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Macromolecules
+                              
+                              33
+                           
+                           2000
+                        
+                        
+                           2114
+                        
+                     
+                  
+               
+               
+                  [37]
+                  
+                     J. Brandrup; E.H. Immergut, Polymer Handbook, 2nd Edition, John Wiley and Sons, London, 1974.
+                  
+               
+               
+                  [38]
+                  
+                     
+                        
+                           
+                              E.
+                              Daly
+                           
+                           
+                              B.R.
+                              Saunders
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Langmuir
+                              
+                              16
+                           
+                           2000
+                        
+                        
+                           5546
+                        
+                     
+                  
+               
+               
+                  [39]
+                  
+                     
+                        
+                           
+                              H.
+                              Dalmont
+                           
+                           
+                              O.
+                              Pinprayoon
+                           
+                           
+                              B.R.
+                              Saunders
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Langmuir
+                              
+                              24
+                           
+                           2008
+                        
+                        
+                           2834
+                        
+                     
+                  
+               
+               
+                  [40]
+                  
+                     P.J. Flory, Principles of polymer chemistry, Cornell, Ithaca, 1953.
+                  
+               
+               
+                  [41]
+                  
+                     
+                        
+                           
+                              R.J.
+                              Hall
+                           
+                           
+                              V.T.
+                              Pinkrah
+                           
+                           
+                              B.Z.
+                              Chowdhry
+                           
+                           
+                              M.J.
+                              Snowden
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Colloids Surf A
+                              
+                              233
+                           
+                           2004
+                        
+                        
+                           25
+                        
+                     
+                  
+               
+               
+                  [42]
+                  
+                     
+                        
+                           
+                              A.M.
+                              Islam
+                           
+                           
+                              B.Z.
+                              Chowdhry
+                           
+                           
+                              M.J.
+                              Snowden
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Adv Colloid Interface Sci
+                              
+                              62
+                           
+                           1995
+                        
+                        
+                           109
+                        
+                     
+                  
+               
+               
+                  [43]
+                  
+                     
+                        
+                           
+                              D.J.
+                              Shaw
+                           
+                        
+                        
+                           Colloid and Surface Chemistry
+                        
+                     
+                     
+                        
+                           4th Ed.
+                           1992
+                           
+                              Butterworth-Heinemann
+                              Oxford
+                           
+                        
+                     
+                  
+               
+               
+                  [44]
+                  
+                     
+                        
+                           
+                              P.
+                              Jenkins
+                           
+                           
+                              M.J.
+                              Snowden
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Adv Colloid Interface Sci
+                              
+                              68
+                           
+                           1996
+                        
+                        
+                           57
+                        
+                     
+                  
+               
+               
+                  [45]
+                  
+                     
+                        
+                           
+                              B.
+                              Vincent
+                           
+                           
+                              B.R.
+                              Saunders
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 T.F.
+                                 Tadros
+                              
+                           
+                           
+                              
+                                 
+                                    Colloid Stability: The Role of Surface Forces
+                                 
+                                 vol. 2
+                              
+                           
+                           2006
+                           
+                              Wiley
+                              England
+                           
+                        
+                     
+                     Part II
+                  
+               
+               
+                  [46]
+                  
+                     
+                        
+                           
+                              T.
+                              Hoare
+                           
+                           
+                              R.H.
+                              Pelton
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Langmuir
+                              
+                              22
+                           
+                           2006
+                        
+                        
+                           7342
+                        
+                     
+                  
+               
+               
+                  [47]
+                  
+                     
+                        
+                           
+                              
+                                 J.A.
+                                 Dean
+                              
+                           
+                           
+                              Lange's Handbook of Chemistry
+                           
+                           15th Ed
+                           1999
+                           
+                              McGraw-Hill
+                           
+                        
+                     
+                  
+               
+               
+                  [48]
+                  
+                     O. Pinprayoon; B. Groves; B.R. Saunders, J Colloid Interface Sci, 2008;321:315.
+                  
+               
+               
+                  [49]
+                  
+                     
+                        
+                           
+                              S.E.
+                              Creager
+                           
+                           
+                              J.
+                              Clarke
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Langmuir
+                              
+                              10
+                           
+                           1994
+                        
+                        
+                           3675
+                        
+                     
+                  
+               
+               
+                  [50]
+                  
+                     
+                        
+                           
+                              J.
+                              Stone-Masui
+                           
+                           
+                              A.
+                              Watillon
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 J Colloid Interface Sci
+                              
+                              52
+                           
+                           1975
+                        
+                        
+                           479
+                        
+                     
+                  
+               
+               
+                  [51]
+                  
+                     
+                        
+                           
+                              O.E.
+                              Philippova
+                           
+                           
+                              D.
+                              Hourdet
+                           
+                           
+                              R.
+                              Audebert
+                           
+                           
+                              A.R.
+                              Khokhlov
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Macromolecules
+                              
+                              30
+                           
+                           1997
+                        
+                        
+                           8278
+                        
+                     
+                  
+               
+               
+                  [52]
+                  
+                     
+                        
+                           
+                              D.M.O.
+                              Kiminta
+                           
+                           
+                              P.F.
+                              Luckham
+                           
+                           
+                              S.
+                              Lenon
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Polymer
+                              
+                              36
+                           
+                           1995
+                        
+                        
+                           4827
+                        
+                     
+                  
+               
+               
+                  [53]
+                  
+                     
+                        
+                           
+                              A.F.
+                              Routh
+                           
+                           
+                              W.B.
+                              Zimmerman
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 J Colloid Interface Sci
+                              
+                              261
+                           
+                           2003
+                        
+                        
+                           547
+                        
+                     
+                  
+               
+               
+                  [54]
+                  
+                     
+                        
+                           
+                              S.
+                              Lally
+                           
+                           
+                              P.
+                              Mackenzie
+                           
+                           
+                              C.L.
+                              Le Maitre
+                           
+                           
+                              A.J.
+                              Freemont
+                           
+                           
+                              B.R.
+                              Saunders
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 J Colloid Interface Sci
+                              
+                              316
+                           
+                           2007
+                        
+                        
+                           367
+                        
+                     
+                  
+               
+               
+                  [55]
+                  
+                     
+                        
+                           
+                              J.
+                              Zhou
+                           
+                           
+                              G.
+                              Wang
+                           
+                           
+                              L.
+                              Zou
+                           
+                           
+                              L.
+                              Tang
+                           
+                           
+                              M.
+                              Marquez
+                           
+                           
+                              Z.
+                              Hu
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Biomacromolecules
+                              
+                              9
+                           
+                           2008
+                        
+                        
+                           142
+                        
+                     
+                  
+               
+               
+                  [56]
+                  
+                     
+                        
+                           
+                              R.J.
+                              English
+                           
+                           
+                              S.R.
+                              Raghavan
+                           
+                           
+                              R.D.
+                              Jenkins
+                           
+                           
+                              S.A.
+                              Khan
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 J Rheol
+                              
+                              43
+                           
+                           1999
+                        
+                        
+                           1175
+                        
+                     
+                  
+               
+               
+                  [57]
+                  
+                     
+                        
+                           
+                              J.M.
+                              Saunders
+                           
+                           
+                              T.
+                              Tong
+                           
+                           
+                              C.
+                              LeMaitre
+                           
+                           
+                              A.J.
+                              Freemont
+                           
+                           
+                              B.R.
+                              Saunders
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Soft Matter
+                              
+                              3
+                           
+                           2007
+                        
+                        
+                           486
+                        
+                     
+                  
+               
+               
+                  [58]
+                  
+                     
+                        
+                           
+                              J.E.
+                              Puskas
+                           
+                           
+                              Y.
+                              Chen
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Biomacromolecules
+                              
+                              5
+                           
+                           2004
+                        
+                        
+                           1141
+                        
+                     
+                  
+               
+               
+                  [59]
+                  
+                     
+                        
+                           
+                              Y.X.
+                              Wang
+                           
+                           
+                              J.L.
+                              Robertson
+                           
+                           
+                              W.B.
+                              Spillman
+                           
+                           
+                              R.O.
+                              Claus
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Pharm Res
+                              
+                              21
+                           
+                           2004
+                        
+                        
+                           1362
+                        
+                     
+                  
+               
+               
+                  [60]
+                  
+                     
+                        
+                           
+                              D.F.
+                              Williams
+                           
+                        
+                     
+                     
+                        
+                           
+                              Definitions in Biomaterials
+                           
+                           1986
+                           
+                              Elsevier
+                              Amsterdam
+                           
+                        
+                        
+                           49
+                        
+                     
+                  
+               
+               
+                  [61]
+                  
+                     
+                        
+                           
+                              R.
+                              Duncan
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Nate Rev
+                              
+                              2
+                           
+                           2003
+                        
+                        
+                           347
+                        
+                     
+                  
+               
+               
+                  [62]
+                  
+                     
+                        
+                           
+                              F.
+                              Marcucci
+                           
+                           
+                              F.
+                              Lefoulon
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Drug Discov Today
+                              
+                              9
+                           
+                           2004
+                        
+                        
+                           219
+                        
+                     
+                  
+               
+               
+                  [63]
+                  
+                     
+                        
+                           
+                              C.
+                              de las Heras Alarcon
+                           
+                           
+                              S.
+                              Pennadam
+                           
+                           
+                              C.
+                              Alexander
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Chem Soc Rev
+                              
+                              34
+                           
+                           2005
+                        
+                        
+                           276
+                        
+                     
+                  
+               
+               
+                  [64]
+                  
+                     
+                        
+                           
+                              N.
+                              Murthy
+                           
+                           
+                              Y.X.
+                              Thng
+                           
+                           
+                              S.
+                              Schuck
+                           
+                           
+                              M.C.
+                              Xu
+                           
+                           
+                              J.M.J.
+                              Frechet
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 J Am Chem Soc
+                              
+                              124
+                           
+                           2002
+                        
+                        
+                           12398
+                        
+                     
+                  
+               
+               
+                  [65]
+                  
+                     
+                        
+                           
+                              V.
+                              Bulmus
+                           
+                           
+                              Y.
+                              Chan
+                           
+                           
+                              Q.
+                              Nguyen
+                           
+                           
+                              H.L.
+                              Tran
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Macromol Biosci
+                              
+                              7
+                           
+                           2007
+                        
+                        
+                           446
+                        
+                     
+                  
+               
+               
+                  [66]
+                  
+                     
+                        
+                           
+                              P.F.
+                              Kiser
+                           
+                           
+                              G.
+                              Wilson
+                           
+                           
+                              D.
+                              Needham
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 J Contemp Relig
+                              
+                              68
+                           
+                           2000
+                        
+                        
+                           9
+                        
+                     
+                  
+               
+               
+                  [67]
+                  
+                     
+                        
+                           
+                              M.
+                              Das
+                           
+                           
+                              N.
+                              Sanson
+                           
+                           
+                              D.
+                              Fava
+                           
+                           
+                              E.
+                              Kumacheva
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Langmuir
+                              
+                              23
+                           
+                           2007
+                        
+                        
+                           196
+                        
+                     
+                  
+               
+               
+                  [68]
+                  
+                     
+                        
+                           
+                              C.L.
+                              Le Maitre
+                           
+                           
+                              T.J.
+                              Freemont
+                           
+                           
+                              J.A.
+                              Hoyland
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Arthritis Res Ther
+                              
+                              7
+                           
+                           2005
+                        
+                        
+                           R732
+                        
+                     
+                  
+               
+               
+                  [69]
+                  
+                     
+                        
+                           
+                              H.J.
+                              Wilke
+                           
+                           
+                              P.
+                              Neef
+                           
+                           
+                              M.
+                              Caimi
+                           
+                           
+                              T.
+                              Hoogland
+                           
+                           
+                              L.E.
+                              Claes
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Spine
+                              
+                              24
+                           
+                           1999
+                        
+                        
+                           755
+                        
+                     
+                  
+               
+               
+                  [70]
+                  
+                     
+                        
+                           
+                              T.
+                              Hoare
+                           
+                           
+                              R.H.
+                              Pelton
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Biomacromolecules
+                              
+                              9
+                           
+                           2008
+                        
+                        
+                           733
+                        
+                     
+                  
+               
+               
+                  [71]
+                  
+                     
+                        
+                           
+                              P.D.
+                              Thornton
+                           
+                           
+                              R.J.
+                              Mart
+                           
+                           
+                              S.J.
+                              Webb
+                           
+                           
+                              R.V.
+                              Ulijn
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Soft Matter
+                              
+                              4
+                           
+                           2008
+                        
+                        
+                           821
+                        
+                     
+                  
+               
+               
+                  [72]
+                  
+                     
+                        
+                           
+                              D.
+                              Suzuki
+                           
+                           
+                              S.
+                              Tsuji
+                           
+                           
+                              H.
+                              Kawaguchi
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 J Am Chem Soc
+                              
+                              129
+                           
+                           2007
+                        
+                        
+                           8088
+                        
+                     
+                  
+               
+               
+                  [73]
+                  
+                     
+                        
+                           
+                              E.C.
+                              Cho
+                           
+                           
+                              J.W.
+                              Kim
+                           
+                           
+                              A.
+                              Fernandez-Nieves
+                           
+                           
+                              D.A.
+                              Weitz
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Nano Lett
+                              
+                              8
+                           
+                           2008
+                        
+                        
+                           168
+                        
+                     
+                  
+               
+               
+                  [74]
+                  
+                     
+                        
+                           
+                              J.P.K.
+                              Tan
+                           
+                           
+                              K.C.
+                              Tam
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 J Contemp Relig
+                              
+                              118
+                           
+                           2007
+                        
+                        
+                           87
+                        
+                     
+                  
+               
+               
+                  [75]
+                  
+                     
+                        
+                           
+                              H.
+                              Zhang
+                           
+                           
+                              S.
+                              Mardyani
+                           
+                           
+                              W.C.W.
+                              Chan
+                           
+                           
+                              E.
+                              Kumacheva
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Biomacromolecules
+                              
+                              7
+                           
+                           2006
+                        
+                        
+                           1568
+                        
+                     
+                  
+               
+               
+                  [76]
+                  
+                     
+                        
+                           
+                              H.
+                              Vihola
+                           
+                           
+                              A.
+                              Laukkanen
+                           
+                           
+                              J.
+                              Hirvonen
+                           
+                           
+                              H.
+                              Tenhu
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Eur J Pharm Sci
+                              
+                              16
+                           
+                           2002
+                        
+                        
+                           69
+                        
+                     
+                  
+               
+               
+                  [77]
+                  
+                     
+                        
+                           
+                              W.
+                              Qin
+                           
+                           
+                              Y.
+                              Zhao
+                           
+                           
+                              Y.
+                              Yang
+                           
+                           
+                              H.
+                              Xu
+                           
+                           
+                              X.
+                              Yang
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Colloid Polym Sci
+                              
+                              285
+                           
+                           2007
+                        
+                        
+                           515
+                        
+                     
+                  
+               
+               
+                  [78]
+                  
+                     
+                        
+                           
+                              V.
+                              Castro-Lopez
+                           
+                           
+                              J.
+                              Hadgraft
+                           
+                           
+                              M.J.
+                              Snowden
+                           
+                        
+                     
+                     
+                        
+                           
+                              
+                                 Int J Pharm
+                              
+                              292
+                           
+                           2005
+                        
+                        
+                           137
+                        
+                     
+                  
+               
+            
+         
+      
+   

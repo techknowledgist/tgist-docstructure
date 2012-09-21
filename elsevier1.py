@@ -41,7 +41,7 @@ structure parser so instead we have used the number of structure facts with the 
 import codecs, re
 
 import normheader
-from sections import Section, SectionFactory
+from sections import Section, SectionFactory, link_sections
 from utils.misc import connect
 
 
@@ -87,6 +87,7 @@ class SimpleElsevierSectionFactory(SectionFactory):
         for segment in self.segments:
             segment.make_sections()
             self.sections.extend(segment.sections)
+        link_sections(self.sections)
 
 
 
@@ -222,9 +223,9 @@ class ElsevierSegment(object):
         Take all the elements that are ElsevierSections, turn them into instances of
         Section, and put them on the self.sections list."""
         for e in self.elements:
-            if e.is_section():
-                section = e.generalize()
-                self.sections.append(section)
+            #if e.is_section():
+            section = e.generalize()
+            self.sections.append(section)
 
     def print_features(self):
         print "\nSegment Features"
@@ -397,6 +398,21 @@ class ElsevierHeader(ElsevierSegmentElement):
     def is_header(self):
         return True
 
+    def generalize(self):
+        """Create a Section instance using local information and return it."""
+        section = Section()
+        section.start_index = self.begin
+        # TODO: not sure why I have to add 1 to get it right, disconcerting!
+        section.end_index = self.end + 1
+        section.text = self.line.line
+        # TODO: I am also not sure why this works, need to do something about giving
+        # header sections their own type throughout, which has a type (['Header']), a
+        # header (the string) and a header_type (from normheader).
+        section.types = ['Header']
+        section.header_types = self.types
+        return section
+
+
 
 
 class ElsevierSection(ElsevierSegmentElement):
@@ -422,7 +438,7 @@ class ElsevierSection(ElsevierSegmentElement):
         self.lines.extend(section.lines)
 
     def generalize(self):
-        """Create a Section instance using local information adn return it."""
+        """Create a Section instance using local information and return it."""
         section = Section()
         section.start_index = self.begin
         section.end_index = self.end
@@ -436,7 +452,7 @@ class ElsevierSection(ElsevierSegmentElement):
 
     def add_type(self):
         if self.previous is not None and self.previous.is_header():
-            print self.previous.types
+            #print self.previous.types
             self.headers.extend(self.previous.types)
 
 
