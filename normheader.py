@@ -31,7 +31,9 @@ sem_types = {
     "Subjects": (["subjects","participants","patient","population"],["communication"]),
     "Government Interest": (["government"],[]),
     "Operation": (["operation"],[]),
-    "Invention": (["invention"],["background"]),
+    "Invention": (["invention"],["background", 'summary']),
+    "Summary": (['summar'], []),
+    "References": (['reference'], []),
     "Preferred Embodiments": (["preferredembodiment"],[]),
     "Abstract": (["abstract"],["ion","e"])
     }
