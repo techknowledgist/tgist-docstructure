@@ -13,6 +13,7 @@ class Section(object):
     def __init__(self):
         Section.SECTION_ID += 1
         self.id = Section.SECTION_ID
+        self.parent_id = None
         self.types = []
         self.header = ""
         self.subsumers = []
@@ -28,10 +29,28 @@ class Section(object):
         offsets = "id=%d start=%d end=%d" % (self.id, p1, p2)
         types = "types='%s'" % '|'.join(self.types)
         header = " header='%s'" % self.header if self.header else ''
-        return "<%s %s%s>" % (offsets, types, header)
+        return "<%s %s%s>" % (offsets, types, header) # + str(self.subsumers)
     
     def __len__(self):
         return self.end_index - self.start_index
+
+    def set_parent_id(self):
+        if self.subsumers:
+            self.parent_id = self.subsumers[-1].id
+            
+    def is_header(self):
+        return self.types == ['Header']
+
+    def percolate_types(self, parent_types):
+        if self.types == ['Header']:
+            return
+        print "\nPercolating", self
+        print "   adding ", parent_types
+        print "   to     ", self.types
+        all_types = list(set(self.types + parent_types))
+        self.types = all_types
+        for sub in self.subsumed:
+            sub.percolate_types(all_types)
 
     def pp(self):
         text_string = self.text.replace("\n", '\\n').encode('utf-8')[:80]
@@ -78,6 +97,8 @@ class SectionFactory(object):
         a particular section.
         """
         sec_string = "SECTION ID=%d" % (section.id)
+        #if section.parent_id is not None:
+        #    sec_string += " PARENT_ID=%d" % section.parent_id
         if len(section.types) > 0:
             sec_string += " TYPE=\"" + "|".join(section.types).upper() + "\""
         if len(section.header) > 0:
@@ -115,14 +136,16 @@ class SectionFactory(object):
                 pass
 
     def print_hierarchy(self):
-        print len(self.sections)
+        print "Number of sections:", len(self.sections)
         for s in self.sections:
-            self.print_hierarchy_tree(s)
+            if not s.subsumers:
+                self.print_hierarchy_tree(s)
 
     def print_hierarchy_tree(self, section, indent=0):
         print "%s%s" % (' '*indent, section)
         for subsection in section.subsumed:
             self.print_hierarchy_tree(subsection, indent+3)
+
             
 
 def section_gaps(sections, text, filename=""):
@@ -156,3 +179,19 @@ def section_gaps(sections, text, filename=""):
         gaps.append(ul_section)
     return gaps
 
+
+
+def make_section(text_file, tag, text, section_type=None):
+    """Utility method to create a Section given a filename, a unicode string that contains
+    the content of the document, an instance of readers.common.Tag and an optional section
+    type."""
+    if tag is None:
+        return None
+    section = Section()
+    if section_type is not None:
+        section.types = [section_type]
+    section.filename = text_file
+    section.start_index = tag.start_index
+    section.end_index = tag.end_index
+    section.text = tag.text(text)
+    return section
