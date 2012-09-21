@@ -17,3 +17,4 @@ data/*.xml.txt
 data/*.sections
 data/*.sect
 data/*.html
+data/*.onto

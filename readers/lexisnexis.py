@@ -93,10 +93,14 @@ def read_tags_default(text, taglist):
     tags['claims_sections'] = tags_with_name(taglist, 'claims')
     tags['claims'] = tags_with_name(taglist, 'claim')
     tags['claims'] = sorted(tags['claims'], key = lambda x: x.start_index)
-    # for reasons I do not understand, but that are probably related to the code in
-    # utils/create_standoff.pl, all headers have the beginning offset wrong.
-    for t in tags['headers']:
-        t.start_index += -1
+    # TODO: for reasons I do not understand, but that are probably related to the code in
+    # utils/create_standoff.pl, some elements have the beginning and ending offset wrong;
+    # I have seen this only for headers and paragraphs, but there may be more
+    adjustment_list = ['headers', 'paragraphs']
+    for element in adjustment_list:
+        for t in tags[element]:
+            t.start_index += -1
+            t.end_index += -1
     return (text, tags)
 
 

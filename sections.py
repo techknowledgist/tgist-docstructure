@@ -69,13 +69,14 @@ class SectionFactory(object):
     code. Themain method called by outside code is make_sections(), which should be
     implemented on all subclasses."""
     
-    def __init__(self, text_file, fact_file, sect_file, verbose=False):
+    def __init__(self, text_file, fact_file, sect_file, fact_type, verbose=False):
         """
         The first two files are the ones that are given by the wrapper, the third is
         the file that the wrapper expects."""
         # reset the SECTION_ID class variable so that ids start at 1 for each file, this
         # is important because it makes the regression test much more robust.
         Section.SECTION_ID = 0
+        self.fact_type = fact_type
         self.text_file = text_file
         self.fact_file = fact_file
         self.sect_file = sect_file

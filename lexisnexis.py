@@ -41,10 +41,11 @@ class PatentSectionFactory(SectionFactory):
                     next = current.next
                     if next is None: break
                     if next.is_header(): break
+                    if next.types == ['Claims']: break
                     next_parents = sorted([s.start_index for s in next.subsumers])
                     if parents == next_parents and next.types == ['Other']: 
-                       next.types = section_types
-                       next.header = header_title
+                        next.types = section_types
+                        next.header = header_title
                     current = next
 
 

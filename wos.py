@@ -6,9 +6,9 @@ from sections import Section, SectionFactory
 class WebOfScienceSectionFactory(SectionFactory):
 
 
-    def __init__(self, text_file, fact_file, sect_file, verbose=False):
+    def __init__(self, text_file, fact_file, sect_file, fact_type, verbose=False):
 
-        SectionFactory.__init__(self, text_file, fact_file, sect_file)
+        SectionFactory.__init__(self, text_file, fact_file, sect_file, fact_type)
         self.sections = []
         self.text = codecs.open(self.text_file, encoding='utf-8').read()
 
