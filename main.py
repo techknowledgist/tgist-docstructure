@@ -137,11 +137,13 @@ def determine_collection(fact_file):
     return None
 
 def run_tests(verbose=False):
-    """Runs a test on four files: a pubmed file, a mockup WOS file, a mockup unstructured
+    """
+    Runs a test on four files: a pubmed file, a mockup WOS file, a mockup unstructured
     Elsevier file, and a LexisNexis patent. Prints the output of the document parser as
     well as a diff of that output relative to a file in the data/regression directory."""
     files = (
         'f401516f-bd40-11e0-9557-52c9fc93ebe0-001-gkp847',
+        'pubmed-mm-test',
         'elsevier-simple',
         'US4192770A',
         'wos'
@@ -154,7 +156,7 @@ def run_tests(verbose=False):
         fact_file = "data/%s.fact" % f
         sect_file = "data/%s.sect" % f
         key_file ="data/regression/%s.sect" % f
-        process_file(text_file, fact_file, sect_file, None, verbose=False)
+        process_file(text_file, fact_file, sect_file, None, verbose=False, html=True)
         response = open(sect_file).readlines()
         key = open(key_file).readlines()
         if verbose:

@@ -116,23 +116,19 @@ class PatentSectionFactory(SectionFactory):
         for section in self.sections:
             if section.is_header():
                 section_types = normheader.header_to_types(section.text)
-                #print section.text, section_types
+                header_title = section.text
                 parents = sorted([ss.start_index for ss in section.subsumers])
-                #print '>>>', section, parents, section.next
-                #print '   ', section_types
                 current = section
                 while True:
                     next = current.next
-                    #print '   ', next
                     if next is None: break
                     if next.is_header(): break
                     next_parents = sorted([s.start_index for s in next.subsumers])
                     if parents == next_parents and next.types == ['Other']: 
                        next.types = section_types
-                    #print '   ', next
+                       next.header = header_title
                     current = next
 
-            
 
     def add_basic_sections(self, text, tags):
         abstract = tags['abstracts'][0] if tags['abstracts'] else None
@@ -208,7 +204,7 @@ def link_sections(sections):
     # make sure that the subsumers are ordered so that the parent is always the last in
     # the list, this is also where the parent_id gets set
     for section in sections:
-        section.subsumers.sort(key= lambda x: x.end_index)
+        section.subsumers.sort(key= lambda x: x.start_index)
         if section.subsumers:
             section.parent_id = section.subsumers[-1].id
             
