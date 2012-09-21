@@ -21,38 +21,6 @@ from common import Tag, load_data
 from common import tags_with_name, tags_with_type, tags_with_matching_type
 
 
-def headed_sections(tags, cautious=False):
-
-    (headers, paragraphs, abstracts, descriptions) = read_sections(tags)
-
-    if not descriptions:
-        return []
-
-    description = descriptions[0] # first text_chunk is always (?) the description
-    matches = []
-    desc_start = description.start_index
-    desc_end = description.end_index
-    headers = sorted(headers, key = lambda x: x.start_index)
-    for index in range(len(headers)):
-        header = headers[index]
-        head_start = header.start_index
-        if index < len(headers) - 1: #we're not at the last header
-            head_end = headers[index+1].start_index - 1
-        else:
-            head_end = desc_end
-        headed_paragraphs=[]
-        if head_start < desc_start or head_start > desc_end:
-            continue #header outside descriptions section ignored
-        if head_end > desc_end:
-            head_end = desc_end
-        for paragraph in paragraphs:
-            if paragraph.start_index >= head_start and paragraph.end_index <= head_end:
-                headed_paragraphs.append(paragraph)
-        matches.append((header, sorted(headed_paragraphs, key= lambda x: x.end_index)))
-
-    return matches
-
-
 def read_sections(tags):
 
     """Returns lists of headers, paragraphs and descriptions from the list of Tags."""
@@ -111,25 +79,24 @@ def read_tags_bae(text, structures):
         tags['claims'] = sorted(tags['claims'], key = lambda x: x.start_index)
     else:
         tags['claims'] = []
-    #return (text, headers, paragraphs, abstracts, summaries, sections, claims)
     return (text, tags)
 
-def read_tags_default(text, tags):
-    
-    # this used the output of create_standoff.pl
-    # TODO: needs to be updated
 
-    headers = tags_with_name(tags, 'heading')
-    paragraphs = tags_with_name(tags, 'p')
-    abstracts =  tags_with_type(tags, 'abstract')
-    summaries = tags_with_type(tags, 'summary')
-    sections = tags_with_name(tags, 'description')
-    claims = tags_with_name(tags, 'claim')
-    claims = sorted(claims, key = lambda x: x.start_index)
-    
-    #print len(structures), len(title_structures), len(text_structures), len(text_chunks), \
-    #    len(headers), len(paragraphs), len(descriptions)
-    #return (text, headers, paragraphs, abstracts, summaries, sections, claims)
+def read_tags_default(text, taglist):
+    # this uses the output of create_standoff.pl
+    tags = {}
+    tags['headers'] = tags_with_name(taglist, 'heading')
+    tags['paragraphs'] = tags_with_name(taglist, 'p')
+    tags['abstracts'] =  tags_with_name(taglist, 'abstract')
+    tags['summaries'] = tags_with_name(taglist, 'summary')
+    tags['sections'] = tags_with_name(taglist, 'description')
+    tags['claims_sections'] = tags_with_name(taglist, 'claims')
+    tags['claims'] = tags_with_name(taglist, 'claim')
+    tags['claims'] = sorted(tags['claims'], key = lambda x: x.start_index)
+    # for reasons I do not understand, but that are probably related to the code in
+    # utils/create_standoff.pl, all headers have the beginning offset wrong.
+    for t in tags['headers']:
+        t.start_index += -1
     return (text, tags)
 
 

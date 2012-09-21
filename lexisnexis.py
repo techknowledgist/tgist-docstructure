@@ -47,8 +47,6 @@ class PatentSectionFactory(SectionFactory):
                        next.header = header_title
                     current = next
 
-        #for section in self.sections: print section
-
 
     def add_basic_sections(self, text, tags):
         abstract = tags['abstracts'][0] if tags['abstracts'] else None
@@ -72,6 +70,20 @@ class PatentSectionFactory(SectionFactory):
             self.sections.append(make_section(self.text_file, h, text, 'Header'))
         for p in paragraphs:
             self.sections.append(make_section(self.text_file, p, text, 'Other'))
+
+    def add_rest_section(self, text, tags):
+        """Adds a section that is the difference of the Description section and the
+        Summary section in thre. This is needed for analysis of patents, but is not used
+        here since this should really be elsewhere."""
+        description = tags['sections'][0] if tags['sections'] else None
+        summary = tags['summaries'][0] if tags['summaries'] else None
+        if description and summary:
+            rest_section = Section()
+            rest_section.start_index = summary.end_index
+            rest_section.end_index = description.end_index
+            rest_section.text = text[rest_section.start_index:rest_section.end_index]
+            rest_section.types = ['Description_Rest']
+            self.sections.append(rest_section)
             
     def add_claims(self, text, claims, cautious=True):
         claim_index = 1
@@ -103,5 +115,7 @@ def print_tags(text, tags):
     for name, l in tags.items():
         print name
         for t in l:
-            title = '"' + text[t.start_index:t.end_index] + '"' if name == 'headers' else ''
+            # somehow the former caused problems for the default standoff data
+            title = "['%s']" % text[t.start_index-1:t.end_index] if name == 'headers' else ''
+            title = text[t.start_index:t.end_index] if name == 'headers' else ''
             print "   %s %s" % (t, title)

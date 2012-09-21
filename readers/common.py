@@ -24,7 +24,7 @@ class Tag():
             self.start_index = int(split_text[0])
             self.end_index = int(split_text[1])
             self.name = split_text[2]
-            self.attributes = split_text[3:]
+            self.attributes = dict([x.split('=',1) for x in split_text[3:]])
         except IndexError:
             #  assume this is a malformed tag if there are less then three tokens in the line
             self.start_index = None
@@ -103,3 +103,8 @@ def tags_with_type(tags, tagtype):
 def tags_with_matching_type(tags, tagtype, p1, p2):
     """Returns all elements from tags with type[p1:p2] == typename"""
     return [t for t in tags if t.attributes["TYPE"][p1:p2] == tagtype]
+
+def open_write_file(filename, encoding='utf-8'):
+    """Open a file using codecs and return the filehandle."""
+    return codecs.open(filename, 'w', encoding)
+
