@@ -51,6 +51,19 @@ class Tag():
     def text(self, doc):
         return doc[self.start_index:self.end_index]
 
+    def attr(self, attr):
+        return self.attributes.get(attr, None)
+
+    def is_contained_in(self, p1, p2):
+        """Return True if self is contained in p1 and p2."""
+        if p1 <= self.start_index <= p2 and p1 <= self.end_index <= p2:
+            return True
+        return False
+
+    def is_not_contained_in(self, p1, p2):
+        """Return True if self is not contained in p1 and p2."""
+        return not self.is_contained_in(p1, p2)
+
     def is_abstract(self):
         """Return True if self is an abstract, False otherwise. Can deal with BAE fact
         files and output of utils/create_standoff.pl."""

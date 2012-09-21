@@ -20,10 +20,10 @@
 from common import Tag, load_data
 from common import tags_with_name, tags_with_type, tags_with_matching_type
 
-    
+
 def headed_sections(tags, cautious=False):
 
-    (headers, paragraphs, descriptions) = read_sections(tags)
+    (headers, paragraphs, abstracts, descriptions) = read_sections(tags)
 
     if not descriptions:
         return []
@@ -48,31 +48,89 @@ def headed_sections(tags, cautious=False):
         for paragraph in paragraphs:
             if paragraph.start_index >= head_start and paragraph.end_index <= head_end:
                 headed_paragraphs.append(paragraph)
-        matches.append((header,sorted(headed_paragraphs, key= lambda x: x.end_index)))
-        
+        matches.append((header, sorted(headed_paragraphs, key= lambda x: x.end_index)))
+
     return matches
 
 
 def read_sections(tags):
 
     """Returns lists of headers, paragraphs and descriptions from the list of Tags."""
-    
+
+    # first see if you can find data in BAE fact file format
     structures = tags_with_name(tags, 'STRUCTURE')
-    title_structures = tags_with_type(structures, 'SECTITLE')
-    text_structures = tags_with_type(structures, 'TEXT')
-    text_chunks = tags_with_type(structures, 'TEXT_CHUNK')
-    # these three are doing nothing with input from the BAE fact file, but are still needed if we use
-    # the output of create_standoff.pl, shoul dprobably hve some setting somewhere that
-    # encodes what input tyoe we are dealing with
+    headers = tags_with_type(structures, 'SECTITLE')
+    paragraphs = tags_with_type(structures, 'TEXT')
+    abstracts =  tags_with_type(structures, 'ABSTRACT')
+    descriptions = tags_with_type(structures, 'TEXT_CHUNK')
+    if (headers or paragraphs or descriptions):
+        return (headers, paragraphs, abstracts, descriptions)
+
+    # if there weren't any data, try whether we used the output of create_standoff.pl (we
+    # should probably have some setting somewhere that encodes what input type we are
+    # dealing with)
     headers = tags_with_name(tags, 'heading')
     paragraphs = tags_with_name(tags, 'p')
+    abstracts =  tags_with_type(structures, 'abstract')
     descriptions = tags_with_name(tags, 'description')
-    # and these three make sure there are headers etcetera when we have a BAE fact file
-    headers.extend(title_structures)
-    paragraphs.extend(text_structures)
-    descriptions.extend(text_chunks)
-
     #print len(structures), len(title_structures), len(text_structures), len(text_chunks), \
     #    len(headers), len(paragraphs), len(descriptions)
-    return (headers, paragraphs, descriptions)
+    return (headers, paragraphs, abstracts, descriptions)
+
+
+
+def read_tags(text_file, fact_file):
+    """Returns the text as a unicode string as well as a dictionary with the various kinds
+    of tags."""
+    (text, tags) = load_data(text_file, fact_file)
+    # poke for the kind of tags expected in the BAE fact file format
+    structures = tags_with_name(tags, 'STRUCTURE')
+    if structures:
+        return read_tags_bae(text, structures)
+    else:
+        return read_tags_default(text, tags)
+
+
+def read_tags_bae(text, structures):
+
+    def is_claim(text, claims_section):
+        return text.attributes["TYPE"] == "TEXT" \
+            and text.start_index >= claims_section.start_index \
+            and text.end_index <= claims_section.end_index
+
+    tags = {}
+    tags['headers'] = tags_with_type(structures, 'SECTITLE')
+    tags['paragraphs'] = tags_with_type(structures, 'TEXT')
+    tags['abstracts'] =  tags_with_type(structures, 'ABSTRACT')
+    tags['summaries'] = tags_with_type(structures, 'SUMMARY')
+    tags['sections'] = tags_with_type(structures, 'TEXT_CHUNK')
+    tags['claims_sections'] = tags_with_type(structures, 'CLAIMS')
+    if tags['claims_sections']:
+        claims_section = tags['claims_sections'][0]
+        tags['claims'] = [c for c in structures if is_claim(c, claims_section)]
+        tags['claims'] = sorted(tags['claims'], key = lambda x: x.start_index)
+    else:
+        tags['claims'] = []
+    #return (text, headers, paragraphs, abstracts, summaries, sections, claims)
+    return (text, tags)
+
+def read_tags_default(text, tags):
+    
+    # this used the output of create_standoff.pl
+    # TODO: needs to be updated
+
+    headers = tags_with_name(tags, 'heading')
+    paragraphs = tags_with_name(tags, 'p')
+    abstracts =  tags_with_type(tags, 'abstract')
+    summaries = tags_with_type(tags, 'summary')
+    sections = tags_with_name(tags, 'description')
+    claims = tags_with_name(tags, 'claim')
+    claims = sorted(claims, key = lambda x: x.start_index)
+    
+    #print len(structures), len(title_structures), len(text_structures), len(text_chunks), \
+    #    len(headers), len(paragraphs), len(descriptions)
+    #return (text, headers, paragraphs, abstracts, summaries, sections, claims)
+    return (text, tags)
+
+
 
