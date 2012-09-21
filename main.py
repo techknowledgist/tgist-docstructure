@@ -7,8 +7,9 @@ Usage:
    % python main.py [-h] TEXT_FILE FACT_FILE STRUCTURE_FILE [COLLECTION]
    % python main.py FILE_LIST [COLLECTION]
    % python main.py DIRECTORY [COLLECTION]
+   % python main.py -o XML_FILE
    % python main.py -t
-   
+
 In the first form, input is taken from TEXT_FILE, which contains the bare text, and
 FACT_FILE, which contains some structural tags taken from the low-level input parser. The
 output is written to STRUCTURE_FILE, which has lines like the following
@@ -31,7 +32,11 @@ file and find the following line:
 
 In this line, $COLLECTION is in ('WEB_OF_SCIENCE', 'LEXISNEXIS', 'PUBMED', 'ELSEVIER').
 
-Finally, in the fourth form, a simple sanity check is run, where four files (one pubmed,
+In the fourth form, an XML file is taken and an input file for ontology creation is
+generated. This is currentyl only relevant for patents. One step here is the
+utils/create_standoff.pl script, which splits the XML file in text, meta and tag files.
+
+Finally, in the fifth form, a simple sanity check is run, where four files (one pubmed,
 one mockup Elsevier, one mockup WOS and one patent) are processed and the diffs between
 the resulting .sect files and the regression files are printed to the standard
 output.
@@ -44,9 +49,9 @@ output.
 """
 
 
-import os, sys, codecs, re, getopt, difflib
+import os, sys, codecs, re, getopt, difflib, subprocess
 import elsevier1, elsevier2, pubmed, wos, lexisnexis, utils.view
-
+from readers.common import load_data, open_write_file
 
 
 def process_file(text_file, fact_file, sect_file, collection, verbose=False, html=False):
@@ -84,13 +89,18 @@ def process_directory(path, collection):
     for f in os.listdir(path):
         if f.endswith('.txt'): text_files.append(f)
         if f.endswith('.fact'): fact_files[f] = True
+    total_files = len(text_files)
+    file_number = 0
+    print "Processing %d files" % total_files
     for text_file in text_files:
+        file_number += 1
         fact_file = text_file[:-4] + '.fact'
         sect_file = text_file[:-4] + '.sect'
         if fact_files.has_key(fact_file):
             text_file = os.path.join(path, text_file)
             fact_file = os.path.join(path, fact_file)
             sect_file = os.path.join(path, sect_file)
+            print "Processing %d of %d: %s" % (file_number, total_files, text_file[:-4])
             process_file(text_file, fact_file, sect_file, collection)
 
 def create_factory(text_file, fact_file, sect_file, collection, verbose=False):
@@ -164,19 +174,61 @@ def run_tests():
             sys.stdout.write(line)
     print 
 
+def create_ontology_creation_input(xml_file):
+    """This code creates input files that can be used by the ontology creation process. it
+    currently only works for English."""
+    subprocess.call(["perl", "utils/create_standoff.pl", xml_file])    
+    text_file = xml_file + '.txt'
+    fact_file = xml_file + '.tag'
+    sect_file = xml_file + '.sect'
+    onto_file = xml_file + '.onto'
+    process_file(text_file, fact_file, sect_file, 'LEXISNEXIS', html=True)
+    (text, tags) = load_data(text_file, sect_file)
+    FIELDS = ('FH_TITLE', 'FH_ABSTRACT', 'FH_SUMMARY', 'FH_DESC_REST', 'FH_DESCRIPTION') 
+    FH_DATA = {}
+    for f in FIELDS: FH_DATA[f] = None
+    for line in open(fact_file):
+        (p1, p2, tag) = line.split(' ')[:3]
+        if tag == 'invention-title':
+            FH_DATA['FH_TITLE'] = (p1, p2, text[int(p1)-1:int(p2)])
+            break
+    for tag in tags:
+        (p1, p2, tagtype) = (tag.start_index, tag.end_index, tag.attr('TYPE'))
+        if tagtype == 'ABSTRACT':
+            FH_DATA['FH_ABSTRACT'] = (p1, p2, text[int(p1):int(p2)].strip())
+        elif tagtype == 'SUMMARY':
+            FH_DATA['FH_SUMMARY'] = (p1, p2, text[int(p1):int(p2)].strip())
+        elif tagtype == 'DESCRIPTION':
+            FH_DATA['FH_DESCRIPTION'] = (p1, p2, text[int(p1):int(p2)].strip())
+        desc = FH_DATA['FH_DESCRIPTION']
+        summ = FH_DATA['FH_SUMMARY']
+        if desc and summ:
+            FH_DATA['FH_DESC_REST'] = (summ[1], desc[1], text[summ[1]:desc[1]].strip())
     
+    ONTO_FH = open_write_file(onto_file)
+    for f in FIELDS[:-1]:
+        ONTO_FH.write("%s:\n" % f)
+        ONTO_FH.write(FH_DATA[f][2].encode('utf-8'))
+        ONTO_FH.write("\n")
+    ONTO_FH.write("END\n")
+
+
 if __name__ == '__main__':
 
-    (opts, args) = getopt.getopt(sys.argv[1:], 'ht')
-    test_mode, html_mode = False, False
+    (opts, args) = getopt.getopt(sys.argv[1:], 'hto')
+    test_mode, html_mode, onto_mode = False, False, False
     for opt, val in opts:
         if opt == '-t': test_mode = True
         if opt == '-h': html_mode = True
+        if opt == '-o': onto_mode = True
 
     # when called to run some simple tests
     if test_mode:
         run_tests()
             
+    if onto_mode:
+        create_ontology_creation_input(args[0])
+
     # when called to process one file
     elif len(args) >= 3:
         text_file, fact_file, sect_file = args[:3]
