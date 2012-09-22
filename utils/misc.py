@@ -1,3 +1,5 @@
+import subprocess
+
 
 def connect(objects):
     """Turn the objects list into a linked list."""
@@ -11,3 +13,11 @@ def connect(objects):
         objects[0].previous = None
         objects[-1].next = None
 
+
+def run_shell_commands(commands):
+    pipe = subprocess.PIPE
+    for command in commands:
+        sub = subprocess.Popen(command, shell=True,
+                               stdin=pipe, stdout=pipe, stderr=pipe, close_fds=True)
+        for line in sub.stderr:
+            print line
