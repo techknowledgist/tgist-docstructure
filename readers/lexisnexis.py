@@ -47,16 +47,15 @@ def read_sections(tags):
 
 
 
-def read_tags(text_file, fact_file):
+def read_tags(text_file, fact_file, fact_type):
     """Returns the text as a unicode string as well as a dictionary with the various kinds
     of tags."""
-    (text, tags) = load_data(text_file, fact_file)
-    # poke for the kind of tags expected in the BAE fact file format
-    structures = tags_with_name(tags, 'STRUCTURE')
-    if structures:
+    (text, tags) = load_data(text_file, fact_file, fact_type)
+    if fact_type == 'BAE':
+        structures = tags_with_name(tags, 'STRUCTURE')
         return read_tags_bae(text, structures)
     else:
-        return read_tags_default(text, tags)
+        return read_tags_basic(text, tags)
 
 
 def read_tags_bae(text, structures):
@@ -82,9 +81,10 @@ def read_tags_bae(text, structures):
     return (text, tags)
 
 
-def read_tags_default(text, taglist):
-    # this uses the output of create_standoff.pl
+def read_tags_basic(text, taglist):
     tags = {}
+    # these are used in English patents, and many of them also in chinese and german
+    # patents
     tags['headers'] = tags_with_name(taglist, 'heading')
     tags['paragraphs'] = tags_with_name(taglist, 'p')
     tags['abstracts'] =  tags_with_name(taglist, 'abstract')
@@ -93,14 +93,7 @@ def read_tags_default(text, taglist):
     tags['claims_sections'] = tags_with_name(taglist, 'claims')
     tags['claims'] = tags_with_name(taglist, 'claim')
     tags['claims'] = sorted(tags['claims'], key = lambda x: x.start_index)
-    # TODO: for reasons I do not understand, but that are probably related to the code in
-    # utils/create_standoff.pl, some elements have the beginning and ending offset wrong;
-    # I have seen this only for headers and paragraphs, but there may be more
-    adjustment_list = ['headers', 'paragraphs']
-    for element in adjustment_list:
-        for t in tags[element]:
-            t.start_index += -1
-            t.end_index += -1
+    
     return (text, tags)
 
 

@@ -8,13 +8,14 @@
 *~
 .#*
 
-# output from utils/create_standoff.pl
+# output from utils/create_standoff.pl (will be obsolete)
 data/*.xml.meta
 data/*.xml.tag
 data/*.xml.txt
 
 # document structure parser output
-data/*.sections
 data/*.sect
 data/*.html
 data/*.onto
+data/*.xml.tags
+data/*.xml.fact

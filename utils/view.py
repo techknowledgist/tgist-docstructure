@@ -49,7 +49,7 @@ def createHTML(text_file, sect_file, html_file):
         # p1-p2 and another from position p2-p3, opening the latter first introduces a
         # crossing tag
         if ends.has_key(p) and stack and stack[-1][1] == p:
-            fh_html.write("\n<p>%d</p>\n</div>\n" % p)
+            fh_html.write("\n<p class=offset>%d</p>\n</div>\n" % p)
             stack.pop()
         # check for opening tags
         if starts.has_key(p):
@@ -57,12 +57,12 @@ def createHTML(text_file, sect_file, html_file):
             stack.append((p, end))
             fh_html.write("\n<div class=section>\n")
             fh_html.write("\n<div class=header>%s</div>\n" % starts[p][1])
-            fh_html.write("<p>%d</p>\n" % p)
+            fh_html.write("<p class=offset>%d</p>\n" % p)
         # write the actual character
         fh_html.write(char)
         # now check for closing tag again for cases where you have a tag p1-p1
         if ends.has_key(p) and stack and stack[-1][1] == p:
-            fh_html.write("\n<p>%d</p>\n</div>\n" % p)
+            fh_html.write("\n<p class=offset>%d</p>\n</div>\n" % p)
             stack.pop()
         # also preserve newlines in html
         if char == "\n":

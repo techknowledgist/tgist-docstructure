@@ -47,11 +47,11 @@ from utils.misc import connect
 
 class SimpleElsevierSectionFactory(SectionFactory):
 
-    def __init__(self, text_file, fact_file, sect_file, fact_type, verbose=False):
+    def __init__(self, text_file, fact_file, sect_file, fact_type, language, verbose=False):
         """
         Initialize the factory by reading segment boundaries from the fact file and the
         actual segments from the text file. """
-        SectionFactory.__init__(self, text_file, fact_file, sect_file, fact_type)
+        SectionFactory.__init__(self, text_file, fact_file, sect_file, fact_type, language)
         self.segment_boundaries = self._read_fact_file()
         self.segments = self._read_segments()
         self.sections = []

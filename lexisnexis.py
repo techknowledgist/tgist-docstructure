@@ -1,6 +1,6 @@
 import re
 import normheader
-import readers.lexisnexis
+from readers.lexisnexis import read_tags
 from sections import Section, SectionFactory, section_gaps, make_section, link_sections
 from utils.misc import connect
 
@@ -17,7 +17,7 @@ class PatentSectionFactory(SectionFactory):
 
     def make_sections(self, separate_headers=True):
 
-        (text, tags) = readers.lexisnexis.read_tags(self.text_file, self.fact_file)
+        (text, tags) = read_tags(self.text_file, self.fact_file, self.fact_type)
 
         self.add_basic_sections(text, tags)
         self.add_description_sections(text, tags)
