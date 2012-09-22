@@ -104,7 +104,9 @@ class SectionFactory(object):
         if len(section.types) > 0:
             sec_string += " TYPE=\"" + "|".join(section.types).upper() + "\""
         if len(section.header) > 0:
-            sec_string += " TITLE=\"" + section.header + "\""
+            # normalize whitespace to avoid having newlines in fact
+            section_header = ' '.join(section.header.strip().split())
+            sec_string += " TITLE=\"" + section_header + "\""
         if section.start_index is not -1:
             sec_string += " START=" + str(section.start_index)
         if section.end_index is not -1:
