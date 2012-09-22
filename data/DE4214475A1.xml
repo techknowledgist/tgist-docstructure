@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright ©2011 LexisNexis Univentio, The Netherlands. -->
+<lexisnexis-patent-document schema-version="1.08" date-produced="20110619" file="DE4214475A1.xml" produced-by="LexisNexis-Univentio" lang="eng" date-changed="20090410" time-changed="205346">
+  <bibliographic-data lang="ger">
+    <publication-reference publ-type="Application" publ-desc="Document laid open (First publication)">
+      <document-id>
+        <country>DE</country>
+        <doc-number>4214475</doc-number>
+        <kind>A1</kind>
+        <date>19931111</date>
+      </document-id>
+    </publication-reference>
+    <application-reference>
+      <document-id>
+        <country>DE</country>
+        <doc-number>4214475</doc-number>
+        <date>19920506</date>
+      </document-id>
+    </application-reference>
+    <language-of-filing>ger</language-of-filing>
+    <language-of-publication>ger</language-of-publication>
+    <dates-of-public-availability date-changed="20090410">
+      <unexamined-printed-without-grant>
+        <date>19931111</date>
+      </unexamined-printed-without-grant>
+    </dates-of-public-availability>
+    <classification-ipc date-changed="20070509">
+      <main-classification>
+        <text> 5B 21D  39/03   A</text>
+        <edition>5</edition>
+        <section>B</section>
+        <class>21</class>
+        <subclass>D</subclass>
+        <main-group>39</main-group>
+        <subgroup>03</subgroup>
+        <qualifying-character>A</qualifying-character>
+      </main-classification>
+    </classification-ipc>
+    <classifications-ipcr date-changed="20070509">
+      <classification-ipcr sequence="1">
+        <text>B21D  39/03        20060101C I20051008RMEP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>C</classification-level>
+        <section>B</section>
+        <class>21</class>
+        <subclass>D</subclass>
+        <main-group>39</main-group>
+        <subgroup>03</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+      <classification-ipcr sequence="2">
+        <text>B21D  39/03        20060101A I20051008RMEP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>B</section>
+        <class>21</class>
+        <subclass>D</subclass>
+        <main-group>39</main-group>
+        <subgroup>03</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+    </classifications-ipcr>
+    <classifications-ecla date-changed="20070509">
+      <classification-ecla sequence="1" classification-scheme="EC" country="EP">
+        <text>B21D 39/03B</text>
+        <section>B</section>
+        <class>21</class>
+        <subclass>D</subclass>
+        <main-group>39</main-group>
+        <subgroup>03</subgroup>
+        <additional-subgroups>
+          <additional-subgroup sequence="1">B  </additional-subgroup>
+        </additional-subgroups>
+      </classification-ecla>
+    </classifications-ecla>
+    <number-of-claims calculated="yes">27</number-of-claims>
+    <invention-title id="title_ger" date-changed="20090410" lang="ger" format="original">Verfahren zum Verbinden dünner Platten und Vorrichtung zur Durchführung des Verfahrens.</invention-title>
+    <invention-title id="title_eng" date-changed="20090410" lang="eng" format="original">Method and installation for joining thin plates - with punch force and displacement monitored during the entire joining process</invention-title>
+    <references-cited date-changed="20100713">
+      <patent-citations name="patcit" date-changed="20090410" />
+      <non-patent-citations name="nplcit" date-changed="20090410" />
+      <forward-citations name="fwdcit" date-changed="20100713" />
+      <citation srep-phase="0">
+        <patcit num="1">
+          <document-id>
+            <country>DE</country>
+            <doc-number>3932532</doc-number>
+            <kind>A1</kind>
+            <date>19910411</date>
+          </document-id>
+          <application-date>
+            <date>19890929</date>
+          </application-date>
+        </patcit>
+      </citation>
+      <citation srep-phase="0">
+        <patcit num="2">
+          <document-id>
+            <country>WO</country>
+            <doc-number>8907020</doc-number>
+            <kind>A1</kind>
+            <date>19890810</date>
+          </document-id>
+          <application-date>
+            <date>19890202</date>
+          </application-date>
+        </patcit>
+      </citation>
+      <citation srep-phase="0">
+        <nplcit num="1">
+          <text>DE-Z: MUTSCHLER,Joerg</text>
+        </nplcit>
+      </citation>
+      <citation srep-phase="0">
+        <nplcit num="2">
+          <text>LIEBIG, Hanns Peter: Flexibilität steigern, Druckfügen mit Industrie- robotern als Automatisierungsbaustein der Montage.In: Maschinenmarkt Würzburg 97,1991, 47, S.36-42</text>
+        </nplcit>
+      </citation>
+      <citation srep-phase="0">
+        <nplcit num="3">
+          <text>DE-Z: BEYER,R.</text>
+        </nplcit>
+      </citation>
+      <citation srep-phase="0">
+        <nplcit num="4">
+          <text>WÖSSNER, J.: Druckfügen in der autmatisierten Fertigung. In. wt Werkstattstechnik81, 1991,S.629-632</text>
+        </nplcit>
+      </citation>
+      <citation>
+        <fwdcit num="1">
+          <document-id>
+            <country>DE</country>
+            <doc-number>10208304</doc-number>
+            <kind>C1</kind>
+            <date>20031120</date>
+          </document-id>
+          <application-date>
+            <date>20020226</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+      <citation>
+        <fwdcit num="2">
+          <document-id>
+            <country>US</country>
+            <doc-number>7409760</doc-number>
+            <kind>B2</kind>
+            <date>20080812</date>
+          </document-id>
+          <application-date>
+            <date>20010522</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+      <citation>
+        <fwdcit num="3">
+          <document-id>
+            <country>US</country>
+            <doc-number>7123982</doc-number>
+            <kind>B2</kind>
+            <date>20061017</date>
+          </document-id>
+          <application-date>
+            <date>20040302</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+      <citation>
+        <fwdcit num="4">
+          <document-id>
+            <country>US</country>
+            <doc-number>7752739</doc-number>
+            <kind>B2</kind>
+            <date>20100713</date>
+          </document-id>
+          <application-date>
+            <date>20060223</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+      <citation>
+        <fwdcit num="5">
+          <document-id>
+            <country>EP</country>
+            <doc-number>876861</doc-number>
+            <kind>A1</kind>
+            <date>19981111</date>
+          </document-id>
+          <application-date>
+            <date>19980502</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+      <citation>
+        <fwdcit num="6">
+          <document-id>
+            <country>EP</country>
+            <doc-number>813456</doc-number>
+            <kind>A1</kind>
+            <date>19971229</date>
+          </document-id>
+          <application-date>
+            <date>19950310</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+      <citation>
+        <fwdcit num="7">
+          <document-id>
+            <country>EP</country>
+            <doc-number>813456</doc-number>
+            <kind>B1</kind>
+            <date>20041229</date>
+          </document-id>
+          <application-date>
+            <date>19950310</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+    </references-cited>
+    <parties date-changed="20070509">
+      <applicants>
+        <applicant sequence="1" app-type="applicant">
+          <addressbook lang="ger">
+            <orgname>Pressotechnik GmbH</orgname>
+          </addressbook>
+        </applicant>
+      </applicants>
+      <inventors>
+        <inventor sequence="1">
+          <addressbook lang="ger">
+            <name>NICHTNENNUNG</name>
+          </addressbook>
+        </inventor>
+      </inventors>
+    </parties>
+    <patent-family date-changed="20070529">
+      <main-family family-id="41155250">
+        <family-member>
+          <document-id>
+            <country>DE</country>
+            <doc-number>4214475</doc-number>
+            <kind>A1</kind>
+            <date>19931111</date>
+          </document-id>
+          <application-date>
+            <date>19920506</date>
+          </application-date>
+        </family-member>
+      </main-family>
+      <complete-family family-id="40996863">
+        <family-member>
+          <document-id>
+            <country>DE</country>
+            <doc-number>4214475</doc-number>
+            <kind>A1</kind>
+            <date>19931111</date>
+          </document-id>
+          <application-date>
+            <date>19920506</date>
+          </application-date>
+        </family-member>
+      </complete-family>
+    </patent-family>
+  </bibliographic-data>
+  <abstract id="abstr_ger" date-changed="20070509" lang="ger" format="original">
+    <p> Qualitätssicherung beim Kaltfügeverfahren von übereinanderliegenden Platten oder Plattenabschnitten in dem die Stempelkraft und der Stempelweg während des gesamten Fügevorgangs kontrolliert werden.</p>
+  </abstract>
+  <abstract id="abstr_eng" date-changed="20070509" lang="eng" format="original">
+    <p>The method concerns joining of thin plates and metal sheets lying on top of one another. Parts of the plane surface of the plates to be joined are jointly pressed through by means of the combined action of a punch (8) and a die (5). The resulting protrusions are subsequently flattened by pressure with or without cuts produced in the plates at the joint. The method is characterised by the fact that the punch force and displacement are monitored during the entire joining process. The installation is characterised by the presence of a digital or analogue displacement measuring device and at least one force measuring device.$ USE/ADVANTAGE - In the motor car industry, for example. In contrast to known alternatives, it allows faulty joints to be detected immediately in the process of their formation.</p>
+  </abstract>
+  <legal-data date-changed="20070508">
+    <legal-event sequence="1">
+      <publication-date>
+        <date>19931111</date>
+      </publication-date>
+      <event-code-1>OM8</event-code-1>
+      <effect>+</effect>
+      <legal-description>SEARCH REPORT AVAILABLE AS TO PARAGRAPH 43 LIT. 1 SENTENCE 1 PATENT LAW</legal-description>
+      <status-identifier>C</status-identifier>
+      <docdb-publication-number> DE     4214475A1</docdb-publication-number>
+    </legal-event>
+    <legal-event sequence="2">
+      <publication-date>
+        <date>19950511</date>
+      </publication-date>
+      <event-code-1>8139</event-code-1>
+      <effect>-</effect>
+      <legal-description>DISPOSAL/NON-PAYMENT OF THE ANNUAL FEE</legal-description>
+      <status-identifier>C</status-identifier>
+      <docdb-publication-number> DE     4214475A1</docdb-publication-number>
+    </legal-event>
+  </legal-data>
+  <description id="descr_ger" lang="ger" format="original" date-changed="20090426">
+    <heading>Stand der Technik</heading>
+    <p>Die Erfindung geht aus von einem Verfahren zum Verbinden aufeinanderliegender dünner Platten nach der Gattung des Anspruchs 1 und von einer Vorrichtung zur Durchführung dieses Verfahrens nach der Gattung des Anspruchs 21.Bei einem bekannten Kaltfügeverfahren dieser Art (DE 35 32 899) werden die übereinanderliegenden Plattenstücke beim gemeinsamen Durchsetzen entlang eines Teils ihrer Umrißlinien gestanzt und aus der Plattenebene herausgedrückt. Anschließend werden die herausgedrückten Plattenstücke durch eine Gegenkraft breitgequetscht, wobei ein Stanznocken erzeugt wird, welcher die zu verbindenden Plattenabschnitte hintergreift. Bei einem anderen bekannten Verfahren dieser Art (DE 35 32 900) werden aus den zu verbindenden Plattenabschnitten Plattenstücke gemeinsam durchsetzt wobei infolge der Ausgestaltung der Matrize sich beim Stauchen der Plattenstücke ein Rückfließvorgang ergibt, der zu einer Hintergreifung der Plattenstücke an den übereinanderliegenden Plattenabschnitten führt.Derartige Verfahren werden in der industriellen Massenproduktion eingesetzt, beispielsweise im Automobilbau. Ein Überwachen der Qualität der Verbindungsstellen bzw. das Sicherstellen bestimmter Güteanforderungen an solche Verbindungsstellen, ist daher bei diesem Verfahren von besonderer Bedeutung. Das Auftreten von Mängeln bei der Durchführung dieses Verfahrens muß schnellstmöglich erkannt und beseitigt werden, um den Ausschuß und die Maschinenstillstandszeiten möglichst gering zu halten. Solche Mängel können durch einen Materialbruch, insbesondere des Stempels oder der Matrize, hervorgerufen sein. Es ist dabei wichtig, jede fehlerhafte Verbindungsstelle zu erkennen, um das entsprechende Teil aussortieren bzw. einen Verbindungsvorgang wiederholen zu können. Ein Kriterium für die Qualität der Verbindung bzw. deren Mangel ist dabei die verbleibende Restmaterialstärke im Bereich der Fügestelle. Bei den bekannten Verfahren besteht die Qualitätssicherung in einer Überwachung der Stempelkraft bezüglich eines zulässigen Maximalwertes und in einer nach erfolgter Verbindung durchgeführten Messung der Restmaterialstärke. Dadurch wird nur ein Teil der möglicherweise auftretenden Mängel erfaßt. Die nachfolgende Messung der Restmaterialstärke ist zudem umständlich und zeitaufwendig.</p>
+    <heading>Vorteile der Erfindung</heading>
+    <p>Das erfindungsgemaße Verfahren mit den kennzeichnenden Merkmalen des Anspruchs 1 bzw. die erfindungsgemäße Vorrichtung mit den kennzeichenden Merkmalen des Anspruchs 21 hat demgegenüber den Vorteil, daß in weit größerem Maße auftretende Mängel erfaßt werden und daß keine separate Messung der Restmaterialstärke mehr durchgeführt werden muß. Durch die Messung der Stempelkraft sowie des Stempelweges während des jeweiligen dort aber gesamten Fügevorgangs wird einerseits jede fehlerhafte Verbindung erkannt und andererseits die verbleibende Restmaterialstärke an jeder Verbindungsstelle aus dem gemessenen Stempelweg erfaßt. Die Überwachung erfolgt durch Vergleich mit vorgegebenen Sollwerten, so daß auftretende Mängel erfaßt werden können. Das Überschreiten des für den Stempelweg vorgegebenen Maximalwertes zeigt beispielsweise einen Stempelbruch an, während das Überschreiten des Maximalwertes bzw. das Unterschreiten eines Minimalwertes für die Stempelkraft auf ein zu hartes bzw. zu weiches Material der zu verbindenden Platten falsches Werkzeug oder Matritzenbruch hinweist.Nach einer vorteilhaften Ausgestaltung der Erfindung werden außer der Stempelkraft auch die auf die Matrize wirkende Preßkraft und/oder die zum Abstreifen der verbundenen Platten vom Stempel erforderliche Abstreifkraft für eine Überwachung gemessen und mit einem Sollwert verglichen. Durch das Überprüfen der Abstreifkraft wird ein Ausfuttern des Materials festgestellt, was insbesondere bei der Verwendung der Erfindung in Robotereinrichtungen wichtig ist.Nach einer weiteren vorteilhaften Ausgestaltung der Erfindung werden die genannten Meßgrößen nicht nur bzgl. absoluter Minimal- und Maximalwerte überwacht, sondern auch bzgl. relativer Minimal- und Maximalwerte und zwar in Abhängigkeit vom jeweils ermittelten Stempelweg. Für jeden Stempelweg ist ein zulässiger Toleranzbereich für die Stempelkraft vorgegeben dessen Einhaltung überwacht wird. Auf diese Weise können verschiedene Mängel voneinander unterschieden werden.Nach weiteren vorteilhaften Ausgestaltungen der Erfindung wird bei Überschreiten eines vorgegebenen Sollwerts bzw. Toleranzbetrags ein Signal erzeugt, welches zum Ansteuern einer optischen und/oder akustischen Anzeigeeinrichtung dienen kann, um auf das Vorliegen eines Mangels aufmerksam zu machen. Das Signal kann auch zur Steuerung der Unterbrechung des Fügevorgangs verwendet werden, wodurch der Ausschuß und die Stillstandzeit der Fertigung verringert werden kann.Nach einer weiteren vorteilhaften Ausgestaltung der Erfindung wird der Stempelhub anhand des ermittelten Stempelwegs gesteuert. Nach Weiterbildung dieser Merkmale wird bei Erreichen eines Maximalwerts für den Stempelweg der Stempelhub beendet. Darüberhinaus kann ein Minimalwert für den Stempelweg vorgegeben sein, sodaß erst bei dessen Erreichen mit der Überwachung der verschiedenen Kräfte begonnen wird.Nach einer weiteren vorteilhaften Ausgestaltung der Erfindung liegen die Sollwerte und gegebenenfalls die zugehörigen Toleranzbeträge abrufbar in einem Speicher vor. Hierdurch können die Werte je nach Bedarf angepaßt werden. Die Eingabe der Sollwerte kann mittels Teach-In-Programmierung erfolgen, wodurch die Eingabe wesentlich vereinfacht wird. Es können auch mehrere Sätze von Werten im Speicher vorliegen, um unterschiedlichen Anforderungen, beispielsweise bei Werkzeug- oder Materialwechsel, schnell gerecht zu werden.Nach einer Weiterbildung dieser Merkmale sind die im Speicher vorhandenen Toleranzbeträge bei Überschreiten durch einen ermittelten Meßwert wahlweise durch Erstrecken des Toleranzbereichs an diesen Meßwert anpaßbar. Diese sogenannte Gutteilfunktion ermöglicht es, den Toleranzbereich an die Bedürfnisse schnell und praxisgerecht anzupassen.Nach einer vorteilhaften Weiterbildung dieser Merkmale ist die Eingabe der Werte in den Speicher geschützt. Hierdurch ist gewährleistet, daß Änderungen nur durch Befugte vorgenommen werden können.Nach einer weiteren vorteilhaften Ausgestaltung der Erfindung werden mehrere parallel ablaufende Fügevorgänge gleichzeitig überwacht, wobei die ermittelten Werte von einer gemeinsamen Einrichtung im Multiplexverfahren ausgewertet werden.Nach einer weiteren vorteilhaften Ausgestaltung der Erfindung werden die ermittelten Meßwerte optisch angezeigt. Die optische Anzeige erleichtert die Unterscheidung verschiedener Fehlerarten, um dadurch die geeigneten Gegenmaßnahmen vornehmen zu können. Hierfür können die ermittelten Meßwerte gespeichert werden, um eine nachträgliche Auswertung zu ermöglichen. Gleichzeitig dient die Speicherung der Meßwerte der Qualitätskontrolle, indem bei späteren Reklamationen der Verlauf des Fügevorgangs nachgeprüft werden kann.Die erfindungsgemäße Vorrichtung zur Durchführung des Verfahrens mit den Merkmalen des Anspruchs 21 ist an die Verfahrenserfordernisse vorteilhaft angepaßt. Kraftmeßeinrich­tungen sind in der Matrizenaufnahme, bzw im Stempelhalter, oder am Abstreifer vorgesehen, wobei bevorzugt piezo­elektrische Geber verwendet werden, nämlich ein PiezoKraftaufnehmer in der Matrizenaufnahme, ein Piezo-Quermeßdübel im Stempelhalter und ein Piezo-Meßring am Abstreifer. Die Messung des Stempelwegs erfolgt über einen bewegungsschlüssig mit dem Stempel angetriebenen Auslegearm, welcher mit einer Meßschiene zusammen wirkt, die an einem ortsfesten Pressenteil fest angeordnet ist. Als Meßgröße kann auch die Abstreifkraft als negative Stempelkraft verwendet werden.Weitere Vorteile und vorteilhafte Ausgestaltung der Erfindung sind der nachfolgenden Beschreibung, der Zeichnung und den Ansprüchen entnehmbar.</p>
+    <heading>Zeichnung</heading>
+    <p>Ein Ausführungsbeispiel der Erfindung ist in der Zeichnung dargestellt und im folgenden näher beschrieben.Es zeigen<b>Fig.</b> 1 eine Seitenansicht einer erfindungsgemäßen Vorrichtung im Teilschnitt und<b>Fig.</b> 2 ein Diagramm in dem die Stempelkraft (Ordinate) über dem Stempelweg (Abszisse) aufgetragen ist.</p>
+    <heading>Beschreibung des Ausführungsbeispiels</heading>
+    <p>Die in <b>Fig.</b> 1 gezeigte Presse <b>1</b> weist einen C-förmigen Rahmen <b>2</b> auf, dessen unterer Teil als Pressentisch <b>3</b> dient, auf welchem die Matrizenaufnahme <b>4</b> für die Matrize <b>5</b> angeordnet ist. Am oberen Ausleger <b>6</b> des Rahmens <b>2</b> ist, der Matrizenaufnahme <b>4</b> gegenüberliegend, ein Stempelhalter <b>7</b> vorhanden, zur Aufnahme des Stempels <b>8</b>. Um den Stempelhalter <b>8</b> ist eine Abstreifeinrichtung <b>9</b> angeordnet, zum Abstreifen von am Stempel hängenden Platten. Der Stempel <b>8</b> wird über einen Druckzylinder von einem auf der Oberseite des C-förmigen Rahmens <b>2</b> vorhandenen Pressenantrieb <b>11</b> auf- und abbewegt. Der Druckzylinder <b>10</b> ist hierfür durch eine zylindrische Ausnehmung <b>12</b> im Ausleger <b>6</b> in Richtung seiner Längsachse verschiebbar geführt.In der Matrizenaufnahme <b>4</b> ist ein Piezo-Kraftaufnehmer vorhanden, mit welchem die auf die Matrize ausgeübte Preßkraft ermittelt wird. In dem Stempelhalter <b>7</b> ist ein PiezoQuermeßdübel <b>14</b> vorhanden zur Ermittlung der ausgeübten Stempelkraft. Schließlich ist am Abstreifer <b>9</b> ein um den Druckzylinder <b>10</b> angeordneter Piezo-Meßring <b>15</b> vorhanden zur Ermittlung der Abstreifkraft. Der Druckzylinder <b>10</b> weist einen Auslegearm <b>16</b> auf, dessen freies Ende in den Bereich der senkrechten Stütze <b>17</b> des Rahmens <b>2</b> reicht und dort mit einer Meßschiene <b>18</b> zur Ermittlung des Stempelwegs zusammenwirkt. Die Wegmessung kann hierbei digital oder analog in bekannter Weise erfolgen. Nicht dargestellt sind die Auswerteeinrichtungen und die elektrischen Verbindungen zwischen den Auswerteeinrichtungen und den Meßeinrichtungen.Das Diagramm von <b>Fig.</b> 2 zeigt beispielhaft den Verlauf der Sollkurve ä als durchgezogene Linie dargestellt ä für die Stempelkraft relativ zum Stempelweg. Die verschiedenen Phasen des Kaltfügevorgangs sind durch senkrechte Linien gezeigt, wobei in Phase I kombiniertes Einsenken und Durchsetzen erfolgt, in Phase II Stauchen und Breiten, in Phase III Ausfüllen der oberen Kontur der Matrizengravur, in Phase IV das Füllen des Ringkanals der Matrize <b>5</b> und in Phase V das Napfrückwärtsfließpressen zum Verschränken der zu verbindenen Plattenelemente ineinander. Wie aus dem Schaubild ersichtlich steigt die Sollkurve für die Stempelkraft zwar stetig bis zum Ende des Fügevorgangs an, jedoch nicht linear, sondern je nach Fügephase unterschiedlich. Zu jedem Stempelweg ist ein zulässiger Toleranzbereich für die Stempelkraft ä durch das Punktemuster gezeigt ä vorgegeben. Die senkrecht zu den Koordinatenachsen verlaufenden gepunkteten Linien VI und VII geben den zulässigen Maximalwert für die Stempelkraft und den Stempelweg an. Die übrigen gestrichelten, strichpunktierten und punktierten Linien VIII-XI stellen Meßkurven dar, die bei verschiedenen Störungen auftreten können. Schließlich ist in dem Diagramm von <b>Fig.</b> 2 das Schnittbild der Fügeverbindung senkrecht zur Plattenebene bei verschiedenen Stempelwegen dargestellt, die mit Punkten auf der Sollkurve gekennzeichnet sind.Die mit VIII bezeichnete Meßkurve zeigt einen Kurvenverlauf der Stempelkraft, wie er bei zu weichem Material oder falschem Werkzeug auftreten kann. Die mit IX bezeichnete Meßkurve stellt einen Verlauf der Stempelkraft dar, der bei zu hartem Material oder bei zu großem Stempeldurchmesser oder bei Materialauftrag auf dem Werkzeug auftreten kann. Die mit X bezeichnete Meßkurve stellt einen Kurvenverlauf dar, der bei zu kurzem Stempel auftreten kann. Die Schulter des Stempels <b>7</b> sitzt hierbei auf den Platten <b>4</b> auf. Die mit XI bezeichnete Meßkurve stellt schließlich einen Verlauf dar, wie er bei Stempel- oder Matrizenbruch auftreten kann.Das erfindungsgemäße Verfahren kann außer bei Pressen mit hin- und hergehender Stempelbewegung auch bei Verfahren mit einer Drehbewegung des Stempels verwendet werden. Anstelle der Hubbewegung wird dann die Drehbewegung mittels eines Drehwinkelgebers ermittelt. Zusätzlich zu den Kraft- und Wegmessungen kann noch eine Beschleunigungsmessung vorgenommen werden, beispielsweise durch Messung des beim Hub erzeugten Körperschalls, um auch hier die Einhaltung eines Sollwerts mit Toleranzbereich zu gewährleisten. Zu große Beschleunigungen führen zu hohem Materialverschleiß und erhöhter Werkzeugbruchgefahr.Alle in der Beschreibung, in den Ansprüchen und der Zeichnung dargestellten Merkmale können sowohl einzeln, als auch in beliebiger Kombination erfindungswesentlich sein.Bezugszahlenliste <b>1</b> Presse <b>2</b> Rahmen <b>3</b> Pressentisch <b>4</b> Matrizenaufnahme <b>5</b> Matrize <b>6</b> Ausleger <b>7</b> Stempelhalter <b>8</b> Stempel <b>9</b> Abstreifer<b>10</b> Druckzylinder<b>11</b> Pressenantrieb<b>12</b> Ausnehmung<b>13</b> Piezo-Kraftaufnehmer<b>14</b> Piezo-Quermeßdübel<b>15</b> Piezo-Meßring<b>16</b> Auslegearm<b>17</b> Stütze<b>18</b> MeßschieneIäV FügephasenVI, VII MaximalwertVIIIäIX Meßkurve</p>
+  </description>
+  <claims id="claims_ger" lang="ger" format="original" date-changed="20090426">
+    <claim num="1">
+      <claim-text>1. Verfahren zum Verbinden aufeinanderliegender dünner Platten, insbesondere Bleche, oder Plattenabschnitte durch Kaltfügen, bei welchem übereinanderliegende Flächenteile der zu verbindenden Platten oder Plattenabschnitte durch Zusammenwirken eines Stempels (<b>8</b>) mit einer Matrize (<b>5</b>) gemeinsam durchsetzt und nachfolgend durch Stauchen breitgequetscht werden, mit oder ohne Einschneiden der Flächenteile an der Fügestelle, <b>dadurch gekennzeichnet,</b> daß die Stempelkraft und der Stempelweg während des jeweiligen gesamten Fügevorgangs überwacht werden.</claim-text>
+    </claim>
+    <claim num="2">
+      <claim-text>2. Verfahren nach Anspruch 1, dadurch gekennzeichnet, daß, außer der Stempelkraft auch die auf die Matrize wirkende Preßkraft und oder die zum Abstreifen der verbundenen Platten oder Plattenabschnitte von Stempel erforderliche Abstreifkraft überwacht werden.</claim-text>
+    </claim>
+    <claim num="3">
+      <claim-text>3. Verfahren nach Anspruch 1 oder 2, dadurch gekennzeichnet, daß die Stempelkraft und/oder die Preßkraft und/oder die Abstreifkraft sowie der Stempelweg während des Fügevorgangs kontinuierlich oder in vorbestimmten Abständen während des Fügevorgangs ermittelt werden und sowohl einzeln als auch in Bezug zueinander mit vorgegebenen Sollwerden verglichen werden.</claim-text>
+    </claim>
+    <claim num="4">
+      <claim-text>4. Verfahren nach Anspruch 3, dadurch gekennzeichnet, daß bei Überschreiten eines für die überwachte Kraft bzw. für den Stempelweg vorgegebenen Maximalwerts ein Signal erzeugt wird.</claim-text>
+    </claim>
+    <claim num="5">
+      <claim-text>5. Verfahren nach Anspruch 3 oder 4, dadurch gekennzeichnet, daß jedem Stempelweg ein Sollwert für die überwachte Kraft zugeordnet ist und daß bei Ermittlung einer Abweichung von diesem Sollwert um einen vorgegebenen Toleranzbetrag ein Signal erzeugt wird.</claim-text>
+    </claim>
+    <claim num="6">
+      <claim-text>6. Verfahren nach Anspruch 4 oder 5, dadurch gekennzeichnet, daß das Signal ein Steuersignal ist, mit welchem eine optische und/oder akustische Anzeigeeinrichtung angesteuert wird.</claim-text>
+    </claim>
+    <claim num="7">
+      <claim-text>7. Verfahren nach einem der Ansprüche 4 bis 6, dadurch gekennzeichnet, daß das Signal zur Steuerung der Unterbrechung eines entsprechenden Fügevorgangs verwendet wird.</claim-text>
+    </claim>
+    <claim num="8">
+      <claim-text>8. Verfahren nach Anspruch 7, dadurch gekennzeichnet, daß die Fortführung des Verfahrens nach Unterbrechung erst nach Entriegelung möglich ist.</claim-text>
+    </claim>
+    <claim num="9">
+      <claim-text>9. Verfahren nach einem der vorhergehenden Ansprüche, dadurch gekennzeichnet, daß der Hub des Stempels anhand der für den Stempelweg ermittelten Werte gesteuert wird.</claim-text>
+    </claim>
+    <claim num="10">
+      <claim-text>10 Verfahren nach Anspruch 9, dadurch gekennzeichnet, daß bei Erreichen eines vorgegebenen Maximalwerts für den Stempelweg der Stempelhub beendet wird.</claim-text>
+    </claim>
+    <claim num="11">
+      <claim-text>11. Verfahren nach einem der vorhergehenden Ansprüche, dadurch gekennzeichnet, daß erst bei Erreichen eines vorgegebenen Minimalwerts für den Stempelweg die Überwachung der Kräfte beginnt.</claim-text>
+    </claim>
+    <claim num="12">
+      <claim-text>12. Verfahren nach einem der vorhergehenden Ansprüche, dadurch gekennzeichnet, daß die Sollwerte bzw. die zugehörigen Toleranzbeträge abrufbar in einem Speicher vorliegen.</claim-text>
+    </claim>
+    <claim num="13">
+      <claim-text>13. Verfahren nach Anspruch 12, dadurch gekennzeichnet, daß die Eingabe der Sollwerte in den Speicher mittels TeachIn-Programmierung erfolgt.</claim-text>
+    </claim>
+    <claim num="14">
+      <claim-text>14. Verfahren nach Anspruch 12 oder 13, dadurch gekennzeichnet, daß die Toleranzbeträge bei Überschreiten an einen ermittelten Meßwert anpaßbar sind, durch Ersetzen des gespeicherten Toleranzbetrags durch den Betrag der Differenz zwischen Sollwert und ermitteltem Meßwert (Gutteilfunktion).</claim-text>
+    </claim>
+    <claim num="15">
+      <claim-text>15. Verfahren nach einem der Ansprüche 12 bis 14, dadurch gekennzeichnet, daß in dem Speicher mehrere Sätze von Sollwerten und gegebenenfalls zugehörigen Toleranzbeträgen gespeichert sind.</claim-text>
+    </claim>
+    <claim num="16">
+      <claim-text>16. Verfahren nach einem der Ansprüche 12ä15, dadurch gekennzeichnet, daß die Eingabe der Sollwerte und Toleranzbeträge gegen Entnahme oder Verlust geschützt ist.</claim-text>
+    </claim>
+    <claim num="17">
+      <claim-text>17. Verfahren nach einem der vorhergehenden Ansprüche, dadurch gekennzeichnet, daß die Kräfte mehrerer Kaltfügestellen gleichzeitig überwacht und von einer gemeinsamen Auswerteeinrichtung ausgewertet werden (Multiplexing).</claim-text>
+    </claim>
+    <claim num="18">
+      <claim-text>18. Verfahren nach einem der vorhergehenden Ansprüche, dadurch gekennzeichnet, daß die ermittelten Meßwerte optisch angezeigt werden.</claim-text>
+    </claim>
+    <claim num="19">
+      <claim-text>19. Verfahren nach einem der vorhergehenden Ansprüche, dadurch gekennzeichnet, daß die ermittelten Meßwerte gespeichert werden.</claim-text>
+    </claim>
+    <claim num="20">
+      <claim-text>20. Verfahren nach einem der vorhergehenden Ansprüche, dadurch gekennzeichnet, daß neben der Meßkurve die vorgegebene Sollkurve und/oder Toleranzbereich optisch wiedergegeben werden.</claim-text>
+    </claim>
+    <claim num="21">
+      <claim-text>21. Vorrichtung zur Durchführung des Verfahrens nach einem der vorhergehenden Ansprüche mit einer in einer Presse (<b>1</b>) angeordneten Matrize (<b>5</b>) und einem quer zu den verbindenden Platten hin und her angetriebenen Stempel (<b>8</b>), dadurch gekennzeichnet, daß eine digitale oder analoge Wegmeßeinrichtung und mindestens eine Kraftmeßeinrichtung vorhanden ist.</claim-text>
+    </claim>
+    <claim num="22">
+      <claim-text>22. Vorrichtung nach Anspruch 21 dadurch gekennzeichnet, daß ein Geber bewegungsschlüssig mit dem Stempel (<b>8</b>) verbunden ist (für eine Linear oder Drehendbewegung).</claim-text>
+    </claim>
+    <claim num="23">
+      <claim-text>23. Vorrichtung nach Anspruch 21 oder 22, dadurch gekennzeichnet, daß ein bewegungsschlüssig mit dem Stempel (<b>8</b>) angetriebener Auslegearm (<b>16</b>) vorhanden ist, dessen freies Ende mit einer fest an einem ortsfesten Pressenteil vorhandenen Meßschiene (<b>18</b>) zusammenwirkt.</claim-text>
+    </claim>
+    <claim num="24">
+      <claim-text>24. Vorrichtung nach einem der Ansprüche 21 bis 23, dadurch gekennzeichnet, daß als Kraftmeßeinrichtung ein oder mehrere Piezo-Elemente dient bzw dienen.</claim-text>
+    </claim>
+    <claim num="25">
+      <claim-text>25. Vorrichtung nach einem der Ansprüche 21 bis 24, dadurch gekennzeichnet, daß eine Kraftmeßeinrichtung (<b>13</b>) in der Matrizenaufnahme (<b>4</b>) oder am Pressentisch (<b>3</b>) vorhanden ist.</claim-text>
+    </claim>
+    <claim num="26">
+      <claim-text>26. Vorrichtung nach einem der Ansprüche 21 bis 25, dadurch gekennzeichnet, daß eine Kraftmeßeinrichtung (<b>14</b>) zwischen Stempel (<b>8</b>) und Antriebseinrichtung (<b>10</b>) vorhanden ist.</claim-text>
+    </claim>
+    <claim num="27">
+      <claim-text>27. Vorrichtung nach Anspruch 26, dadurch gekennzeichnet, daß eine Kraftmeßeinrichtung (<b>15</b>) am Abstreifer (<b>9</b>) vorhanden ist.</claim-text>
+    </claim>
+  </claims>
+</lexisnexis-patent-document>

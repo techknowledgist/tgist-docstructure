@@ -83,8 +83,9 @@ def read_tags_bae(text, structures):
 
 def read_tags_basic(text, taglist):
     tags = {}
-    # these are used in English patents, and many of them also in chinese and german
-    # patents
+
+    # the follwoing are used in English patents, and many of them also in chinese and
+    # german patents
     tags['headers'] = tags_with_name(taglist, 'heading')
     tags['paragraphs'] = tags_with_name(taglist, 'p')
     tags['abstracts'] =  tags_with_name(taglist, 'abstract')
@@ -93,7 +94,13 @@ def read_tags_basic(text, taglist):
     tags['claims_sections'] = tags_with_name(taglist, 'claims')
     tags['claims'] = tags_with_name(taglist, 'claim')
     tags['claims'] = sorted(tags['claims'], key = lambda x: x.start_index)
-    
+
+    # chinese patents until 2010 have two relevant named tags inside the description
+    # TODO: see remark in ../lexisnexis.add_description_sections() on refactoring
+    # language-specific code
+    tags['technical-field'] = tags_with_name(taglist, 'technical-field')
+    tags['background-art'] = tags_with_name(taglist, 'background-art')
+
     return (text, tags)
 
 

@@ -50,12 +50,15 @@ class PatentSectionFactory(SectionFactory):
 
 
     def add_basic_sections(self, text, tags):
-        abstract = tags['abstracts'][0] if tags['abstracts'] else None
         description = tags['sections'][0] if tags['sections'] else None
         summary = tags['summaries'][0] if tags['summaries'] else None
         claims = tags['claims_sections'][0] if tags['claims_sections'] else None
+        # TODO: Chinese and German patents have two abstracts, and each has a language
+        # feature (lang="chi"), maybe add this feature (would need a add a dictionary
+        # feature to make_section)
+        for a in tags['abstracts']:
+            self.sections.append(make_section(self.text_file, a, text, 'Abstract'))
         for section in [
-            make_section(self.text_file, abstract, text, 'Abstract'),
             make_section(self.text_file, description, text, 'Description'),
             make_section(self.text_file, summary, text, 'Summary'),
             make_section(self.text_file, claims, text, 'Claims') ]:
@@ -71,7 +74,17 @@ class PatentSectionFactory(SectionFactory):
             self.sections.append(make_section(self.text_file, h, text, 'Header'))
         for p in paragraphs:
             self.sections.append(make_section(self.text_file, p, text, 'Other'))
-
+        if self.language == 'CHINESE':
+            # TODO: this should be refactored, the differences between languages should
+            # not be hidden in the code, but be visible from the outside in module names
+            for tf in tags['technical-field']:
+                self.sections.append(make_section(self.text_file, tf, text, 'Technical_Field'))
+            for tf in tags['background-art']:
+                self.sections.append(make_section(self.text_file, tf, text, 'Background_Art'))
+        if self.language == 'GERMAN':
+            # TODO: split paragraphs where each line has a prefix like [0014]
+            pass
+        
     def add_rest_section(self, text, tags):
         """Adds a section that is the difference of the Description section and the
         Summary section in thre. This is needed for analysis of patents, but is not used

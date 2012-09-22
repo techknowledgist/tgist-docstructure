@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright ©2011 LexisNexis Univentio, The Netherlands. -->
+<lexisnexis-patent-document schema-version="1.08" date-produced="20110620" file="DE10215802A1.xml" produced-by="LexisNexis-Univentio" lang="eng" date-changed="20090918" time-changed="192429">
+  <bibliographic-data lang="ger">
+    <publication-reference publ-type="Application" publ-desc="Document laid open (First publication)">
+      <document-id>
+        <country>DE</country>
+        <doc-number>10215802</doc-number>
+        <kind>A1</kind>
+        <date>20031030</date>
+      </document-id>
+    </publication-reference>
+    <application-reference>
+      <document-id>
+        <country>DE</country>
+        <doc-number>10215802</doc-number>
+        <date>20020410</date>
+      </document-id>
+    </application-reference>
+    <language-of-filing>ger</language-of-filing>
+    <language-of-publication>ger</language-of-publication>
+    <dates-of-public-availability date-changed="20090412">
+      <unexamined-printed-without-grant>
+        <date>20031030</date>
+      </unexamined-printed-without-grant>
+    </dates-of-public-availability>
+    <classification-ipc date-changed="20070509">
+      <main-classification>
+        <text> 7B 01D  17/04   A</text>
+        <edition>7</edition>
+        <section>B</section>
+        <class>01</class>
+        <subclass>D</subclass>
+        <main-group>17</main-group>
+        <subgroup>04</subgroup>
+        <qualifying-character>A</qualifying-character>
+      </main-classification>
+    </classification-ipc>
+    <classifications-ipcr date-changed="20070509">
+      <classification-ipcr sequence="1">
+        <text>B01D  17/02        20060101C I20051008RMEP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>C</classification-level>
+        <section>B</section>
+        <class>01</class>
+        <subclass>D</subclass>
+        <main-group>17</main-group>
+        <subgroup>02</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+      <classification-ipcr sequence="2">
+        <text>B01D  17/02        20060101A I20051008RMEP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>B</section>
+        <class>01</class>
+        <subclass>D</subclass>
+        <main-group>17</main-group>
+        <subgroup>02</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+    </classifications-ipcr>
+    <classifications-ecla date-changed="20070509">
+      <classification-ecla sequence="1" classification-scheme="EC" country="EP">
+        <text>B01D 17/02F2+/02F4+/04H+/08B</text>
+        <section>B</section>
+        <class>01</class>
+        <subclass>D</subclass>
+        <main-group>17</main-group>
+        <subgroup>02</subgroup>
+        <additional-subgroups>
+          <additional-subgroup sequence="1">F  </additional-subgroup>
+          <additional-subgroup sequence="2">2  </additional-subgroup>
+        </additional-subgroups>
+        <examiner-edition>+/02F4+/04H+/08B</examiner-edition>
+      </classification-ecla>
+      <classification-ecla sequence="2" classification-scheme="EC" country="EP">
+        <text>B01D 17/02H+/04H+/08B</text>
+        <section>B</section>
+        <class>01</class>
+        <subclass>D</subclass>
+        <main-group>17</main-group>
+        <subgroup>02</subgroup>
+        <additional-subgroups>
+          <additional-subgroup sequence="1">H  </additional-subgroup>
+        </additional-subgroups>
+        <examiner-edition>+/04H+/08B</examiner-edition>
+      </classification-ecla>
+    </classifications-ecla>
+    <number-of-claims calculated="yes">7</number-of-claims>
+    <invention-title id="title_ger" date-changed="20090412" lang="ger" format="original">Verfahren und Vorrichtung zur Emulsionsspaltung</invention-title>
+    <invention-title id="title_eng" date-changed="20090412" lang="eng" format="original">Separation of oil/grease and water emulsion involves passing over membranes and surrender of grease/oil to coalescing filter</invention-title>
+    <references-cited date-changed="20090412">
+      <patent-citations name="patcit" date-changed="20090412" />
+      <citation srep-phase="0">
+        <patcit num="1">
+          <document-id>
+            <country>DE</country>
+            <doc-number>10022104</doc-number>
+            <kind>C1</kind>
+            <date>20011115</date>
+          </document-id>
+          <application-date>
+            <date>20000508</date>
+          </application-date>
+        </patcit>
+      </citation>
+      <citation srep-phase="0">
+        <patcit num="2">
+          <document-id>
+            <country>DE</country>
+            <doc-number>4325786</doc-number>
+            <kind>A1</kind>
+            <date>19950202</date>
+          </document-id>
+          <application-date>
+            <date>19930731</date>
+          </application-date>
+        </patcit>
+      </citation>
+      <citation srep-phase="0">
+        <patcit num="3">
+          <document-id>
+            <country>DE</country>
+            <doc-number>9300595</doc-number>
+            <kind>U1</kind>
+            <date>19930429</date>
+          </document-id>
+          <application-date>
+            <date>19930119</date>
+          </application-date>
+        </patcit>
+      </citation>
+      <citation srep-phase="0">
+        <patcit num="4">
+          <document-id>
+            <country>DE</country>
+            <doc-number>9202643</doc-number>
+            <kind>U1</kind>
+            <date>19920521</date>
+          </document-id>
+          <application-date>
+            <date>19920228</date>
+          </application-date>
+        </patcit>
+      </citation>
+      <citation srep-phase="0">
+        <patcit num="5">
+          <document-id>
+            <country>GB</country>
+            <doc-number>2190854</doc-number>
+            <kind>A</kind>
+            <date>19871202</date>
+          </document-id>
+          <application-date>
+            <date>19870127</date>
+          </application-date>
+        </patcit>
+      </citation>
+    </references-cited>
+    <parties date-changed="20070510">
+      <applicants>
+        <applicant sequence="1" app-type="applicant">
+          <addressbook lang="ger">
+            <orgname>Chmiel, Horst, Prof.Dr.-Ing.habil., 66123 Saarbrücken, DE</orgname>
+          </addressbook>
+        </applicant>
+      </applicants>
+      <inventors>
+        <inventor sequence="1">
+          <addressbook lang="ger">
+            <name>Chmiel, Horst, Prof.Dr.-Ing.habil., 66123 Saarbrücken, DE</name>
+          </addressbook>
+        </inventor>
+      </inventors>
+    </parties>
+    <patent-family date-changed="20070529">
+      <main-family family-id="35676032">
+        <family-member>
+          <document-id>
+            <country>DE</country>
+            <doc-number>10215802</doc-number>
+            <kind>B4</kind>
+            <date>20040923</date>
+          </document-id>
+          <application-date>
+            <date>20020410</date>
+          </application-date>
+        </family-member>
+        <family-member>
+          <document-id>
+            <country>DE</country>
+            <doc-number>10215802</doc-number>
+            <kind>A1</kind>
+            <date>20031030</date>
+          </document-id>
+          <application-date>
+            <date>20020410</date>
+          </application-date>
+        </family-member>
+      </main-family>
+      <complete-family family-id="35544473">
+        <family-member>
+          <document-id>
+            <country>DE</country>
+            <doc-number>10215802</doc-number>
+            <kind>B4</kind>
+            <date>20040923</date>
+          </document-id>
+          <application-date>
+            <date>20020410</date>
+          </application-date>
+        </family-member>
+        <family-member>
+          <document-id>
+            <country>DE</country>
+            <doc-number>10215802</doc-number>
+            <kind>A1</kind>
+            <date>20031030</date>
+          </document-id>
+          <application-date>
+            <date>20020410</date>
+          </application-date>
+        </family-member>
+      </complete-family>
+    </patent-family>
+  </bibliographic-data>
+  <abstract id="abstr_ger" date-changed="20070510" lang="ger" format="original">
+    <p>Die Erfindung betrifft ein Verfahren und eine Vorrichtung zur Spaltung von Emulsionen, die aus einer hydrophoben und einer hydrophilen Phase bestehen. Dabei wird die zu spaltende Emulsion zunächst an einer oder mehreren Membraneinrichtungen vorbeigeführt, wobei eine von der hydrophoben Phase quasi vollständig befreite wässrige Phase durch die Membran permeiert, während die zurückgehaltene Phase mit dem im Rententat noch vorhandenen Druck nachfolgend einen Koaleszenzfilter passiert. Dabei wächst die Tröpfchengröße der hydrophoben Phase soweit an, dass sie nach Passage des Filters auf der wässrigen Phase aufschwimmt und ausgetragen werden kann.</p>
+  </abstract>
+  <abstract id="abstr_eng" date-changed="20070510" lang="eng" format="original">
+    <p>Separation of an emulsion containing oil or grease from an aqueous mixture of oil/water or grease/water  involves passing the emulsified medium over one or membranes. The oil/grease-free phase permeates through  the membrane leaving behind an oil/grease-enriched phase, which is then surrendered to one or more coalescing  filters on which the oil/grease droplets agglomerate. The phase produced by the coalescing filter is  surrendered to a skimmer in which the oil/grease floats and is removed. Alternatively, the oil/grease-enriched  phase is surrendered to a centrifugal separator. An Independent claim is included for an assembly for use in  the above method, with a membrane filter operated in conjunction with a pump. the pump, membrane assembly  and coalescent filter are operated in a loop, or in series with a centrifugal separator.</p>
+  </abstract>
+  <legal-data date-changed="20070508">
+    <legal-event sequence="1">
+      <publication-date>
+        <date>20031030</date>
+      </publication-date>
+      <event-code-1>OP8</event-code-1>
+      <effect>+</effect>
+      <legal-description>REQUEST FOR EXAMINATION AS TO PARAGRAPH 44 PATENT LAW</legal-description>
+      <status-identifier>C</status-identifier>
+      <docdb-publication-number> DE    10215802A1</docdb-publication-number>
+    </legal-event>
+    <legal-event sequence="2">
+      <publication-date>
+        <date>20050317</date>
+      </publication-date>
+      <event-code-1>8364</event-code-1>
+      <effect>+</effect>
+      <legal-description>NO OPPOSITION DURING TERM OF OPPOSITION</legal-description>
+      <status-identifier>C</status-identifier>
+      <docdb-publication-number> DE    10215802A1</docdb-publication-number>
+    </legal-event>
+    <legal-event sequence="3">
+      <publication-date>
+        <date>20060209</date>
+      </publication-date>
+      <event-code-1>8327</event-code-1>
+      <legal-description>CHANGE IN THE PERSON/NAME/ADDRESS OF THE PATENT OWNER</legal-description>
+      <status-identifier>N</status-identifier>
+      <docdb-publication-number> DE    10215802A1</docdb-publication-number>
+      <new-owner>CHMIEL, HORST, PROF. DR.-ING., 80689 MNCHEN, DE</new-owner>
+    </legal-event>
+  </legal-data>
+  <description id="descr_ger" lang="ger" format="original" date-changed="20091001">
+    <p>[0001] Die vorliegende Erfindung betrifft ein Verfahren und eine Vorrichtung zur Emulsionsspaltung.
+ [0002] Öle und Fette, im folgenden auch hydrophobe Phasen genannt, bilden mit Wasser bzw. wässrigen Lösungen mehr oder weniger stabile Emulsionen. Eine solche Emulsion ist in der Regel umso stabiler, je kleiner die Olbzw.
+ Fetttröpfchen sind. Die bekannteste Emulsion ist wahrscheinlich die Milch.
+ [0003] Will man die Emulsion "brechen", d. h. die hydrophobe Phase von der wässrigen Phase trennen, so muss man die Tröpfchengröße erhöhen. Dabei gibt es eine Reihe von Möglichkeiten, von denen die einfachste diejenige ist, bei der man demulgierende Substanzen, d. h. grenzflächenaktive Substanzen, die die Tröpfchengröße erhöhen, hinzu gibt. Diese Methode schließt sich aber meist deshalb aus, weil sie die chemische Zusammensetzung der Emulsion verändert.
+ [0004] Alternativ bieten sich mechanische Verfahren an, bei denen von außen auf die Tröpfchen wirkende Kräfte eingebracht werden, die sie zur Koaleszenz zwingen, d. h.
+ durch Vereinigung größere Tröpfchen bilden.
+ [0005] Die bekanntesten Verfahren nutzen die Fliehkraft.
+ Hierzu gehören z. B. die Zentrifuge, insbesondere der Tellerseparator, mit dem z. B. das Fett von der Milch abgetrennt wird. Auch der Hydrozyklon, bei dem das zu trennende Medium tangetial mit hoher Geschwindigkeit eingeführt und dann in eine kreisförmige Bewegung umgelenkt wird, gehört zu den Fliehkraftabscheider, die zur EmulsionsSpaltung eingesetzt werden. Die Investitionen bzw. der Energieaufwand hierfür sind allerdings sehr hoch.
+ [0006] In den letzten Jahren kommen auch verstärkt Mikround Ultrafiltrationsverfahren zum Einsatz. Dabei wird die zu spaltende Emulsion mit einer relativ hohen mittleren Geschwindigkeit (ca. 1 bis 3 m/s) tangential an einer porösen Membran entlang geführt. Wählt man den Porendurchmesser der Membran so, dass er deutlich kleiner als der kleinste Tröpfchendurchmesser der hydrophoben Phase ist und erzeugt z. B. mit einer Drossel einen entsprechenden Druck, so wird die wässrige Phase als Permeat durch die Membranporen gepresst, während die zurück gehaltene hydrophobe Phase aufkonzentriert wird, wodurch die Tröpfchengröße wächst. Die zum Druckaufbau notwendige Drossel wird anschließend zwangsläufig von der hydrophoben Phase durchströmt. Sie hat dabei leider eine gewisse emulgierende Wirkung, d. h. die Olbzw. Fetttröpfchen werden in dieser Scherströmung zum Teil wieder zerkleinert.
+ [0007] Ein weiterer Apparat zur Brechung von Emulsionen ist der so genannte Koaleszenzfilter. Er kann eine schwammartige, faserige, porenartige oder aus kleinen Partikeln bestehende gesinterte Struktur aufweisen. Die bewusst sehr groß gewählte Oberfläche ist permanent hydrophob ausgerüstet. Lange Zeit war der genaue Wirkungsmechanismus des Koaleszenzfilters nicht bekannt. Aus neuesten Untersuchungen weiß man, dass bei der Passage der Emulsion durch den Koaleszenzfilter jeweils ein Teil der 01bzw. Fetttröpfchen an der Oberfläche verzögert entlang wandern und dabei in ihrer Größe wachsen. Da es sich dabei um einen statistischen Vorgang handelt, ist die mehrfache 60 Passage des Koaleszenzfilters zweckmässig, bevor ein befriedigendes Ergebnis erzielt wird. Da der erforderliche Druck zur Passage über eine Pumpe erzeugt wird, muss das zu demulgierende Medium auch die Pumpe mehrfach passieren, die unglücklicherweise aufgrund ihrer Scherwirkung 65 wiederum emulgierende Wirkung hat, d. h. ein Teil der Tröpfchen wird in der Pumpe wieder zu kleineren Tröpfchen [0008] Die Aufgabe der vorliegenden Erfindung besteht nun darin, mit möglichst geringem Energieaufwand, der sowohl bei dem Membranfilter als auch bei dem. Koaleszenzfilter mit Scherung verbunden ist, zu arbeiten.
+ [0009] Die vorliegende Erfindung schafft ein Verfahren nach Anspruch 1 und eine Vorrichtung nach Anspruch 4.
+ Bevorzugte Weiterbildungen sind Gegenstand der jeweiligen Unteransprüche.
+ [0010] Erfindungsgemäß konnte nun festgestellt werden, dass der Koaleszenzfilter genau so dimensioniert werden kann, dass der für seine Durchströmung notwendige Druck demjenigen entspricht, der für die Filtration im Membranmodul - darunter versteht man die zu einer Einheit zusammengefassten Membranen - erforderlich ist. Schaltet man nun den Koaleszenzfilter hinter den Membranmodul, so kann man die jeweiligen Vorteile der beiden gemeinsam nutzen und deren Nachteile vermeiden.
+ [0011] Im folgenden wird die vorliegende Erfindung anhand bevorzugter Ausführungsbeispiele unter Bezugsnahme auf die begleitenden Zeichnungen näher erläutert.
+ [0012] In den Figuren zeigen:
+ [0013] Fig. 1 eine Vorrichtung zur Emulsionsspaltung gemäss einer ersten Ausführungsform der vorliegenden Erfindung; [0014] Fig. 2 eine Vorrichtung zur Emulsionsspaltung gemäss einer zweiten Ausführungsform der vorliegenden Erfindung; und [0015] Fig. 3 eine Vorrichtung zur Emulsionsspaltung gemäss einer dritten Ausführungsform der vorliegenden Erfindung.
+ [0016] In Fig. 1 ist eine erste Ausführungsform der erfindungsgemäßen Vorrichtung schematisch dargestellt.
+ [0017] Die zu spaltende Emulsion 1 wird mit einer Pumpe 2 auf den erforderlichen Druck gebracht, um bei der Durchströmung eines Membranmoduls 3 mit einer Mehrzahl paralleler Flachmembranen entlang der Strömungsrichtung ein entsprechendes Olbzw. fettfreies Permeat 5 zu erzeugen, das abgeführt wird.
+ [0018] Das Retentat durchströmt aufgrund des noch vorhandenen Drucks einen Koaleszenzfilter 4, wodurch die Tröpfchengröße der hydrophoben Phase weiter wächst. Leitet man diese Mischphase möglichst laminar in einen Behälter 6, in dem sie sich beruhigen kann, so werden die inzwischen großen Olbzw. Fetttröpfchen aufgrund des Dichteunterschieds zum Wasser schnell nach oben steigen, wo sie als hydrophobe Phase 7 mit einem üblichen Skimmer bzw.
+ Abstreifer abgeschöpft (geskimmt) werden können. Das von der hydrophoben Phase befreite Wasser bzw. wässrige Lösung 9 wird zur Weiterverwendung abgeleitet.
+ [0019] Ist die Emulsion relativ stabil, so kann es notwendig sein, mehrere Membranmodule bzw. Koaleszenzfilter oder mehrere Kombinationen Membranmodul/Koaleszenzfilter hintereinander (in Reihe) zu schalten.
+ [0020] Versuche haben gezeigt, dass bei einer einzigen Passage der Reihenschaltung von Fig. 1 eine stärker demulgierende Wirkung erzielt als die Addition der Ergebnisse der Einzelpassagen eines Membranmoduls und eines Koaleszenzfilters. Erklären lässt sich dies damit, dass die Scherwirkung der Drossel entfällt.
+ [0021] Sind die Dichteunterschiede zwischen wässriger und hydrophober Phase gering, so könnte die Phasentrennung so langsam erfolgen, dass es sich als vorteilhaft erweist, statt des Skimmers einen Fliehkraftabscheider zu verwenden. Fig. 2 zeigt diese vorteilhafte zweite Ausführungsform, wobei als Fliehkraftabscheider 8 beispielhaft ein Zyklon verwendet wird.
+ [0022] Liegt die hydrophobe Phase nur in geringer Konzentration vor oder sind deren Tröpfchen besonders klein, so DE 102 15 802 A 1 kann eine Kreislaufführung, wie sie schematisch in Fig. 3 dargestellt ist, notwendig sein.
+ [0023] Hierzu wird die wässrige Phase im Behälter 6 wiederholt durch die Reihenschaltung von Membranmodul 3 und Koaleszenzfilter 4 geleitet.
+ [0024] Dabei verbleibt der erfindungsgemäße Vorteil, dass die Zahl der notwendigen Zyklen nur ein Bruchteil dessen ist, der bei einem Betrieb nach dem Stand der Technik - also Membran oder Koaleszenzfilter - erforderlich wäre.
+ [0025] In Fig. 3 ist der S kimmer 6 durch eine Zwischenwand 9 so unterteilt, dass sich im unteren Teil die frisch zugeführte Emulsion 1 und das durch Skimmen 7 verarmte im Kreislauf geführte Fluid mischen und gemeinsam von der Pumpe 2 in den Kreislauf geführt wurden.</p>
+  </description>
+  <claims id="claims_ger" lang="ger" format="original" date-changed="20091001">
+    <claim num="1">
+      <claim-text>1. Verfahren zur Emulsionsspaltung, insbesondere zur Entfernung von Olbzw. Fetttröpfchen aus einem wässrigen Ol/Wasser-Gemisch bzw. Fett/Wasser-Gemisch, dadurch gekennzeichnet, dass das emulgierte Medium zunächst an einer oder mehreren Membraneinrichtungen vorbei geführt wird, wobei eine von 01bzw. Fetttröpfchen befreite Phase durch die Membran permeiert und eine an Olbzw. Fetttröpfchen angereicherte Phase das von der Membran zurückgehaltene Retentat bildet, welches anschließend durch einen oder mehrere Koaleszenzfilter geleitet wird, wobei sich die Olbzw. Fetttröpfchen vergrößern.</claim-text>
+    </claim>
+    <claim num="2">
+      <claim-text>2. Verfahren nach Anspruch 1 dadurch gekennzeichnet, dass die den Koaleszenzfilter verlassende Phase in einen Skimmer geleitet wird, in dem die an Ol bzw.
+ Fett angereicherte Phase aufschwimmt und geskimmt wird.</claim-text>
+    </claim>
+    <claim num="3">
+      <claim-text>3. Verfahren nach Anspruch 1 oder 2, dadurch gekennzeichnet, dass die den Koaleszenzfilter verlassende an Ol bzw. Fett angereicherte Phase durch einen Fliehkraftabscheider geleitet wird.</claim-text>
+    </claim>
+    <claim num="4">
+      <claim-text>4. Vorrichtung zur Emulsionsspaltung, insbesondere zur Entfernung von Olbzw. Fetttröpfchen aus einem wässrigen Ol/Wasser-Gemisch bzw. Fett/Wasser-Gemisch, gekennzeichnet durch eine oder mehrere Membraneinrichtungen, woran das emulgierte Medium zunächst vorbeiführbar ist, so dass eine von Olbzw. Fetttröpfchen befreite Phase auf der Permeatseite und eine an Olund Fetttröpfchen angereicherte Phase an der Retentatseite der Membraneinrichtung vorliegt, und einen oder mehrere Koaleszenzfilter, in Reihe zu der oder den Membraneinrichtungen, wodurch die angereicherte Phase anschließend leitbar ist, so dass sich eine weiter angereicherte Phase bildet.</claim-text>
+    </claim>
+    <claim num="5">
+      <claim-text>5. Vorrichtung nach Anspruch 4, dadurch gekennzeichnet, dass eine Pumpe der oder den Membraneinrichtungen vorgeschaltet ist.</claim-text>
+    </claim>
+    <claim num="6">
+      <claim-text>6. Vorrichtung nach Anspruch 4 oder 5, dadurch gekennzeichnet, dass Pumpe, Membraneinrichtungen und Koaleszenzfilter im Kreis geschlossen sind.</claim-text>
+    </claim>
+    <claim num="7">
+      <claim-text>7. Vorrichtung nach Anspruch 4, 5 oder 6, dadurch gekennzeichnet, dass Pumpe, Membraneinrichtungen und Koaleszenzfilter mit einem Zentrifugalseperator in 60 Reihe geschaltet sind.
+ Hierzu 3 Seite(n) Zeichnungen</claim-text>
+    </claim>
+  </claims>
+</lexisnexis-patent-document>
