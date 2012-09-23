@@ -19,6 +19,7 @@ class PatentSectionFactory(SectionFactory):
 
         (text, tags) = read_tags(self.text_file, self.fact_file, self.fact_type)
 
+        self.add_meta_sections(text, tags)
         self.add_basic_sections(text, tags)
         self.add_description_sections(text, tags)
         self.add_claims(text, tags['claims'])
@@ -48,7 +49,15 @@ class PatentSectionFactory(SectionFactory):
                         next.header = header_title
                     current = next
 
-
+    def add_meta_sections(self, text, tags):
+        for t in tags.get('meta_tags',[]):
+            if t.name == 'date':
+                section = make_section(self.text_file, t, text, 'Meta-Date')
+                self.sections.append(section)
+            if t.name == 'invention-title':
+                section = make_section(self.text_file, t, text, 'Meta-Title')
+                self.sections.append(section)
+        
     def add_basic_sections(self, text, tags):
         description = tags['sections'][0] if tags['sections'] else None
         summary = tags['summaries'][0] if tags['summaries'] else None

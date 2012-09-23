@@ -256,11 +256,11 @@ class Parser(object):
         self.collection = 'LEXISNEXIS'
         self.process_file(text_file, fact_file, sect_file, fact_type='BASIC')
         (text, section_tags) = load_data(text_file, sect_file)
-        TARGET_FIELDS = ['FH_TITLE', 'FH_ABSTRACT', 'FH_SUMMARY', 'FH_DESC_REST', 'FH_FIRST_CLAIM']
+        TARGET_FIELDS = ['FH_TITLE', 'FH_DATE', 'FH_ABSTRACT', 'FH_SUMMARY',
+                         'FH_DESC_REST', 'FH_FIRST_CLAIM']
         USED_FIELDS = TARGET_FIELDS + ['FH_DESCRIPTION']
         FH_DATA = {}
         for f in USED_FIELDS: FH_DATA[f] = None
-        self._add_title(tags_file, text, FH_DATA)
         self._add_usable_sections(section_tags, text, FH_DATA)
         ONTO_FH = open_write_file(onto_file)
         for f in TARGET_FIELDS:
@@ -269,34 +269,14 @@ class Parser(object):
             ONTO_FH.write("\n")
         ONTO_FH.write("END\n")
 
-    def _add_title(self, tags_file, text, FH_DATA):
-        for line in open(tags_file):
-            fields = line.strip().split()
-            if len(fields) > 2:
-                tag = fields[0].strip('<')
-                (p1, p2, length) = (None, None, None)
-                for field in fields[1:]:
-                    if field.startswith('standoff:offset'):
-                        p1 = field.split('=')[1].strip('"')
-                    elif field.startswith('standoff:length'):
-                        length = field.split('=')[1].strip('"/>')
-                if p1 is not None and length is not None and p1.isdigit() and length.isdigit():
-                    p1 = int(p1)
-                    length = int(length)
-                    p2 = p1 + length
-                if tag == 'invention-title':
-                    FH_DATA['FH_TITLE'] = (p1, p2, text[int(p1)-1:int(p2)])
-                    break
-
     def _add_usable_sections(self, section_tags, text, FH_DATA):
+        mappings = { 'META-TITLE': 'FH_TITLE', 'META-DATE': 'FH_DATE',
+                     'ABSTRACT': 'FH_ABSTRACT', 'SUMMARY': 'FH_SUMMARY',
+                     'DESCRIPTION': 'FH_DESCRIPTION' }
         for tag in section_tags:
             (p1, p2, tagtype) = (tag.start_index, tag.end_index, tag.attr('TYPE'))
-            if tagtype == 'ABSTRACT':
-                FH_DATA['FH_ABSTRACT'] = (p1, p2, text[int(p1):int(p2)].strip())
-            elif tagtype == 'SUMMARY':
-                FH_DATA['FH_SUMMARY'] = (p1, p2, text[int(p1):int(p2)].strip())
-            elif tagtype == 'DESCRIPTION':
-                FH_DATA['FH_DESCRIPTION'] = (p1, p2, text[int(p1):int(p2)].strip())
+            if mappings.get(tagtype) is not None:
+                FH_DATA[mappings[tagtype]] = (p1, p2, text[int(p1):int(p2)].strip())
             elif tagtype == 'CLAIM':
                 if tag.attr('CLAIM_NUMBER') == '1':
                     FH_DATA['FH_FIRST_CLAIM'] = (p1, p2, text[int(p1):int(p2)].strip())

@@ -59,14 +59,15 @@ def createHTML(text_file, sect_file, html_file):
             fh_html.write("\n<div class=header>%s</div>\n" % starts[p][1])
             fh_html.write("<p class=offset>%d</p>\n" % p)
         # write the actual character
-        fh_html.write(char)
+        if char == "\n":
+            fh_html.write("</br>\n")
+        else:
+            fh_html.write(char)
         # now check for closing tag again for cases where you have a tag p1-p1
         if ends.has_key(p) and stack and stack[-1][1] == p:
             fh_html.write("\n<p class=offset>%d</p>\n</div>\n" % p)
             stack.pop()
         # also preserve newlines in html
-        if char == "\n":
-            fh_html.write('</br>')
         p += 1
     fh_html.write(html_fragments.HTML_END)
     fh_html.close()

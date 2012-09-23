@@ -60,6 +60,8 @@ def read_tags_basic(text, taglist):
 
     # the follwoing are used in English patents, and many of them also in chinese and
     # german patents
+    tags['meta_tags'] = meta_tags(taglist)
+    taglist = [t for t in taglist if t.name != 'date']
     tags['headers'] = tags_with_name(taglist, 'heading')
     tags['paragraphs'] = tags_with_name(taglist, 'p')
     tags['abstracts'] =  tags_with_name(taglist, 'abstract')
@@ -78,4 +80,16 @@ def read_tags_basic(text, taglist):
     return (text, tags)
 
 
-
+def meta_tags(taglist):
+    p1, p2 = 0, 0
+    metatags = []
+    for t in taglist:
+        if t.name == 'invention-title':
+            metatags.append(t)
+        if t.name == 'publication-reference':
+            metatags.append(t)
+            p1, p2 = t.start_index, t.end_index
+        if t.name == 'date':
+           if t.is_contained_in(p1, p2):
+               metatags.append(t)
+    return metatags

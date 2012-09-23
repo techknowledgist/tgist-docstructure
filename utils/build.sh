@@ -7,7 +7,8 @@
 # directory, the latter to make it easy for the user to relaize that what you are packagng
 # is not versioned.
 #
-# Should probably use git-archive
+# TODO: should probably use git-archive in some way to make this more robust.
+
 
 set version = `date +"%Y%m%d"`
 set x = "docstructure-${version}"
