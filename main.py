@@ -85,15 +85,16 @@ def usage():
 def create_fact_file(xml_file, text_file, tags_file, fact_file):
     """Given an xml file, first create text and tags files using the xslt standoff scripts and
     then create a fact file."""
-    text_xsl = 'utils/standoff/text-content.xsl'
-    tags_xsl = 'utils/standoff/standoff.xsl'
+    dirname = os.path.dirname(__file__)
+    text_xsl = os.path.join(dirname, 'utils/standoff/text-content.xsl')
+    tags_xsl = os.path.join(dirname, 'utils/standoff/standoff.xsl')
     commands = [
         "xsltproc %s %s > %s" % (text_xsl, xml_file, text_file),
         "xsltproc %s %s | xmllint --format - > %s" % (tags_xsl, xml_file, tags_file)]
     run_shell_commands(commands)
     transform_tags_file(tags_file, fact_file)
 
-        
+
 class Parser(object):
 
     def __init__(self):
@@ -103,6 +104,9 @@ class Parser(object):
         self.collection = None
         self.language = None
 
+    def __str__(self):
+        return "<Parser for %s on %s>" % (self.language, self.collection)
+    
 
     def process_file(self, text_file, fact_file, sect_file, fact_type='BAE', verbose=False):
         """
@@ -182,6 +186,8 @@ class Parser(object):
         elif self.collection == 'ELSEVIER':
             self.factory = self._create_elsevier_factory(
                 text_file, fact_file, sect_file, fact_type, verbose)
+        else:
+            raise Exception("No factory could be created")
 
     def _create_elsevier_factory(self, text_file, fact_file, sect_file,
                              fact_type, verbose=False):
@@ -234,7 +240,7 @@ class Parser(object):
             key = open(key_file).readlines()
             results.append((f, sect_file, response, key_file, key))
         for filename, sect_file, response, key_file, key in results:
-            print "\n==> %s (diff)" % filename
+            print "\n==> %s" % filename
             for line in difflib.unified_diff(response, key, fromfile=sect_file, tofile=key_file):
                 sys.stdout.write(line)
         print 
