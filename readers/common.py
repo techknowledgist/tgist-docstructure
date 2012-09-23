@@ -2,10 +2,10 @@
 
 This module contains shared code for the reader modules.
 
-For now, it only is used by readers.lexisnexis.py, but med_read.py and else_read.py
-contain some duplications of the code in this module.
-
 """
+
+# TODO: there are still some duplications of code in readers/elsevier2.py
+
 
 import shlex, codecs
 
@@ -24,6 +24,11 @@ class Tag():
         if fact_type == 'BASIC':
             p1 = int(self.attributes.get("standoff:offset", '-1'))
             length = int(self.attributes.get("standoff:length", '-1'))
+            if p1 == -1 or length == -1:
+                # for unexplained reasons, the standoff.xsl script sometimes uses standoff1
+                # instead of standoff in attribute names, this is the workaround for that
+                p1 = int(self.attributes.get("standoff1:offset", '-1'))
+                length = int(self.attributes.get("standoff1:length", '-1'))
             self.start_index = p1
             self.end_index = p1 + length if (p1 > -1 and length > -1) else -1
         if fact_type == 'BAE':
@@ -57,7 +62,7 @@ class Tag():
 
     def is_abstract(self):
         """Return True if self is an abstract, False otherwise. Can deal with BAE fact
-        files and output of utils/create_standoff.pl."""
+        files and output of utils/standoff."""
         if self.name.lower() == 'abstract':
             return True
         if self.name == 'STRUCTURE' and self.attributes['TYPE'] == 'ABSTRACT':

@@ -21,32 +21,6 @@ from common import Tag, load_data
 from common import tags_with_name, tags_with_type, tags_with_matching_type
 
 
-def read_sections(tags):
-
-    """Returns lists of headers, paragraphs and descriptions from the list of Tags."""
-
-    # first see if you can find data in BAE fact file format
-    structures = tags_with_name(tags, 'STRUCTURE')
-    headers = tags_with_type(structures, 'SECTITLE')
-    paragraphs = tags_with_type(structures, 'TEXT')
-    abstracts =  tags_with_type(structures, 'ABSTRACT')
-    descriptions = tags_with_type(structures, 'TEXT_CHUNK')
-    if (headers or paragraphs or descriptions):
-        return (headers, paragraphs, abstracts, descriptions)
-
-    # if there weren't any data, try whether we used the output of create_standoff.pl (we
-    # should probably have some setting somewhere that encodes what input type we are
-    # dealing with)
-    headers = tags_with_name(tags, 'heading')
-    paragraphs = tags_with_name(tags, 'p')
-    abstracts =  tags_with_type(structures, 'abstract')
-    descriptions = tags_with_name(tags, 'description')
-    #print len(structures), len(title_structures), len(text_structures), len(text_chunks), \
-    #    len(headers), len(paragraphs), len(descriptions)
-    return (headers, paragraphs, abstracts, descriptions)
-
-
-
 def read_tags(text_file, fact_file, fact_type):
     """Returns the text as a unicode string as well as a dictionary with the various kinds
     of tags."""
