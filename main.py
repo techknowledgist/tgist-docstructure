@@ -121,8 +121,10 @@ class Parser(object):
             self.factory.print_sections(f)
             f.close()
             if self.html_mode:
-                utils.view.createHTML(text_file, fact_file, fact_file + '.html')
-                utils.view.createHTML(text_file, sect_file, sect_file + '.html')
+                fact_file_html = 'data/html/' + os.path.basename(fact_file) + '.html'
+                sect_file_html = 'data/html/' + os.path.basename(sect_file) + '.html'
+                utils.view.createHTML(text_file, fact_file, fact_file_html)
+                utils.view.createHTML(text_file, sect_file, sect_file_html)
         except UserWarning:
             print 'WARNING:', sys.exc_value
 
@@ -221,28 +223,56 @@ class Parser(object):
         sect file in data/regression. Prints a diff of the output of the document parser
         relative to a file in the data/regression directory."""
         files = (
-            'f401516f-bd40-11e0-9557-52c9fc93ebe0-001-gkp847', 'pubmed-mm-test',
-            'elsevier-simple', 'elsevier-complex', 'US4192770A', 'wos'
+            ('pubmed', 'f401516f-bd40-11e0-9557-52c9fc93ebe0-001-gkp847'),
+            ('pubmed', 'pubmed-mm-test'),
+            ('elsevier', 'elsevier-simple'),
+            ('elsevier', 'elsevier-complex'),
+            ('lexisnexis', 'US4192770A'),
+            ('lexisnexis', 'US4192770A.xml'),
+            ('wos', 'wos')
             )
         results = []
         self.html_mode = True
-        for f in files:
-            text_file = "data/%s.txt" % f
-            fact_file = "data/%s.fact" % f
-            sect_file = "data/%s.sect" % f
-            key_file ="data/regression/%s.sect" % f
-            # reset the collection every iteration
-            self.collection = None
-            self.process_file(text_file, fact_file, sect_file)
-            response = open(sect_file).readlines()
-            key = open(key_file).readlines()
-            results.append((f, sect_file, response, key_file, key))
+        for collection, filename in files:
+            self.run_test(collection, filename, results)
         for filename, sect_file, response, key_file, key in results:
             print "\n==> %s" % filename
             for line in difflib.unified_diff(response, key, fromfile=sect_file, tofile=key_file):
                 sys.stdout.write(line)
         print 
 
+    def run_test(self, collection, filename, results):
+        # reset the collection every iteration, we are not using the collection argument
+        # on purpose because we want to also test whether the code finds the collection in
+        # the fact file
+        self.collection = None
+        if filename.endswith('.xml'):
+            self.run_test_with_basic_input(collection, filename, results)
+        else:
+            self.run_test_with_bae_input(collection, filename, results)
+        
+    def run_test_with_basic_input(self, collection, filename, results):
+        self.collection = 'LEXISNEXIS'
+        xml_file = "data/in/%s/%s" % (collection, filename)
+        text_file = "data/tmp/%s.txt" % filename
+        tags_file = "data/tmp/%s.tags" % filename
+        fact_file = "data/tmp/%s.fact" % filename
+        sect_file = "data/out/%s.sect.basic" % filename
+        key_file ="data/regression/%s.sect" % filename
+        self.process_xml_file(xml_file, text_file, tags_file, fact_file, sect_file)
+        response = open(sect_file).readlines()
+        key = open(key_file).readlines()
+        results.append((filename, sect_file, response, key_file, key))
+    
+    def run_test_with_bae_input(self, collection, filename, results):
+        text_file = "data/in/%s/%s.txt" % (collection, filename)
+        fact_file = "data/in/%s/%s.fact" % (collection, filename)
+        sect_file = "data/out/%s.sect.bae" % filename
+        key_file ="data/regression/%s.sect" % filename
+        self.process_file(text_file, fact_file, sect_file)
+        response = open(sect_file).readlines()
+        key = open(key_file).readlines()
+        results.append((filename, sect_file, response, key_file, key))
         
     def create_ontology_creation_input(self, xml_file):
         """Create input files that can be used by the ontology creation process. It is

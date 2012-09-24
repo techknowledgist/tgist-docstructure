@@ -5,7 +5,7 @@ def transform_tags_file(file1 , file2):
     # TODO: list below is just for patents, may need many more
     # TODO: do all tags?
     tags = ('<description', '<abstract', '<technical-field', '<background-art',
-            '<claims', '<claim', '<p', '<heading',
+            '<claims', '<claim', '<p', '<heading', '<summary',
             '<invention-title', '<publication-reference', '<date') 
     out = open(file2, 'w')
     for line in open(file1):

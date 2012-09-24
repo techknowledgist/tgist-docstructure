@@ -1,0 +1,3 @@
+# parsing an XML file
+python main.py -h -c LEXISNEXIS data/in/lexisnexis/US4192770A.xml data/tmp/US4192770A.txt data/tmp/US4192770A.tags data/tmp/US4192770A.fact data/out/US4192770A.sect.basic
+
