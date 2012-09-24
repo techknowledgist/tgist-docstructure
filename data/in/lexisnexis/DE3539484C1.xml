@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright ©2011 LexisNexis Univentio, The Netherlands. -->
+<lexisnexis-patent-document schema-version="1.08" date-produced="20110619" file="DE3539484C1.xml" produced-by="LexisNexis-Univentio" lang="eng" date-changed="20090409" time-changed="063413">
+  <bibliographic-data lang="ger">
+    <publication-reference publ-type="Grant" publ-desc="Patent specification (First publ.)">
+      <document-id>
+        <country>DE</country>
+        <doc-number>3539484</doc-number>
+        <kind>C1</kind>
+        <date>19861218</date>
+      </document-id>
+    </publication-reference>
+    <application-reference>
+      <document-id>
+        <country>DE</country>
+        <doc-number>3539484</doc-number>
+        <date>19851107</date>
+      </document-id>
+    </application-reference>
+    <language-of-filing>ger</language-of-filing>
+    <language-of-publication>ger</language-of-publication>
+    <dates-of-public-availability date-changed="20090409">
+      <printed-with-grant>
+        <date>19861218</date>
+      </printed-with-grant>
+    </dates-of-public-availability>
+    <classification-ipc date-changed="20070508">
+      <main-classification>
+        <text> 4F 16D  35/00   A</text>
+        <edition>4</edition>
+        <section>F</section>
+        <class>16</class>
+        <subclass>D</subclass>
+        <main-group>35</main-group>
+        <subgroup>00</subgroup>
+        <qualifying-character>A</qualifying-character>
+      </main-classification>
+    </classification-ipc>
+    <classifications-ipcr date-changed="20070508">
+      <classification-ipcr sequence="1">
+        <text>F16D  35/00        20060101C I20051008RMEP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>C</classification-level>
+        <section>F</section>
+        <class>16</class>
+        <subclass>D</subclass>
+        <main-group>35</main-group>
+        <subgroup>00</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+      <classification-ipcr sequence="2">
+        <text>F16D  35/00        20060101A I20051008RMEP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>F</section>
+        <class>16</class>
+        <subclass>D</subclass>
+        <main-group>35</main-group>
+        <subgroup>00</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+    </classifications-ipcr>
+    <classifications-ecla date-changed="20070508">
+      <classification-ecla sequence="1" classification-scheme="EC" country="EP">
+        <text>F16D 35/00B</text>
+        <section>F</section>
+        <class>16</class>
+        <subclass>D</subclass>
+        <main-group>35</main-group>
+        <subgroup>00</subgroup>
+        <additional-subgroups>
+          <additional-subgroup sequence="1">B  </additional-subgroup>
+        </additional-subgroups>
+      </classification-ecla>
+    </classifications-ecla>
+    <invention-title id="title_eng" date-changed="20090409" lang="eng" format="original">Controllable coupling</invention-title>
+    <references-cited date-changed="20090411">
+      <patent-citations name="patcit" date-changed="20090409" />
+      <forward-citations name="fwdcit" date-changed="20090411" />
+      <citation srep-phase="0">
+        <patcit num="1">
+          <document-id>
+            <country>DE</country>
+            <doc-number>3426460</doc-number>
+            <kind>C1</kind>
+            <date>19851205</date>
+          </document-id>
+          <application-date>
+            <date>19840718</date>
+          </application-date>
+        </patcit>
+      </citation>
+      <citation srep-phase="0">
+        <patcit num="2">
+          <document-id>
+            <country>US</country>
+            <doc-number>4058027</doc-number>
+            <kind>A</kind>
+            <date>19771115</date>
+          </document-id>
+          <application-date>
+            <date>19760709</date>
+          </application-date>
+        </patcit>
+      </citation>
+      <citation srep-phase="0">
+        <patcit num="3">
+          <document-id>
+            <country>US</country>
+            <doc-number>4022084</doc-number>
+            <kind>A</kind>
+            <date>19770510</date>
+          </document-id>
+          <application-date>
+            <date>19750509</date>
+          </application-date>
+        </patcit>
+      </citation>
+      <citation>
+        <fwdcit num="1">
+          <document-id>
+            <country>DE</country>
+            <doc-number>4343917</doc-number>
+            <kind>A1</kind>
+            <date>19950629</date>
+          </document-id>
+          <application-date>
+            <date>19931222</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+      <citation>
+        <fwdcit num="2">
+          <document-id>
+            <country>DE</country>
+            <doc-number>3817082</doc-number>
+            <kind>C1</kind>
+            <date>19890601</date>
+          </document-id>
+          <application-date>
+            <date>19880519</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+      <citation>
+        <fwdcit num="3">
+          <document-id>
+            <country>DE</country>
+            <doc-number>3905729</doc-number>
+            <kind>C1</kind>
+            <date>19891207</date>
+          </document-id>
+          <application-date>
+            <date>19890224</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+      <citation>
+        <fwdcit num="4">
+          <document-id>
+            <country>US</country>
+            <doc-number>4938330</doc-number>
+            <kind>A</kind>
+            <date>19900703</date>
+          </document-id>
+          <application-date>
+            <date>19890519</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+      <citation>
+        <fwdcit num="5">
+          <document-id>
+            <country>US</country>
+            <doc-number>4844219</doc-number>
+            <kind>A</kind>
+            <date>19890704</date>
+          </document-id>
+          <application-date>
+            <date>19870702</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+    </references-cited>
+    <parties date-changed="20090409">
+      <applicants>
+        <applicant sequence="1" app-type="applicant">
+          <addressbook lang="eng">
+            <orgname>UNI-CARDAN AG, 5200 SIEGBURG, DE</orgname>
+          </addressbook>
+        </applicant>
+        <applicant sequence="1" app-type="applicant" data-format="docdb">
+          <addressbook lang="eng">
+            <orgname>UNI CARDAN AG</orgname>
+          </addressbook>
+        </applicant>
+        <applicant sequence="1" app-type="applicant" data-format="docdba">
+          <addressbook lang="eng">
+            <orgname>UNI-CARDAN AG, 5200 SIEGBURG, DE</orgname>
+          </addressbook>
+        </applicant>
+      </applicants>
+      <inventors>
+        <inventor sequence="1">
+          <addressbook lang="eng">
+            <name>TAUREG, HERBERT, DIPL.-ING., 5202 HENNEF, DE</name>
+          </addressbook>
+        </inventor>
+        <inventor sequence="1" data-format="docdb">
+          <addressbook lang="eng">
+            <name>TAUREG HERBERT DIPL-ING</name>
+          </addressbook>
+        </inventor>
+        <inventor sequence="1" data-format="docdba">
+          <addressbook lang="eng">
+            <name>TAUREG, HERBERT, DIPL.-ING., 5202 HENNEF, DE</name>
+          </addressbook>
+        </inventor>
+      </inventors>
+    </parties>
+    <patent-family date-changed="20070529">
+      <main-family family-id="39041437">
+        <family-member>
+          <document-id>
+            <country>DE</country>
+            <doc-number>3539484</doc-number>
+            <kind>C1</kind>
+            <date>19861218</date>
+          </document-id>
+          <application-date>
+            <date>19851107</date>
+          </application-date>
+        </family-member>
+      </main-family>
+      <complete-family family-id="38856783">
+        <family-member>
+          <document-id>
+            <country>DE</country>
+            <doc-number>3539484</doc-number>
+            <kind>C1</kind>
+            <date>19861218</date>
+          </document-id>
+          <application-date>
+            <date>19851107</date>
+          </application-date>
+        </family-member>
+      </complete-family>
+    </patent-family>
+  </bibliographic-data>
+  <abstract id="abstr_eng" date-changed="20070508" lang="eng" format="original">
+    <p>It is the object of the invention to provide a controllable coupling which, while having a short axial overall length, has a specifiable switching behaviour from the shearing range of the viscous coupling to the friction range and in which overheating of the viscous coupling is precluded. This object is achieved according to the invention by virtue of the fact that the annular chamber of the viscous coupling (10) is formed between the inner coupling part (1) and a tubular attachment (13) connected concentrically to the outer coupling part (2), inside the latter, and attached rigidly to it at one end, all the way round, which forms an annular free space (14) with the said outer coupling part (2), and that the annular chamber of the viscous coupling (10) and the annular free space (14) are bounded at the free end of the attachment (13) by an annular piston (3) which can be displaced axially in the outer coupling part (2), and that, at its outside diameter, the annular piston (3) is sealed off from the outer coupling part (2) by means of a seal (7) and, at a smaller diameter, is sealed off from the tubular attachment (13) by means of a seal (8), and that, outside the annular surface (FR) formed between the operative surfaces of the seals (7 and 8), the annular piston (3) is provided with axially extending through passages (15). &lt;;IMAGE&gt;;</p>
+  </abstract>
+  <legal-data date-changed="20070508">
+    <legal-event sequence="1">
+      <publication-date>
+        <date>19861218</date>
+      </publication-date>
+      <event-code-1>8100</event-code-1>
+      <effect>+</effect>
+      <legal-description>PUBLICATION OF THE EXAMINED APPLICATION WITHOUT PUBLICATION OF UNEXAMINED APPLICATION</legal-description>
+      <status-identifier>C</status-identifier>
+      <docdb-publication-number> DE     3539484C1</docdb-publication-number>
+    </legal-event>
+    <legal-event sequence="2">
+      <publication-date>
+        <date>19861218</date>
+      </publication-date>
+      <event-code-1>D1</event-code-1>
+      <effect>+</effect>
+      <legal-description>GRANT (NO UNEXAMINED APPLICATION PUBLISHED) PATENT LAW 81</legal-description>
+      <status-identifier>C</status-identifier>
+      <docdb-publication-number> DE     3539484C1</docdb-publication-number>
+    </legal-event>
+    <legal-event sequence="3">
+      <publication-date>
+        <date>19870611</date>
+      </publication-date>
+      <event-code-1>8364</event-code-1>
+      <effect>+</effect>
+      <legal-description>NO OPPOSITION DURING TERM OF OPPOSITION</legal-description>
+      <status-identifier>C</status-identifier>
+      <docdb-publication-number> DE     3539484C1</docdb-publication-number>
+    </legal-event>
+    <legal-event sequence="4">
+      <publication-date>
+        <date>19890323</date>
+      </publication-date>
+      <event-code-1>8327</event-code-1>
+      <legal-description>CHANGE IN THE PERSON/NAME/ADDRESS OF THE PATENT OWNER</legal-description>
+      <status-identifier>C</status-identifier>
+      <docdb-publication-number> DE     3539484C1</docdb-publication-number>
+      <new-owner>VISCODRIVE GMBH, 5204 LOHMAR, DE</new-owner>
+    </legal-event>
+    <legal-event sequence="5">
+      <publication-date>
+        <date>19931111</date>
+      </publication-date>
+      <event-code-1>8339</event-code-1>
+      <effect>-</effect>
+      <legal-description>CEASED/NON-PAYMENT OF THE ANNUAL FEE</legal-description>
+      <status-identifier>C</status-identifier>
+      <docdb-publication-number> DE     3539484C1</docdb-publication-number>
+    </legal-event>
+  </legal-data>
+  <description id="descr_ger" lang="ger" format="original" date-changed="20090424">
+    <p>
+      <b>(g) </b>Int. <b>Cl. *:</b><b>F16 D 35/00</b><b>DEUTSCHLAND</b><b>DE 3539484 C1</b> © Aktenzeichen: P 35 39 484.6-12 ©Anmeldetag: 7.11.85 © Offenlegungstag: — @ Veröffentlichungstag der Patenterteilung: 18.12.86  <b>o&gt;;</b><b>M IA CO</b><b>Q</b><b>DEUTSCHES PATENTAMT</b> Innerhalb von 3 Monaten nach Veröffentlichung der <u>Erteilung kann Einspruch erhoben werden</u> @ Patentinhaber: Uni-Cardan AG, 5200 Siegburg, DE (72) Erfinder: Taureg, Herbert, Dipl.-Ing., 5202 Hennef, DE @ Im Prüfungsverfahren entgegengehaltene Druckschriften nach § 44 PatG: DE-PS 34 26 460 US 40 58 027 US 40 22 084 <b>ü</b><b>0</b><b>CO</b><b>to</b><b>CO </b> (g) Regelkupplung Aufgabe der Erfindung ist es, eine Regelkupplung zu schaffen, die bei kurzer axialer Baulänge, ein vorgebbares Sohaltverhalten vom Scherbereich der Viskosekupplung in den Reibbereich aufweist und bei der eine Überhitzung der Viskosekupplung ausgeschlossen ist. Diese Aufgabe wird erfindungsgemäß dadurch gelöst, daß die ringförmige Kammer der Viskosekupplung (10) zwischen dem inneren Kupplungsteil (1) und einem konzentrisch in­nerhalb des äußeren Kupplungsteils (2) einseitig rundum fest mit dem äußeren Kupplungsteil (2) verbundenen, rohr-förmig ausgebildeten, einen ringförmigen Freiraum (14) mit dem äußeren Kupplungsteil (2) bewirkenden Ansatz (13) gebildet ist, und daß die ringförmige Kammer der Viskose­kupplung (10) und der ringförmige Freiraum (14) am freien Ende des Ansatzes (13) durch einen axial im äußeren Kupp­lungsteil (2) verschiebbaren Ringkolben (3) begrenzt ist, und daß der Ringkolben (3) an seinem Außendurchmesser mit­tels einer Dichtung (7) gegen das äußere Kupplungsteil (2) und an einem kleineren Durchmesser mittels einer Dichtung (8) gegen den rohrförmigen Ansatz (13) abgedichtet ist, und daß der Ringkolben (3) außerhalb der zwischen den Wirkflä­chen der Dichtungen (7 und 8) gebildeten Ringfläche (FR) mit axial verlaufenden durchgehenden Kanälen (15) versehen ist. </p>
+    <p>
+      <b>5 26</b>
+      <b>7 3 9 12</b>
+      <b>24</b>
+      <b />
+      <b>25</b>
+      <b />
+      <b>17</b>
+      <b>Ul</b>
+      <b>Q</b> BUNDESDRUCKEREI 10.86 608151/484  39 484  Patentansprüche kupplung aus wechselweise jeweils mit dem inneren bzw. äußeren Kupplungsteil drehfest verbundenen La­ 1. Regelkupplung mit einem inneren Kupplungsteil und einem äußeren als Gehäuse ausgebildeten Kupplungsteil, zwischen denen eine ringförmige 5 Kammer zur Aufnahme einer wirkungsmäßig auf Reibungsschluß übergehenden Viskosekupplung angeordnet ist, wobei die mit einer viskosen Flüs­sigkeit mit einem Füllungsgrad von unter 100% gefüllte Viskosekupplung aus wechselweise jeweils io mit dem inneren bzw. äußeren Kupplungsteil dreh­fest verbundenen Lamellen besteht, und die inne­ren oder die äußeren Lamellen durch axial federn­de Distanzhalter in einem axialen Abstand vonein­ander gehalten sind,<b>dadurch gekennzeichnet, </b>daß a) die ringförmige Kammer der Viskosekupp­lung (10) zwischen dem inneren Kupplungsteil (1) und einem konzentrisch innerhalb des äu­ßeren Kupplungsteils (2) einseitig rundum fest 20 mit dem äußeren Kupplungsteil (2) verbun­denen, rohrförmig ausgebildeten, einen ring­förmigen Freiraum (14) mit dem äußeren Kupplungsteil (2) bildenden Ansatz (13) gebil­det ist,25 b) die ringförmige Kammer der Viskosekupp­lung (10) und der ringförmige Freiraum (14) am freien Ende des Ansatzes (13) durch einen im äußeren Kupplungsteil (2) axial verschieb­baren Ringkolben (3) begrenzt ist,30 c) der Ringkolben (3) an seinem Außendurch­messer mittels einer Dichtung (7) gegen das äußere kupplungsteil (2) und an einem kleine­ren Durchmesser mittels einer Dichtung (8) gegen den rohrförmigen Ansatz (13) abgedich- 35 tet ist, und d) der Ringkolben (3) außerhalb der zwischen den Wirkflächen der Dichtungen (7 und 8) ge­bildeten Ringfläche <i>(FR) </i>mit axial verlaufen­den durchgehenden Kanälen (15) versehen ist. 40 2. Regelkupplung nach Anspruch 1, dadurch ge­kennzeichnet, daß e) der Ringkolben (3) zweiteilig ausgebildet ist und innerhalb des Ringkolbens (3) ein zusätzli­cher, ebenfalls ringförmig ausgebildeter, durch 45 einen an seiner der Viskosekupplung (10) zu­gewandten Seite vorgesehenen, radial nach außen weisenden Ansatz (29) axial beweglich in Richtung auf die Viskosekupplung (10) hin mit dem Ringkolben (3) verbundener Druck- 50 Stempel (28) angeordnet ist, wobei die durch­gehenden Kanäle (15) in dem Druckstempel (28) vorgesehen sind. 3. Regelkupplung nach den Ansprüchen 1 und 2, dadurch gekennzeichnet, daß55 g) eine auf die der Viskosekupplung zuge­wandte Stirnfläche des Ringkolbens (3) einwir­kende Rückstellfeder (19) vorgesehen ist. </p>
+    <p>mellen besteht, und die inneren oder die äußeren Lamel­len durch axial federnde Distanzhalter in einem axialen Abstand voneinander gehalten sind. Bekannt ist eine Viskosekupplung, zu der eine Rei­bungskupplung parallel schaltbar ist, wobei die Viskose­kupplung die Aufgabe hat, den bei ihrer Erwärmung sich einstellenden Druckanstieg zum Ansteuern der Rei­bungskupplung zu nutzen (US-PS 40 58 027). Die Beauf­schlagung der Reibungskupplung geschieht dabei durch Einwirkung des Druckes auf einen Differentialkolben. Bei der bekannten Regelkupplung ist es von Nachteil, daß diese durch die Parallelschaltung zweier unabhängi­ger Kupplungen axial eine große Baulänge beansprucht. Die Regelkupplung nach der US-PS ist daher nur schwer dazu geeignet, in Längsdifferentiale oder in Achsdifferentiale integriert zu werden. Eine weitere bekannte Regelkupplung (US-PS 40 22 084) ist als Viskosekupplung aufgebaut, wobei die Lamellen wenigstens eines der beiden Lamellensätze mit Reibungsmaterial beschichtet sind. Bei Berührung der Lamellensätze untereinander soll dadurch ein höherer Reibwert zwischen ihnen bewirkt werden. Bei dieser Regelkupplung ist es jedoch von Nachteil, daß keine das Nennmoment der Kupplung festlegende Normalkraft auftritt. Die Drehmomentverhältnisse der Kupplung sind daher mehr dem Zufall überlassen. Eine weitere bekannte Regelkupplung weist eine Vis­kosekupplung auf, die bei Eintritt einer Drehzahldiffe­renz und eines daraus herleitbaren Druckanstieges auf einen Ringkolben einwirkt, wobei der Ringkolben sei­erseits wieder in eine getrennte Reibungskupplung inwirkt (DE-PS 34 26 460). Der Kolbenweg ist durch einen Anschlag begrenzt, obei der Kolben über Federn auf die Reibungskupp­ung einwirkt. Hierdurch ist eine kalkulierbare maximale Normal­raft für die Reibungskupplung gegeben, womit auch as maximal übertragbare Drehmoment errechenbar st. Nachteilig bei der beschriebenen Kupplung ist je­och, daß die Viskosekupplung und die Reibungskupp­ung axial hintereinander liegen, wodurch eine große aulänge bewirkt wird. Der Erfindung liegt die Aufgabe zugrunde, eine Re­elkupplung zu schaffen, die bei kurzer axialer Baulän­e, ein vorgebbares Schaltverhalten vom Scherbereich er Viskosekupplung in den Reibbereich aufweist und ei der eine Überhitzung der Viskosekupplung ausge­hlossen ist. Erfindungsgemäß wird diese Aufgabe dadurch gelöst, aß a) die ringförmige Kammer der Viskosekupplung zwischen dem inneren Kupplungsteil und einem konzentrisch innerhalb des äußeren Kupplungsteils einseitig rundum fest mit dem äußeren Kupplungs­ Beschreibung  teil verbundenen, rohrförmig ausgebildeten, einen ringförmigen Freiraum mit dem äußeren Kupp­lungsteil bildenden Ansatz gebildet ist, b) die ringförmige Kammer der Viskosekupplung und der ringförmige Freiraum am freien Ende des Ansatzes durch einen im äußeren Kupplungsteil axial verschiebbaren Ringkolben begrenzt ist, c) der Ringkolben an seinem Außendurchmesser mittels einer Dichtung gegen das äußere Kupp­lungsteil und an einem kleineren Durchmesser mit- Die Erfindung betrifft eine Regelkupplung mit einem inneren Kupplungsteil und einem äußeren als Gehäuse ausgebildeten Kupplungsteil, zwischen denen eine ring­förmige Kammer zur Aufnahme einer Viskosekupplung 65 angeordnet ist, wobei die mit einer viskosen Flüssigkeit mit einem Füllungsgrad von unter 100% gefüllte wir­kungsmäßig auf Reibungsschluß übergehende Viskose-  <b>3</b><b /><b>4 </b>tels einer Dichtung gegen den rohrförmigen Ansatzgleichzeitigem Schutz der Regelkupplung gegen Über­abgedichtet ist, undhitzung wieder her. d) der Ringkolben außerhalb der zwischen denZwangsläufig kühlt sich die Regelkupplung aufgrund Wirkflächen der Dichtungen gebildeten Ringflächeder reibschlüssigen Verbindung zwischen den Lamellen <i>(FR) </i>mit axial verlaufenden durchgehenden Kanä- 5und der hieraus bedingten Aufhebung der Drehzahldif-len versehen ist.ferenz wieder ab und gibt die Regelkupplung durch Bei der erfindungsgemäßen Ausbildung einer Rei-Umschalten auf die Viskosewirkung wieder frei, bungskupplung ist es von Vorteil, daß ein und dasselbeIn einer vorteilhaften Ausgestaltung der Erfindung ist Lamellenpaket in seiner Wirkung als Viskosekupplung,vorgesehen, daß der Ringkolben zweiteilig ausgebildet die Umschaltung zur Reibungskupplung hin einleitet ioist und innerhalb des Ringkolbens ein zusätzlicher, und anschließend die Reibungskupplung darstellt. Dieebenfalls ringförmig ausgebildeter, durch einen an sei­für die Umfunktionierung der Viskosekupplung zur Rei-ner der Viskosekupplung zugewandten Seite vorgese-bungskupplung erforderliche Normalkraft resultiert da-henen, radial nach außen weisenden Ansatz axial be-bei aus dem Anpreßdruck, der sich aus der Erwärmungweglich in Richtung auf die Viskosekupplung hin mit der viskosen Flüssigkeit und ihrer hieraus bedingten 15dem Ringkolben verbundener Druckstempel angeord-Volumenausdehnung ergibt und der über den als Diffe-net ist, wobei die durchgehenden Kanäle in dem Druck-rentialkolben ausgebildeten Ringkolben auf das Lamel-Stempel vorgesehen sind. lenpaket einwirkt. Eine Zerstörung der Viskosekupp-Dieses Merkmal hat den Vorteil, daß sich trotz mögh- lung durch Überhitzung ist damit ausgeschlossen.eher elastischer Verformungen des Ringkolbens immer Die die Normalkraft aufbringende wirksame Fläche 20eine gleichmäßige Druckverteilung zwischen Druck- <i>FR </i>des Ringkolbens, die sich aus dem WirkdurchmesserStempel und Lamellen ergibt. der Dichtungen des Ringkolbens gegen das als GehäuseNach einem vorteilhaften Merkmal der Erfindung ist aufgebaute zweite Kupplungsteil und gegen den miteine auf die der Viskosekupplung zugewandte Stirnflä- dem zweiten Kupplungsteil verbundenen rohrförmigenche des Ringkolbens einwirkende Rückstellfeder vorge- Ansatz ergibt, kann durch Änderung des Wirkdurch- 25sehen. messers einer oder beider der genannten DichtungenHierdurch wird die Rückstellung der Regelkupplung leicht verändert werden, ohne daß Änderungen an denin die Funktion der Viskosekupplung beschleunigt, konstruktionsaufwendigen Teilen der Regelkupplung,Nachstehend wird die Erfindung anhand in der Zeich- wie der Größe des Lamellenpaketes und der die Lamel-nung dargestellter Ausführungsbeispiele näher erläu- len aufnehmenden Vielkeilprofile vorgenommen wer- 30tert. den.Es zeigt Ein weiterer Vorteil der Viskosekupplung ist darin zu<b>Fig. </b>1 das Prinzip der Regelkupplung im Teilschmtt, sehen, daß sie sich wegen ihrer kleinen Bauart dazuund eignet, ohne große konstruktive Änderungen in Längs-<b>Fig. </b>2 einen Teilschnitt durch die Regelkupplung mit differentiale wie auch in Achsdifferentiale integriert zu 35einem im Inneren des Ringkolbens angeordneten werden.Druckstempel. In vorteilhafter Weise eignet sich die erfindungsge-Die in der <b>Fig. </b>1 dargestellte Regelkupplung besteht mäße Regelkupplung zum Einsatz als Längsdifferential,aus einem hier rohrförmig ausgebildeten inneren Kupp-um einen permanenten Vierradantrieb darzustellen. Inlungsteil 1, und einem drehbar auf dem inneren Kupp­diesem Fall arbeitet die Regelkupplung auf dem Prinzip 40lungsteil 1 gelagerten äußeren Kupplungsteil 2. Die bei­der Viskoseübertragung, wobei die Kennung der Regel-den Kupplungsteile 1 und 2 sind über Dichtungen 20 kupplung durch die Vorgabe einer viskosen Flüssigkeitund 22 nach außen hin abgedichtet. Zum Beispiel durch entsprechender Viskosität und eines entsprechendenSchweißen mit dem äußeren Kupplungsteil 2 bzw. wie Füllungsgrades hoch ausgelegt ist. Eine bei Auftretenin der <b>Fig. </b>1 dargestellt, mit einem mit dem äußeren von langzeitigem Schlupf an der direkt angetriebenen 45Kupplungsteil verschraubten Einsatz fest verbunden, ist Achse auftretende Gefahr einer Überhitzung wirdein koaxial zur Achse der Regelkupplung angeordneter durch Umschalten der Regelkupplung in die Funktionrohrförmiger Ansatz 13. Der Durchmesser des rohrför-einer Reibungskupplung vermieden.migen Ansatzes 13 ist so gehalten, daß sich zwischen In vorteilhafter Weise eignet sich die erfindungsge-seiner Außenwandung und der Innenwandung des als mäße Reibungskupplung auch zum Einsatz als Differen- 50Gehäuse ausgebildeten äußeren Kupplungsteiles 2 ein tialsperre. Bei normalen Fahrzuständen tritt keineringförmiger Freiraum 14 bildet. Drehzahldifferenz innerhalb der in diesem Fall mit einerDas innere Kupplungsteil 1 ist auf einem Teil seines niedrigen Kennung versehenen Regelkupplung auf undAußenmantels mit einer Vielkeilverzahnung 25 verse-auch kurzzeitige Drehzahldifferenzen, wie sie bei Kur-hen. Axial korrespondierend zu der Vielkeilverzahnung venfahrten zwangsläufig eintreten, ergeben nur geringe 5525 ist der rohrförmige Ansatz 13 an seinem Innenmantel Sperrmomente und bringen die Regelkupplung nichtebenfalls mit einer Vielkeilverzahnung 24 versehen. In zum Umschalten auf die Funktion als Reibungskupp-der Vielkeilverzahnung 25 sind Lamellen 5 und in der l<sub>un</sub>gVielkeilverzahnung 24 weitere Lamellen 4 drehfest auf­Wenn jedoch bedingt durch ungünstige Bodenver-genommen, hältnisse (U-Splitt zwischen den Rädern einer Achse 60Der aus den Lamellen 4 und 5 zusammengesetzte bzw. zwischen den Achsen) sich höhere Differenzdreh-Lamellensatz bildet die Viskosekupplung 10. Zwischen zahlen einstellen, tritt innerhalb der noch als Viskose-den mit dem rohrförmigen Ansatz 13 drehfest verbun-kupplung arbeitenden Regelkupplung eine Erwärmungdenen Lamellen 4 sind axial federnde Distanzhalter 6 ein, die über die hieraus resultierende Druckerhöhungangeordnet, die z. B. aus gewellten Federringen beste-das Umschalten auf die Funktion der Reibungskupplung eshen können. bewirkt. Das Differential verhält sich dann wie einDie zusammengedrückte Dicke der Distanzhalter 6 Sperrdifferential mit hohem Sperrwert und stellt dieist kleiner als die Dicke der Lamellen 5, die mit dem zum Vortrieb des Fahrzeuges notwendige Traktion beiinneren Kupplungsteil 1 drehfest verbunden sind. </p>
+    <p>39 484 An der der Befestigungsseite des rohrförmigen An­satzes 13 abgewandten Seite der Viskosekupplung 10 ist ein Ringkolben 3 axial verschiebbar angeordnet. Der Ringkolben 3 ist über eine Dichtung 7 gegen die Innenwandung des als Gehäuse aufgebauten äußeren Kupplungsteiles 2 und mittels einer Dichtung 8 gegen den rohrförmigen Ansatz 13 abgedichtet. Korrespon­dierend zum rohrförmigen Ansatz 13 ist im Ringkolben 3 ein Einstich 21 vorgesehen, der einen ausreichenden axialen Verschiebeweg für den Ringkolben 3 gewährlei­stet. Zur Erleichterung der Flüssigkeitsbewegung kann der Ringkolben 3 an seinen Stirnflächen mit Radialnu­ten 16 und 17 versehen sein. An der dem Ringkolben 3 zugeordneten Seite ist das äußere Kupplungsteil 2 durch eine z. B. gegen einen Sprengring 12 abgestützte Deckplatte 11 abgeschlos­sen, die über eine Dichtung 9 gegen die Innenwandung des Gehäuses abgedichtet ist. Die erfindungsgemäße Regelkupplung arbeitet wie<br />  ordnet. Der Druckstempel 28 weist an seiner der Visko­sekupplung 10 zugewandten Seite einen radial nach au­ßen weisenden Ansatz 29 auf, der am Ringkolben 3 ab­gestützt ist. Der in den Ringkolben 3 hineinreichende Bereich des Druckstempels 28 ist sich zu der der Visko­sekupplung 10 abgewandten Seite kegelig verjüngend ausgebildet. Hierdurch können elastische Verformun­gen des Ringkolbens 3, die zu einer ungleichmäßigen Belastung der Lamellen 4 und 5 führen könnten, ausge­glichenwerden. Die Kanäle 15 sind bei dieser Ausführung innerhalb des Druckstempels 28 vorgesehen. </p>
+    <p>Hierzu 2 Blatt Zeichnungen  folgt:  Solange zwischen dem inneren Kupplungsteil 1 und dem äußeren Kupplungsteil 2 keine Differenzdrehzahl auftritt, tritt in der Viskosekupplung 10 keine Relativbe­wegung der Lamellen 4 und 5 zueinander ein, d. b, die Regelkupplung ist vollkommen unwirksam. </p>
+    <p> Bei Auftreten einer Drehzahldifferenz innerhalb der Viskosekupplung 10 wird aufgrund der Flüssigkeits-scherung ein Drehmoment durch die Viskosekupplung 10 geleitet. Die Viskosekupplung 10 erwärmt sich hier­ bei, was einen Druckanstieg zur Folge hat  Da der Ringkolben 3 innerhalb einer durch die Wirk­flächen der Dichtungen 7 und 8 bestimmten Ringfläche <i>FR, </i>an der der Viskosekupplung 10 zugewandten Seite frei von Flüssigkeitsdruck bzw. mit dem Atmosphären­ druck beaufschlagt ist, entsteht eine auf den Ringkolben<br />  3 einwirkende Kraftkomponente, die in die Viskose­kupplung 10 als Normalkraft einwirkt. Sobald diese Kraftkomponente so groß ist, daß die Spreizkraft der Distanzhalter 6 überwunden wird, treten die Lamellen 4 und 5 in Reibschluß zueinander und die Kupplung ist in<br />  eine Reibungskupplung umfunktioniert, so daß bei ent­sprechender Auslegung der Kupplung, die Drehzahldif­ferenz Null wird. Die Kupplung ist damit voll durchge­schaltet. Ausgehend von diesem Zustand stellt sich wieder eine 45 Temperatursenkung in der Regelkupplung ein, da keine Energie mehr in ihrem Inneren umgesetzt wird und die Kupplung schaltet nach einer gewissen von der Abkühl­geschwindigkeit abhängigen' Zeit wieder zu der Wir­kung einer Viskosekupplung um. Dieses Umschalten so der Kupplung kann noch zusätzlich durch eine im Frei­raum 14 angeordnete Feder unterstützt werden. Der zwischen dem rohrförmigen Ansatz 13 und dem Außenmantel des äußeren Kupplungsteiles 2 gebildete Freiraum 14 kann durch Durchbrüche 23 mit der Au-<br />  ßenluft verbunden werden, um zu verhindern, daß sich bei Axialbewegungen des Ringkolbens 3 die Wirkungs­weise der Kupplung beeinflussende Druckschwankun­gen in dem Freiraum 14 einstellen. Zum Einbau der Regelkupplung in ein Längs- oder Achsdifferential ist das innere Kupplungsteil 1 als Auf­stecknabe ausgebildet, während das äußere Kupplungs­teil 2 z. B. mit einem Anschlußflansch 26 versehen sein kann, der gleichzeitig Schrauben 27 zur Verbindung der die Viskosekupplung 10 bildenden Bauteile mit dem Ge­häuse aufnimmt. Bei der in Fig. 2 dargestellten Regelkupplung ist im Inneren des Ringkolbens 3 ein Druckstempel 28 ange-   <b>ZEICHNUNGEN BLATT 2</b><b>Nummer:</b><b /><b>35 39484</b><b>Int. Cl.<sup>4</sup>:</b><b> F16 D 35/00</b><b>Veröffentlichungstag: 18. Dezember 1986</b> Eig^ <b>608 151/484</b> ZEICHNUNGEN BLATT 1 Nummer: <b>35 39 484</b> Int. Cl.<sup>4</sup>: <b>F 16 D 35/00</b> Veröffentlichungstag: 18. Dezember 1986 <b>5 26 19 4 23 6 14 13. 2 8 21 7 3 9 12</b> 608151/484 </p>
+  </description>
+</lexisnexis-patent-document>

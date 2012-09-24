@@ -1,3 +1,10 @@
 # parsing an XML file
+
 python main.py -h -c LEXISNEXIS data/in/lexisnexis/US4192770A.xml data/tmp/US4192770A.txt data/tmp/US4192770A.tags data/tmp/US4192770A.fact data/out/US4192770A.sect.basic
+
+
+# and now a 1986 german one that caused troubles in the past 
+# (invalid literal for int() with base 10: '0/')
+
+python main.py -h -c LEXISNEXIS -l GERMAN data/in/lexisnexis/DE3539484C1.xml data/tmp/DE3539484C1.txt data/tmp/DE3539484C1.tags data/tmp/DE3539484C1.fact data/out/DE3539484C1.sect.basic
 

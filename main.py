@@ -164,6 +164,7 @@ class Parser(object):
         Takes a file with names of input and output files and processes them. Each line in the
         file has three filenames, separated by tabs, the first file is the text inut file, the
         second the fact input file, and the third the output file."""
+        # TODO: may want to extend this to XML files
         for line in open(file_list):
             (text_file, fact_file, sections_file) = line.strip().split()
             #print "Processing  %s" % (text_file[:-4])

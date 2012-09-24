@@ -13,5 +13,5 @@ def transform_tags_file(file1 , file2):
         tag = fields[0]
         if tag in tags:
             tagline =  tag[1:] + ' ' + ' '.join(fields[1:])
-            tagline = tagline.strip('>')
+            tagline = tagline.strip('/>')
             out.write(tagline+"\n")
