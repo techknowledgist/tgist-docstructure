@@ -41,14 +41,25 @@ class ComplexElsevierSectionFactory(SectionFactory):
             section.text = header.text(a_text)
             self.sections.append(section)
 
+        #Sometimes abstracts are tagged one way, sometimes another way, sometimes both at once.
+        #We need to eliminate double-counting.
+        abstract_sections = filter(lambda x: "Abstract" in x.types, self.sections)
+
         for abstract in abstracts:
-            section = Section()
-            section.types = ["Abstract"]
-            section.filename = self.text_file
-            section.start_index = abstract.start_index
-            section.end_index = abstract.end_index
-            section.text = abstract.text(a_text)
-            self.sections.append(section)
+            already_here=False
+            for abs_sec in abstract_sections:
+                if ((abs_sec.start_index < abstract.start_index and abs_sec.end_index > abstract.start_index)
+                    or (abs_sec.start_index > abstract.start_index and abs_sec.start_index < abstract.end_index)):
+                    already_here=True
+                    break
+            if not already_here:
+                section = Section()
+                section.types = ["Abstract"]
+                section.filename = self.text_file
+                section.start_index = abstract.start_index
+                section.end_index = abstract.end_index
+                section.text = abstract.text(a_text)
+                self.sections.append(section)
             
         self.sections.extend(section_gaps(self.sections, a_text, self.text_file))
         link_sections(self.sections)
