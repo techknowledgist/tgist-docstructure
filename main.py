@@ -8,7 +8,7 @@ Usage:
    % python main.py [OPTIONS] XML_FILE TEXT_FILE TAGS_FILE FACT_FILE STRUCTURE_FILE
    % python main.py [-c COLLECTION] [-l LANGUAGE] FILE_LIST
    % python main.py [-c COLLECTION] [-l LANGUAGE] DIRECTORY
-   % python main.py -o XML_FILE
+   % python main.py -o XML_FILE TEXT_FILE TAGS_FILE FACT_FILE STRUCTURE_FILE ONTO_FILE
    % python main.py -t
 
 In the first form, input is taken from TEXT_FILE, which contains the bare text, and
@@ -73,12 +73,13 @@ from utils.misc import run_shell_commands
 def usage():
     print "\nUsage:"
     print '  % python main.py [-h] [-c COLLECTION] [-l LANGUAGE] ' \
-        + 'TEXT_FILE FACT_FILE STRUCTURE_FILE'
+          + 'TEXT_FILE FACT_FILE STRUCTURE_FILE'
     print '  % python main.py [-h] [-c COLLECTION] [-l LANGUAGE] ' \
-        + 'XML_FILE TEXT_FILE TAGS_FILE FACT_FILE STRUCTURE_FILE'
+          + 'XML_FILE TEXT_FILE TAGS_FILE FACT_FILE STRUCTURE_FILE'
     print '  % python main.py [-c COLLECTION] [-l LANGUAGE] FILE_LIST'
     print '  % python main.py [-c COLLECTION] [-l LANGUAGE] DIRECTORY'
-    print '  % python main.py -o XML_FILE'
+    print '  % python main.py -o XML_FILE TEXT_FILE TAGS_FILE ' \
+          + 'FACT_FILE STRUCTURE_FILE ONTO_FILE'
     print '  % python main.py -t'
 
     
@@ -275,14 +276,11 @@ class Parser(object):
         key = open(key_file).readlines()
         results.append((filename, sect_file, response, key_file, key))
         
-    def create_ontology_creation_input(self, xml_file):
+    def create_ontology_creation_input(self, xml_file, text_file, tags_file,
+                                       fact_file, sect_file, onto_file):
         """Create input files that can be used by the ontology creation process. It is
         currently only guaranteed to work for English patents."""
-        text_file = xml_file + '.txt'
-        tags_file = xml_file + '.tags'
-        fact_file = xml_file + '.fact'
-        sect_file = xml_file + '.sect'
-        onto_file = xml_file + '.onto'
+        # TODO: german gets wrong abstract
         create_fact_file(xml_file, text_file, tags_file, fact_file)
         self.collection = 'LEXISNEXIS'
         self.process_file(text_file, fact_file, sect_file, fact_type='BASIC')
@@ -295,9 +293,13 @@ class Parser(object):
         self._add_usable_sections(section_tags, text, FH_DATA)
         ONTO_FH = open_write_file(onto_file)
         for f in TARGET_FIELDS:
-            ONTO_FH.write("%s:\n" % f)
-            ONTO_FH.write(FH_DATA[f][2].encode('utf-8'))
-            ONTO_FH.write("\n")
+            # TODO: make more specific
+            try:
+                ONTO_FH.write("%s:\n" % f)
+                ONTO_FH.write(FH_DATA[f][2].encode('utf-8'))
+                ONTO_FH.write("\n")
+            except Exception:
+                pass
         ONTO_FH.write("END\n")
 
     def _add_usable_sections(self, section_tags, text, FH_DATA):
@@ -341,7 +343,9 @@ if __name__ == '__main__':
 
     # create ontology input
     elif parser.onto_mode:
-        parser.create_ontology_creation_input(args[0])
+        xml_file, txt_file, tags_file, fact_file, sect_file, onto_file = args
+        parser.create_ontology_creation_input(xml_file, txt_file, tags_file,
+                                              fact_file, sect_file, onto_file)
 
     # process a text file and a fact file, creating a sect file
     elif len(args) == 3:
