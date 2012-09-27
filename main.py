@@ -280,7 +280,6 @@ class Parser(object):
                                        fact_file, sect_file, onto_file):
         """Create input files that can be used by the ontology creation process. It is
         currently only guaranteed to work for English patents."""
-        # TODO: german gets wrong abstract
         create_fact_file(xml_file, text_file, tags_file, fact_file)
         self.collection = 'LEXISNEXIS'
         self.process_file(text_file, fact_file, sect_file, fact_type='BASIC')
@@ -293,13 +292,10 @@ class Parser(object):
         self._add_usable_sections(section_tags, text, FH_DATA)
         ONTO_FH = open_write_file(onto_file)
         for f in TARGET_FIELDS:
-            # TODO: make more specific
-            try:
+            if FH_DATA.has_key(f) and FH_DATA[f] is not None:
                 ONTO_FH.write("%s:\n" % f)
-                ONTO_FH.write(FH_DATA[f][2].encode('utf-8'))
+                ONTO_FH.write(FH_DATA[f][2])
                 ONTO_FH.write("\n")
-            except Exception:
-                pass
         ONTO_FH.write("END\n")
 
     def _add_usable_sections(self, section_tags, text, FH_DATA):
@@ -309,15 +305,21 @@ class Parser(object):
         for tag in section_tags:
             (p1, p2, tagtype) = (tag.start_index, tag.end_index, tag.attr('TYPE'))
             if mappings.get(tagtype) is not None:
-                FH_DATA[mappings[tagtype]] = (p1, p2, text[int(p1):int(p2)].strip())
+                mapped_type = mappings[tagtype]
+                # need to do this for german and chinese since both have two titles and
+                # two abstracts and the second of those is in English.
+                # TODO: this is fragile because it depends on fact order
+                if FH_DATA.has_key(mapped_type) and FH_DATA[mapped_type] is None:
+                    FH_DATA[mapped_type] = (p1, p2, text[int(p1):int(p2)].strip())
             elif tagtype == 'CLAIM':
                 if tag.attr('CLAIM_NUMBER') == '1':
                     FH_DATA['FH_FIRST_CLAIM'] = (p1, p2, text[int(p1):int(p2)].strip())
-            desc = FH_DATA['FH_DESCRIPTION']
-            summ = FH_DATA['FH_SUMMARY']
-            if desc and summ:
-                FH_DATA['FH_DESC_REST'] = (summ[1], desc[1], text[summ[1]:desc[1]].strip())
-        
+        desc = FH_DATA['FH_DESCRIPTION']
+        summ = FH_DATA['FH_SUMMARY']
+        if desc and summ:
+            FH_DATA['FH_DESC_REST'] = (summ[1], desc[1], text[summ[1]:desc[1]].strip())
+        elif desc and not summ:
+            FH_DATA['FH_DESC_REST'] = (desc[0], desc[1], text[desc[0]:desc[1]].strip())
 
     
 if __name__ == '__main__':
