@@ -119,7 +119,10 @@ class SectionFactory(object):
         except AttributeError:
             pass   
         if self.verbose and len(section.text) > 0:
-            sec_string += "\n"+section.text
+            if len(section.text) < 2000:
+                sec_string += "\n"+section.text
+            else:
+                sec_string += "\n"+section.text[:900]+"  [...]  " + section.text[-900:]
         if suppress_empty and len(section.text.strip()) < 1:
             return None
         return sec_string + "\n"

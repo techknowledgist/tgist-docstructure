@@ -7,7 +7,7 @@ Source reading code for Elsevier structured documents.
 
 import shlex, codecs
 from common import load_data, load_articles
-
+from common import tags_with_type
 
 class Tag():
 
@@ -64,13 +64,14 @@ class Tag():
 
     
 
-def headed_sections(tags, max_title_lead=30, separate_headers=True):
+def headed_sections(tags, doc_length, max_title_lead=50, separate_headers=True, max_title_follow=50):
     """
     max_title_lead controls how far the title's end can be from the section's beginning
     for it to still count as that section's header. separate_headers controls whether
     or not headers are treated as section objects in their own right, or simply have
     their text subsumed in the section.
     """
+
     
     structures = filter(lambda x: x.name == "STRUCTURE", tags)
     title_structures = filter(lambda x: x.attributes["TYPE"] == "TITLE", structures)
@@ -89,11 +90,19 @@ def headed_sections(tags, max_title_lead=30, separate_headers=True):
     
     for index in range(len(title_structures)-1):
         title = title_structures[index]
+        
+        
         next_title = title_structures[index+1]
         titled_paras =[]
+        titled_chunks = []
         for text_structure in text_structures:
-            if (title.end_index < text_structure.start_index
-                and text_structure.end_index < next_title.start_index):
+            if (text_structure.attributes["TYPE"]=="TEXT_CHUNK"
+                and title.start_index < text_structure.start_index + max_title_follow
+                and text_structure.start_index - title.end_index < max_title_lead):
+                titled_chunks.append(text_structure)
+            elif (title.start_index < text_structure.start_index + max_title_follow
+                and text_structure.end_index < next_title.start_index
+                  and len(titled_chunks)==0):
                 immediate_follower=False
                 if text_structure.start_index - title.end_index < max_title_lead and len(titled_paras) < 1:
                     immediate_follower=True
@@ -103,7 +112,20 @@ def headed_sections(tags, max_title_lead=30, separate_headers=True):
                     text_structure.start_index = title.start_index
                 if immediate_follower or len(titled_paras) > 0:
                     titled_paras.append(text_structure)
-        if len(titled_paras) > 0:
+        """
+        We can't rule out BODY tags by any structural analysis, since Introduction
+        inside BODY has the same structure as p1 of Methods inside Methods. So we
+        just figure anything sufficiently long is BODY.
+        """
+        titled_chunks=filter(lambda x: len(x) < doc_length/4, titled_chunks)
+        if len(titled_chunks) > 0:
+            best_chunk=sorted(titled_chunks, key=len)[-1]
+            if separate_headers:
+                header_matches.append(title)
+            else:
+                best_chunk.start_index = title.start_index
+            matches.append((title,[best_chunk]))
+        elif len(titled_paras) > 0:
             matches.append((title, titled_paras))
     matches.extend(header_matches)
     return matches
@@ -111,5 +133,6 @@ def headed_sections(tags, max_title_lead=30, separate_headers=True):
 def find_abstracts(tags):
     structures = filter(lambda x: x.name == "STRUCTURE", tags)
     return filter(lambda x: x.attributes["TYPE"] == "ABSTRACT", structures)
+
 
 
