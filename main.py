@@ -375,4 +375,4 @@ if __name__ == '__main__':
         sect_file = "doc.sections"
         parser.collection = 'PUBMED'
         parser.process_file(text_file, fact_file, sect_file, verbose=False)
-
+        
