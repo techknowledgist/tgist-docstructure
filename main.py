@@ -203,6 +203,6 @@ if __name__ == '__main__':
         text_file = "doc.txt"
         fact_file = "doc.fact"
         sect_file = "doc.sections"
-        collection = 'PUBMED'
-        process_file(text_file, fact_file, sect_file, collection, verbose=False, html=False)
+        collection = 'C_ELSEVIER'
+        process_file(text_file, fact_file, sect_file, collection, verbose=True, html=False)
         

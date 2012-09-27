@@ -12,7 +12,7 @@ class ComplexElsevierSectionFactory(SectionFactory):
         of the article, converts them into a list of semantically typed sections. """
 
         (a_text, a_tags) = readers.elsevier2.load_data(self.text_file, self.fact_file)
-        raw_sections = readers.elsevier2.headed_sections(a_tags, separate_headers=True)
+        raw_sections = readers.elsevier2.headed_sections(a_tags, len(a_text), separate_headers=True)
         text_sections = filter(lambda x: type(x) == tuple, raw_sections)
         header_sections = filter(lambda x: type(x) != tuple, raw_sections)
         abstracts = readers.elsevier2.find_abstracts(a_tags)
@@ -46,7 +46,6 @@ class ComplexElsevierSectionFactory(SectionFactory):
         abstract_sections = filter(lambda x: "Abstract" in x.types, self.sections)
 
         for abstract in abstracts:
-            already_here=False
             for abs_sec in abstract_sections:
                 if ((abs_sec.start_index < abstract.start_index and abs_sec.end_index > abstract.start_index)
                     or (abs_sec.start_index > abstract.start_index and abs_sec.start_index < abstract.end_index)):
