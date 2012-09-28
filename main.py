@@ -86,6 +86,8 @@ def usage():
 def create_fact_file(xml_file, text_file, tags_file, fact_file):
     """Given an xml file, first create text and tags files using the xslt standoff scripts and
     then create a fact file."""
+    # TODO: find a better way to do this, I want to use execfile to put the document
+    # parser into a namespace, but then the __file__ variable is not available anymore
     dirname = os.path.dirname(__file__)
     text_xsl = os.path.join(dirname, 'utils/standoff/text-content.xsl')
     tags_xsl = os.path.join(dirname, 'utils/standoff/standoff.xsl')
@@ -219,6 +221,18 @@ class Parser(object):
                     self.collection = result.group(1)
                     break
 
+    def ping(self):
+        """Utility method to quickly see if it work, useful when calling this module from
+        the outside."""
+        self.collection = 'LEXISNEXIS'
+        xml_file = "data/in/lexisnexis/US4192770A.xml"
+        text_file = "data/tmp/US4192770A.txt"
+        tags_file = "data/tmp/US4192770A.tags"
+        fact_file = "data/tmp/US4192770A.fact"
+        sect_file = "data/tmp/US4192770A.sect"
+        self.process_xml_file(xml_file, text_file, tags_file, fact_file, sect_file)
+        print "Created", sect_file
+
     def run_tests(self):
         """
         Runs a regression test on a couple of files. For all these files, there needs to be a
@@ -306,9 +320,14 @@ class Parser(object):
             (p1, p2, tagtype) = (tag.start_index, tag.end_index, tag.attr('TYPE'))
             if mappings.get(tagtype) is not None:
                 mapped_type = mappings[tagtype]
-                # need to do this for german and chinese since both have two titles and
-                # two abstracts and the second of those is in English.
-                # TODO: this is fragile because it depends on fact order
+                # skip the title or abstract if it is in English and the language set is
+                # German or Chinese
+                # TODO: needs to be generalized to all languages
+                if self.language != 'ENGLISH' and tagtype in ('META-TITLE', 'ABSTRACT'):
+                    if tag.attr('LANGUAGE') == 'eng':
+                        continue
+                # only add the content if there wasn't any already, this is a bit ad hoc
+                # but will have a preference for the first occurrence of the same content
                 if FH_DATA.has_key(mapped_type) and FH_DATA[mapped_type] is None:
                     FH_DATA[mapped_type] = (p1, p2, text[int(p1):int(p2)].strip())
             elif tagtype == 'CLAIM':

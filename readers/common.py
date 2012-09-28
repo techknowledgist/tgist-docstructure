@@ -22,18 +22,11 @@ class Tag():
         self.name = split_text[0]
         self.attributes = dict([x.split('=',1) for x in split_text[1:]])
         if fact_type == 'BASIC':
-            p1 = int(self.attributes.get("standoff:offset", '-1'))
-            length = int(self.attributes.get("standoff:length", '-1'))
-            if p1 == -1 or length == -1:
-                # for unexplained reasons, the standoff.xsl script sometimes uses standoff1
-                # instead of standoff in attribute names, this is the workaround for that
-                p1 = int(self.attributes.get("standoff1:offset", '-1'))
-                length = int(self.attributes.get("standoff1:length", '-1'))
+            p1 = self.get_basic_offset()
+            length = self.get_basic_length()
             self.start_index = p1
             self.end_index = p1 + length if (p1 > -1 and length > -1) else -1
         if fact_type == 'BAE':
-            # the following is a simplicifcation that works for patents and pubmed, but it
-            # needs to be tested for elsevier2
             self.start_index = int(self.attributes.get("START", '-1'))
             self.end_index = int(self.attributes.get("END", '-1'))
 
@@ -47,9 +40,17 @@ class Tag():
     def text(self, doc):
         return doc[self.start_index:self.end_index]
 
-    def attr(self, attr):
-        return self.attributes.get(attr, None)
+    def attr(self, attr, default=None):
+        return self.attributes.get(attr, default)
 
+    def get_basic_offset(self):
+        keys = [a for a in self.attributes.keys() if a.endswith(':offset')]
+        return int(self.attr(keys[0], -1)) if keys else -1
+    
+    def get_basic_length(self):
+        keys = [a for a in self.attributes.keys() if a.endswith(':length')]
+        return int(self.attr(keys[0], -1)) if keys else -1
+    
     def is_contained_in(self, p1, p2):
         """Return True if self is contained in p1 and p2."""
         if p1 <= self.start_index <= p2 and p1 <= self.end_index <= p2:

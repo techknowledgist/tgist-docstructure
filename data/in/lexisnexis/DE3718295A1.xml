@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright ©2011 LexisNexis Univentio, The Netherlands. -->
+<lexisnexis-patent-document schema-version="1.08" date-produced="20110619" file="DE3718295A1.xml" produced-by="LexisNexis-Univentio" lang="eng" date-changed="20071209" time-changed="171929">
+  <bibliographic-data lang="ger">
+    <publication-reference publ-type="Application" publ-desc="Document laid open (First publication)">
+      <document-id>
+        <country>DE</country>
+        <doc-number>3718295</doc-number>
+        <kind>A1</kind>
+        <date>19881103</date>
+      </document-id>
+    </publication-reference>
+    <application-reference>
+      <document-id>
+        <country>DE</country>
+        <doc-number>3718295</doc-number>
+        <date>19870530</date>
+      </document-id>
+    </application-reference>
+    <language-of-filing>ger</language-of-filing>
+    <language-of-publication>ger</language-of-publication>
+    <priority-claims date-changed="20090410">
+      <priority-claim sequence="1" kind="national">
+        <country>DE</country>
+        <doc-number>3712601</doc-number>
+        <kind>A</kind>
+        <date>19870414</date>
+      </priority-claim>
+      <priority-claim sequence="1" data-format="epodoc">
+        <doc-number>DE19873718295</doc-number>
+      </priority-claim>
+      <priority-claim sequence="2" data-format="epodoc">
+        <doc-number>DE19873712601</doc-number>
+      </priority-claim>
+    </priority-claims>
+    <dates-of-public-availability date-changed="20090410">
+      <unexamined-printed-without-grant>
+        <date>19881103</date>
+      </unexamined-printed-without-grant>
+    </dates-of-public-availability>
+    <classification-ipc date-changed="20070509">
+      <main-classification>
+        <text> 4B 23Q  27/00   A</text>
+        <edition>4</edition>
+        <section>B</section>
+        <class>23</class>
+        <subclass>Q</subclass>
+        <main-group>27</main-group>
+        <subgroup>00</subgroup>
+        <qualifying-character>A</qualifying-character>
+      </main-classification>
+      <further-classification sequence="1">
+        <text> 4B 23B   5/36   B</text>
+        <edition>4</edition>
+        <section>B</section>
+        <class>23</class>
+        <subclass>B</subclass>
+        <main-group>5</main-group>
+        <subgroup>36</subgroup>
+        <qualifying-character>B</qualifying-character>
+      </further-classification>
+    </classification-ipc>
+    <classifications-ipcr date-changed="20070509">
+      <classification-ipcr sequence="1">
+        <text>B23B   5/00        20060101C I20060521RMDE        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>C</classification-level>
+        <section>B</section>
+        <class>23</class>
+        <subclass>B</subclass>
+        <main-group>5</main-group>
+        <subgroup>00</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20060521</date>
+        </action-date>
+        <generating-office>
+          <country>DE</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+      <classification-ipcr sequence="2">
+        <text>B23B   5/44        20060101A I20060521RMDE        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>B</section>
+        <class>23</class>
+        <subclass>B</subclass>
+        <main-group>5</main-group>
+        <subgroup>44</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20060521</date>
+        </action-date>
+        <generating-office>
+          <country>DE</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+      <classification-ipcr sequence="3">
+        <text>B23B  29/24        20060101C I20051008RMEP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>C</classification-level>
+        <section>B</section>
+        <class>23</class>
+        <subclass>B</subclass>
+        <main-group>29</main-group>
+        <subgroup>24</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+      <classification-ipcr sequence="4">
+        <text>B23B  29/24        20060101A I20051008RMEP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>B</section>
+        <class>23</class>
+        <subclass>B</subclass>
+        <main-group>29</main-group>
+        <subgroup>24</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+      <classification-ipcr sequence="5">
+        <text>B23Q  27/00        20060101C I20051008RMEP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>C</classification-level>
+        <section>B</section>
+        <class>23</class>
+        <subclass>Q</subclass>
+        <main-group>27</main-group>
+        <subgroup>00</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+      <classification-ipcr sequence="6">
+        <text>B23Q  27/00        20060101A I20051008RMEP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>B</section>
+        <class>23</class>
+        <subclass>Q</subclass>
+        <main-group>27</main-group>
+        <subgroup>00</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+    </classifications-ipcr>
+    <classifications-ecla date-changed="20070509">
+      <classification-ecla sequence="1" classification-scheme="EC" country="EP">
+        <text>B23B 29/24</text>
+        <section>B</section>
+        <class>23</class>
+        <subclass>B</subclass>
+        <main-group>29</main-group>
+        <subgroup>24</subgroup>
+      </classification-ecla>
+      <classification-ecla sequence="2" classification-scheme="EC" country="EP">
+        <text>B23Q 27/00C</text>
+        <section>B</section>
+        <class>23</class>
+        <subclass>Q</subclass>
+        <main-group>27</main-group>
+        <subgroup>00</subgroup>
+        <additional-subgroups>
+          <additional-subgroup sequence="1">C  </additional-subgroup>
+        </additional-subgroups>
+      </classification-ecla>
+    </classifications-ecla>
+    <number-of-claims calculated="yes">15</number-of-claims>
+    <invention-title id="title_ger" date-changed="20090410" lang="ger" format="original">WERKZEUGKOPF FUER EINE VORRICHTUNG ZUM HERSTELLEN VON WERKSTUECKEN MIT POLYGONALER AUSSEN- UND/ODER INNENKONTUR</invention-title>
+    <invention-title id="title_eng" date-changed="20090410" lang="eng" format="original">Tool head for an apparatus for producing workpieces with a polygonal outer and/or inner contour</invention-title>
+    <parties date-changed="20090410">
+      <applicants>
+        <applicant sequence="1" app-type="applicant">
+          <addressbook lang="eng">
+            <orgname>LEY,HANS</orgname>
+            <address>
+              <country>DE</country>
+            </address>
+          </addressbook>
+        </applicant>
+        <applicant sequence="1" app-type="applicant" data-format="docdb">
+          <addressbook lang="eng">
+            <orgname>LEY HANS</orgname>
+            <address>
+              <country>DE</country>
+            </address>
+          </addressbook>
+        </applicant>
+        <applicant sequence="1" app-type="applicant" data-format="docdba">
+          <addressbook lang="eng">
+            <orgname>LEY,HANS</orgname>
+            <address>
+              <country>DE</country>
+            </address>
+          </addressbook>
+        </applicant>
+      </applicants>
+      <inventors>
+        <inventor sequence="1">
+          <addressbook lang="eng">
+            <name>LEY,HANS</name>
+            <address>
+              <country>DE</country>
+            </address>
+          </addressbook>
+        </inventor>
+        <inventor sequence="1" data-format="docdb">
+          <addressbook lang="eng">
+            <name>LEY HANS</name>
+            <address>
+              <country>DE</country>
+            </address>
+          </addressbook>
+        </inventor>
+        <inventor sequence="1" data-format="docdba">
+          <addressbook lang="eng">
+            <name>LEY,HANS</name>
+            <address>
+              <country>DE</country>
+            </address>
+          </addressbook>
+        </inventor>
+      </inventors>
+    </parties>
+    <patent-family date-changed="20070529">
+      <main-family family-id="40167504">
+        <family-member>
+          <document-id>
+            <country>DE</country>
+            <doc-number>3718295</doc-number>
+            <kind>A1</kind>
+            <date>19881103</date>
+          </document-id>
+          <application-date>
+            <date>19870530</date>
+          </application-date>
+        </family-member>
+      </main-family>
+      <complete-family family-id="39986456">
+        <family-member>
+          <document-id>
+            <country>DE</country>
+            <doc-number>3718295</doc-number>
+            <kind>A1</kind>
+            <date>19881103</date>
+          </document-id>
+          <application-date>
+            <date>19870530</date>
+          </application-date>
+        </family-member>
+      </complete-family>
+    </patent-family>
+  </bibliographic-data>
+  <abstract id="abstr_eng" date-changed="20070509" lang="eng" format="original">
+    <p>On a tool head for an apparatus for producing workpieces with a polygonal outer and/or inner contour, which tool head has a tool carrier (18) held in a rotatable and drivable manner in a bearing (17) which is arranged in a main spindle (7) mounted in turn in a housing (6) in a drivable manner, the rotary axis (20) of the tool carrier (18) being adjustable in its distance parallel to the rotary axis (21) of the main spindle (7) by turning an eccentric arrangement (12) carrying the bearing (17) of the tool carrier (18), it is necessary for the adjustment of the eccentric arrangement (12) or the infeed of the tool (19) to stop the machine each time in order to be able to carry out the setting measures. In order to be able to carry out the requisite setting actions during operation and thus also meet the requirements imposed on an automatically controlled machine, the eccentric arrangement (12) is provided with a setting wheel (30) which is connected to a drive, the phase position of which is adjustable with regard to the phase position of the main spindle (7). &lt;;IMAGE&gt;;</p>
+  </abstract>
+  <legal-data date-changed="20070508">
+    <legal-event sequence="1">
+      <publication-date>
+        <date>19940825</date>
+      </publication-date>
+      <event-code-1>8141</event-code-1>
+      <effect>-</effect>
+      <legal-description>DISPOSAL/NO REQUEST FOR EXAMINATION</legal-description>
+      <status-identifier>C</status-identifier>
+      <docdb-publication-number> DE     3718295A1</docdb-publication-number>
+    </legal-event>
+  </legal-data>
+  <description id="descr_ger" lang="ger" format="original" date-changed="20090424">
+    <p>Die Erfindung betrifft einen Werkzeugkopf für eine Vorrichtung zum Herstellen von Werkstücken mit polygonaler Außen- und/oder Innenkontur, die eine drehbar gelagerte, antreibbare Werk­stückaufnahme und einen verstellbaren Support für den Werkzeug­kopf aufweist, der einen in einem Lager dreh- und antreibbar gehaltenen Werkzeugträger aufweist, das in einer ihrerseits antreibbaren in einem Gehäuse gelagerten Hauptspindel angeordnet ist, wobei die Drehachse des Werkzeugträgers in ihrem Abstand parallel zur Drehachse der Hauptspindel durch Verdrehen einer das Lager des Werkzeugträgers tragenden Exzenteranordnung aus einer Grundeinstellung, in der sie mit der Hauptspindeldrehachse zusammenfällt, bis auf den maximalen Abstand der Drehachsen zueinander einstellbar ist.</p>
+    <p>Eine Vorrichtung der vorstehend bezeichneten Art ist aus der DE-OS 35 32 558 bekannt, mit der Polygonprofile unter­schiedlichster Konturen mit praktisch beliebiger "Eckenzahl" herstellbar sind, wobei die "Ecken" sowohl abgerundet als auch scharf ausgezogen sein können und die Flanken des Polygonprofils sowohl ebenflächig als auch konvex bzw. konkav gewölbt ausgebildet sein können. Hierbei verläuft die Drehachse der Hauptspindel ihrerseits mit Abstand zur Drehachse des Werkzeugträgers. Die vorbekannte Vorrichtung ist insbesondere zur Bearbeitung von Stangenmaterial mit konstantem Profilquerschnitt ausgelegt. Zum Verstellen des Exzenters bzw. zum Zustellen des Werkzeugs ist es jedoch erforderlich, die Maschine jeweils anzuhalten, um die Stell­maßnahmen durchführen zu können.</p>
+    <p>Der Erfindung liegt nun die Aufgabe zugrunde, einen Werkzeug­kopf der eingangs bezeichneten Art zu schaffen, bei dem die erforderlichen Stelleingriffe während des Betriebes vorgenommen werden können, um auch die Anforderungen an eine automatisch gesteuerte Maschine erfüllen zu können.</p>
+    <p>Antrieb im Sinne der vorliegenden Erfindung ist entweder ein Antriebsmotor, der unmittelbar auf das anzutreibende Teil einwirkt, oder auch eine Getriebeanordnung, die das erforderliche Drehmoment von einem angetriebenen Teil ab­greift.</p>
+    <p>Diese Aufgabe wird erfindungsgemäß dadurch gelöst, daß die Exzenteranordnung einen Außenteil aufweist, der zen­trisch auf der Hauptspindel gelagert ist und einen exzentri­schen Innenteil aufweist, der in einer exzentrisch zur Hauptspindel angeordneten Ausnehmung der Hauptspindel gela­gert ist und über einen Mitnehmer mit dem Außenteil verbun­den ist, und daß am Außenteil ein mit einem Antrieb in Verbindung stehendes Stellrad angeordnet ist, der das Stell­rad mit der gleichen Drehzahl in der gleichen Drehrichtung wie die Hauptspindel antreibt und dessen Phasenlage gegen­über der Phasenlage des Hauptspindelantriebs zum Einstellen des Abstandes der Drehachsen zueinander verstellbar ist.</p>
+    <p>Diese Anordnung erlaubt es, während des Betriebes durch Verstellen der Phasenlage der Antriebe von Exzenteranordnung einerseits und Hauptspindel andererseits, jeden beliebigen Abstand zwischen der Drehachse der Hauptspindel und der Drehachse des Werkzeugträgers zwischen der Grundeinstellung, in der beide Drehachsen zusammenfallen und einem maximalen Abstand beider Drehachsen einzustellen. Der im Zusammenhang mit der Charakterisierung und Beschreibung der Erfindung verwendete Begriff "Rad" bezeichnet im folgenden immer ein Zahnrad.</p>
+    <p>Bevorzugt ist jedoch eine Ausführung vorgesehen, bei der zum Einstellen des Abstandes der Drehachsen zueinander im Gehäuse ein über eine Stellschnecke verdrehbares Drehge­häuse mit einem Differentialgetriebe gelagert ist, vorzugs­weise mit einem im Drehgehäuse gelagerten Übertragungsritzel, das über ein Eingangsrad mit dem Antrieb der Hauptspindel einerseits und über ein Ausgangsrad mit dem Stellrad am zentrischen Außenteil der Exzenteranordnung in Verbindung steht.</p>
+    <p>In einer bevorzugten Ausgestaltung der Erfindung ist hierbei vorgesehen, daß das Übertragungsritzel, das zugeordnete Eingangsrad und das Ausgangsrad als Kegelräder ausgebildet sind. Durch diese Anordnung wird die Verstelleinrichtung erheblich vereinfacht, da mit nur drei Rädern ohne Beeinflus­sung des Übersetzungsverhältnisses die Relativverdrehung bewerkstelligt werden kann. Anstelle eines Kegelradgetriebes in diesem Bereich läßt sich die Relativverdrehung zwischen Exzenteranordnung und Hauptspindel auch durch ein Stirnradge­triebe bewerkstelligen. Hierbei ist es jedoch erforderlich, daß an die Stelle des als Kegelrad ausgebildeten Übertragungs­ritzels über ein Zwischenritzel mit zwei unterschiedlichen Durchmessern für eine entsprechende Übersetzung zwischen Eingangsrad und Ausgangsrad vorgesehen werden muß.</p>
+    <p>In einer bevorzugten Ausgestaltung der Erfindung ist vorgese­hen, daß die Antriebsverbindung zwischen Hauptspindel und Eingangsrad über eine mit der Hauptspindel in Verbindung stehende Vorgelegewelle erfolgt, auf der das Ausgangsrad frei drehbar gelagert ist und daß die Vorgelegewelle über ein Abstandsausgleichsgetriebe mit einem Abtriebsrad am Werkzeugträger in antreibender Verbindung steht. Durch diese Anordnung ist gewährleistet, daß bei einer Veränderung des Abstandes zwischen der Drehachse der Hauptspindel einer­seits und der Drehachse des Werkzeugträgers andererseits die den Werkzeugträger gesondert treibenden Antriebsräder immer im Eingriff bleiben. Besonders zweckmäßig ist es, wenn die Vorgelegewelle die Hauptantriebswelle bildet und über ein Zwischenrad die Hauptspindel antreibt. Hiermit ergibt sich für die gesamte Anordnung ein Hauptantriebs­strang, von dem alle anderen Drehbewegungen abgeleitet sind. Das Übersetzungsverhältnis zwischen der Vorgelegewelle und der Hauptspindel einerseits und der Vorgelegewelle und der Exzenteranordnung andererseits ist hierbei so ausge­legt, daß beide mit gleicher Drehgeschwindigkeit in gleicher Drehrichtung umlaufen.</p>
+    <p>In weiterer Ausgestaltung der Erfindung ist vorgesehen, daß für die Zustellung des Werkzeuges im Gehäuse ein mit einem Kegelritzel versehenes Stellgehäuse drehbar gelagert ist, das mit einem koaxialen Schneckenrad verbunden und über eine Stellschnecke verdrehbar ist, daß das Kegelritzel einerseits mit der Vorgelegewelle und andererseits mit dem Abstandsausgleichsgetriebe in Verbindung steht, und daß das Abtriebsrad am Werkzeugträger zu diesem relativ verdrehbar auf einem Mitnehmerteil gelagert ist, der drehfest mit dem Werkzeugträger verbunden ist und der mit einem Stellantrieb für die Zustellung des Werkzeugs versehen ist, der über eine relative Verdrehung des Abtriebsrades gegenüber dem Mitnehmerteil verstellbar ist. Hierdurch ist es insbesondere bei Serienfertigungen möglich, auch während des Betriebes die Zustellung des Werkzeugs zu ändern und so beispielsweise bei gegebener Einspannung des Werkzeu­ges einen Werkzeugverschleiß auszugleichen.</p>
+    <p>In vorteilhafter Ausgestaltung der Erfindung ist ferner vorgesehen, daß das Abstandsausgleichsgetriebe durch eine Räderschere gebildet wird, deren einer Arm am Gehäuse um die Achse der Vorgelegewelle und deren anderer Arm an einem in Richtung der Abstandsänderung verschiebbaren Stellschie­ber schwenkbar gelagert ist und daß die Stellmittel für den Stellschieber mit den Stellmitteln für die Verdrehung des Ritzelgehäuses gekoppelt sind. Hierdurch ist sicherge­stellt, daß bei einer Veränderung des Abstandes der beiden Drehachsen zueinander die Eingriffsverhältnisse für den Antrieb des Werkzeugkopfes aufrechterhalten bleiben. Die Koppelung zwischen dem Stellschieber für das Abstandsaus­gleichsgetriebe einerseits und für die Verdrehung der dem Ritzelgehäuse zugeordneten Stellschnecke kann nun mechanisch, beispielsweise über eine Zahnradanordnung erfolgen, so daß bei einem Betätigen der Stellschnecke zwangläufig der Stellschieber mit betätigt wird. Besonders zweckmäßig ist es jedoch, wenn sowohl die Stellschnecke als auch der Stell­schieber über einen Getriebe-Servo-Motor betätigt werden, die in bekannter Weise auf elektrischem Wege gleichlaufend gekoppelt sind.</p>
+    <p>In weiterer Ausgestaltung der Erfindung ist ferner vorgesehen, daß der Stelltrieb für die Werkzeugzustellung durch einen mit dem Abtriebsrad des Werkzeugträgers verbundenen Winkel­trieb gebildet wird, dessen Ritzel über eine drehbare Schiebe­hülse eine mit dem Werkzeug verbundene Stellspindel antreibt.</p>
+    <p>Insbesondere für einen Werkzeugkopf mit den vorstehend angegebenen erfindungsgemäßen Merkmalen, die eine Verstellung der Abstände der Drehachsen von Werkzeugträger und Hauptspin­del zueinander und/oder eine Werkzeugzustellung während des Betriebes gestatten, ist es erfindungsgemäß vorgesehen, daß der Werkzeugträger frei drehbar in der Exzenteranordnung gelagert ist, daß auf einem radial zur Drehachse der Haupt­spindel verschiebbaren Gehäuseteil ein Tragrahmen frei drehbar gelagert ist und daß der Werkzeugträger und der Tragrahmen über eine Mitnehmeranordnung verbunden sind, die eine radiale Relativverschiebung zwischen beiden zuläßt und zugleich eine drehfeste Verbindung bildet. Ein derart ausgebildeter Werkzeugkopf, der auch für eine Exzenteran­ordnung vorgesehen werden kann, wie sie in der DE-OS 35 32 558 beschrieben ist, hat den Vorteil, daß die Übertragung des Drehmomentes zwischen Hauptspindel und Werkzeugträger zur Erzeugung der sich in der Exzenteranordnung überlagernden Drehbewegungen ohne einen zusätzlichen Antrieb von außen erfolgen kann. In einer Ausgestaltungsform ist der Tragrahmen als Rad ausgebildet und steht mit einem Antrieb in Verbindung. Diese Anordnung hat den Vorteil, daß mit dem Werkzeugkopf auch eine reine Drehbearbeitung durchgeführt werden kann, also runde Profilquerschnitte erzeugt werden können, was dann der Fall ist, wenn die Drehachse des Werkzeugträgers mit der Drehachse der Hauptspindel zusammenfällt. Ist eine derartige Drehbearbeitung nicht erforderlich, so kann der Antrieb über die Hauptspindel erfolgen. Um hier die über die Exzenteranordnung zu bewirkende Relativdrehung zwischen Hauptspindel einerseits und Werkzeugträger andererseits zu erzeugen, muß ein Mindestabstand der Drehachse des Trag­rahmens zur Drehachse der Hauptspindel vorgesehen werden und im übrigen die Verstellung so vorgenommen werden, daß das Maß des Abstandes dem Abstandsmaß zwischen der Drehachse des Werkzeugträgers und der Drehachse der Hauptspindel entspricht.</p>
+    <p>In weiterer Ausgestaltung der Erfindung ist vorgesehen, daß die Mitnehmeranordnung als eine rein radial ausgerich­tete Geradführung ausgebildet ist. Bei angetriebenem Trag­rahmen kann die Mitnehmeranordnung auch als Kurbelschleife ausgebildet sein.</p>
+    <p>Die Erfindung wird anhand schematischer Zeichnungen eines Ausführungsbeispiels näher erläutert. Es zeigen</p>
+    <p>
+      <b>Fig.</b> 1 schematisch die Kontur einer mit dem Werkzeugkopf einstellbaren Werkzeugbahn,</p>
+    <p>
+      <b>Fig.</b> 2 einen Längsschnitt durch einen Werkzeug­kopf,</p>
+    <p>
+      <b>Fig.</b> 3 einen Querschnitt gem. der Linie III-III in <b>Fig.</b> 2,</p>
+    <p>
+      <b>Fig.</b> 4 einen Querschnitt gem. der Linie IV-IV in <b>Fig.</b> 2,</p>
+    <p>
+      <b>Fig.</b> 4a die Stellung des Werkzeuges und die Lage der einzelnen Teile zueinander in einer von <b>Fig.</b> 4 abweichenden Betriebs­stellung,</p>
+    <p>
+      <b>Fig.</b> 5 einen Querschnitt durch die Exzenteran­ordnung gem. der Linie V-V in <b>Fig.</b> 2,</p>
+    <p>
+      <b>Fig.</b> 5a den Querschnitt gem. <b>Fig.</b> 5 mit einer anderen Exzentereinstellung,</p>
+    <p>
+      <b>Fig.</b> 6 ein Beispiel einer sich aus der Überla­gerung der Drehbewegung von Werkstück und Werkzeug ergebenden Vierkantpolygon­kontur,</p>
+    <p>
+      <b>Fig.</b> 7 in einem Teilausschnitt eine Abwand­lung der Anordnung gem. <b>Fig.</b> 2 mit einem direkt angetriebenen Werkzeugträger,</p>
+    <p>
+      <b>Fig.</b> 8a, b, c eine Abwandlung der in <b>Fig.</b> 4 dargestell­ten Mitnehmeranordnung in unterschiedli­chen Betriebsstellungen.</p>
+    <p>In <b>Fig.</b> 1 ist eine Werkzeugbahn <b>1</b> in Form einer Pascalschen Kurve gezeigt, die jedoch aus Gründen der zeichnerischen Darstellung etwas verzerrt gezeichnet ist. Bei der darge­stellten Bahnkurve <b>1</b> ergibt sich bei entsprechenden Drehzahl­verhältnissen zwischen Drehzahl des Werkstücks einerseits und der Drehzahl des Werkzeugs andererseits ein dreieckiges Polygonprofil mit eingezogenen Flanken. Wird der Werkzeugkopf so eingestellt, daß die Bahnkurve <b>1</b> um 180° gedreht zum Umkreis <b>2</b> angeordnet ist, dann ergibt sich bei entsprechendem Drehzahlverhältnis eine dreieckige Polygonkontur mit im wesentlichen scharf ausgezogenen Ecken und geraden Flanken. Das Werkzeug ist in verschiedenen Stellungen auf seiner Umlaufbahn durch das Dreieck <b>5</b> gekennzeichnet. Die schemati­sche Darstellung läßt hierbei erkennen, daß bei dem Werkzeug­kopf die Eingriffsbedingungen zwischen Werkzeug und Werkstück­oberfläche über den gesamten Umlauf praktisch konstant bleiben.</p>
+    <p>Der in <b>Fig.</b> 2 in einem Längsschnitt dargestellte Werkzeugkopf besteht im wesentlichen aus einem Gehäuse <b>6</b>, das auf einem nicht näher dargestellten Support befestigt ist, der mit einer Vorrichtung verschieb- und einstellbar verbunden ist, die eine dreh- und antreibbare Werkstückaufnahme aufweist. Im Gehäuse <b>1</b> ist eine hohl ausgebildete Hauptspindel <b>7</b> drehbar gelagert, die an ihrem einen Ende mit einem Zahnrad <b>8</b> verbunden ist und die über ein Zwischenrad <b>9</b> und ein Zahnrad <b>10</b>, das mit einer Vorgelegewelle <b>11</b> fest verbunden ist, angetrieben wird.</p>
+    <p>Am anderen Ende ist die Hauptspindel <b>7</b> mit einer Exzenteran­ordnung <b>12</b> versehen. Die Exzenteranordnung <b>12</b> wird im wesent­lichen aus einem auf der Außenseite der Hauptspindel <b>7</b> gelagerten Außenteil <b>13</b> gebildet, dem ein exzentrischer Innenteil <b>14</b> zugeordnet ist, der in einer exzentrischen Ausnehmung <b>15</b> der Hauptspindel <b>7</b> zugeordnet ist. Stirnseitig stehen der Außenteil <b>13</b> und der Innenteil <b>14</b> über einen Mitnehmer <b>16</b> in drehfester Verbindung.</p>
+    <p>Im Innenteil <b>14</b> der Exzenteranordnung <b>12</b> ist über ein Lager <b>17</b> ein Werkzeugträger <b>18</b> drehbar gelagert, der stirnseitig mit wenigstens einem Werkzeug <b>19</b> verbunden ist. In der dargestellten Anordnung des Werkzeuges <b>19</b> dient dieses zur Herstellung einer Außenkontur. Zur Herstellung einer Innenkontur muß am Werkzeugträger <b>18</b> über entsprechende Anschlußmittel eine sogenannte Bohrstange befestigt werden.</p>
+    <p>In der gezeigten Lage ist die Exzenteranordnung so eingestellt, daß die durch das Lager <b>17</b> definierte Drehachse des Werkzeug­trägers <b>18</b> und die Drehachse der Hauptspindel <b>7</b> zusammenfallen. Durch ein relatives Verdrehen des Außenteils <b>13</b> der Exzenter­anordnung <b>12</b> gegenüber der Hauptspindel <b>7</b> läßt sich nun innerhalb der durch die exzentrische Ausnehmung <b>15</b> vorgegebe­nen Exzentrizität jeder beliebige Abstand zwischen der Drehachse <b>20</b> des Werkzeugträgers <b>18</b> und der Drehachse <b>21</b> der Hauptspindel <b>7</b> einstellen. Die sich hierdurch zwangsläu­fig ergebende Abstandsänderung zwischen dem Außenteil <b>13</b> und dem Innenteil <b>14</b> wird über den Mitnehmer <b>16</b> ausgeglichen, so daß bei jeder Einstellung die drehfeste Verbindung zwischen Außenteil und Innenteil erhalten bleibt. Die Lagerung des Außenteils <b>13</b> und des Innenteils <b>14</b> der Exzenteranordnung <b>12</b> auf der Hauptspindel <b>7</b> erfolgt über ein spielfreies Lager bekannter Bauart. Im Betrieb laufen die Hauptspindel <b>7</b> und die Exzenteranordnung gleichsinnig und mit gleicher Drehzahl um, so daß sie relativ zueinander in Ruhe sind.</p>
+    <p>Um nun die gleichsinnige und gleichlaufende Drehbewegung von Hauptspindel und Exzenteranordnung zu bewerkstelligen, ist im Gehäuse <b>6</b> ein Ritzelgehäuse <b>22</b> über Lager <b>23</b> verdreh­bar gelagert, das auf seiner Außenseite ein Schneckenrad <b>24</b> aufweist, das mit einer im Gehäuse <b>6</b> gelagerten Stellschnecke <b>25</b> zusammenwirkt. Im Ritzelgehäuse ist ein als Kegelrad ausgebildetes Übertragungsritzel <b>26</b> frei drehbar gelagert, dem ein mit der Vorlegewelle <b>11</b> drehfest verbundenes Eingangs­rad <b>27</b> und ein auf der Vorgelegewelle <b>11</b> frei drehbar gela­gertes Ausgangsrad <b>28</b> zugeordnet ist. Das Ausgangsrad <b>28</b> ist mit einem Zahnrad <b>29</b> versehen, das mit einem Stellrad <b>30</b> kämmt, das mit dem Außenteil <b>13</b> der Exzenteranordnung <b>12</b> fest verbunden ist. Die Übersetzung zwischen dem Zahnrad <b>29</b> und dem Stellrad <b>30</b> einerseits sowie die Übersetzung zwischen dem Zahnrad <b>10</b> und dem Zahnrad <b>8</b> andererseits sind so gewählt, daß Hauptspindel und Exzenteranordnung gleichsinnig und mit gleicher Drehzahl umlaufen.</p>
+    <p>Um nun die Exzenteranordnung <b>12</b> verstellen zu können, wird mit Hilfe der Stellspindel <b>25</b> das Ritzelgehäuse <b>22</b> verdreht, so daß sich durch die Abrollbewegung des Übertragungsritzels <b>28</b> auf dem Eingangsrad <b>27</b> eine entsprechende Relativverdrehung zwischen dem Hauptspindel <b>7</b> und der Exzenteranordnung <b>12</b> ergibt. Da im Betrieb das Ritzelgehäuse über die Stellschnecke <b>25</b> drehfest im Gehäuse <b>6</b> gehalten ist, ergibt sich somit die Möglichkeit, auch bei drehender Vorgelegewelle <b>11</b> die Relativverdrehung zwischen Hauptspindel <b>7</b> und Exzenteranord­nung <b>12</b> vorzunehmen.</p>
+    <p>Da die Drehachse der Vorgelegewelle <b>11</b> durch das Gehäuse <b>6</b> festgelegt ist, bei einer Änderung der Abstände der Drehach­sen <b>20</b> und <b>21</b> zueinander sich damit auch der Abstand der Drehachse <b>20</b> zur Drehachse <b>34</b> der Vorgelegewelle <b>11</b> ändert, ist ein Abstandsausgleichsgetriebe mit einer in <b>Fig.</b> 3 in einer Stirnansicht dargestellten Radschere vorgesehen. Diese weist einen am Gehäuse um die Achse <b>34</b> der Vorgelege­welle <b>11</b> schwenkbaren ersten Arm <b>35</b> auf, der gelenkig mit einem zweiten Arm <b>36</b> verbunden ist, wobei die Gelenkachse <b>37</b> ein Zwischenrad <b>38</b> trägt.</p>
+    <p>Der Arm <b>36</b> ist mit seinem freien Ende über ein Lager <b>39</b> auf einem Stellschieber <b>40</b> schwenkbar gelagert, in dem koaxial zum Lager <b>39</b> ein Rad <b>41</b> gelagert ist, mit dem ein Antriebsrad <b>32</b> drehfest verbunden ist, das mit einem Ab­triebsrad <b>33</b> des Werkzeugträgers <b>18</b> in Wirkverbindung steht. Mit der Vorgelegewelle <b>11</b> steht ein Rad <b>42</b> in Verbindung, das in das Zwischenrad <b>38</b> eingreift und damit das Drehmoment auf das Abtriebsrad <b>33</b> am Werkzeugträger <b>18</b> überträgt.</p>
+    <p>Wird nun der Abstand der beiden Drehachsen <b>20</b> und <b>21</b> zueinan­der durch Verstellung der Exzenteranordnung <b>12</b> geändert, so verschiebt sich auch die Drehachse <b>20</b> des Abtriebsrades <b>33</b> relativ zum Gehäuse. Über den Schieber <b>40</b> kann nun über einen entsprechenden Stellantrieb, beispielsweise einen Getriebemotor <b>43</b>, der mit einem Ritzel <b>44</b> in eine Zahnstange <b>45</b> am Schieber <b>40</b> eingreift, das Antriebsrad <b>32</b> dem Abtriebs­rad <b>33</b> nachgeführt werden. Durch eine elektrische Koppelung mit einem entsprechenden Servo-Motor an der Stellschnecke <b>25</b> kann dann diese Bewegung gleichsinnig und synchron zur Verdrehung der Exzenteranordnung durchgeführt werden.</p>
+    <p>Um nun das Werkzeug <b>19</b> in bezug auf die Drehachse <b>20</b> zustellen zu können, ist es im Werkzeugträger <b>18</b> in einer entsprechen­den Halterung radial verschiebbar gelagert und mit einer Stellspindel <b>46</b> verbunden. Die Stellspindel <b>46</b> ist an ihrem freien Ende längsverschiebbar, aber drehfest in einer Hülse <b>48</b> gehalten, die mit einem Kegelrad <b>49</b> versehen ist. Das Kegel­rad <b>49</b> kämmt hierbei mit einer entsprechenden Verzahnung am Abtriebsrad <b>33</b> für den Werkzeugträger.</p>
+    <p>Da das Abtriebsrad <b>33</b> auf dem Werkzeugträger relativ zu diesem verdrehbar gelagert ist, kann durch entsprechendes Verdrehen des Abtriebsrades <b>33</b> über das Kegelrad <b>49</b> die Stellspindel entsprechend betätigt werden, so daß hier dem Drehsinn entsprechend eine Verschiebung des Werkzeuges <b>19</b> erfolgt.</p>
+    <p>Um nun die Verdrehung des Abtriebsrades <b>33</b> relativ zum Werkzeugträger zu bewerkstelligen, ist im Gehäuse <b>6</b> ein Stellgehäuse <b>50</b> drehbar gelagert, das ein Kegelritzel <b>51</b> trägt und das auf seiner Außenseite als Schneckenrad <b>52</b> ausgebildet ist und über eine Stellschnecke <b>53</b> relativ zum Gehäuse <b>6</b> verdreht werden kann.</p>
+    <p>Die Vorgelegewelle <b>11</b> ist an ihrem zugehörigen Ende mit einem entsprechenden Kegelrad <b>54</b> versehen, das mit dem Kegelritzel <b>51</b> zusammenwirkt und über dieses ein Kegelrad <b>55</b> antreibt, das mit dem Zahnrad <b>42</b> drehfest verbunden ist.</p>
+    <p>Wird nun über die Stellschnecke <b>53</b> das Stellgehäuse <b>50</b> verdreht, so erfolgt über die Abwälzbewegung des Kegelritzels <b>51</b> auf dem Kegelrad <b>54</b> eine Verdrehung des Abtriebsrades <b>33</b>, durch das je nach der Drehrichtung das Kegelrad <b>49</b> verdreht wird und damit eine Verschiebung des Werkzeugs <b>19</b> bewirkt.</p>
+    <p>Wie die Darstellung zeigt, können beispielsweise zwei Werk­zeuge vorgesehen werden, so daß die Gesamtanordnung ausge­wuchtet ist. Falls nur ein Werkzeug eingesetzt wird, kann in den gegenüberliegenden Werkzeughalter ein entsprechend dimensioniertes Gegengewicht eingesetzt werden.</p>
+    <p>Das Abtriebsrad <b>33</b> ist zusammen mit dem Stelltrieb <b>46</b>, <b>47</b>, <b>48</b>, <b>49</b> für die Werkzeugzustellung auf einem als Rad ausgebildeten Tragrahmen <b>56</b> angeordnet, der drehbar im Stellschieber <b>40</b> gehalten ist. Der Tragrahmen <b>56</b> weist eine, vorzugsweise zwei diametral gegenüberliegende Nuten <b>57</b> auf, in die entspre­chende Vorsprünge <b>58</b> am Werkzeugträger <b>18</b> eingreifen, so daß eine drehfeste Verbindung entsteht, gleichwohl die aus der Exzentrizität herrührende Radialbewegung des Werk­zeugträgers relativ zum Tragrahmen <b>56</b> möglich ist. Entspre­chend dieser Radialbewegung kann auch das freie Ende <b>47</b> der Stellspindel <b>46</b> für die Werkzeugzustellung in der Schie­behülse <b>48</b> sich hin- und herbewegen. Dies ist schematisch in <b>Fig.</b> 4 und 4a für zwei verschiedene Drehstellungen bei einer vorgegebenen Exzentrizität der Drehachsen <b>20</b> und <b>21</b> zueinander dargestellt.</p>
+    <p>In Verbindung mit <b>Fig.</b> 2 läßt sich nun ohne weiteres anhand der <b>Fig.</b> 4 und 4a ableiten, daß bei einem auf die Hauptspin­del <b>7</b> eingeleiteten Drehmoment und einem über die Exzenter­anordnung <b>12</b> eingeleiteten entsprechenden Drehmoment, bei Gleichlauf von beiden Teilen der in der Exzenteranordnung <b>12</b> frei drehbar gelagerte Werkzeugträger <b>18</b> ohne zusätzlichen Antrieb zwangläufig mitgenommen wird, wenn die Drehachse <b>56</b>' des Tragrahmens <b>56</b> mit Abstand zur Drehachse <b>21</b> der Haupt­spindel <b>7</b> eingestellt ist. Dies ergibt sich aus dem Zusammen­wirken der mit dem Werkzeugträger <b>18</b> verbundenen, als Mitneh­mer wirkenden Vorsprünge <b>58</b>, die in die Nuten <b>57</b> des Tragrah­mens <b>56</b> eingreifen, wobei der Tragrahmen <b>56</b> seinerseits frei drehbar am Gehäuse <b>6</b>, beim dargestellten Ausführungsbei­spiel auf dem mit dem Gehäuse verbundenen Stellschieber <b>40</b> gelagert ist.</p>
+    <p>Aus der schematischen Darstellung in <b>Fig.</b> 4 und <b>Fig.</b> 4a in Verbindung mit <b>Fig.</b> 7 läßt sich jedoch auch ableiten, daß über den Tragrahmen <b>56</b> der Werkzeugträger unmittelbar angetrieben werden kann, wobei die Hauptspindel <b>7</b> mit der doppelten Drehzahl antreibbar ist und die Exzenteranordnung <b>12</b> mit dem auf den Tragrahmen <b>56</b> einwirkenden Antrieb gekoppelt sein muß, sei es über einen gesonderten, elektrisch zwang­läufig gekoppelten Antriebsmotor, sei es über die in <b>Fig.</b> 2 dargestellte Vorgelegewelle mit einem auf das Stellrad <b>30</b> wirkenden Differentialgetriebe, deren Antrieb vom Antriebs­motor für den Tragrahmen <b>56</b> abgegriffen wird. In diesem Falle kann das Übertragungsrad <b>9</b> entfallen. Der Vorteil dieser Anordnung besteht vor allem darin, daß der Werkzeug­kopf auch dann eingesetzt werden kann, wenn die Drehachse <b>20</b> des Werkzeugträgers und die Drehachse <b>21</b> der Hauptspindel <b>7</b> bei entsprechender Exzentereinstellung gleichachsig ausge­richtet sind. Dies ist insbesondere dann von Bedeutung, wenn an Werkstücken Zonen mit Kreisquerschnitten und Zonen mit Polygonquerschnitten abwechseln.</p>
+    <p>Auch bei dieser Ausführungsform kann die anhand von <b>Fig.</b> 2 beschriebene Zustellung des Werkzeugs über das Stellgehäuse <b>50</b> in gleicher Weise ausgebildet sein.</p>
+    <p>Während bei der Ausführungsform gem. <b>Fig.</b> 2 und <b>Fig.</b> 4 die Mitnehmeranordnung zwischen dem Tragrahmen <b>56</b> und dem Werkzeugträger <b>18</b> als eine Geradführung ausgebildet ist, kann diese Mitnehmeranordnung auch entsprechend einer ande­ren Ausgestaltung der Erfindung als Kurbelschleife ausgebil­det sein. Bei einer derartigen Ausbildung entfällt einer der in <b>Fig.</b> 4 dargestellten Mitnehmer <b>58</b>. Der dann noch verbleibende Mitnehmer kann dann beispielsweise eine Form erhalten, wie sie in <b>Fig.</b> 5 für den Mitnehmer <b>16</b> dargestellt ist, so daß zusätzlich zu der Radialbewegung auch eine Schwenkbewegung um den als Kreis ausgebildeten Mitnehmerkopf möglich ist.</p>
+    <p>
+      <b>Fig.</b> 5 zeigt einen Schnitt gem. der Linie V-V in <b>Fig.</b> 2 durch die Exzenteranordnung in einer Einstellung, bei der die Drehachsen <b>20</b> und <b>21</b> miteinander fluchten. In <b>Fig.</b> 5a ist die Situation für den größtmöglichen Abstand zwischen der Drehachse <b>20</b> und der Drehachse <b>21</b> dargestellt, durch relatives Verdrehen des mit dem Innenteil <b>14</b> über die Nase <b>16</b> gekoppelten Außenteils <b>13</b> der Exzenteranordnung gegenüber der Hauptspindel <b>7</b> mit ihrer exzentrischen Ausnehmung <b>15</b>.</p>
+    <p>In <b>Fig.</b> 6 ist für die Herstellung eines Vierkants die sich aus der Überlagerung der Drehbewegungen des Werkzeugträgers einerseits und der Drehbewegung des Werkstücks andererseits ergebende Werkzeugbahn <b>60</b>' schematisch dargestellt. Durch eine entsprechende Verschiebung des Supports quer zur Werk­stückdrehachse, läßt sich dann eine entsprechende Verschiebung dieser Werkzeugbahn erzielen, so daß in Verbindung mit einem entsprechenden Vorschub in Achsrichtung, beispielsweise ein vierseitiger Pyramidenkörper mit abnehmendem bzw. zunehmendem Querschnitt in einer Drehbearbeitung hergestellt werden kann. Die Bahn <b>60</b>'' zeigt den Verlauf nach entsprechen­dem Querschub des Werkzeugkopfes. Die Position des Werkzeu­ges <b>5</b> in den verschiedenen Bewegungsphasen ist durch das Dreieck angedeutet.</p>
+    <p>Wie sich aus <b>Fig.</b> 6 ableiten läßt, kann der Werkzeugkopf auch so ausgebildet werden, daß die Werkzeugspitze nach außen weist. Hierbei muß dann der Werkzeugkopf seitlich neben dem Werkstück angeordnet werden, so daß das Werkzeug dieses nicht mehr umkreist, sondern entsprechend der jeweils vorgebbaren Bahnkurve kontinuierlich mit dem Werkstück in Eingriff kommt nach Art des Schlagdrehfräsens. Bei einem derart ausgebildeten Werkzeugkopf wird dann die Hauptspindel <b>7</b> nicht mehr als Hohlspindel ausgebildet, sondern zur Redu­zierung der Baugröße als Vollspindel. Dementsprechend ist dann die Exzenteranordnung <b>12</b> entsprechend der Funktion umzugestalten und der Werkzeugträger <b>18</b> auf dem dann außen­liegenden Teil der Exzenteranordnung drehbar gelagert.</p>
+    <p>Bei beiden Ausführungsformen macht sich das Spiel zwischen den einzelnen Zahnrädern im Betrieb nicht bemerkbar, da alle Zahnräder in gleicher Richtung anliegen.</p>
+    <p>Anhand von <b>Fig.</b> 8a, b und c ist als Stirnansicht im Bewegungs­ablauf eine andere Ausführungsform für die aus Tragrahmen <b>56</b> mit Nut <b>57</b> und Werkzeugträger <b>18</b> mit seinen als Mitnehmer wirkenden Vorsprüngen <b>58</b> gebildeten Mitnehmeranordnung dargestellt.</p>
+    <p>Bei dieser Ausführungsform sind zwei Tragrahmen <b>56</b> und <b>561</b> vorgesehen, von denen jeder mit zwei diametral gegenüberlie­genden Nuten <b>57</b> und <b>571</b> versehen ist. Beide Tragrahmen <b>56</b> und <b>561</b> sind hierbei um gestellfeste Drehachsen drehbar gelagert, und zwar der Tragrahmen <b>56</b> um die Achse <b>56</b>' und der Tragrahmen <b>561</b> um die Achse <b>561</b>'. Beide Achsen sind parallel und mit gleichem Abstand zur Drehachse <b>21</b> der Hauptspindel <b>7</b> angeordnet.</p>
+    <p>Der Werkzeugträger <b>18</b> ist nunmehr mit vier um 90° versetzten Vorsprüngen <b>58</b> und <b>581</b> versehen, die entsprechend in den Nuten <b>57</b> und <b>571</b> des zugehörigen Tragrahmens <b>56</b> bzw. <b>561</b> geführt sind.</p>
+    <p>Der Antrieb kann nun entweder entsprechend dem Ausführungs­beispiel gem. <b>Fig.</b> 2 erfolgen, also über die Hauptspindel <b>7</b> oder entsprechend dem Ausführungsbeispiel gem. <b>Fig.</b> 7, also über die Tragrahmen <b>56</b> und <b>561</b>. In letzterem Falle müssen die beiden Tragrahmen <b>56</b> und <b>561</b> gleichsinnig synchron angetrieben werden.</p>
+  </description>
+  <claims id="claims_ger" lang="ger" format="original" date-changed="20090424">
+    <claim num="1">
+      <claim-text>1. Werkzeugkopf für eine Vorrichtung zum Herstellen von Werkstücken mit polygonaler Außen- und/oder Innenkontur, die eine drehbar gelagerte, antreibbare Werkstückaufnahme und einen verstellbaren Support für den Werkzeugkopf auf­weist, der einen in einem Lager dreh- und antreibbar gehal­tenen Werkzeugträger aufweist, das in einer seinerseits antreibbaren, in einem Gehäuse gelagerten Hauptspindel angeordnet ist, wobei die Drehachse des Werkzeugträgers in ihrem Abstand parallel zur Drehachse der Hauptspindel durch Verdrehen einer das Lager des Werkzeugträgers tragen­den Exzenteranordnung aus einer Grundeinstellung, in der sie mit der Hauptspindeldrehachse zusammenfällt, bis auf den maximalen Abstand der Drehachsen zueinander einstell­bar ist, dadurch gekennzeichnet, daß die Exzenteranordnung (12) einen Außenteil (13) aufweist, der zentrisch auf der Hauptspindel (7) gelagert ist und einen exzentrischen Innenteil (14) aufweist, der in einer exzentrisch zur Hauptspindel (7) angeordneten Ausnehmung der Hauptspindel (7) gelagert ist und über einen Mitnehmer (16) mit dem Außenteil (13) verbunden ist, und daß am Außen­teil (13) ein mit einem Antrieb in Verbindung stehendes Stellrad (30) angeordnet ist, der das Stellrad (30) mit der gleichen Drehzahl in der gleichen Drehrichtung wie die Hauptspindel (7) antreibt und dessen Phasenlage gegen­über der Phasenlage des Hauptspindelantriebs zum Einstellen des Abstandes der Drehachsen (20, 21) zueinander verstellbar ist.</claim-text>
+    </claim>
+    <claim num="2">
+      <claim-text>2. Werkzeugkopf nach Anspruch 1, dadurch gekennzeichnet, daß zum Einstellen des Abstandes der Drehachsen (20, 21) zueinander im Gehäuse (6) ein über eine Stellschnecke (25) verdrehbares Drehgehäuse (22) mit einem Differentialgetrie­be gelagert ist, vorzugsweise mit einem im Drehgehäuse gelagerten Übertragungsritzel (26), das über ein Eingangs­rad (27) mit dem Antrieb der Hauptspindel (7) einerseits und über ein Ausgangsrad (28) mit dem Stellrad (30) am zentrischen Außenteil (13) der Exzenteranordnung (12) in Verbindung steht.</claim-text>
+    </claim>
+    <claim num="3">
+      <claim-text>3. Werkzeugkopf nach Anspruch 2, dadurch gekennzeichnet, daß das Übertragungsritzel (26) das zugeordnete Eingangsrad (27) und das Ausgangsrad (28) als Kegelräder ausgebildet sind.</claim-text>
+    </claim>
+    <claim num="4">
+      <claim-text>4. Werkzeugkopf nach Anspruch 1, 2 oder 3, dadurch gekennzeich­net, daß die Antriebsverbindung zwischen Hauptspindel (7) und Übertragungsritzel (26) über eine mit der Hauptspindel (7) in Verbindung stehende Vorgelegewelle (11) erfolgt, auf der das Ausgangsrad (28) frei drehbar gelagert ist und daß die Vorgelegewelle (11) über ein Abstandsausgleichs­getriebe (35, 36, 38, 41, 42) mit einem Abtriebsrad (33) am Werkzeugträger (18) in antreibender Verbindung steht.</claim-text>
+    </claim>
+    <claim num="5">
+      <claim-text>5. Werkzeugkopf nach Anspruch 4, dadurch gekennzeichnet, daß die Vorgelegewelle (11) die Hauptantriebswelle bildet und über ein Zwischenrad (9) die Hauptspindel (7) antreibt.</claim-text>
+    </claim>
+    <claim num="6">
+      <claim-text>6. Werkzeugkopf nach einem der Ansprüche 1 bis 5, dadurch gekennzeichnet, daß für die Zustellung des Werkzeugs (19) im Gehäuse (6) ein Stellgehäuse (50) drehbar gelagert ist, das mit einem koaxialen Schneckenrad (52) verbunden und über eine Stellschnecke (53) verdrehbar ist und das ein Differentialgetriebe enthält, vorzugsweise ein im Stellge­häuse (50) gelagertes Kegelritzel (51), das einerseits mit der Vorgelegewelle (11) und andererseits mit dem Ab­standsausgleichsgetriebe (35, 36, 38, 41, 42) in Verbindung steht und daß das Abtriebsrad (33) am Werkzeugträger (18) zu diesem relativ verdrehbar auf einem Tragrahmen (56) gelagert ist, der drehfest mit dem Werkzeugträger (18) verbunden ist und der mit einem Stelltrieb (46, 47, 48, 49) für die Zustellung des Werkzeugs (19) versehen ist, der über eine Relativverdrehung des Abtriebsrades (33) gegen­über dem Tragrahmen (56) verstellbar ist.</claim-text>
+    </claim>
+    <claim num="7">
+      <claim-text>7. Werkzeugkopf nach einem der Ansprüche 1 bis 6, dadurch gekennzeichnet, daß das Abstandsausgleichsgetriebe durch eine Räderschere gebildet wird, deren einer Arm (35) am Gehäuse (6) um die Achse (34) der Vorgelegewelle (11) und deren anderer Arm (36) an einem in Richtung der Abstandsän­derung verschiebbaren Stellschieber (40) schwenkbar gelagert ist und daß die Stellmittel (43, 44, 45) für den Stellschie­ber (40) mit den Stellmitteln (25) für die Verdrehung des Ritzelgehäuses (22) gekoppelt sind.</claim-text>
+    </claim>
+    <claim num="8">
+      <claim-text>8. Werkzeugkopf nach einem der Ansprüche 1 bis 7, dadurch gekennzeichnet, daß der Stelltrieb für die Werkzeugzustel­lung durch einen mit dem Abtriebsrad (33) des Werkzeugträ­gers (18) verbundenen Winkeltrieb gebildet wird, dessen Ritzel (49) über eine drehbare Schiebehülse (48) eine mit dem Werkzeug (19) verbundene Stellspindel (46) antreibt.</claim-text>
+    </claim>
+    <claim num="9">
+      <claim-text>9. Werkzeugkopf für eine Vorrichtung zum Herstellen von Werkstücken mit polygonaler Außen- und/oder Innenkontur, die eine drehbar gelagerte, antreibbare Werkstückaufnahme und einen verstellbaren Support für den Werkzeugkopf auf­weist, der einen in einem Lager dreh- und antreibbar gehal­tenen Werkzeugträger aufweist, das in einer seinerseits antreibbaren, in einem Gehäuse gelagerten Hauptspindel angeordnet ist, wobei die Drehachse des Werkzeugträgers in ihrem Abstand parallel zur Drehachse der Hauptspindel durch Verdrehen einer das Lager des Werkzeugträgers tragen­den Exzenteranordnung aus einer Grundeinstellung, in der sie mit der Hauptspindeldrehachse zusammenfällt, bis auf den maximalen Abstand der Drehachsen zueinander einstell­bar ist, insbesondere nach einem der Ansprüche 1 bis 8, dadurch gekennzeichnet, daß der Werkzeugträger (18) frei drehbar in der Exzenteranordnung (12) gelagert ist, daß auf einem radial zur Drehachse (21) der Hauptspindel ver­schiebbaren Gehäuseteil (40) ein Tragrahmen (56) frei dreh­bar gelagert ist und daß der Werkzeugträger (18) und der Tragrahmen (56) über eine Mitnehmeranordnung (57, 58) verbunden sind, die eine radiale Relativverschiebung zwi­schen beiden zuläßt und zugleich eine drehfeste Verbindung bildet.</claim-text>
+    </claim>
+    <claim num="10">
+      <claim-text>10. Werkzeugkopf nach einem der Ansprüche 1 bis 9, dadurch gekennzeichnet, daß der Tragrahmen (56) als Rad ausgebildet ist und mit einem Antrieb in Verbindung steht.</claim-text>
+    </claim>
+    <claim num="11">
+      <claim-text>11. Werkzeugkopf nach einem der Ansprüche 1 bis 10, dadurch gekennzeichnet, daß die Mitnehmeranordnung (57, 58) als eine rein radial ausgerichtete Geradführung ausgebildet ist.</claim-text>
+    </claim>
+    <claim num="12">
+      <claim-text>12. Werkzeugkopf nach einem der Ansprüche 1 bis 11, dadurch gekennzeichnet, daß bei einem auf die Hauptspindel (7) wirkenden Antrieb die Drehachse (56') des Tragrahmens (56) in einem Mindestabstand zur Drehachse (21) der Hauptspindel (7) angeordnet ist und daß das Maß dieses Abstandes dem Abstandsmaß zwischen der Drehachse (20) des Werkzeugträgers (18) und der Drehachse (21) der Hauptspindel (7) entspricht.</claim-text>
+    </claim>
+    <claim num="13">
+      <claim-text>13. Werkzeugkopf nach einem der Ansprüche 1 bis 10, dadurch gekennzeichnet, daß bei angetriebenem Tragrahmen (56) die Mitnehmeranordnung als Kurbelschleife ausgebildet ist.</claim-text>
+    </claim>
+    <claim num="14">
+      <claim-text>14. Werkzeugkopf nach einem der Ansprüche 9 bis 13, dadurch gekennzeichnet, daß die Mitnehmeranordnung (57, 58; 571, 581) durch zwei Tragrahmen (56; 561) gebildet wird, deren orts­feste Drehachsen (56'; 561') mit Abstand parallel zueinander im Werkzeugkopf ausgerichtet sind, daß jeder Tragrahmen (56; 561) je eine Mitnehmeranordnung in Form einer Geradfüh­rung aufweist, daß die Geradführung beider Tragrahmen (56; 561) um 90° zueinander versetzt angeordnet sind und daß der Werkzeugträger (18) mit vier um 90° versetzten Mitnehmern versehen ist, wobei je zwei um 180° versetzte Mitnehmer jeweils mit einem der Tragrahmen die Geradführung bilden.</claim-text>
+    </claim>
+    <claim num="15">
+      <claim-text>15. Werkzeugkopf nach Anspruch 14, dadurch gekennzeichnet, daß beide Tragrahmen (56; 561) mit einem Antrieb in Verbin­dung stehen und synchron angetrieben werden.</claim-text>
+    </claim>
+  </claims>
+</lexisnexis-patent-document>

@@ -22,7 +22,10 @@ mkdir $x ; cp *.py $x
 mkdir $x/utils ; cp utils/*py $x/utils ; cp -r utils/standoff $x/utils
 mkdir $x/readers ; cp readers/*py $x/readers
 mkdir $x/data ; cp data/*.{txt,fact} $x/data
+cp -r data/in $x/data
 mkdir $x/data/tmp
+mkdir $x/data/out
+mkdir $x/data/html
 mkdir $x/data/regression ; cp data/regression/* $x/data/regression
 
 mkdir $x/info

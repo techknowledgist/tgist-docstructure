@@ -23,7 +23,8 @@ class Section(object):
         self.start_index = -1
         self.end_index = -1
         self.text = ""
-
+        self.tag = None
+        
     def __str__(self):
         (p1, p2) = (self.start_index, self.end_index)
         offsets = "id=%d pid=%s start=%d end=%d" % (self.id, self.parent_id, p1, p2)
@@ -34,6 +35,11 @@ class Section(object):
     def __len__(self):
         return self.end_index - self.start_index
 
+    def get_language(self):
+        if self.tag is None:
+            return None
+        return self.tag.attr('lang', None)
+        
     def set_parent_id(self):
         if self.subsumers:
             self.parent_id = self.subsumers[-1].id
@@ -98,11 +104,14 @@ class SectionFactory(object):
         Called by print_sections. Returns a human-readable string with relevant information about
         a particular section.
         """
+        language = section.get_language()
         sec_string = "SECTION ID=%d" % (section.id)
         if section.parent_id is not None:
             sec_string += " PARENT_ID=%d" % section.parent_id
         if len(section.types) > 0:
             sec_string += " TYPE=\"" + "|".join(section.types).upper() + "\""
+        if language is not None:
+            sec_string += " LANGUAGE=\"%s\"" % language
         if len(section.header) > 0:
             # normalize whitespace to avoid having newlines in fact
             section_header = ' '.join(section.header.strip().split())
@@ -226,4 +235,5 @@ def make_section(text_file, tag, text, section_type=None):
     section.start_index = tag.start_index
     section.end_index = tag.end_index
     section.text = tag.text(text)
+    section.tag = tag
     return section
