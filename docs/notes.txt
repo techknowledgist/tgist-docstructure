@@ -25,3 +25,11 @@ med_read.py:
 - __repr__() is used to create a string that when evaluated creates a the object, in this case
 use __str__() instead.
 
+
+== Spetember, 2012
+
+Tested how many sections there are in the 500 sample patents for each language:
+
+       US  54720
+       CN  39640
+       DE  17017

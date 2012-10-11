@@ -8,7 +8,8 @@ Usage:
    % python main.py [OPTIONS] XML_FILE TEXT_FILE TAGS_FILE FACT_FILE STRUCTURE_FILE
    % python main.py [-c COLLECTION] [-l LANGUAGE] FILE_LIST
    % python main.py [-c COLLECTION] [-l LANGUAGE] DIRECTORY
-   % python main.py -o XML_FILE TEXT_FILE TAGS_FILE FACT_FILE STRUCTURE_FILE ONTO_FILE
+   % python main.py -o [-l LANGUAGE] XML_FILE \
+                       TEXT_FILE TAGS_FILE FACT_FILE STRUCTURE_FILE ONTO_FILE
    % python main.py -t
 
 In the first form, input is taken from TEXT_FILE, which contains the bare text, and
@@ -18,7 +19,7 @@ parser. The output is written to STRUCTURE_FILE, which has lines like the follow
    SECTION ID=1 TYPE="UNLABELED" START=0 END=3978
    SECTION ID=2 TYPE="INTRODUCTION" TITLE="INTRODUCTION" START=3978 END=6016
 
-In the secons form, the input is an xml file and three intermediate files are created:
+In the second form, the input is an xml file and three intermediate files are created:
 text file, tags file and facts file. As with form 1, the text file and the fact file are
 then used to create the sect file. Both forms have the same options, all optional:
 
@@ -78,8 +79,8 @@ def usage():
           + 'XML_FILE TEXT_FILE TAGS_FILE FACT_FILE STRUCTURE_FILE'
     print '  % python main.py [-c COLLECTION] [-l LANGUAGE] FILE_LIST'
     print '  % python main.py [-c COLLECTION] [-l LANGUAGE] DIRECTORY'
-    print '  % python main.py -o XML_FILE TEXT_FILE TAGS_FILE ' \
-          + 'FACT_FILE STRUCTURE_FILE ONTO_FILE'
+    print '  % python main.py -o [-l LANGUAGE] XML_FILE TEXT_FILE ' \
+          + 'TAGS_FILE FACT_FILE STRUCTURE_FILE ONTO_FILE'
     print '  % python main.py -t'
 
     
