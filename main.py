@@ -246,6 +246,7 @@ class Parser(object):
             ('elsevier', 'elsevier-complex'),
             ('lexisnexis', 'US4192770A'),
             ('lexisnexis', 'US4192770A.xml'),
+            ('lexisnexis', 'US4504220A'),
             ('wos', 'wos')
             )
         results = []

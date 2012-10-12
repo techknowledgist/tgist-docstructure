@@ -43,6 +43,9 @@ class Tag():
     def attr(self, attr, default=None):
         return self.attributes.get(attr, default)
 
+    def set_type(self, type_value):
+        self.attributes['TYPE'] = type_value
+        
     def get_basic_offset(self):
         keys = [a for a in self.attributes.keys() if a.endswith(':offset')]
         return int(self.attr(keys[0], -1)) if keys else -1
@@ -75,7 +78,19 @@ def load_data(text_file, fact_file, fact_type='BAE'):
     """Returns a tuple of the text as a unicode string and a list of Tag instances created
     from the fact file."""
     text = codecs.open(text_file, encoding="utf-8").read()
-    tags = [ Tag(line, fact_type) for line in open(fact_file) if line.strip() != '' ]
+    # tags = [ Tag(line, fact_type) for line in open(fact_file) if line.strip() != '' ]
+    # The nice compact line above needed to be replaced with somehting more verbose since
+    # some error handling was needed, this was added because USPP021257P2.fact in the fact
+    # files for the 500 US sample patents in lexis.tgz is corrupted
+    tags = []
+    for line in open(fact_file):
+        if line.strip() != '':
+            try:
+                tag = Tag(line, fact_type)
+                tags.append(tag)
+            except Exception, e:
+                print "WARNING: could not make Tag instance from line"
+                print '         [', line.rstrip(), ']'
     return (text, tags)
 
 def find_abstracts(tags):

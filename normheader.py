@@ -8,7 +8,8 @@ against false positives.
 """
 sem_types = {
     "Results": (["result"],[]),
-    "Background": (["background"],[]),
+    "Background": (["background", "prior art", "related art"],[]),
+    "Field": (["field"],[]),
     "Discussion": (["discuss"],[]),
     "Conclusion": (["conclu","summary"],["invention"]),
     "Methods": (["method","procedure","studydesign","implementation","experiment"],[]),
@@ -31,7 +32,7 @@ sem_types = {
     "Subjects": (["subjects","participants","patient","population"],["communication"]),
     "Government Interest": (["government"],[]),
     "Operation": (["operation"],[]),
-    "Invention": (["invention"],["background", 'summary']),
+    "Invention": (["invention"],["field", "background", 'summary']),
     "Summary": (['summar'], []),
     "References": (['reference'], []),
     "Preferred Embodiments": (["preferredembodiment"],[]),
