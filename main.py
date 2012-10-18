@@ -338,7 +338,10 @@ class Parser(object):
                 # only add the content if there wasn't any already, this is a bit ad hoc
                 # but will have a preference for the first occurrence of the same content
                 if FH_DATA.has_key(mapped_type) and FH_DATA[mapped_type] is None:
-                    FH_DATA[mapped_type] = (p1, p2, text[int(p1):int(p2)].strip())
+                    section_text = text[int(p1):int(p2)].strip()
+                    if mapped_type == 'FH_TITLE' and self.language == 'GERMAN':
+                        section_text = restore_proper_capitalization(section_text)
+                    FH_DATA[mapped_type] = (p1, p2, section_text)
             elif tagtype == 'CLAIM':
                 if tag.attr('CLAIM_NUMBER') == '1':
                     FH_DATA['FH_FIRST_CLAIM'] = (p1, p2, text[int(p1):int(p2)].strip())
@@ -359,6 +362,9 @@ class Parser(object):
 
 
 def restore_sentences(f, data_to_write):
+    """Chinese data seem to be created using OCS and have <br> all over the place, often
+    splitting segments. Since the segmenter takes one line at the time, we spend some time
+    here gluing together theparts of sentences."""
     return_data = ""
     empty_line = False
     for line in data_to_write.split("\n"):
@@ -371,8 +377,17 @@ def restore_sentences(f, data_to_write):
                 return_data += "\n"
             emtpy_line = True
     return return_data
-    
-            
+
+
+def restore_proper_capitalization(text):
+    """Up to 1991, German titles are all caps, which causes the tagger to recognize them
+    as a string of proper nouns. The quickest fix to get decent tagging was to go to
+    initial caps for all words. Do not do anything is the text is not all upper."""
+    return text.lower().title() if text.isupper() else text
+
+
+
+
 if __name__ == '__main__':
 
     try:

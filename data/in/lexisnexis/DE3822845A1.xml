@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright ©2011 LexisNexis Univentio, The Netherlands. -->
+<lexisnexis-patent-document schema-version="1.08" date-produced="20110619" file="DE3822845A1.xml" produced-by="LexisNexis-Univentio" lang="eng" date-changed="20090410" time-changed="154014">
+  <bibliographic-data lang="ger">
+    <publication-reference publ-type="Application" publ-desc="Document laid open (First publication)">
+      <document-id>
+        <country>DE</country>
+        <doc-number>3822845</doc-number>
+        <kind>A1</kind>
+        <date>19900118</date>
+      </document-id>
+    </publication-reference>
+    <application-reference>
+      <document-id>
+        <country>DE</country>
+        <doc-number>3822845</doc-number>
+        <date>19880706</date>
+      </document-id>
+    </application-reference>
+    <language-of-filing>ger</language-of-filing>
+    <language-of-publication>ger</language-of-publication>
+    <dates-of-public-availability date-changed="20090410">
+      <unexamined-printed-without-grant>
+        <date>19900118</date>
+      </unexamined-printed-without-grant>
+    </dates-of-public-availability>
+    <classifications-ipcr date-changed="20070509">
+      <classification-ipcr sequence="1">
+        <text>B60S   1/46        20060101C I20051008RMEP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>C</classification-level>
+        <section>B</section>
+        <class>60</class>
+        <subclass>S</subclass>
+        <main-group>1</main-group>
+        <subgroup>46</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+      <classification-ipcr sequence="2">
+        <text>B60S   1/48        20060101A I20051008RMEP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>B</section>
+        <class>60</class>
+        <subclass>S</subclass>
+        <main-group>1</main-group>
+        <subgroup>48</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+      <classification-ipcr sequence="3">
+        <text>B60S   1/52        20060101A I20051008RMEP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>B</section>
+        <class>60</class>
+        <subclass>S</subclass>
+        <main-group>1</main-group>
+        <subgroup>52</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+    </classifications-ipcr>
+    <classifications-ecla date-changed="20070509">
+      <classification-ecla sequence="1" classification-scheme="EC" country="EP">
+        <text>B60S  1/48B</text>
+        <section>B</section>
+        <class>60</class>
+        <subclass>S</subclass>
+        <main-group>1</main-group>
+        <subgroup>48</subgroup>
+        <additional-subgroups>
+          <additional-subgroup sequence="1">B  </additional-subgroup>
+        </additional-subgroups>
+      </classification-ecla>
+      <classification-ecla sequence="2" classification-scheme="EC" country="EP">
+        <text>B60S  1/52</text>
+        <section>B</section>
+        <class>60</class>
+        <subclass>S</subclass>
+        <main-group>1</main-group>
+        <subgroup>52</subgroup>
+      </classification-ecla>
+    </classifications-ecla>
+    <number-of-claims calculated="yes">6</number-of-claims>
+    <invention-title id="title_ger" date-changed="20090410" lang="ger" format="original">SCHEIBENWASCHANLAGE EINES FAHRZEUGES UND VERFAHREN ZUM WASCHEN DER FRONTSCHEIBE EINES FAHRZEUGS</invention-title>
+    <invention-title id="title_eng" date-changed="20090410" lang="eng" format="original">Window-washing system of a vehicle and method of washing the windscreen of a vehicle</invention-title>
+    <references-cited date-changed="20090410">
+      <patent-citations name="patcit" date-changed="20090410" />
+      <forward-citations name="fwdcit" date-changed="20090410" />
+      <citation srep-phase="0">
+        <patcit num="1">
+          <document-id>
+            <country>DE</country>
+            <doc-number>2949574</doc-number>
+            <kind>A1</kind>
+            <date>19800612</date>
+          </document-id>
+          <application-date>
+            <date>19791210</date>
+          </application-date>
+        </patcit>
+      </citation>
+      <citation>
+        <fwdcit num="1">
+          <document-id>
+            <country>DE</country>
+            <doc-number>4139584</doc-number>
+            <kind>A1</kind>
+            <date>19920625</date>
+          </document-id>
+          <application-date>
+            <date>19911130</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+      <citation>
+        <fwdcit num="2">
+          <document-id>
+            <country>EP</country>
+            <doc-number>911232</doc-number>
+            <kind>A1</kind>
+            <date>19990428</date>
+          </document-id>
+          <application-date>
+            <date>19981013</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+      <citation>
+        <fwdcit num="3">
+          <document-id>
+            <country>EP</country>
+            <doc-number>911232</doc-number>
+            <kind>B1</kind>
+            <date>20031217</date>
+          </document-id>
+          <application-date>
+            <date>19981013</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+    </references-cited>
+    <parties date-changed="20090410">
+      <applicants>
+        <applicant sequence="1" app-type="applicant">
+          <addressbook lang="eng">
+            <orgname>VDO ADOLF SCHINDLING AG, 6000 FRANKFURT, DE</orgname>
+            <address>
+              <country>DE</country>
+            </address>
+          </addressbook>
+        </applicant>
+        <applicant sequence="1" app-type="applicant" data-format="docdb">
+          <addressbook lang="eng">
+            <orgname>VDO SCHINDLING</orgname>
+            <address>
+              <country>DE</country>
+            </address>
+          </addressbook>
+        </applicant>
+        <applicant sequence="1" app-type="applicant" data-format="docdba">
+          <addressbook lang="eng">
+            <orgname>VDO ADOLF SCHINDLING AG, 6000 FRANKFURT, DE</orgname>
+            <address>
+              <country>DE</country>
+            </address>
+          </addressbook>
+        </applicant>
+      </applicants>
+      <inventors>
+        <inventor sequence="1">
+          <addressbook lang="eng">
+            <name>HOFFMANN, HEINRICH, 6432 HERINGEN, DE</name>
+            <address>
+              <country>DE</country>
+            </address>
+          </addressbook>
+        </inventor>
+        <inventor sequence="1" data-format="docdb">
+          <addressbook lang="eng">
+            <name>HOFFMANN HEINRICH</name>
+            <address>
+              <country>DE</country>
+            </address>
+          </addressbook>
+        </inventor>
+        <inventor sequence="1" data-format="docdba">
+          <addressbook lang="eng">
+            <name>HOFFMANN, HEINRICH, 6432 HERINGEN, DE</name>
+            <address>
+              <country>DE</country>
+            </address>
+          </addressbook>
+        </inventor>
+      </inventors>
+    </parties>
+    <patent-family date-changed="20070529">
+      <main-family family-id="40839832">
+        <family-member>
+          <document-id>
+            <country>DE</country>
+            <doc-number>3822845</doc-number>
+            <kind>A1</kind>
+            <date>19900118</date>
+          </document-id>
+          <application-date>
+            <date>19880706</date>
+          </application-date>
+        </family-member>
+        <family-member>
+          <document-id>
+            <country>DE</country>
+            <doc-number>3822845</doc-number>
+            <kind>C2</kind>
+            <date>20011206</date>
+          </document-id>
+          <application-date>
+            <date>19880706</date>
+          </application-date>
+        </family-member>
+      </main-family>
+      <complete-family family-id="40668121">
+        <family-member>
+          <document-id>
+            <country>DE</country>
+            <doc-number>3822845</doc-number>
+            <kind>C2</kind>
+            <date>20011206</date>
+          </document-id>
+          <application-date>
+            <date>19880706</date>
+          </application-date>
+        </family-member>
+        <family-member>
+          <document-id>
+            <country>DE</country>
+            <doc-number>3822845</doc-number>
+            <kind>A1</kind>
+            <date>19900118</date>
+          </document-id>
+          <application-date>
+            <date>19880706</date>
+          </application-date>
+        </family-member>
+      </complete-family>
+    </patent-family>
+  </bibliographic-data>
+  <abstract id="abstr_eng" date-changed="20070509" lang="eng" format="original">
+    <p>The invention proposes a window-washing system of a vehicle, with a pump (9) which can be brought alternately into connection with spray nozzles (4a, 4b), which system is characterised in that two spray nozzles (4a, 4b) are provided which are both directed onto the windscreen (1) of the vehicle. The method of washing the windscreen of a vehicle, in which two spray nozzles are directed onto the windscreen, is characterised in that the spray nozzles are operated alternately. The invention does not need a high pump pressure for cleaning the windscreen and as a result of the lower power required the overall size of the pump can hence be reduced. Due to the continuous increase and decrease in the jet a larger wetting area of the windscreen is furthermore obtained; since in each case only one spray nozzle is operated the quality of the jet is, moreover, better. &lt;;IMAGE&gt;;</p>
+  </abstract>
+  <legal-data date-changed="20070508">
+    <legal-event sequence="1">
+      <publication-date>
+        <date>19950614</date>
+      </publication-date>
+      <event-code-1>8110</event-code-1>
+      <effect>+</effect>
+      <legal-description>REQUEST FOR EXAMINATION PARAGRAPH 44</legal-description>
+      <status-identifier>C</status-identifier>
+      <docdb-publication-number> DE     3822845A1</docdb-publication-number>
+    </legal-event>
+    <legal-event sequence="2">
+      <publication-date>
+        <date>19971127</date>
+      </publication-date>
+      <event-code-1>8127</event-code-1>
+      <legal-description>NEW PERSON/NAME/ADDRESS OF THE APPLICANT</legal-description>
+      <status-identifier>C</status-identifier>
+      <docdb-publication-number> DE     3822845A1</docdb-publication-number>
+      <new-owner>MANNESMANN VDO AG, 60326 FRANKFURT, DE</new-owner>
+    </legal-event>
+    <legal-event sequence="3">
+      <publication-date>
+        <date>20011206</date>
+      </publication-date>
+      <event-code-1>D2</event-code-1>
+      <effect>+</effect>
+      <legal-description>GRANT AFTER EXAMINATION</legal-description>
+      <status-identifier>C</status-identifier>
+      <docdb-publication-number> DE     3822845A1</docdb-publication-number>
+    </legal-event>
+    <legal-event sequence="4">
+      <publication-date>
+        <date>20020404</date>
+      </publication-date>
+      <event-code-1>8327</event-code-1>
+      <legal-description>CHANGE IN THE PERSON/NAME/ADDRESS OF THE PATENT OWNER</legal-description>
+      <status-identifier>C</status-identifier>
+      <docdb-publication-number> DE     3822845A1</docdb-publication-number>
+      <new-owner>SIEMENS AG, 80333 MUENCHEN, DE</new-owner>
+    </legal-event>
+    <legal-event sequence="5">
+      <publication-date>
+        <date>20020529</date>
+      </publication-date>
+      <event-code-1>8364</event-code-1>
+      <effect>+</effect>
+      <legal-description>NO OPPOSITION DURING TERM OF OPPOSITION</legal-description>
+      <status-identifier>C</status-identifier>
+      <docdb-publication-number> DE     3822845A1</docdb-publication-number>
+    </legal-event>
+    <legal-event sequence="6">
+      <publication-date>
+        <date>20050512</date>
+      </publication-date>
+      <event-code-1>8339</event-code-1>
+      <effect>-</effect>
+      <legal-description>CEASED/NON-PAYMENT OF THE ANNUAL FEE</legal-description>
+      <status-identifier>C</status-identifier>
+      <docdb-publication-number> DE     3822845A1</docdb-publication-number>
+    </legal-event>
+  </legal-data>
+  <description id="descr_ger" lang="ger" format="original" date-changed="20090425">
+    <heading>P</heading>
+    <p>Eine Scheibenwaschanlage eines Fahrzeuges mit einer mit Spritz­düsen wechselweise in Verbindung bringbaren Pumpe ist bei­spielsweise aus der DE-PS 30 23 897 bekannt. Die Scheiben­waschanlage weist Spritzdüsen für die Front- und Heckscheibe und eine rechts- und linksdrehend ausgebildete Pumpe auf, mit zwei Förderanschlüssen die von einem in Abhängigkeit von der Drehrichtung der Pumpe bewegbaren Ventilkörper alternativ verschließbar sind. Im Betrieb werden somit entweder die Spritzdüsen für die Frontscheibe oder die Spritzdüsen für die Heckscheibe beaufschlagt.</p>
+    <p>Aus der Praxis ist es ferner bekannt, der Frontscheibe eines Fahrzeuges zwei auf diese gerichtete Spritzdüsen zuzuordnen, die gleichzeitig mittels einer gemeinsamen Pumpe beaufschlagt werden.</p>
+    <p>Es ist Aufgabe vorliegender Erfindung eine Scheibenwaschan­lage eines Fahrzeuges bzw. ein Verfahren zum Waschen der Frontscheibe eines Fahrzeuges so weiter zu bilden, daß bei geringer Leistungsaufnahme der Pumpe und damit bei vermin­derter Baugröße der Pumpe dennoch zufriedenstellende Wasch­ergebnisse erzielt werden können.</p>
+    <p>Erfindungsgemäß wird eine Scheibenwaschanlage eines Fahrzeu­ges mit einer mit Spritzdüsen wechselweise in Verbindung bringbaren Pumpe vorgeschlagen, die dadurch gekennzeichnet ist, daß zwei Spritzdüsen vorgesehen sind, die beide auf die Frontscheibe des Fahrzeuges gerichtet sind. Dies bedeutet, daß zu einem bestimmten Zeitpunkt immer nur eine der beiden Spritzdüsen beaufschlagt werden, womit die Pumpe ein vermin­dertes Flüssigkeitsvolumen fördern muß und bei gleicher Pum­penleistung erhöhte Förderdrücke erzielbar sind, was die Waschwirkung der jeweiligen Spritzdüse steigert. Zweckmäßig sind dabei die Spritzdüsen als Doppel-Düsen ausgebildet, das heißt es werden mittels jeder Spritzdüse zwei Strahlen auf die Frontscheibe des Fahrzeuges gerichtet. Unabhängig davon ob ein oder zwei Scheibenwischer vorgesehen sind, sollten die beiden Spritzdüsen symmetrisch zur Fahrzeuglängsachse an­geordnet sein, um so eine Waschwirkung auf der ganzen Front­scheibenfläche zu gewährleisten.</p>
+    <p>Das erfindungsgemäße Verfahren zum Waschen der Frontscheibe eines Fahrzeuges, bei der zwei Spritzdüsen auf die Front­scheibe gerichtet sind, ist dadurch gekennzeichnet, daß die Spritzdüsen abwechselnd betrieben werden. In diesem Zusammen­hang wird es als vorteilhaft angesehen, wenn der aus der je­weiligen Spritzdüse ausgegebene Flüssigkeitsstrahl in Be­wegungsrichtung des Scheibenwischers vor diesem auftrifft. Darüber hinaus sollte nur noch die der Fahrerseite zugeord­nete Spritzdüse betrieben werden, wenn die Waschflüssigkeit im Vorratsbehälter ein bestimmtes Minimalniveau erreicht hat. Es kann damit selbst bei geringen Waschflüssigkeitsreserven sichergestellt werden, daß der dem Fahrer zugeordnete Bereich der Frontscheibe über einen ausreichenden Zeitraum zufrieden­stellend gesäubert werden kann.</p>
+    <p>Die erfindungsgemäße Scheibenwaschanlage und das Verfahren zum Waschen der Frontscheibe eines Fahrzeuges ermöglicht da­mit nicht nur ein Betreiben der Düsen mit einem niedrigeren Pumpendruck, sondern es ergibt sich, da nur jeweils eine Düse bzw. Doppel-Düse betrieben wird, eine bessere Strahl­qualität. Durch den ständigen Auf- und Abbau des Strahles ist ferner eine größere Benetzungsfläche der Scheibe als bei einem stetigen Aufspritzen der Flüssigkeit auf die Scheibe zu verzeichnen. Im übrigen ist immer eine Hälfte der Front­scheibe frei von dem auftreffenden Wasserstrahl, was die Sicht durch den gerade nicht benetzten Bereich der Front­scheibe verbessert und damit zur Sicherheit beim Fahren bei­trägt.</p>
+    <p>Die einzige Figur verdeutlicht in schematischer Darstellung eine Frontscheibe <b>1</b> eines Kraftfahrzeuges mit einem Scheiben­wischer <b>2</b>, der um den mit der Fahrzeuglängsachse zusammen­fallenden Punkt <b>3</b> in Richtung des Pfeiles A zwischen der ge­zeigten Endlage und der strichliert eingezeichneten weiteren Endlage hin- und herverschwenkbar ist. Symmetrisch zu dem die Schwenkachse des Scheibenwischers <b>2</b> darstellenden Punkt <b>3</b> sind zwei Spritzdüsen <b>4</b>a und <b>4</b>b angeordnet die jeweils als Doppel-Düsen ausgebildet sind, was durch die der Spritz­düse <b>4</b>a bzw. <b>4</b>b zugeordneten beiden Flüssigkeitsstrahlen <b>5</b> und <b>6</b> bzw. <b>7</b> und <b>8</b> verdeutlicht wird. Bezogen auf die Dar­stellung der Figur benetzen die Flüssigkeitsstrahlen <b>5</b> und <b>6</b> den linken Bereich der Frontscheibe <b>1</b>, hingegen die Flüs­sigkeitsstrahlen <b>7</b> und <b>8</b> den rechten Bereich der Frontschei­be <b>1</b>. Die Flüssigkeitszufuhr zu den beiden Spritzdüsen <b>4</b>a und <b>4</b>b erfolgt über eine Dualpumpe <b>9</b>, die eine mit einem Vor­ratsbehälter <b>10</b> verbundene Zuleitung <b>11</b> aufweist, sowie Förderleitungen <b>12</b>a und <b>12</b>b, die mit den Spritzdüsen <b>4</b>a und <b>4</b>b verbunden sind. Mit  und ä sind die Polaritäten der Dual­pumpe <b>9</b> verdeutlicht, die zu einem wechselweisen Fördern der im Vorratsbehälter <b>10</b> befindlichen Waschflüssigkeit entweder über die Förderleitung <b>12</b>a zur Spritzdüse <b>4</b>a oder über die Förderleitung <b>12</b>b zur Spritzdüse <b>4</b>b führen. Das wechselweise Fördern der Waschflüssigkeit bedingt eine Benetzung der Frontscheibe <b>1</b> entweder nur im linken oder im rechten Bereich. Nicht näher verdeutlicht ist in der Figur eine Steuerung, die bei Erreichen eines bestimmten Minimalflüssigkeitsniveaus im Vorratsbehälter <b>10</b> aktiviert wird und dazu führt, daß pulsierende Spritzstöße nur durch eine der beiden Spritzdü­sen abgegeben wird.</p>
+  </description>
+  <claims id="claims_ger" lang="ger" format="original" date-changed="20090425">
+    <claim num="1">
+      <claim-text>1. Scheibenwaschanlage eines Fahrzeuges mit einer mit Spritz­düsen wechselweise in Verbindung bringbaren Pumpe, dadurch gekennzeichnet, daß zwei Spritzdüsen (4a, 4b) vorgesehen sind, die beide auf die Frontscheibe (1) des Fahrzeuges gerichtet sind.</claim-text>
+    </claim>
+    <claim num="2">
+      <claim-text>2. Scheibenwaschanlage nach Anspruch 1, dadurch gekennzeich­net, daß die Spritzdüsen (4a, 4b) als Doppel-Düsen (5, 6, 7, 8) ausgebildet sind.</claim-text>
+    </claim>
+    <claim num="3">
+      <claim-text>3. Scheibenwaschanlage nach Anspruch 1 oder 2, dadurch gekenn­zeichnet, daß die Spritzdüsen (4a, 4b) symmetrisch zur Fahrzeugslängsachse angeordnet sind.</claim-text>
+    </claim>
+    <claim num="4">
+      <claim-text>4. Verfahren zum Waschen der Frontscheibe eines Fahrzeuges, bei der zwei Spritzdüsen auf die Frontscheiben gerichtet sind, dadurch gekennzeichnet, daß die Spritzdüsen (4a, 4b) ab­wechselnd betrieben werden.</claim-text>
+    </claim>
+    <claim num="5">
+      <claim-text>5. Verfahren nach Anspruch 4, dadurch gekennzeichnet, daß der aus der jeweiligen Spritzdüse (4a, 4b) ausgegebene Flüssigkeitsstrahl in Bewegungsrichtung des Scheiben­wischers (2) vor diesem auftrifft.</claim-text>
+    </claim>
+    <claim num="6">
+      <claim-text>6. Verfahren nach Anspruch 4 oder 5, dadurch gekennzeichnet, daß bei Erreichen eines bestimmten Flüssigkeitsniveaus im Vorratsbehälter (10) für die Scheibenwaschflüssigkeit nur die der Fahrerseite zugeordnete Spritzdüse betrieben wird.</claim-text>
+    </claim>
+  </claims>
+</lexisnexis-patent-document>

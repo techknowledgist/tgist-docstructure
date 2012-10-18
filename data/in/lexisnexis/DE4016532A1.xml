@@ -1,0 +1,1734 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright ©2011 LexisNexis Univentio, The Netherlands. -->
+<lexisnexis-patent-document schema-version="1.08" date-produced="20110619" file="DE4016532A1.xml" produced-by="LexisNexis-Univentio" lang="eng" date-changed="20110118" time-changed="051855">
+  <bibliographic-data lang="ger">
+    <publication-reference publ-type="Application" publ-desc="Document laid open (First publication)">
+      <document-id>
+        <country>DE</country>
+        <doc-number>4016532</doc-number>
+        <kind>A1</kind>
+        <date>19901129</date>
+      </document-id>
+    </publication-reference>
+    <application-reference>
+      <document-id>
+        <country>DE</country>
+        <doc-number>4016532</doc-number>
+        <date>19900522</date>
+      </document-id>
+    </application-reference>
+    <language-of-filing>ger</language-of-filing>
+    <language-of-publication>ger</language-of-publication>
+    <priority-claims date-changed="20090410">
+      <priority-claim sequence="1" kind="national">
+        <country>JP</country>
+        <doc-number>01126717</doc-number>
+        <kind>A</kind>
+        <date>19890522</date>
+      </priority-claim>
+      <priority-claim sequence="1" data-format="original">
+        <doc-number>1-126717</doc-number>
+      </priority-claim>
+      <priority-claim sequence="1" data-format="epodoc">
+        <doc-number>JP19890126717</doc-number>
+      </priority-claim>
+    </priority-claims>
+    <dates-of-public-availability date-changed="20090410">
+      <unexamined-printed-without-grant>
+        <date>19901129</date>
+      </unexamined-printed-without-grant>
+    </dates-of-public-availability>
+    <classifications-ipcr date-changed="20110118">
+      <classification-ipcr sequence="1">
+        <text>H05K   1/05        20060101AFI20051220RMJP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>H</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>1</main-group>
+        <subgroup>05</subgroup>
+        <symbol-position>F</symbol-position>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051220</date>
+        </action-date>
+        <generating-office>
+          <country>JP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+      <classification-ipcr sequence="2">
+        <text>B60R  16/02        20060101A I20051008RMEP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>B</section>
+        <class>60</class>
+        <subclass>R</subclass>
+        <main-group>16</main-group>
+        <subgroup>02</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+      <classification-ipcr sequence="3">
+        <text>B60R  16/023       20060101A I20070721RMEP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>B</section>
+        <class>60</class>
+        <subclass>R</subclass>
+        <main-group>16</main-group>
+        <subgroup>023</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20070721</date>
+        </action-date>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+      <classification-ipcr sequence="4">
+        <text>G11C   5/00        20060101A I20051008RMEP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>G</section>
+        <class>11</class>
+        <subclass>C</subclass>
+        <main-group>5</main-group>
+        <subgroup>00</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+      <classification-ipcr sequence="5">
+        <text>H01L  25/04        20060101ALI20051220RMJP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>25</main-group>
+        <subgroup>04</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051220</date>
+        </action-date>
+        <generating-office>
+          <country>JP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+      <classification-ipcr sequence="6">
+        <text>H01L  25/18        20060101ALI20051220RMJP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>25</main-group>
+        <subgroup>18</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051220</date>
+        </action-date>
+        <generating-office>
+          <country>JP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+      <classification-ipcr sequence="7">
+        <text>H01R  12/16        20060101A I20051008RMEP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>H</section>
+        <class>01</class>
+        <subclass>R</subclass>
+        <main-group>12</main-group>
+        <subgroup>16</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+      <classification-ipcr sequence="8">
+        <text>H01R  13/66        20060101A I20051008RMEP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>H</section>
+        <class>01</class>
+        <subclass>R</subclass>
+        <main-group>13</main-group>
+        <subgroup>66</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+      <classification-ipcr sequence="9">
+        <text>H05K   1/14        20060101ALI20051220RMJP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>H</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>1</main-group>
+        <subgroup>14</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051220</date>
+        </action-date>
+        <generating-office>
+          <country>JP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+      <classification-ipcr sequence="10">
+        <text>H05K   3/36        20060101A N20051008RMEP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>H</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>3</main-group>
+        <subgroup>36</subgroup>
+        <classification-value>N</classification-value>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+      <classification-ipcr sequence="11">
+        <text>H05K   5/00        20060101A I20051008RMEP        </text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>H</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>5</main-group>
+        <subgroup>00</subgroup>
+        <classification-value>I</classification-value>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+      </classification-ipcr>
+    </classifications-ipcr>
+    <classifications-ecla date-changed="20110118">
+      <classification-ecla sequence="1" classification-scheme="EC" country="EP">
+        <text>B60R 16/023L</text>
+        <section>B</section>
+        <class>60</class>
+        <subclass>R</subclass>
+        <main-group>16</main-group>
+        <subgroup>023</subgroup>
+        <additional-subgroups>
+          <additional-subgroup sequence="1">L  </additional-subgroup>
+        </additional-subgroups>
+      </classification-ecla>
+      <classification-ecla sequence="2" classification-scheme="EC" country="EP">
+        <text>G11C  5/00</text>
+        <section>G</section>
+        <class>11</class>
+        <subclass>C</subclass>
+        <main-group>5</main-group>
+        <subgroup>00</subgroup>
+      </classification-ecla>
+      <classification-ecla sequence="3" classification-scheme="EC" country="EP">
+        <text>H01R 13/66D2</text>
+        <section>H</section>
+        <class>01</class>
+        <subclass>R</subclass>
+        <main-group>13</main-group>
+        <subgroup>66</subgroup>
+        <additional-subgroups>
+          <additional-subgroup sequence="1">D  </additional-subgroup>
+          <additional-subgroup sequence="2">2  </additional-subgroup>
+        </additional-subgroups>
+      </classification-ecla>
+      <classification-ecla sequence="4" classification-scheme="EC" country="EP">
+        <text>H01R 23/68A</text>
+        <section>H</section>
+        <class>01</class>
+        <subclass>R</subclass>
+        <main-group>23</main-group>
+        <subgroup>68</subgroup>
+        <additional-subgroups>
+          <additional-subgroup sequence="1">A  </additional-subgroup>
+        </additional-subgroups>
+      </classification-ecla>
+      <classification-ecla sequence="5" classification-scheme="EC" country="EP">
+        <text>H05K  5/00E</text>
+        <section>H</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>5</main-group>
+        <subgroup>00</subgroup>
+        <additional-subgroups>
+          <additional-subgroup sequence="1">E  </additional-subgroup>
+        </additional-subgroups>
+      </classification-ecla>
+      <classification-ecla sequence="1" classification-scheme="ICO" country="EP">
+        <text>T01R  9:07</text>
+        <section>T</section>
+        <class>01</class>
+        <subclass>R</subclass>
+        <main-group>9</main-group>
+        <subgroup>07</subgroup>
+      </classification-ecla>
+      <classification-ecla sequence="2" classification-scheme="ICO" country="EP">
+        <text>T05K  1:05</text>
+        <section>T</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>1</main-group>
+        <subgroup>05</subgroup>
+      </classification-ecla>
+      <classification-ecla sequence="3" classification-scheme="ICO" country="EP">
+        <text>T05K  1:14D</text>
+        <section>T</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>1</main-group>
+        <subgroup>14</subgroup>
+        <additional-subgroups>
+          <additional-subgroup sequence="1">D  </additional-subgroup>
+        </additional-subgroups>
+      </classification-ecla>
+      <classification-ecla sequence="4" classification-scheme="ICO" country="EP">
+        <text>T05K  3:36B</text>
+        <section>T</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>3</main-group>
+        <subgroup>36</subgroup>
+        <additional-subgroups>
+          <additional-subgroup sequence="1">B  </additional-subgroup>
+        </additional-subgroups>
+      </classification-ecla>
+    </classifications-ecla>
+    <number-of-claims calculated="yes">13</number-of-claims>
+    <invention-title id="title_ger" date-changed="20090410" lang="ger" format="original">INTEGRIERTE SCHALTUNG MIT METALLSUBSTRAT</invention-title>
+    <invention-title id="title_eng" date-changed="20090410" lang="eng" format="original">Integrated circuit unit with metal substrate - is produced as encapsulated module with plug connections at either end</invention-title>
+    <references-cited date-changed="20110118">
+      <patent-citations name="patcit" date-changed="20110118" />
+      <non-patent-citations name="nplcit" date-changed="20090410" />
+      <forward-citations name="fwdcit" date-changed="20110111" />
+      <citation srep-phase="0">
+        <patcit num="1">
+          <document-id>
+            <country>DE</country>
+            <doc-number>1129194</doc-number>
+            <kind>B</kind>
+            <date>19620510</date>
+          </document-id>
+          <application-date>
+            <date>19600929</date>
+          </application-date>
+        </patcit>
+      </citation>
+      <citation srep-phase="0">
+        <patcit num="2">
+          <document-id>
+            <country>EP</country>
+            <doc-number>155403</doc-number>
+            <kind>A2</kind>
+            <date>19850925</date>
+          </document-id>
+          <application-date>
+            <date>19841222</date>
+          </application-date>
+        </patcit>
+      </citation>
+      <citation srep-phase="0">
+        <patcit num="3">
+          <document-id>
+            <country>WO</country>
+            <doc-number>8902151</doc-number>
+            <kind>A1</kind>
+            <date>19890309</date>
+          </document-id>
+          <application-date>
+            <date>19880830</date>
+          </application-date>
+        </patcit>
+      </citation>
+      <citation srep-phase="0">
+        <patcit num="4">
+          <document-id>
+            <country>JP</country>
+            <doc-number>46013234</doc-number>
+            <kind>A</kind>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="0">
+        <nplcit num="1">
+          <text>Bürklin Hauptkatalog '88 (Stand Oktober 1987), M3</text>
+        </nplcit>
+      </citation>
+      <citation srep-phase="0">
+        <nplcit num="2">
+          <text>ATZ, Automobiltechnische Zeitschrift 91(1989)3, S. 153-158</text>
+        </nplcit>
+      </citation>
+      <citation srep-phase="0">
+        <nplcit num="3">
+          <text>OPEL, Elektronik im PKW, März 1989, S. 48/49</text>
+        </nplcit>
+      </citation>
+      <citation srep-phase="0">
+        <nplcit num="4">
+          <text>HUSE, Horst: Multi-Mikrocomputer-System modular aufgebaut, aus: Multi-Prozessor-Systeme</text>
+        </nplcit>
+      </citation>
+      <citation srep-phase="0">
+        <nplcit num="5">
+          <text>Franzis- Verlag 1982, S. 60, Sp. 1, Z. 2-5 und Sp. 2, Z. 2-7, sowie Bild 4</text>
+        </nplcit>
+      </citation>
+      <citation>
+        <fwdcit num="1">
+          <document-id>
+            <country>US</country>
+            <doc-number>6233153</doc-number>
+            <kind>B1</kind>
+            <date>20010515</date>
+          </document-id>
+          <application-date>
+            <date>19951103</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+      <citation>
+        <fwdcit num="2">
+          <document-id>
+            <country>US</country>
+            <doc-number>5699233</doc-number>
+            <kind>A</kind>
+            <date>19971216</date>
+          </document-id>
+          <application-date>
+            <date>19950726</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+      <citation>
+        <fwdcit num="3">
+          <document-id>
+            <country>FR</country>
+            <doc-number>2720594</doc-number>
+            <kind>A1</kind>
+            <date>19951201</date>
+          </document-id>
+          <application-date>
+            <date>19940527</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+      <citation>
+        <fwdcit num="4">
+          <document-id>
+            <country>EP</country>
+            <doc-number>560631</doc-number>
+            <kind>A1</kind>
+            <date>19930915</date>
+          </document-id>
+          <application-date>
+            <date>19930312</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+      <citation>
+        <fwdcit num="5">
+          <document-id>
+            <country>DE</country>
+            <doc-number>4426465</doc-number>
+            <kind>A1</kind>
+            <date>19960201</date>
+          </document-id>
+          <application-date>
+            <date>19940726</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+      <citation>
+        <fwdcit num="6">
+          <document-id>
+            <country>EP</country>
+            <doc-number>560631</doc-number>
+            <kind>B1</kind>
+            <date>19961218</date>
+          </document-id>
+          <application-date>
+            <date>19930312</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+      <citation>
+        <fwdcit num="7">
+          <document-id>
+            <country>DE</country>
+            <doc-number>10217099</doc-number>
+            <kind>A1</kind>
+            <date>20031106</date>
+          </document-id>
+          <application-date>
+            <date>20020417</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+      <citation>
+        <fwdcit num="8">
+          <document-id>
+            <country>DE</country>
+            <doc-number>4138818</doc-number>
+            <kind>B4</kind>
+            <date>20040401</date>
+          </document-id>
+          <application-date>
+            <date>19911126</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+      <citation>
+        <fwdcit num="9">
+          <document-id>
+            <country>DE</country>
+            <doc-number>4439471</doc-number>
+            <kind>A1</kind>
+            <date>19960509</date>
+          </document-id>
+          <application-date>
+            <date>19941108</date>
+          </application-date>
+        </fwdcit>
+      </citation>
+    </references-cited>
+    <parties date-changed="20090410">
+      <applicants>
+        <applicant sequence="1" app-type="applicant">
+          <addressbook lang="eng">
+            <orgname>MAZDA MOTOR CORP., HIROSHIMA, JP</orgname>
+            <address>
+              <country>JP</country>
+            </address>
+          </addressbook>
+        </applicant>
+        <applicant sequence="1" app-type="applicant" data-format="docdb">
+          <addressbook lang="eng">
+            <orgname>MAZDA MOTOR</orgname>
+            <address>
+              <country>JP</country>
+            </address>
+          </addressbook>
+        </applicant>
+        <applicant sequence="1" app-type="applicant" data-format="docdba">
+          <addressbook lang="eng">
+            <orgname>MAZDA MOTOR CORP., HIROSHIMA, JP</orgname>
+            <address>
+              <country>JP</country>
+            </address>
+          </addressbook>
+        </applicant>
+      </applicants>
+      <inventors>
+        <inventor sequence="1">
+          <addressbook lang="eng">
+            <name>IZUMI, TOMOJI, HATSUKAICHI, HIROSHIMA, JP</name>
+            <address>
+              <country>JP</country>
+            </address>
+          </addressbook>
+        </inventor>
+        <inventor sequence="2">
+          <addressbook lang="eng">
+            <name>FUJITA, NAGAHISA</name>
+            <address>
+              <country>JP</country>
+            </address>
+          </addressbook>
+        </inventor>
+        <inventor sequence="3">
+          <addressbook lang="eng">
+            <name>ITOH, YUICHI, HIROSHIMA, JP</name>
+            <address>
+              <country>JP</country>
+            </address>
+          </addressbook>
+        </inventor>
+        <inventor sequence="1" data-format="docdb">
+          <addressbook lang="eng">
+            <name>IZUMI TOMOJI</name>
+            <address>
+              <country>JP</country>
+            </address>
+          </addressbook>
+        </inventor>
+        <inventor sequence="1" data-format="docdba">
+          <addressbook lang="eng">
+            <name>IZUMI, TOMOJI, HATSUKAICHI, HIROSHIMA, JP</name>
+            <address>
+              <country>JP</country>
+            </address>
+          </addressbook>
+        </inventor>
+        <inventor sequence="2" data-format="docdba">
+          <addressbook lang="eng">
+            <name>FUJITA, NAGAHISA</name>
+            <address>
+              <country>JP</country>
+            </address>
+          </addressbook>
+        </inventor>
+        <inventor sequence="2" data-format="docdb">
+          <addressbook lang="eng">
+            <name>FUJITA NAGAHISA</name>
+            <address>
+              <country>JP</country>
+            </address>
+          </addressbook>
+        </inventor>
+        <inventor sequence="3" data-format="docdb">
+          <addressbook lang="eng">
+            <name>ITOH YUICHI</name>
+            <address>
+              <country>JP</country>
+            </address>
+          </addressbook>
+        </inventor>
+        <inventor sequence="3" data-format="docdba">
+          <addressbook lang="eng">
+            <name>ITOH, YUICHI, HIROSHIMA, JP</name>
+            <address>
+              <country>JP</country>
+            </address>
+          </addressbook>
+        </inventor>
+      </inventors>
+    </parties>
+    <patent-family date-changed="20071122">
+      <main-family family-id="118852720">
+        <family-member>
+          <document-id>
+            <country>JP</country>
+            <doc-number>02306685</doc-number>
+            <kind>A</kind>
+            <date>19901220</date>
+          </document-id>
+          <application-date>
+            <date>19890522</date>
+          </application-date>
+        </family-member>
+        <family-member>
+          <document-id>
+            <country>DE</country>
+            <doc-number>4016532</doc-number>
+            <kind>A1</kind>
+            <date>19901129</date>
+          </document-id>
+          <application-date>
+            <date>19900522</date>
+          </application-date>
+        </family-member>
+        <family-member>
+          <document-id>
+            <country>JP</country>
+            <doc-number>2702225</doc-number>
+            <kind>B2</kind>
+            <date>19980121</date>
+          </document-id>
+          <application-date>
+            <date>19890522</date>
+          </application-date>
+        </family-member>
+      </main-family>
+      <complete-family family-id="40418265">
+        <family-member>
+          <document-id>
+            <country>US</country>
+            <doc-number>5274570</doc-number>
+            <kind>A</kind>
+            <date>19931228</date>
+          </document-id>
+          <application-date>
+            <date>19930416</date>
+          </application-date>
+        </family-member>
+        <family-member>
+          <document-id>
+            <country>JP</country>
+            <doc-number>2702225</doc-number>
+            <kind>B2</kind>
+            <date>19980121</date>
+          </document-id>
+          <application-date>
+            <date>19890522</date>
+          </application-date>
+        </family-member>
+        <family-member>
+          <document-id>
+            <country>JP</country>
+            <doc-number>02306685</doc-number>
+            <kind>A</kind>
+            <date>19901220</date>
+          </document-id>
+          <application-date>
+            <date>19890522</date>
+          </application-date>
+        </family-member>
+        <family-member>
+          <document-id>
+            <country>DE</country>
+            <doc-number>4016532</doc-number>
+            <kind>A1</kind>
+            <date>19901129</date>
+          </document-id>
+          <application-date>
+            <date>19900522</date>
+          </application-date>
+        </family-member>
+      </complete-family>
+    </patent-family>
+  </bibliographic-data>
+  <abstract id="abstr_eng" date-changed="20070509" lang="eng" format="original">
+    <p>An integrated circuit module, consisting of I/O stages, CPU and memory stages, is formed with an insulated circuit board  mounted within a sealed housing (16a,16b).  Interconnections between the boards is provided by bridging elements (22f). Each board has contact pads (22j, 22h) at either end.  One end of the housing has pin connections (24a) and the other has contact made by the sliding contacts (14) of a connecting plug.  All contact elements are embedded in a sealing compound (38). USE/ADVANTAGE - In vehicle.  Has encapsulated housing with metal outer layer.</p>
+  </abstract>
+  <legal-data date-changed="20070508">
+    <legal-event sequence="1">
+      <publication-date>
+        <date>19901129</date>
+      </publication-date>
+      <event-code-1>OP8</event-code-1>
+      <effect>+</effect>
+      <legal-description>REQUEST FOR EXAMINATION AS TO PARAGRAPH 44 PATENT LAW</legal-description>
+      <status-identifier>C</status-identifier>
+      <docdb-publication-number> DE     4016532A1</docdb-publication-number>
+    </legal-event>
+    <legal-event sequence="2">
+      <publication-date>
+        <date>19990708</date>
+      </publication-date>
+      <event-code-1>8139</event-code-1>
+      <effect>-</effect>
+      <legal-description>DISPOSAL/NON-PAYMENT OF THE ANNUAL FEE</legal-description>
+      <status-identifier>C</status-identifier>
+      <docdb-publication-number> DE     4016532A1</docdb-publication-number>
+    </legal-event>
+  </legal-data>
+  <description id="descr_ger" lang="ger" format="original" date-changed="20080214">
+    <heading>P</heading>
+    <p>Üblicherweise ist eine Technik, die in der japanischen Patent­veröffentlichung Nr. 46-13 234 offenbart ist, als integrierte Schaltung bekannt, welche ein Paar Metallsubstrate aufweist, wobei leitfähige Schichten an jedem Metallsubstrat über eine isolierende Schicht haften, wobei ein Schaltungselement an jeder leitfähigen Schicht befestigt ist, und wobei die leit­fähigen Schichten über ein Anschlußsubstrat angeschlossen und voneinander zueinander weisend getrennt sind. Ein Verfahren zur Herstellung der integrierten Schaltung, die in dieser Druckschrift offenbart ist, besteht aus dem Verfahrensschritt, daß wenigstens eine größere Oberfläche eines Aluminiumsub­strats anodisch oxidiert wird, um eine dünne Aluminiumoxid­schicht auf der Substratoberfläche zu bilden, dem Verfahrens­schritt, daß wahlweise ein Widerstandsmaterial und ein hoch­leitfähiges Material auf dem dünnen Aluminiumoxidfilm gebondet und geformt wird, um zahlreiche Schaltungselemente zu bilden, dem Verfahrensschritt, daß Transistor-Pellets auf vorderen Abschnitten befestigt werden, die durch wahlweises Bonden des hochleitfähigen Materials gebildet sind, und dem Verfahrens­schritt, daß wenigstens alle Schaltungselemente versiegelt werden.</p>
+    <p>Bei der auf diese Weise gebildeten integrierten Schaltung ist auf einer Schaltungsplatte, auf der eine leitfähige Schicht aus einer gewünschten Struktur auf einem Metallsubstrat über eine Isolierschicht gebildet ist, wenigstens ein Speicher­element unlösbar als sogenannter freier Chip auf der isolie­renden Schicht montiert.</p>
+    <p>Die auf diese Weise gebildete integrierte Schaltung kann im Hinblick auf ihren kompakten Aufbau und ihre niedrigen Kosten bei einem Fahrzeug eingesetzt werden. Wenn die integrierte Schaltung mit einem Metallsubstrat jedoch tatsächlich in einem Fahrzeug verwendet wird, müssen zahlreiche Tests in einem Entwicklungsprozeß derart durchgeführt werden, daß die in dem Speicherelement gespeicherten Daten nach Bedarf neu einge­schrieben werden müssen und ein Kontrollprogramm muß aktuali­siert werden.</p>
+    <p>Das Speicherelement ist jedoch unmittelbar auf einer Schaltung als freier Chip montiert. Wenn das Speicherelement einmal montiert ist, kann es nicht mehr gelöst werden. Demgemäß ist es schwierig, ein Verarbeiten des Speicherinhalts durchzufüh­ren, beispielsweise ist es schwierig, Daten neu einzuschrei­ben, ein Kontrollprogramm zu aktualisieren, einen Speicher­inhalt zu überwachen und dergleichen. Hierdurch wird der Freiheitsgrad bei der Entwicklung erheblich eingeschränkt.</p>
+    <p>Im Hinblick auf die obige Situation wurde die vorliegende Erfindung gemacht. Sie zielt hauptsächlich darauf ab, eine integrierte Schaltung mit einem Metallsubstrat verfügbar zu machen, die extern eine Verarbeitung eines Speicherinhalts eines Speicherelements, beispielsweise ein erneutes Einschrei­ben von Daten und ein Aktualisieren eines Kontrollprogramms, in einem Entwicklungsprozeß der integrierten Schaltung vor­zunehmen vermag, um dadurch den Freiheitsgrad der Entwicklung zu verbessern.</p>
+    <p>Mit der Erfindung soll weiterhin eine integrierte Schaltung mit einem Metallsubstrat geschaffen werden, welche von außen einen Speicherinhalt eines Speicherelements überwachen kann, um dadurch den Freiheitsgrad bei der Entwicklung zu verbes­sern.</p>
+    <p>Desweiteren soll mit der Erfindung die Schaffung einer inte­grierten Schaltung mit einem Metallsubstrat erreicht werden, die extern die Verarbeitung eines Speicherinhalts eines Spei­cherelements, beispielsweise ein erneutes Einschreiben von Daten und ein Aktualisieren eines Kontrollprogramms, durch­zuführen vermag und die extern den Speicherinhalt ohne Ausein­andernehmen eines zusammengesetzten Aufbaus überwachen kann.</p>
+    <p>Schließlich soll mit der Erfindung erreicht werden, eine integrierte Schaltung mit einem Metallsubstrat verfügbar zu machen, die extern eine Verarbeitung eines Speicherinhalts eines Speicherelements, wie beispielsweise ein erneutes Ein­schreiben von Daten und ein Aktualisieren eines Kontrollpro­gramms durchzuführen vermag, um ihre Leistungsfähigkeit zu aktualisieren, nachdem die integrierte Schaltung in einem Fahrzeug montiert ist.</p>
+    <p>Erfindungsgemäß wird eine integrierte Schaltung mit den im Patentanspruch 1 gekennzeichneten Merkmalen verfügbar gemacht. Bevorzugte Merkmale, die die Erfindung vorteilhaft weiterbil­den, sind den nachgeordneten Patentansprüchen zu entnehmen.</p>
+    <p>In vorteilhafter Weise schafft die Erfindung demgemäß eine integrierte Schaltung mit einem Metallsubstrat, bestehend aus einer Schaltungsplatte, auf der eine leitfähige Schicht in einer gewünschten Struktur auf dem Metallsubstrat über einer isolierenden Schicht gebildet ist; einem Schaltungselement, das auf der isolierenden Schicht montiert ist; und einer Steckereinrichtung zur Verbindung von wenigstens dem Schal­tungselement und einer externen Vorrichtung; wobei das Schal­tungselement nicht lösbar auf der isolierenden Schicht mon­tiert ist und einen nicht flüchtigen Speicherinhalt besitzt, der durch eine externe Operation neu einschreibbar ist, und daß die Steckereinrichtung eine erste Steckeranordnung zur Verbindung von wenigstens dem Schaltungselement mit einem zu kontrollierenden Abschnitt und eine zweite Steckeranordnung zum Verbinden des Schaltungselements und einer externen Ver­arbeitungsvorrichtung über einen anderen Weg als die erste Steckeranordnung für das Verarbeiten des Speicherinhalts des Schaltungselements aufweist.</p>
+    <p>Bei der integrierten Schaltung mit dem Metallsubstrat gemäß der Erfindung bildet die leitfähige Schicht eine erste Signal­leitungsgruppe für den Anschluß des Schaltungselements an ein anderes Schaltungselement, und eine zweite Signalleitungsgruppe für den Anschluß des Schaltungselements an die zweite Stecker­anordnung, und eine Signalabschalteinrichtung, die für das Abschalten der Datenübertragung auf das andere Schaltungs­element betätigt wird, wenn der Speicherinhalt des Schaltungs­elements eingeschrieben werden soll, ist an einer Stelle auf der ersten Signalleitungsgruppe und nahe bzw. angrenzend an das Schaltungselement angeordnet.</p>
+    <p>Vorzugsweise ist bei der integrierten Schaltung mit dem Me­tallsubstrat gemäß der Erfindung die zweite Steckeranordnung mit einem Kunstharz zwecks Abdichtung von einem externen Abschnitt ausgefüllt, wenn die Entwicklung des Schaltungs­elements abgeschlossen ist.</p>
+    <p>Nach einer bevorzugten Ausgestaltung der Erfindung ist die zweite Steckeranordnung auf einem Abschnitt befestigt, der so montiert ist, daß er mit der externen Verarbeitungsvorrichtung verbindbar ist.</p>
+    <p>Bevorzugt weist das Schaltungselement, das mit der externen Verarbeitungsvorrichtung über die zweite Steckeranordnung verbunden ist, ein Speicherelement auf, das vorbestimmte Daten speichert, und die externe Verarbeitungsvorrichtung weist eine Abstimm- bzw. Einstellvorrichtung für ein erneutes Einschrei­ben oder Überwachen des Speicherinhalts des Speicherelements auf.</p>
+    <p>Gemäß einer bevorzugten Ausgestaltung der Erfindung weist das Schaltungselement, das mit der externen Verarbeitungsvorrich­tung für die zweite Steckeranordnung verbunden ist, eine CPU mit einem vorbestimmten Kontrollprogramm auf und die externe Verarbeitungsvorrichtung weist eine Abstimm- bzw. Einstellvor­richtung zum erneuten Einschreiben eines Kontrollinhalts der CPU oder einen Emulator zum Emulieren des Kontrollinhalts der CPU auf.</p>
+    <p>Bevorzugt weist die erste Steckeranordnung einen ersten Außen­stecker, der einstückig an einem Ende der integrierten Schal­tung montiert ist, und einen ersten Innenstecker auf, der lösbar an dem ersten Außenstecker angebracht und mit dem zu kontrollierenden Abschnitt verbunden ist und die zweite Stec­keranordnung weist einen zweiten Innenstecker, der einstückig an dem anderen Ende der integrierten Schaltung montiert ist, und einen zweiten Außenstecker auf, der lösbar an dem zweiten Innenstecker angebracht und mit der externen Verarbeitungsvor­richtung verbunden ist.</p>
+    <p>In vorteilhafter Weise wird bei der Erfindung beim Verarbeiten eines Speicherinhalts, beispielsweise beim Neueinschreiben von Daten, Aktualisieren eines Kontroll- bzw. Steuerprogramms und einer Überwachung von Daten bei einem Entwicklungsprozeß, ist ein Schaltungselement, das diese Operationen vorzunehmen vermag, mit einer externen Verarbeitungsvorrichtung durch eine spezielle zweite Steckeranordnung in einem nicht demontier­baren Zustand derart verbunden, daß die Verarbeitung des Speicherinhalts, wie beispielsweise ein erneutes Einschreiben von Daten und ein Aktualisieren des Kontrollprogramms extern durch die externe Verarbeitungsvorrichtung vorgenommen werden kann, um dadurch den Freiheitsgrad bei der Entwicklung bzw. beim Fertigstellen zu verbessern.</p>
+    <p>Weitere Einzelheiten, Merkmale und Vorteile der Erfindung sind dem nachstehenden Beschreibungsteil zu entnehmen, in dem Ausführungsbeispiele unter Bezugnahme auf die Zeichnungen näher erläutert werden. Es zeigt</p>
+    <p>
+      <b>Fig.</b> 1 eine perspektivische Ansicht einer Ausbildungsform einer integrierten Schaltung mit einem Metallsub­strat gemäß der Erfindung;</p>
+    <p>
+      <b>Fig.</b> 2 eine perspektivische Explosionsansicht einer Anord­nung der in <b>Fig.</b> 1 dargestellten integrierten Schal­tung;</p>
+    <p>
+      <b>Fig.</b> 3A eine Schnittansicht entlang der Schnittlinie A-A in <b>Fig.</b> 1;</p>
+    <p>
+      <b>Fig.</b> 3B einen Schnitt längs der Schnittlinie B-B in <b>Fig.</b> 1;</p>
+    <p>
+      <b>Fig.</b> 4A eine Draufsicht auf eine Anordnung einer gemeinsamen Schaltungsplatte;</p>
+    <p>
+      <b>Fig.</b> 4B einen Teilschnitt zur Darstellung der Anordnung der gemeinsamen Schaltungsplatte;</p>
+    <p>
+      <b>Fig.</b> 5 einen Schnitt zur Darstellung eines auf der inte­grierten Schaltung montierten Außensteckers;</p>
+    <p>
+      <b>Fig.</b> 6 eine Explosionsansicht, die im Detail die Anordnung des Außensteckers darstellt;</p>
+    <p>
+      <b>Fig.</b> 7 eine Draufsicht, die einen Zusammenbauzustand des Außensteckers darstellt;</p>
+    <p>
+      <b>Fig.</b> 8 eine Draufsicht, die einen Zustand darstellt, bei dem mit der Schaltungsplatte im offenen Zustand Anschlußstift-Halteteile befestigt sind;</p>
+    <p>
+      <b>Fig.</b> 9 eine schematische perspektivische Ansicht eines Schaltungselements auf einer ersten Schaltungsplat­te;</p>
+    <p>
+      <b>Fig.</b> 10 ein Blockdiagramm zur Darstellung einer Blockzen­traleinheit (CPU) auf der ersten in <b>Fig.</b> 9 gezeigten Schaltungsplatte; und</p>
+    <p>
+      <b>Fig.</b> 11 ein detailliertes Schaltungsdiagramm, das die Ver­bindungen zwischen einer Zentraleinheit auf der ersten Schaltungsplatte und einem in <b>Fig.</b> 9 gezeig­ten Speicherelement darstellt.</p>
+    <p>Nachfolgend wird unter Bezugnahme auf die <b>Fig.</b> 1 bis 11 ein Ausführungsbeispiel einer integrierten Schaltung mit einem Metallsubstrat gemäß der Erfindung detailliert beschrieben. Bei diesem Ausführungsbeispiel wird die Erfindung bei einer gehäuse- bzw. kastenförmigen integrierten Hybridschaltung angewendet.</p>
+    <p>
+      <b>Fig.</b> 1 zeigt eine integrierte Hybridschaltung <b>10</b> gemäß dieser Ausbildungsform. Die integrierte Hybridschaltung <b>10</b> ist als Kontrolleinheit für einen funktionellen Fahrzeugbestandteil ausgebildet. Genauer gesagt dient die integrierte Schaltung <b>10</b> als eine integrierte Schaltung, die unabhängig die Funktion einer Motorkontrolleinheit aufweist.</p>
+    <p>Wie in <b>Fig.</b> 1 gezeigt, ist die integrierte Hybridschaltung <b>10</b> als kastenförmiges Gehäuse ausgestaltet, dessen Inneres ge­schlossen ist. Die integrierte Hybridschaltung <b>10</b> kann mit einem ersten und einem zweiten Anschlußmechanismus <b>12</b> bzw. <b>14</b> jeweils an ihren einandergegenüberliegenden Endabschnitten verbunden werden. Genauer gesagt dient der erste Anschlußme­chanismus <b>12</b> dazu, die integrierte Schaltung <b>10</b> mit einem (nicht dargestellten) Fahrzeugkabelbaum zu verbinden, und weist einen ersten Außenstecker <b>12</b>a, der einstückig an einem Ende (hinteres Ende) der integrierten Schaltung <b>10</b> gebildet ist, und einen ersten Innenstecker <b>12</b>b auf, der lösbar mit dem ersten Außenstecker <b>12</b>a verbunden ist. Der zweite Anschlußme­chanismus <b>14</b> dient dazu, die integrierte Schaltung <b>10</b> mit einem externen Verarbeitungsgerät zum Verarbeiten eines Spei­cherinhalts eines Speicherelements zu verbinden, das zuvor auf der integrierten Schaltung <b>10</b> montiert ist, und den Speicher­inhalt zu überwachen, und der zweite Anschlußmechanismus <b>12</b> weist einen zweiten Innenstecker <b>14</b>a, der einstückig an dem anderen Ende (vorderen Ende) der integrierten Schaltung <b>10</b> gebildet ist, und einen zweiten Außenstecker <b>14</b>b auf, der lösbar mit dem zweiten Innenstecker <b>14</b>a verbunden ist.</p>
+    <p>Der erste Außenstecker <b>12</b>a ist, wie nachfolgend detailliert beschrieben wird, mit dem ersten herkömmlichen Innenstecker <b>12</b>b verbunden. Der zweite Innenstecker <b>14</b>a ist mit dem her­kömmlichen zweiten Außenstecker <b>14</b>b verbunden.</p>
+    <p>Wie in den <b>Fig.</b> 2 bis 3B gezeigt, weist die integrierte Hy­bridschaltung <b>10</b> ein Paar erste und zweite Schaltungsplatten <b>16</b>a und <b>16</b>b auf, die in vertikaler Richtung voneinander be­abstandet sind, ferner eine Seitenplatte <b>18</b> zum Trennen der ersten und zweiten Schaltungsplatten <b>16</b>a und <b>16</b>b um eine vorbestimmte Entfernung und zum Verschließen der Seitenflä­chen, und einen Rahmen <b>20</b> zur einstückigen Befestigung der ersten und zweiten Schaltungsplatte <b>16</b>a, <b>16</b>b und der Seiten­platte <b>18</b>.</p>
+    <p>Schaltungselemente wie beispielsweise IC-Chips, ein Speicher­element, Widerstände, Kondensatoren und dergleichen, die für das Vorsehen der Funktion einer Motorkontrolleinheit nötig sind, sind auf der ersten und der zweiten Schaltungsplatte <b>16</b>a und <b>16</b>b montiert. Genauer gesagt, sind sogenannte logische Schaltungselemente mit der unteren ersten Schaltungsplatte <b>16</b>a und sogenannte Leistungsschaltungselemente mit der oberen zweiten Schaltungsplatte <b>16</b>b verbunden.</p>
+    <p>Festzuhalten ist, daß ein Montagezustand der Schaltungselemen­te auf der ersten Schaltungsplatte <b>16</b>a für die Erfindung wichtig ist, wie nachfolgend detailliert beschrieben wird.</p>
+    <p>Gemäß <b>Fig.</b> 4A sind die erste Schaltungsplatte <b>16</b>a und die zweite Schaltungsplatte <b>16</b>b durch Aufteilung einer einzigen gemeinsamen Schaltungsplatte <b>22</b> gebildet. Genauer gesagt, ist, wie in <b>Fig.</b> 4B gezeigt, die gemeinsame Schaltungsplatte <b>22</b> durch einen Schaltungsplattenkörper <b>22</b>a gebildet, bestehend aus einem leitfähigen Material, beispielsweise Aluminium, einer isolierenden Schicht <b>22</b>b, die an der gesamten oberen Fläche des Schaltkreisplattenkörpers <b>22</b>a haftet, leitfähige Schichten <b>22</b>c, die auf der isolierenden Schicht <b>22</b>b zur Ge­staltung einer vorbestimmten Schaltungsstruktur und zur Defi­nition eines Schaltkreisnetzwerks gebildet sind, und aus Schaltungselementen <b>22</b>d, die auf den leitfähigen Schichten <b>22</b>c befestigt und elektrisch mit diesen verbunden sind.</p>
+    <p>Ein sich in vertikaler Richtung erstreckender Öffnungsab­schnitt <b>22</b>e ist, wie in <b>Fig.</b> 4A gezeigt, an dem mittleren Abschnitt der gemeinsamen Schaltungsplatte <b>22</b> vorgesehen. Die Schaltungsnetzwerke auf den linken und rechten Abschnitten des Öffnungsabschnitts <b>22</b>e sind miteinander über eine flexible Schaltungsplatte <b>22</b>f verbunden, die über den Öffnungsabschnitt <b>22</b>e angeordnet ist. Hinzuweisen ist darauf, daß der Endab­schnitt, der an die flexible Schaltungsplatte <b>22</b>f grenzt, an einer Stelle angeschlossen ist, die von dem zugehörigen Sei­tenrand des Öffnungsabschnittes <b>22</b>e um eine vorbestimmte Entfernung nach Innen tritt. Genauer gesagt, sind an den beiden anderen Endabschnitten der beiden Schaltungsplatten <b>16</b>a und <b>16</b>b innerhalb eines Bereichs dieser vorbestimmten Entfer­nung Vorsprünge <b>16</b>c und <b>16</b>d gebildet. Durch Abschneiden der oberen und unteren Ränder (Bereiche, die durch Bezugszeichen X und Y angedeutet sind), einschließlich der oberen und unteren Enden des Öffnungsabschnitts <b>22</b>e, werden die beiden Schal­tungsplatten <b>16</b>a und <b>16</b>b unter Beibehaltung einer Verbindung durch die flexible Schaltungsplatte <b>22</b>f gebildet.</p>
+    <p>Bei der gemeinsamen Schaltungsplatte <b>22</b> sind zahlreiche erste Verbindungsanschlüsse <b>22</b>g und <b>22</b>h in Reihen längs der Ränder auf den oberen Flächen von Abschnitten gebildet, die den äußeren Randabschnitten der Schaltungsplatten <b>16</b>a und <b>16</b>b entsprechen, d. h. auf den einander gegenüberliegenden inneren Oberflächen der Randabschnitte, die ein Ende des Gehäuses in einem Zustand bilden, bei dem die gegenüberliegenden Schal­tungsplatten <b>16</b>a und <b>16</b>b in vertikaler Richtung zueinanderwei­send voneinander beabstandet sind. Die Verbindungsstifte <b>24</b>a und <b>24</b>b des ersten Außensteckers <b>12</b>a (der später beschrieben wird) sind an diesen ersten Verbindungsanschlüssen <b>22</b>g und <b>22</b>h nach außen vorstehend befestigt und elektrisch mit diesen verbunden.</p>
+    <p>Zahlreiche zweite Verbindungsanschlüsse <b>22</b>i und <b>22</b>j sind in Reihen längs der Ränder an gegenüberliegenden Abschnitten von oberen und unteren Endabschnitten gebildet, um das andere Ende des Gehäuses vorzusehen, d. h. gegenüberliegende innere Ober­flächen der Vorsprünge <b>16</b>c und <b>16</b>d, während die beiden Schal­tungsplatten <b>16</b>a und <b>16</b>b in vertikaler Richtung voneinander beabstandet sind. Diese zweiten Verbindungsanschlüsse <b>22</b>i und <b>22</b>j bilden Verbindungsanschlüsse des (später noch beschriebe­nen) zweiten Innensteckers <b>14</b>a.</p>
+    <p>Gemäß <b>Fig.</b> 2 ist die oben beschriebene Seitenplatte <b>18</b> U-förmig mit einer von oben gesehen offenen Seite gestaltet. Der offene Seitenabschnitt dient als ein Ende des Gehäuses. Abgesetzte Abschnitte <b>18</b>a und <b>18</b>b zur Aufnahme von drei Rand­abschnitten jeder der Schaltungsplatten <b>16</b>a und <b>16</b>b sind an den inneren Seitenrändern der oberen und unteren Endflächen der Seitenplatte <b>18</b> gebildet.</p>
+    <p>Gemäß <b>Fig.</b> 3A sind die Schaltungsplatten <b>16</b>a und <b>16</b>b in den zugehörigen abgesetzten Abschnitten <b>18</b>a und <b>18</b>b über Dicht­gummielemente <b>26</b> befestigt. Da die Dichtgummielemente <b>26</b> eingebaut sind, wird wirksam das Eindringen von Staub oder dergleichen in das Gehäuse aus Spalten zwischen den Schal­tungsplatten und den abgesetzten Abschnitten verhindert.</p>
+    <p>Ein Abschnitt der Seitenplatte <b>18</b>, der den anderen Endab­schnitt der integrierten Schaltung <b>10</b> abschließt, ist derart festgelegt, daß er unmittelbar an einem Grenzabschnitt zwischen den Vorsprüngen <b>16</b>c und <b>16</b>d und den Schaltungsplatten <b>16</b>a und <b>16</b>b angeordnet ist, wie in <b>Fig.</b> 3B gezeigt. Hierdurch wird ein Gehäuse des zweiten Außensteckers <b>12</b>b durch einen vorstehenden Abschnitt gebildet, der außerhalb der Seiten­platte <b>18</b> angeordnet ist.</p>
+    <p>Der Rahmen <b>20</b> ist aus einem synthetischen Kunstharz als Iso­lierelement gebildet. Der Rahmen <b>20</b> ist derart gestaltet, daß er die Seitenflächen, welche durch die Seitenplatte <b>18</b> abge­schlossen sind, wobei er diese gleichzeitig in vertikaler Richtung einspannt, wie in <b>Fig.</b> 2 gezeigt. Genauer gesagt, besteht der Rahmen <b>20</b> aus einem einstückigen Körper, bestehend aus einem Hauptkörper <b>20</b>a, der der Seitenplatte <b>18</b> gegenüber­liegt, und Flanschabschnitten <b>20</b>b und <b>20</b>c, die sich von dem oberen und dem unteren Ende des Hauptkörpers <b>20</b> um eine vor­bestimmte Entfernung nach innen erstrecken (genauer gesagt, um eine Entfernung, die groß genug ist, um drei nicht offene Endabschnitte der Schaltungsplatten <b>16</b>a und <b>16</b>b einzuspannen).</p>
+    <p>Festzuhalten ist, daß eine Öffnung <b>20</b>d vollständig in einem Abschnitt des Hauptkörpers <b>20</b>a des Rahmens <b>20</b> gebildet ist, welcher die andere Endfläche (vordere Endfläche) der inte­grierten Schaltung <b>10</b> derart bildet, daß eine Verbindung des zweiten oben beschriebenen Innensteckers <b>14</b>a mit dem zweiten Außenstecker <b>14</b>b ermöglicht wird.</p>
+    <p>Gemäß <b>Fig.</b> 3B spannt der Rahmen <b>20</b> in vertikaler Richtung die obere und die untere erste und zweite Schaltungsplatte <b>16</b>b und <b>16</b>a ein, welche jeweils in den oberen und unteren abgesetzten Abschnitten <b>18</b>b und <b>18</b>a der Seitenplatte <b>18</b> befestigt sind, um dadurch in einstückiger Weise das Gehäuse zu bilden. Gemäß <b>Fig.</b> 3B ist die flexible Schaltungsplatte <b>22</b>f zur Verbindung der Schaltungselemente <b>22</b>d der oberen zweiten und der unteren ersten Schaltungsplatte <b>16</b>b bzw. <b>16</b>a geringfügig von dem anderen Endabschnitt der Seitenplatte <b>18</b> nach innen liegend angeordnet.</p>
+    <p>Da der Rahmen <b>20</b> auf diese Weise gestaltet ist, können die erste und die zweite Schaltungsplatte <b>16</b>a und <b>16</b>b einen zu­sammengebauten Zustand beibehalten, wobei sie in vertikaler Richtung um eine vorbestimmte Entfernung in einem Zustand beabstandet sind, bei dem die Seitenplatte <b>18</b> zwischen ihnen angeordnet ist.</p>
+    <p>Bei dem dargestellten Ausführungsbeispiel ist die integrierte Hybridschaltung <b>10</b> in einer gehäuseähnlichen Form gestaltet, und die obere und die untere Oberfläche des Gehäuses werden unmittelbar von den Schaltungsplatten <b>16</b>b und <b>16</b>a gebildet. Hierdurch kann ein kompakter leichtgewichtiger Aufbau im Vergleich zu dem Fall realisiert werden, bei dem die erste und die zweite Schaltungsplatte <b>16</b>a und <b>16</b>b in separaten Gehäusen untergebracht sind.</p>
+    <p>Die Anordnung der Anschlußvorrichtung zum Verbinden der gehäu­seähnlichen integrierten Hybridschaltung <b>10</b> mit der obigen Anordnung mit zu kontrollierenden Abschnitten des Fahrzeugs durch einen Fahrzeugkabelbaum wird nachfolgend unter Bezugnah­me auf die <b>Fig.</b> 5 bis 8 beschrieben.</p>
+    <p>Die Anschlußvorrichtung umfaßt den ersten Außenstecker <b>12</b>a, der auf einem Öffnungsabschnitt der gehäuseähnlichen inte­grierten Hybridschaltung <b>10</b> in einem sogenannten Innenmontage­zustand montiert ist, und den ersten Innenstecker <b>12</b>b, der lösbar an den ersten Außenstecker <b>12</b>a angeschlossen ist. Gemäß <b>Fig.</b> 5 weist der erste Außenstecker <b>12</b>a eine sogenannte DreiTeil-Struktur auf, d. h. er besteht aus einem Steckergehäuse <b>28</b>, das in ein kastenförmiges Gehäuse eingeformt ist, das offene Vorder- und Rückseiten aufweist, einem oberen Anschluß­stift-Halteelement <b>30</b>a, auf dem die oberen Anschlußstifte <b>24</b>a in seitlicher reihenförmiger Ausrichtung angeordnet sind, und aus einem unteren Anschlußstift-Halteelement <b>30</b>b, auf dem die unteren Anschlußstifte <b>24</b>b seitlich in einer Reihe fluchtend angeordnet sind.</p>
+    <p>Das obere und das untere Anschlußstift-Halteelement <b>30</b>a und <b>30</b>b sind in vertikaler Richtung symmetrisch um den vertikalen mittleren Abschnitt gestaltet. Das obere Anschlußstift-Haltee­lement <b>30</b>a ist einstückig in einer im wesentlichen L-Form durch ein aufrechtes Segment <b>30</b>a<sub>1</sub> und einen Ansatz <b>30</b>a<sub>2</sub> gebil­det, der von dem unteren Ende des aufrechten Segments <b>30</b>a<sub>1</sub> nach außen vorsteht. Das untere Anschlußstift-Halteelement <b>30</b>b ist einstückig in eine im wesentlichen umgekehrte L-Form durch ein aufrechtes Segment <b>30</b>b<sub>1</sub> und einen Ansatz <b>30</b>b<sub>2</sub> gestaltet, der von dem oberen Ende des aufrechten Segments <b>30</b>b<sub>1</sub> nach außen vorsteht.</p>
+    <p>Jeder obere Anschlußstift <b>24</b>a ist einstückig durch einen horizontalen Abschnitt <b>24</b>a<sub>1</sub> gebildet, der sich in horizontaler Richtung durch den Ansatz <b>30</b>a<sub>2</sub> erstreckt, um in der Hin- und Herrichtung vorzustehen, einen vertikalen Abschnitt <b>24</b>a<sub>2</sub>, der sich in vertikaler Richtung von dem inneren Rand des horizon­talen Abschnitts <b>24</b>a<sub>1</sub> längs der Innenfläche des aufrechten Segments <b>30</b>a<sub>1</sub> nach oben erstreckt, und mit einem abgebogenen Abschnitt <b>24</b>a<sub>3</sub> gebildet, der von dem oberen Ende des vertikalen Abschnitts <b>24</b>a<sub>2</sub> nach innen abgebogen ist. Der gebogene Ab­schnitt <b>24</b>a<sub>3</sub> ist als Anschlußabschnitt gestaltet, der an dem zugehörigen Verbindungsanschluß <b>22</b>h durch Löten angeschlossen ist, welcher auf der oberen zweiten Schaltungsplatte <b>16</b> gebil­det ist. Der nach außen weisende Abschnitt des horizontalen Abschnitts <b>24</b>a ist als Anschlußabschnitt gestaltet, der in den Innenstecker <b>14</b>a eingesetzt und mit diesem verbunden ist.</p>
+    <p>Jeder der unteren Anschlußstifte <b>24</b>b ist einstückig durch einen horizontalen Abschnitt <b>24</b>b<sub>1</sub> gebildet, der sich in hori­zontaler Richtung durch den Ansatz <b>30</b>b<sub>2</sub> in der Hin- und Her­richtung vorstehend erstreckt, ferner mit einem vertikalen Abschnitt <b>24</b>b<sub>2</sub>, der sich in vertikaler Richtung von dem inneren Rand des horizontalen Abschnitts <b>24</b>b<sub>1</sub> längs der inneren Fläche des aufrechten Segments <b>30</b>b<sub>1</sub> nach unten erstreckt, und mit einem abgebogenen Abschnitt <b>24</b>b<sub>3</sub>, der von dem oberen Ende des vertikalen Abschnitts <b>24</b>b<sub>2</sub> nach innen gebogen ist. Der abgebo­gene Abschnitt <b>24</b>b<sub>3</sub> ist als Anschlußabschnitt gestaltet, der durch Löten mit dem zugehörigen Verbindungsanschluß <b>22</b>g ver­bindbar ist, der an der unteren ersten Schaltungsplatte <b>16</b>a gebildet ist. Der nach außen vorstehende Abschnitt des hori­zontalen Abschnitts <b>24</b>b<sub>1</sub> ist als Verbindungsabschnitt gebildet, der in den Innenstecker <b>14</b>a einsetzbar und mit diesem verbind­bar ist.</p>
+    <p>Die Verbindungsstift-Halteteile <b>30</b>a und <b>30</b>b besitzen eine ausreichende Größe, um genau in den einen Endöffnungsabschnitt des gehäuseähnlichen integrierten Schaltkreis <b>10</b> in einem Zustand zu passen, bei dem sie in vertikaler Richtung gekop­pelt sind. Anders ausgedrückt, bildet ein Bereich der beiden aufrechten Segmente <b>30</b>a<sub>1</sub> und <b>30</b>b<sub>1</sub> (d. h. ein Außenumfangsbe­reich) der in vertikaler Richtung gekoppelten Halteteile <b>30</b>a und <b>30</b>b unmittelbar den inneren Umfangsbereich des einen Endabschnitts der integrierten Schaltung <b>10</b>.</p>
+    <p>An den zentralen Abschnitten des oberen und des unteren Randes der Anschlußstift-Halteteile <b>30</b>a und <b>30</b>b sind jeweils Aus­nehmungen <b>32</b>a und <b>32</b>b gebildet. Diese Ausnehmungen begrenzen eine Einspritzöffnung für ein Epoxidkunstharz, das einge­spritzt wird, nachdem der erste Außenstecker <b>12</b>a einstückig mit der integrierten Hybridschaltung <b>10</b> zusammengesetzt ist, wie nachfolgend beschrieben wird.</p>
+    <p>Die oberen und unteren Anschlußstifte <b>24</b>a und <b>24</b>b weisen in vertikaler Richtung symmetrische Formen auf, d. h. besitzen dieselbe Form, und die oberen und die unteren AnschlußstiftHalteteile <b>30</b>a und <b>30</b>b besitzen ebenfalls in vertikaler Rich­tung symmetrische Formen, d. h. dieselben Formen. Da die Anschlußstift-Halteteile <b>30</b>a und <b>30</b>b, auf denen die Anschluß­stifte <b>24</b>a und <b>24</b>b montiert sind, dieselbe Form haben, können auf diese Weise Bestandteile gemeinsam verwendet werden, wodurch eine Kostenverringerung auftritt.</p>
+    <p>Das oben beschriebene Steckergehäuse <b>28</b> besitzt ein Befesti­gungsloch, das sich in rückwärtiger und vorwärtiger Richtung erstreckt. Das Befestigungsloch <b>34</b> besitzt eine ausreichende Größe zur Aufnahme der übereinander angeordneten Ansätze <b>30</b>a<sub>2</sub> und <b>30</b>b<sub>2</sub>, wenn das obere und das untere Anschlußstift-Halteteil <b>30</b>a und <b>30</b>b miteinander gekoppelt ist, wie in <b>Fig.</b> 7 gezeigt.</p>
+    <p>Montageflansche <b>40</b>a und <b>40</b>b sind einstückig an den beiden Seitenabschnitten des Steckergehäuses <b>28</b> gebildet. Diese Flanschabschnitte <b>40</b>a und <b>40</b>b werden an eine (nicht darge­stellte) Fahrzeugkarosserie befestigt, nachdem der erste Außenstecker <b>12</b>a an der integrierten Hybridschaltung <b>10</b> mon­tiert und an dieser befestigt ist. Auf diese Weise braucht für die integrierte Hybridschaltung <b>10</b> selbst kein Flanschab­schnitt zur Montage der integrierten Hybridschaltung <b>10</b> vor­gesehen zu sein, woraus eine vereinfachte integrierte Hybrid­schaltung <b>10</b> resultiert.</p>
+    <p>Bei diesem Ausführungsbeispiel werden ein vertikaler Abstand und eine horizontale Aufteilung p der Anschlußstifte <b>24</b>a und <b>24</b>b auf der Grundlage der herkömmlichen Stiftausrichtungs­spezifikationen definiert. Hierdurch kann der erste Innen­stecker <b>12</b>b, der mit dem ersten Außenstecker <b>12</b>a verbunden ist, herkömmlich ausgebildet sein, wodurch natürliche Vorteile erzielt werden.</p>
+    <p>Ein herkömmlicher Außenstecker wird nicht verwendet, da er schwergewichtig und voluminös ist. Stattdessen wird der erste Außenstecker <b>12</b>a in entsprechender Zuordnung zu der kompakten leichtgewichtigen kastenartigen integrierten Hybridschaltung <b>10</b> gebildet. Demgemäß kann nach dieser Ausbildungsform der kompakte leichtgewichtige Aufbau der integrierten Hybridschal­tung <b>10</b> gewährleistet werden.</p>
+    <p>Nachfolgend wird unter Bezugnahme auf <b>Fig.</b> 8 das Zusammenbauen des ersten Außensteckers <b>12</b>a, dessen zusammengebauter Zustand in <b>Fig.</b> 5 gezeigt ist, und der Zusammenbau der integrierten Hybridschaltung <b>10</b> beschrieben.</p>
+    <p>Wie bereits oben unter Bezugnahme auf die <b>Fig.</b> 4A und 4B erwähnt, sind die oberen und unteren Ränder X und Y von der gemeinsamen Schaltungsplatte <b>22</b>, auf der die vorbestimmten Schaltkreiselemente <b>22</b>d montiert sind, derart weggeschnitten, daß die ersten und zweiten Schaltungsplatten <b>16</b>a und <b>16</b>b in einem offenen Zustand auf derselben Ebene gebildet sind. Wie in <b>Fig.</b> 8 gezeigt, sind die zugehörigen Stifthalteteile <b>30</b>a und <b>30</b>b an der ersten und der zweiten Schaltungsplatte <b>16</b>a und <b>16</b>b im offenen Zustand mittels eines Klebemittels befestigt.</p>
+    <p>Wie zuvor beschrieben, sind die zugehörigen Anschlußstifte <b>24</b>a und <b>24</b>b bereits an diesen Anschlußstift-Halteteilen <b>30</b>a und <b>30</b>b montiert. Auf diese Weise werden die Anschlußstifte <b>24</b>a und <b>24</b>b an die zugehörigen Verbindungsanschlüsse <b>22</b>g und <b>22</b>h der ersten und der zweiten Schaltungsplatte <b>16</b>a und <b>16</b>b im offenen Zustand angelötet. Es wird ein besonders präzises Löten benötigt, da die Zahl der Verbindungsanschlüsse <b>22</b>g und <b>22</b>h groß ist. Da bei diesem Ausführungsbeispiel die erste und die zweite Schaltungsplatte <b>16</b>a und <b>16</b>b jedoch im offenen Zustand in derselben Ebene liegen, kann das Löten zuverlässig durchgeführt werden, um auf diese Weise die Bearbeitbarkeit zu verbessern und eine leichte Montage zu gewährleisten.</p>
+    <p>Danach wird, während die erste Schaltungsplatte <b>16</b>a in ihrer Stellung gehalten wird, die zweite Schaltungsplatte <b>16</b>b ange­hoben und in eine Lage oberhalb und parallel zu der ersten Schaltungsplatte <b>16</b>a bewegt. Wie in <b>Fig.</b> 8 gezeigt, sind dann die Anschlußstift-Halteteile <b>30</b>a und <b>30</b>b in vertikaler Rich­tung gekoppelt. Wenn die Anschlußstift-Halteteile <b>30</b>a und <b>30</b>b auf diese Weise in vertikaler Richtung gekoppelt sind, werden die erste und die zweite Schaltungsplatte <b>16</b>a und <b>16</b>b parallel zueinander gehalten.</p>
+    <p>Vor dem Koppeln werden die Rahmenteile <b>36</b>a und <b>36</b>b, die dazu dienen, einen vorbestimmten Abstand zwischen der ersten und der zweiten Schaltkreisplatte <b>16</b>a und <b>16</b>b einzuhalten und einen Innenraum nach außen abzuschirmen, wobei sie die mecha­nische Festigkeit der integrierten Hybridschaltung <b>10</b> ver­stärken, in einem aufrechten Zustand an dem vorderen und hinteren Abschnitt der unteren ersten Schaltkreisplatte <b>16</b>a montiert, wie in <b>Fig.</b> 5 gezeigt. Ein Rahmenteil <b>36</b>a ist ge­ringfügig von der flexiblen Schaltungsplatte <b>22</b>f nach innen verlagert angeordnet. Das andere Rahmenteil <b>36</b>b ist von den Verbindungsanschlüssen <b>22</b>g und <b>22</b>h geringfügig nach innen verlagert angeordnet.</p>
+    <p>Die zusammengebaute Anordnung wird in dem Befestigungsloch <b>34</b> des Steckergehäuses <b>28</b> unter Beibehaltung des gekoppelten Zustandes der Teile <b>30</b>a und <b>30</b>b befestigt. Im befestigten Zustand ist der ersten Außenstecker <b>12</b>a einstückig auf der integrierten Hybridschaltung <b>10</b> montiert. Danach wird, wie oben beschrieben, die Seitenplatte <b>18</b> an der integrierten Hybridschaltung <b>10</b> angebracht und der Rahmen <b>20</b> darauf befe­stigt, um dadurch die integrierte Hybridschaltung <b>10</b> zu ge­stalten, die in <b>Fig.</b> 1 gezeigt ist, und die einstückig den ersten Außenstecker <b>12</b>a aufweist.</p>
+    <p>Nach dem Zusammenbau wird ein Epoxidkunstharz <b>38</b> in einen Abschnitt zwischen dem ersten Außenstecker <b>12</b>a und dem Rahmen­teil <b>36</b>b durch das Loch eingespritzt, das durch die Ausnehmun­gen <b>32</b>a und <b>32</b>b gebildet ist, um auf diese Weise den zusammen­gesetzten ersten Außenstecker <b>12</b>a sicher an die integrierte Hybridschaltung <b>10</b> anzuheften und in zufriedenstellender Weise die Lötabschnitte zwischen den Anschlußstiften <b>24</b>a und <b>24</b>b und den zugehörigen Verbindungsanschlüssen <b>22</b>g und <b>22</b>h zu fixie­ren, wobei in perfekter Weise das Innere der integrierten Hybridschaltung <b>10</b> abgeschirmt wird. Demgemäß wird der Ab­schnitt zwischen dem ersten Außenstecker <b>12</b>a und dem Rahmen­teil <b>36</b>b mit dem Epoxidkunstharz <b>38</b> gefüllt.</p>
+    <p>Ein Abschnitt zwischen dem Rahmenteil <b>36</b>a und der Seitenwand <b>18</b> wird in gleicher Weise mit dem Epoxidkunstharz <b>38</b> gefüllt, um die flexible Schaltungsplatte <b>22</b>f zu schützen und das Innere der integrierten Hybridschaltung <b>10</b> abzuschirmen, ehe der Rahmen <b>20</b> montiert wird.</p>
+    <p>Wie sich aus der obigen Beschreibung ergibt, wird der zweite Innenstecker <b>14</b>a, der einstückig an dem anderen Endabschnitt der gehäuseähnlichen integrierten Hybridschaltung <b>10</b> gebildet ist, einstückig mit der gehäuseähnlichen integrierten Schal­tung <b>10</b> für das Vorsehen der Verbindungsanschlüsse <b>22</b>i und <b>22</b>j verbunden, wobei durch die Vorsprünge <b>16</b>c und <b>16</b>d des Paars aus unterer und oberer Schaltungsplatte <b>16</b>a und <b>16</b>b ein Gehäu­se gebildet ist. Der zweite Außenstecker <b>14</b>b, der lösbar mit dem zweiten Innenstecker <b>14</b>a verbunden ist, weist ein Gehäuse <b>14</b>b<sub>1</sub> auf, dessen distales Ende in einen Raum vorsteht, der zwischen den Vorsprüngen <b>16</b>c und <b>16</b>d im Verbund gebildet ist, sowie zahlreiche Anschlußstifte <b>14</b>b<sub>2</sub> und <b>14</b>b<sub>3</sub>, die in einer Reihe an dem oberen und unteren Abschnitt des Gehäuses <b>14</b>b<sub>1</sub> für einen gleitenden Kontakt mit den zuvor beschriebenen Verbin­dungsanschlüssen <b>22</b>i und <b>22</b>j montiert sind.</p>
+    <p>Festzuhalten ist, daß der zweite Außenstecker <b>14</b>b mit einer Tuning- bzw. Einstellvorrichtung <b>44</b> als (noch später zu be­schreiben werdende) externe Verarbeitungsvorrichtung über eine Verbindungsleitung <b>42</b> in Form eines externen Hauptleitungs­kabels verbunden ist, wie in <b>Fig.</b> 1 gezeigt.</p>
+    <p>Verschiedenartige elektronische Teile sind auf der unteren ersten Schaltungsplatte <b>16</b>a wie oben beschrieben und in <b>Fig.</b> 9 gezeigt, montiert.</p>
+    <p>Genauer gesagt, sind gemäß <b>Fig.</b> 9 ein Schaltungsnetzwerk, anders ausgedrückt, zahlreiche BUS-Leitungen als Signal­leitungsgruppe auf der leitfähigen Schicht <b>22</b>c, auf der iso­lierenden Schicht <b>22</b>b der ersten Schaltungsplatte <b>16</b>a gebil­det, um eine vorbestimmte Struktur zu definieren. Ein IC-Chip <b>22</b>d<sub>1</sub> mit einer Funktion, die äquivalent zu der einer IC-Geräte­baugruppe mit einer Funktion als CPU ist, die für das Vorsehen der Funktion einer Motorkontrolleinheit nötig ist (z. B. MC 68O1 von der Fa. Motorola Inc.). ist unmittelbar als freier Chip auf der Isolierschicht <b>22</b>b der ersten Schaltungsplatte <b>16</b>a befestigt. Die CPU <b>22</b>d<sub>1</sub> ist unmittelbar auf einer vor­bestimmten Gruppe von BUS-Leitungen über zugehörige Bonddrähte <b>22</b>d<sub>3</sub> verbunden. Hinzuweisen ist darauf, daß der IC-Chip <b>22</b>d<sub>1</sub> an einen ROM angeschlossen ist, der ein vorbestimmtes Kontroll­programm speichert, obgleich dies nicht dargestellt ist.</p>
+    <p>Ein IC-Chip <b>22</b>d<sub>2</sub>, der eine Funktion aufweist, die äquivalent zu der einer IC-Baugruppe ist, bei der verschiedenartige Daten verarbeitet werden, die die CPU <b>22</b>d<sub>1</sub> benötigt, um eine Kon­trollsequenz durchzuführen (z. B. µPD28C64 von der Firma NEC Corp.) ist unmittelbar als freier Chip auf der isolierenden Schicht <b>22</b>b der ersten Schaltungsplatte <b>16</b>a befestigt. Hinzu­weisen ist darauf, der IC-Chip <b>22</b>d<sub>2</sub> als nicht flüchtiges bzw. leistungsunabhängiges Programmspeicherelement fungiert und direkt auf einer vorbestimmten Gruppe der BUS-Leitungen über zugehörige Bonddrähte <b>22</b>d<sub>3</sub> montiert ist.</p>
+    <p>Das Speicherelement <b>22</b>d<sub>2</sub> ist mit vorbestimmten Bildern bzw. Routineverzeichnissen, Vorgabewerten, Konstanten zur Defini­tion von Grenzwerten oder dergleichen versehen und speichert diese. Obgleich nicht dargestellt, sind verschiedenartige Schaltkreiselemente, wie beispielsweise Leistungstransistoren, Durchschaltungselemente, Spannungsregler, Kondensatoren, Widerstände und Dioden auf der zweiten Schaltungsplatte <b>16</b>b montiert.</p>
+    <p>Gemäß <b>Fig.</b> 10 besteht das Schaltungsnetzwerk (Schaltungsstruk­tur), das auf der leitfähigen Schicht <b>22</b>c gebildet ist, aus einer ersten BUS-Leitung <b>22</b>c<sub>1</sub> für den Anschluß des Speicher­elements <b>22</b>d<sub>2</sub> und der CPU <b>22</b>d<sub>1</sub>, die als freie Chips montiert sind, einer zweiten BUS-Leitung <b>22</b>c<sub>2</sub> zum Anschluß des Speicher­elements <b>22</b>d<sub>2</sub> und der zahlreichen Verbindungsanschlüsse <b>22</b>i und <b>22</b>j des zweiten Innensteckers <b>22</b>b, und aus einer dritten BUSLeitung <b>22</b>c<sub>3</sub> für den Anschluß der CPU <b>22</b>d<sub>1</sub> und der zahlreichen Verbindungsanschlüsse <b>22</b>g und <b>22</b>h des ersten Außensteckers <b>12</b>a durch eine Ausgangsschaltung <b>22</b>d<sub>5</sub> über eine Schaltung aus verschiedenen Schaltungselementen.</p>
+    <p>Eine BUS-Abschalt-Schaltung <b>22</b>d<sub>4</sub>, die als SignalabschaltSchaltung fungiert, ist in der leitfähigen Schicht <b>22</b>c als Schaltungsnetzwerk eingesetzt, um das Speicherelement <b>22</b>d<sub>2</sub> und die CPU <b>22</b>d<sub>1</sub> zu verbinden, d. h. in die zweite BUS-Leitung <b>22</b>c<sub>1</sub>, wie in <b>Fig.</b> 10 gezeigt, um zuverlässig zu vermeiden, daß dann, wenn Daten in das Speichernetz <b>22</b>d<sub>2</sub> einzuschreiben sind, die Neu- bzw. Rückschreibedaten zu anderen Schaltungselemen­ten übertragen werden, und Daten in diesen Schaltungselementen unnötigerweise neu eingeschrieben werden. Die BUS-AbschaltSchaltung <b>22</b>d<sub>4</sub> umfaßt eine herkömmliche bekannte Anordnung, die einen CMOS-Analog-Schalter verwendet, der als sogenannter Dreizustandspuffer dient, und eine detaillierte Beschreibung derselben wird weggelassen.</p>
+    <p>Wenn bei der oben beschriebenen Schaltungsanordnung der ersten Schaltungsplatte <b>16</b>a in dem Speicherelement <b>22</b>d<sub>2</sub> gespeicherte Daten während der Entwicklung neu einzuschreiben sind, wird der zweite Außenstecker <b>14</b>b mit dem zugehörigen zweiten Innen­stecker <b>14</b>a verbunden, wie in <b>Fig.</b> 5 gezeigt, und die Ein­stellvorrichtung <b>44</b> wird in einen Datenneueinschreibebetriebs­zustand gebracht, um dadurch in das Speicherelement <b>22</b>d<sub>2</sub> Daten neu einzuschreiben.</p>
+    <p>Der zweite Innenstecker <b>14</b>a weist die Verbindungsanschlüsse <b>22</b>i und <b>22</b>j in entsprechender Zuordnung zu den Anschlußstiften <b>24</b>c und <b>24</b>d des zweiten Außensteckers <b>14</b>b auf, wie oben be­schrieben. Wie in <b>Fig.</b> 11 dargestellt, gehören zu diesen Verbindungsanschlüssen <b>22</b>j ein Schreibzustandeinstell-Ver­bindungsanschluß, der über einen Inverter mit dem Bonddraht <b>22</b>d<sub>3</sub> verbunden ist, der mit einem ein Einschreiben ermöglichen­den Einschreibe-Freigabeanschluß WE des Speicherelements <b>22</b>d<sub>2</sub> über die zweite BUS-Leitung <b>22</b>c<sub>2</sub> verbunden ist, und ein Paar Einschreibverbindungsanschlüsse, die mit den Bonddrähten <b>22</b>d<sub>3</sub> verbunden sind, welche jeweils mit einem Chip-Freigabeanschluß CE und einem Ausgang-Freigabeanschluß OE verbunden sind.</p>
+    <p>Bei dem Betriebszustand der Datenneueinschreibung ist der zweite Außenstecker <b>14</b>b bei der oben erwähnten Anordnung mit dem Innenstecker <b>22</b>b verbunden, und Daten als Speicherinhalt, die in dem Speicherelement <b>22</b>d<sub>2</sub> gespeichert sind, werden mittels der Einstellvorrichtung <b>44</b> mit den gewünschten Daten neu eingeschrieben bzw. überschrieben, wobei die Abstimm- bzw. Einstellvorrichtung <b>44</b> über die Anschlußleitung <b>42</b> mit der integrierten Schaltung <b>10</b> verbunden ist. Bei diesem Neuein­schreibungsvorgang wird ein hochpegliges Signal von der Ein­stellvorrichtung <b>44</b> auf den Schreibzustandeinstell-Verbin­dungsanschluß gegeben. Hierdurch wird ein Kontrollanschluß der BUS-Abschalt-Schaltung <b>22</b>d<sub>4</sub> auf einen niedrigen Pegel gesetzt, und ein Zwischenschalter wird in der BUS-Abschalt-Schaltung <b>22</b>d<sub>4</sub> geöffnet, um auf diese Weise die BUS-Leitung in einen offenen Zustand einzustellen. Auf diese Weise können Neuein­schreibedaten von der Einstellvorrichtung <b>44</b> zuverlässig seitens der BUS-Abschalt-Schaltung <b>22</b>d<sub>4</sub> an eine Übertragung auf andere Schaltung als das Speicherelement <b>22</b>d<sub>4</sub> gehindert werden.</p>
+    <p>Wenn das hochpeglige Signal auf den Neueinschreibezustand­einstell-Verbindungsanschluß abgegeben wird, wird der SchreibFreigabeanschluß WE des Speicherelements <b>22</b>d<sub>2</sub> auf einen niedri­gen Pegel gesetzt. Weiterhin stellt die Einstellvorrichtung <b>44</b> den Chip-Freigabeanschluß CE auf einen hohen Pegel und den Ausgangs-Freigabeanschluß OE auf einen niedrigen Pegel durch das Paar Schreibverbindungsanschlüsse. Auf diese Weise wird ein Einschreibzustand des Speicherelements <b>22</b>d<sub>2</sub> eingestellt.</p>
+    <p>Wie zuvor beschrieben, wird bei der integrierten Hybridschal­tung dieses Ausführungsbeispiels ein nicht flüchtiger program­mierbarer IC-Chip als Speicherelement <b>22</b>d<sub>2</sub> für die Lieferung vorbestimmter Daten an die CPU <b>22</b>d<sub>1</sub> derart verwendet, daß die in dem Speicherelement <b>22</b>d<sub>2</sub> gespeicherten Daten willkürlich neu eingeschrieben werden können. Auf diese Weise kann selbst dann, wenn Daten in das Speicherelement <b>22</b>d<sub>2</sub> während der Entwicklung neu eingeschrieben werden müssen, ein Neuein­schreibungswunsch leicht erfüllt werden, und der Freiheitsgrad bei der Entwicklung kann in hohem Maße verbessert werden.</p>
+    <p>Da die BUS-Leitung zur Verbindung des Speicherelements <b>22</b>d<sub>2</sub> und der CPU <b>22</b>d<sub>1</sub> bei dem Dateneinschreibvorgang seitens der BUSAbschalt-Schaltung <b>22</b>d<sub>4</sub> in einen offenen Zustand eingestellt ist, wird ein Datenneueinschreibungsinformationsausgang aus der Einstellvorrichtung <b>44</b> nicht auf andere Schaltungen außer dem Speicherelement <b>22</b>d<sub>2</sub> gegeben. Demgemäß kann zuverlässig verhindert werden, daß die in der CPU <b>22</b>d<sub>2</sub> und anderen Schal­tungselementen gespeicherten Daten durch die Datenneuein­schreibeinformation überschrieben werden.</p>
+    <p>Bei diesem Ausführungsbeispiel kann, wie oben beschrieben, der Datenneueinschreibevorgang durchgeführt werden, indem ledig­lich der zweite Außenstecker <b>14</b>b an den zweiten Innenstecker angeschlossen wird, um die integrierte Schaltung <b>10</b> mit der Einstellvorrichtung <b>44</b> zu verbinden. Demgemäß kann der Daten­neueinschreibevorgang leicht durch eine sehr einfache Anord­nung durchgeführt werden.</p>
+    <p>Wenn die Kontrollsequenz der integrierten Schaltung <b>10</b> simu­liert werden soll, während die in dem Speicherelement <b>22</b>d<sub>2</sub> gespeicherten Daten neu eingeschrieben werden, kann bei diesem Ausführungsbeispiel die Einstellvorrichtung <b>44</b> derart in einen Simulationszustand eingestellt werden, daß die Kontrollsequenz auf der Basis der in dem Speicherelement <b>22</b>d<sub>2</sub> gespeicherten Daten simuliert wird. Wenn die in dem Speicherelement <b>22</b>d<sub>2</sub> gespeicherten Daten zu überwachen sind, wird die Einstellvor­richtung <b>44</b> in ähnlicher Weise in einen Überwachungszustand eingestellt, um die Daten zu überwachen bzw. zu kontrollieren. Auf diese Weise kann der Aufbau (die Bestimmung) der in dem Speicherelement <b>22</b>d<sub>2</sub> während der Entwicklung zu speichernden Daten mit einem großen Freiheitsgrad vorgenommen werden.</p>
+    <p>Wenn die in das Speicherelement <b>22</b>d zu speichernde Daten nach der Entwicklung bestimmt sind, wird das Speicherelement <b>22</b>d<sub>2</sub> auf der isolierenden Schicht <b>22</b>b der ersten Schaltungsplatte <b>16</b>a als freier Chip in einem Zustand montiert, bei dem diese Daten unabhängig in das Speicherelement <b>22</b>d<sub>2</sub> eingeschrieben sind. Da in diesem Fall der oben erwähnte zweite Innenstecker <b>14</b>a als nicht im Gebrauch befindlich festgelegt ist, wird das zuvor erwähnte Kunstharz in das Innere des zweiten Innenstec­kers <b>14</b>a eingefüllt, und der zweite Innenstecker <b>14</b>a wird vollständig vergraben. Nachdem die integrierte Hybridschaltung <b>10</b> auf diese Weise als Gegenstand fertiggestellt ist, d. h. wenn es als kommerzielles Erzeugnis lieferbar ist, hat die integrierte Hybridschaltung <b>10</b> eine äußere Erscheinungsform, als ob der zweite Innenstecker <b>14</b>a nicht vorhanden wäre. Hierdurch kann im Vergleich zu einem Fall, bei dem der nicht verwendete zweite Innenstecker <b>14</b>a einen Teil der äußeren Erscheinungsform bildet, der Effekt erreicht werden, daß eine Verringerung des Produktwertes vermieden wird.</p>
+    <p>Da die integrierte Schaltung <b>10</b> dieser Ausbildungsform wie oben beschrieben gestaltet ist, werden der zweite Innenstecker <b>14</b>a und der zweite Außenstecker <b>14</b>b miteinander verbunden, um die integrierte Schaltung <b>10</b> und die Einstellvorrichtung <b>44</b> derart miteinander zu verbinden, daß die Einstellvorrichtung <b>44</b> eine Emulation einer Kontrollsequenz der CPU <b>22</b>d<sub>1</sub> auf der Basis der in dem programmierbaren Speicherelement <b>22</b>d<sub>2</sub> gespei­cherten Daten vornehmen kann und in einfacher Weise einen Einstellvorgang durch Neueinschreiben, Simulieren und Über­wachen der in dem programmierbaren Speicherelement <b>22</b>d gespei­cherten Daten durchführen kann.</p>
+    <p>Auf diese Weise können gemäß dieser Ausbildungsform in dem Speicherelement <b>22</b>d<sub>2</sub> gespeicherte Daten während der Entwicklung in einfacher Weise eingeschrieben werden, kann die Kontroll­sequenz einer Operation der CPU <b>22</b>d<sub>1</sub> leicht basierend auf den neueingeschriebenen Daten simuliert werden und können die neueingeschriebenen Daten in einfacher Weise überwacht werden. Demzufolge kann im großen Maße der Freiheitsgrad bei der Entwicklung verbessert werden.</p>
+    <p>Bei dieser Ausbildungsform sind die Schaltungsstruktur der BUS-Leitungen <b>22</b>c<sub>1</sub>, <b>22</b>c<sub>2</sub> und <b>22</b>c<sub>3</sub>, die bei der Entwicklung verwendet werden, unmittelbar benützt, um die integrierte Schaltung <b>10</b> als Erzeugnis fertigzustellen. Hierdurch können die Kosten für das Ätzen einer Schaltungsstruktur erheblich verringert werden. Da eine Schaltungsstruktur, welche tatsäch­lich während der Entwicklung in Betrieb gesetzt wird, bei einem Produkt angewendet wird, kann das Produkt wie bei der Entwicklung ohne Fehler betrieben werden, und es kann eine stabile Wirkungsweise des Produktes gewährleistet werden. Anders ausgedrückt, kann die Zuverlässigkeit des Produktes gewährleistet werden.</p>
+    <p>Die dargestellte Erfindung ist nicht auf die Anordnung bei dem obigen Ausführungsbeispiel begrenzt. Vielmehr können verschie­denartige Änderungen und Modifikationen im Rahmen der Erfin­dung vorgenommen werden.</p>
+    <p>Bei dem obigen Ausführungsbeispiel wurde die integrierte Hybridschaltung <b>10</b> in ihrer Wirkungsweise als Motorkontroll­einheit beispielhaft dargestellt. Die Erfindung ist jedoch hierauf nicht beschränkt. Beispielsweise kann die integrierte Schaltung <b>10</b> als funktionelle Komponente dienen, z. B. als automatischer Fahrzeuggeschwindigkeitsregler, als Allradlenk­regler oder als Regler für ein automatisches Getriebe.</p>
+    <p>Bei dem obigen Beispiel wurde die integrierte Hybridschaltung als Beispiel mit einem Paar aus einer oberen Schaltungsplatte <b>16</b>b und einer unteren Schaltungsplatte <b>16</b>a erläutert. Die Erfindung ist jedoch nicht auf diesen Aufbau beschränkt. Beispielsweise kann die integrierte Schaltung <b>10</b> auch drei parallel angeordnete Schaltungsplatten aufweisen.</p>
+    <p>Bei dem obigen Ausführungsbeispiel sind die Speicherdaten des Speicherelements <b>22</b>d<sub>2</sub> Ziel der Simulierung, der Überwachung oder der Datenneueinschreibung mittels der Einstellvorrichtung <b>44</b>. Die Erfindung ist jedoch hierauf nicht beschränkt. Bei­spielsweise kann die Erfindung in ähnlicher Weise Anwendung in einem Fall finden, bei dem das Kontrollprogramm eines ICChips als CPU <b>22</b>d<sub>1</sub> extern verarbeitet wird.</p>
+    <p>Bei der obigen Ausbildungsform ist die Einstellvorrichtung <b>44</b> eine Vorrichtung, die durch die Anschlußleitung <b>42</b> anzuschlie­ßen ist, die Erfindung ist jedoch hierauf nicht beschränkt. Beispielsweise kann auch ein Emulator angeschlossen werden und der Kontrollinhalt der integrierten Schaltung <b>10</b> kann durch diesen Emulator emuliert werden.</p>
+    <p>Bei der obigen Ausbildungsform sind die CPU <b>22</b>d<sub>1</sub> und das Speicherelement <b>22</b>d<sub>2</sub> als Schaltkreiselemente unmittelbar auf der isolierenden Schicht <b>22</b> als freie Chips montiert. Die Erfindung ist jedoch auf diese Anordnung nicht beschränkt. Beispielsweise kann die Erfindung in ähnlicher Weise bei einem Fall Verwendung finden, bei dem die CPU <b>22</b>d<sub>1</sub> und das Speicher­element <b>22</b>d<sub>2</sub> als Schaltkreiselemente gehäuse- bzw. paketförmige ICs aufweisen und können nicht lösbar auf einer vorbestimmten BUS-Leitung durch Löten befestigt sein.</p>
+    <p>Wenn bei dem obigen Ausführungsbeispiel die Entwicklung der integrierten Schaltung <b>10</b> abgeschlossen ist und die in dem Speicherslement <b>22</b>d zu speichernden Daten bestimmt sind, wird das oben erwähnte Kunstharz in den zweiten Innenstecker <b>14</b>a eingespritzt und der zweite Innenstecker <b>14</b>a wird vollständig begraben. Die Erfindung ist jedoch nicht auf diese Struktur beschränkt. Beispielsweise kann der zweite Innenstecker <b>14</b>a für einen späteren Gebrauch beibehalten werden, ohne mit Kunstharz begraben zu werden. Wenn der zweite Innenstecker <b>14</b>a an einem Fahrzeug in einem brauchbaren Zustand montiert ist, kann der Kontrollinhalt der CPU <b>22</b>d<sub>1</sub> später neu eingeschrieben werden, selbst wenn die integrierte Schaltung <b>10</b> einer Aktua­lisierung ihrer Version unterliegt und der Kontrollinhalt der CPU <b>22</b>d<sub>1</sub> geändert wird. Demgemäß kann eine Fortschreibung bzw. Aktualisierung der Version der integrierten Schaltung <b>10</b> leicht erreicht werden, selbst wenn der Kontrollbetrieb der integrierten Schaltung <b>10</b> nicht normal vorgenommen wird und deren Kontroll- und Speicherinhalte geprüft werden müssen, können sie leicht durch diesen zweiten Innenstecker <b>14</b>a ge­prüft werden.</p>
+  </description>
+  <description id="descr_eng" lang="eng" format="original" date-changed="20080214">
+    <p>The invention concerns an integrated circuit ge with the 
+invention is further an integrated measured the generic term of the 
+requirement 1. It refers circuit with a metasubstrate to be 
+created, in particular to an integrated circuit with 5 which memory 
+contents flip-flop circuit plate, in which a conductive layer can with
+element supervise, in order to improve thereby the liberty-desired 
+structure over an insulating layer on egg degrees with the 
+development, nem metasubstrate from the outside is formed, and with 
+flat furthermore is with the invention the creation eitungselement, 
+which inseparably on the insulating layer mon integrated more ner 
+circuit with a metasubstrate is ertiert and a not volatile and/or a 
+leistungsunab 10 hands become, which possesses externally the 
+processing of a Speihaengigen memory contents, which can again be 
+written by an externacherinhalts a memory element, for example 
+operation, renewed writing of data and update usually is a 
+technology, those in the Japanese supervisory routine, to accomplish 
+is able and patent publication NR. 46-13 234 is revealed, when 
+those integrated externally memory contents without taking apart 
+circuit well-known, which can supervise a pair meta15 of a compound 
+structure. Substrates exhibits to make, whereby conductive 
+layers at everyone it is with the invention is finally reached meta
+substrate over isolating layer cling, where integrated circuit with 
+metasubstrate circuit element to each conductive layer addable, 
+which externaprocessing one fastened is, and whereby the conductive 
+layers over memory contents of a memory element, how example in 
+connection substrate points attached and from each other 20 a renewed 
+writing from data and a Akzueinander pointing is separate a procedure 
+for a tualisieren supervisory routine to accomplish the production of 
+the integrated circuit, which is able in this, in order to update 
+their efficiency, block letters is revealed, consists of the procedure
+after the integrated circuit in a vehicle walked that at least a
+larger surface one is installed.</p>
+    <p>Aluminum substrate is anodically oxidized to infer in 
+order to form 25 ErfindungsgemaeB an integrated circuit with thin 
+alumina layer on the Substratoberflae the characteristics marked in 
+the patent claim 1 before, the process step that alternatively 
+available made, preferential characteristics, which train the 
+answering and material and a high-conductive material further 
+identification favourably are nachgeordneauf the thin alumina film 
+bonded and form ge ten patent claims become, around numerous circuit 
+elements to bil 30 in favourable way creates the invention demgeden, 
+which process step that on measured transistor pellets an integrated 
+circuit with a Metallsubvorderen sections are fastened, strat by 
+selecting, consisting of a schaltungsplatte, on wise bonding of the 
+high-conductive material formed conductive layer in a desired 
+structure on it are, and the process step that at least everything is 
+sealed the metal substrate over an isolating layer of switching 
+elements. 35 forms is; a circuit element, which on the 
+isolie with the in this way formed integrated flat renden layer is 
+installed; and a plug mechanism is on a schaltungsplatte, on 
+some leitfaehi tung for the connection of at least the Schaltungsge 
+layer from a desired structure on an element and an external device; 
+whereby the metal substrate is formed for incoming goods circuit
+element over an insulating layer, is not inseparably as so-called 40 
+layer installed not solvable on the isolating nigstens a memory 
+element and does not install a not volatile memory suitor chip on the 
+isolating layer. Contents possess, to kontrollieden which are by
+an external operation again the in this way formed integrated circuit 
+writable, and that the plug mechanism can do one regarding its compact
+structure and its first plug arrangement for the connection of 
+little-low costs with a vehicle assigned who stens the circuit element
+with one. If the integrated circuit with a metal 45 renden 
+section and a second plug arrangement substrate however actually in a 
+vehicle whom for connecting the circuit element and one is exterdet, 
+numerous tests in a Entwick must nen processing device over another 
+way lungsprozess to be in such a manner accomplished that the data 
+stored in as the first plug arrangement for processing the memory 
+element as required memory contents of the circuit element it exhibits
+again be written must and a control must during the integrated circuit
+with the Metallsubprogramm is in such a way updated strat in 
+accordance with the invention forms the conductive layer the memory 
+element is however directly onto a first Sipalleitungsgruppe for the 
+connection circuit as free chip installed if the memory of circuit 
+element to another Circuit element element once installed is 
+solved, cannot become it any longer and a second group of signal lines
+for the connection. It is difficult accordingly to accomplish a 
+processing 55 of the circuit element to the second Steckeranorddes of 
+memory contents for example is it nung, and a signal shutdown system 
+to update those for that with difficulty to write data again a control
+pro switching the data communication off on the other gram a 
+Speichermhah to over circuit element is betitigt, if the 
+Speicherinwachen and such a thing. Thereby the liberty stop of 
+the circuit element will be written degrees with the development 
+substantially limited. m is, is in a place on first 
+Signalleitungsgrup in the view to the above situation the vorlie PE 
+and near and/or adjacent on the circuit element gende invention made 
+you aims mainly at it arranged off, an integrated circuit with a metal
+substrate preferably is during the integrated circuit to be made with 
+available, those externally a processing egg the metal substrate in 
+accordance with the invention second of nes memory contents of a 
+memory element, example it plug arrangement with a synthetic resin for
+rejects a renewed writing of data and a Ak seal of an external section
+filled out, if a supervisory routine, in a Entwick the development of 
+the circuit element finally lungsprozess the integrated circuit to be 
+made are DE 40 16 532 AI tualisieren after one preferred 
+arrangement of the invention Fig. 6 an explosion opinion, which 
+is in the detail the on the second plug arrangement on a section order
+of the external plug represents; fastened, which is so installed
+that he with the external Fig, 7 a plan view, which is connectable 
+processing device stood the external plug represents; Preferred 
+points the circuit element, that with the 5 Fig. 8 a plan view, 
+which represents a condition, during external processing device by 
+second, a memory element of conclusion pin retainers is connected with
+the schaltungsplatte in the open condition to the on plug arrangement 
+is fastened; up, which stores pre-determined data, and which 
+external Fig, 9 a schematic perspective opinion egg processing device 
+points co-ordinate and/or nes circuit element on a first 
+Schaltungsplat rigging device for a renewed writing or 10 a width 
+unit; Upper guards of memory contents of the memory element Fig,
+10 a block diagram for the representation of one up. Block 
+central processing unit (CCU) on first in Fig. 9 ge in 
+accordance with a preferential arrangement of the Erfin showed 
+schaltungsplatte; and fertilize points the circuit element, that
+with the external Fig. 11 a detailed interconnection diagram, 
+which is connected the processing device for the second Steckeranord 
+15 connections between a central processing unit on erming, a CCU with
+pre-determined sten schaltungsplatte and one in Fig. 9 to 
+supervisory routines shown up and the external processing memory 
+element represents. Device points a co-ordination and/or a 
+Einstellvorrich becomes following with reference to the Fig. 1 
+tung to the renewed writing of control contents to 11 a remark example
+integrated Schalder CCU or an emulator for emulating the Kon 20 tung 
+with a metal substrate in accordance with the invention 
+detrollinhaltsderCPUauf. tailliert described. With this remark 
+example preferentially the first plug arrangement points to one 
+becomes the invention with one gehaeusebzw. kastenfoermiersten 
+external plug, which are installed einstueckig at an end of the 
+circuit integrated towards integrated hybrid integrated circuit 
+applied, and a first Fig. 1 points an integrated hybrid 
+integrated circuit 10 ge-Innenstecker, solvable at the first 
+Aussenstek the 35 measured to this training form out. The 
+integrated Hybridker the attached and with the one which can be 
+controlled off circuit 10 is as monitoring unit for one is 
+funktionelschnitt connected and the second plug arrangement a len 
+vehicle component trained details said points a second interior plug, 
+which serves einstueckig to the integrated circuit 10 as an integrated
+other end of the integrated circuit is installed, to circuit, which 
+independently the function Motorund a second external plug up, which 
+exhibits 30 monitoring unit solvable at that, second interior plug 
+attached and with the external as in Fig. 1 shown, is the 
+integrated hybrid scarf processing device connected is out-arranged 
+tung 10 as box shaped housing, whose in favourable way with the 
+invention with inside is closed. The integrated hybrid 
+integrated circuit processing memory contents, for example with 10 can
+with first and a second connection letter of data, updating a Kon 35 
+mechanism 12 and/or. 14 at their each other GET roll and/or 
+control program and a monitoring towards-over-lying final sections to 
+be connected in each case, from data with a development process, is a 
+flat of details said serves the first connection mechanism 
+tungselement, these operations to make en 12 for it to connect which 
+integrated circuit 10 with (does not like, with an external processing
+device represented) a vehicle wiring harness and by a special second 
+plug arrangement in one it points a first external plug 1à which 
+einstueckig at not dismantlable condition in such a manner connected 
+that the processing of memory contents is formed for an end (rear end)
+of the integrated circuit, as for example 10, and a first interior 
+plug 12b up, a renewed writing of data and a Aktualisie of the 
+solvable with the first external plug 1à connected the ren 
+supervisory routine external by the external is. The second 
+connection mechanism 14 serves for it, the processing device to be 
+made can to improve 45 integrated circuit 10 with an external 
+Verarbeium thereby the degree of freedom with the development and/or 
+tungsgeraet for processing memory contents one with finishing. 
+Memory element to connect, that before on inte further details, 
+characteristics and advantages of the he the grierten circuit 10 is 
+installed, and the Speicherinfindung are the following description 
+part to stop to be supervised, and the second connection mechanical 
+anise taking, in that remark examples under reference mash 12 points 
+in such a way a second interior plug 1â, which would take on the 
+designs is more near described. It stueckig at the other end 
+(front end) of the intezeigt grierten circuit 10 formed is, and a 
+second Fig. 1 a perspective opinion of a Ausbil external plug 
+14b up, that solvable connected with the second Indungsform of an 
+integrated circuit with a ME of nenstecker 1â is tallsubstrat in 
+accordance with the invention; is following 55 the first 
+external plug 1à, like de-Fig. 2 a perspective explosion 
+opinion of one one describes tailliert, with first herkoemmli 
+arrangement in Fig. for 1 represented integrated serve interior 
+plug 12b connected. The second interior circuit; Plug 1â 
+is connected to the cut line plug 14b with the conventional second 
+outside Fig.SA a cutaway view along.</p>
+    <p>A-A in Fig. l; w as in the Fig. 2 to 3B shown,
+the integrated Fig. 3B a cut points along the cut line b-b in hybrid 
+integrated circuit 10 a pair first and second flat Fig. l; 
+tungsplatten 1ã and 16b up, which are in vertical direction 
+Fig. Â a plan view toward an arrangement ge from each other 
+beabstandet, furthermore a side plate my seed schaltungsplatte; 
+18 for the separation of the first and second Schaltungsplat 
+Fig. 4B an indexing step for the representation of the Anord 55 ten 
+1ã and 16b around a pre-determined distance and nung the common 
+schaltungsplatte; for locking the sides, and a framework Fig. 
+5 a cut for representation one on the inte 20 for the 
+einstueckigen attachment first and zweitengrierten circuit of 
+installed external plug; Schaltungsplatte 1ã, 16b and the side 
+plate 18.</p>
+    <p>DE 40 16 532 AI of circuit elements as for example IC 
+chip, a D, h, opposite internal surfaces of the pre memory element, 
+resistances, condensers and jumps 16c and 16d, while the two 
+Schaitungs is such a thing, which are necessary for planning the 
+function plates of a 1ã and 16b in vertical direction from each other
+engine monitoring unit, on first and these second connecting 
+connections of the second schaltungsplatte 1ã are beabstandet and 16b
+installs. Ge 5 2ì and 22j form connecting connections (more 
+spaeternauer said, so-called logical Schaltungsele is still described)
+of the second interior plug 1â.</p>
+    <p>mente with the lower first schaltungsplatte 1ã and in 
+accordance with Fig. 2 is the side plate so-called achievement 
+circuit elements with the obe 18 u-shaped page, open described above, 
+with one from above seen ren second schaltungsplatte 16b connected 
+arranged. The open side section serves as an end to hold is that
+an assembly condition of the flat 10 of the housing. Set off 
+sections Iå and 18b to tungselemente on the first schaltungsplatte 
+1ã for admission of three edge sections of everyone, like 
+tungsplatten 1ã and 16b is in the following detailed at the internal 
+Seitenraen wrote that of the upper and lower end faces the Seitenplat 
+in accordance with Fig, Â is important to the flat the invention is 
+formed the first schaltungsplatte 1ã width unit 18.</p>
+    <p>and the second schaltungsplatte 16b by allocation 15 in 
+accordance with Fig.SA the schaltungsplatten 1ã and a only one common
+schaltungsplatte 22 gebil 16b are det in the associated set off 
+sections Iå. More exactly said, is, as shown in Fig. 4B, which 
+fastens ge and 18b over sealing rubber elements 26. Since the 
+meinsame schaltungsplatte 22 by a circuit sealing rubber elements 26 
+are inserted, effectively disk body 2à is formed, consisting of a 
+leitfae the penetration of dust or to such a thing into the Gehigen 
+material, for example aluminum, a isolie 20 live from columns between 
+the schaltungsplatten and renden layer 22b, which itten at the entire 
+upper surface the set off Abschn prevents the circuit disk body 2à 
+clings, a conductive section of the side plate 18, that the other 
+layers 22c, which locks final section on the isolating layer 22b for 
+integrated circuit 10, organization of a pre-determined circuit 
+structure is in such a manner fixed that it directly at one and formed
+for the definition of a circuit network 25 border section between the 
+projections/leads 16c and 16d are, and from circuit elements 
+22d, which is arranged on the direction and the schaltungsplatten 1ã 
+and 16b, and electrically with the as shown in Fig, 3B fastens capable
+layers 22c. Thereby a housing of the sen connected are formed 
+second external plug 12b by one managing itself an off section 
+extending in vertical direction, which is outside of the side disk 
+section 2è, as shown in Fig. Â, at which 30 is arranged.</p>
+    <p>middle section of the common schaltungsplatte of the 
+frameworks 20 is from a synthetic Kunst-22 intended. The circuit
+networks on the left resin as isolating element formed the framework 
+20 derund right sections of the opening section 2è kind is arranged 
+that it the sides, which are by those over a flexible schaltungsplatte
+22f side plate 18 with one another are final, whereby it arranges this
+connected, which clamps 2è ange 35 simultaneous over the opening 
+section in vertical direction, as in is to be referred to is on the 
+fact that the final section, Fig. 2 shown. More exactly 
+said, the framework 20 to the flexible schaltungsplatte the 22f exists
+borders, at one of a einstueckigen body, consisting of place attached 
+is, those from the associated being main body 20a, which are 
+appropriate for the side plate 18 gegenuebertenrand the opening 
+section 2è around one, and flange sections a 20b and a 20c, which 
+were correct themselves of distance inward step details said, 40 the 
+upper and the lower end of the main body 16b are stretch within a 
+range at the two other final sections of the two 20 around a 
+pre-determined distance inward he circuit plates 1ã and (more exactly
+said, around a distance, which is large this pre-determined distance 
+projections/leads 16c and enough, around three not open final 
+sections of the Schal-16d in an educated manner. By cutting off 
+the upper and unte 1ã and 16b tungsplatten to clamp), ren edges 
+(ranges, which are to be recorded X and Y 45 by reference symbols that
+an opening 20d completely it is in suggested), including the upper and
+a lower section of the main body 20a of the framework 20 ends of the 
+opening section 2è, the two are formed, for which the other end face 
+(front END circuit plates 1ã and I6b while maintaining a surface) of 
+the integrated circuit forms 10 in such a manner that connection by 
+the flexible schaltungsplatte 22f a ge connection of the second 
+Inbildet described above, like that nensteckers 1â with the second 
+external plug 14b are the common schaltungsplatte 22 number are 
+moeglicht.</p>
+    <p>hands first connecting connections 22g and 22h in Rei in 
+accordance with Fig. 3B stretches the framework 20 in vertical hen 
+along the edges on the upper surfaces of off direction the upper and 
+lower first and second cut in an educated manner, those to the outside
+edge sections of the schaltungsplatte 16b and 1ã, which in the 
+schaltungsplatten 1ãund 16b corresponds in each case, i.e. on the 55 
+upper and lower set off sections 18b and opposite internal surfaces of
+the 1å of the side plate 18 are fastened each other, in order to form
+thereby into edge sections, the one end of the housing into 
+einstueckiger way the housing. In accordance with condition 
+form, with which the opposite flat Fig. 3B is the flexible 
+schaltungsplatte 22f to the verb in tungsplatten 1ã and 16b in 
+vertical direction zuein fertilize the circuit elements 22d upper 
+second other-pointing one from each other beabstandet are. The 
+en 50 and the lower first schaltungsplatte 16b and/or 1ã 
+connection-donated 2â and 24b of the first external plug of the other
+final section of the side 1à (it is described later) is slight 
+because of this first plate 18 inward being arranged connecting 
+connections 22g and 22h outward pre there the framework 20 in this way
+arranged is standing fastened and electrically with these connected 
+nen first and the second schaltungsplatte 1ã and numerous one second 
+connecting connections 2ì and 22j 65 16b an assembled condition 
+maintained, koen, where are in rows along the edges at opposite with 
+they in vertical direction around pre-determined cutting off of upper 
+and lower final sections distance in a condition are beabstandet, with
+that in an educated manner around the other end of the housing 
+to plan, the side plate 18 between them is arranged.</p>
+    <p>DE 40 16 532 AI with the represented remark example is 
+downward extended the in of segment 30bi, and with abtegrierte hybrid 
+integrated circuit 10 in housing-similar curved section 2% of the 
+upper end the form arranges, and the upper and the lower surface of 
+the vertical section 24bj is inward curved the housing from the 
+circuit the bent section 24ba is directly formed as connection port 
+16b and 1ã. Thereby a roughening 5 can cut arranged, which is 
+connectable by soldering with the associated pakter easy-weighty 
+structure compared with the connecting connection 22g, which to the 
+accident is realized, with which first and second teren first 
+schaltungsplatte 1ã is formed. Outside the section of the 
+horizontal Abuntergebracht managing after schaltungsplatte 1ã and I6b
+in separate housings are cut 24bi are formed as connecting section, 
+that those arrangement of the connection device to the en 10 into the 
+interior plug 1â applicable and with this connect the 
+gehiuseaehnlichen integrated hybrid scarf are bindable.</p>
+    <p>tung 10 with the above arrangement also to controlling the
+connecting pin retainers 30a and 30b possesses the sections of the 
+vehicle by a vehicle a sufficient size, over exactly into some END 
+wiring harness becomes following with reference to the opening section
+of the housing-similar integrated Fig. 5 to 8 described. 
+to fit 15 circuit 10 in a condition, with which it covers the 
+first outside of vertical direction into the connection device is 
+coupled. Differently ausge plug 1à, which presses on a 
+Offnungsabschnitt of the gehaeu, forms a range of the two upright Seg 
+for seaehnlichen integrated hybrid integrated circuit 10 when mente 
+30ai and 30bi (i.e. an outer circumference range) a so-called interior
+assembly assembling is installed, and the retainers 30a the first 
+interior plug 12b coupled in vertical direction, which is directly the
+internal extent range the external plug 1à attached solvable at the 
+first 20 and 30b. In accordance with Fig. 5 points final 
+section of the integrated circuit 10.</p>
+    <p>the first external plug 1à so-called three-partial at the
+central sections of the upper and structure up, i.e. it consists of a 
+plug housing of lower edge of the connector pin retainers 30a and 28, 
+which are in-formed into a box shaped housing, 30b is in each case 
+recesses 3à and 32b in an educated manner, which exhibit open front 
+and backs, a obe 35 these recesses limits an injecting opening ren 
+connector pin retaining element 30a, on which the upper for an epoxy 
+synthetic resin, which is injected, after connector pins 2â are 
+arranged in lateral reihenfoermiger Ausrich the first external plug 
+1à einstueckig with the integrating tung, and from a lower connection
+ten hybrid integrated circuit 10, like post pin holding element 30b is
+compound, on that lower connection is following described, 
+donates to 24b laterally in a row aligning arranged 30 the upper and 
+lower connector pins 2â and 24b is exhibits in vertical direction 
+symmetrical forms the upper and the lower connector pin Halteele, i.e.
+possesses the same form, and the upper and ment the 30a and 30b are in
+vertical direction symme lower connector pin retainers 30a and 30b 
+possess trisch around the vertical middle section arranged, likewise 
+in vertical direction symmetrical forms, the upper connector pin 
+retaining element 3fla are einstuek 35 i.e. the same forms. 
+Since the connector pin retainers kig in one essentially l-form 
+by a aufrech 30a and 30b, on which the connector pins 2â and 24b 
+width unit segment 30ai and a beginning 30az in an educated manner, 
+which it is installed, have the same form, can on these by the lower 
+end of the upright segment 30ai way of components together be used, 
+according to which outside that manages lower connector pin stop by a 
+cost decrease arises element 30b is einstueckig into one around the 
+plug housing 28 described above essentially possesses turned l-form by
+an upright segment a 30bi mounting hole, which turns out in rear and 
+vorwaertiund a beginning 30b2 from upper ger direction extended. 
+The mounting hole 34 possesses end of the upright segment 30bi 
+outward pre a sufficient size for the admission lines up the arranged 
+beginnings 30az and 30b2, if obe each upper connector pin is the 2â 
+einstueckig by egg 45 RH and the lower connector pin retainer 30a and 
+3flb nen horizontal section 2âi in an educated manner, which is in 
+coupled with one another, as in Fig. 7 shown, horizontal 
+direction by the beginning 30a? extended, assembly flanges 40a 
+and 40b are to be managed einstueckig to over in and the preparation, 
+an en to both side sections of the plug housing 28 gebiltikalen 
+section 2â2, which in vertical direction det itself these flange 
+sections 40a and 40b becomes on by the internal edge of the horizontal
+section 2âi (not represented) a vehicle body fastened along the inner
+surface of the upright segment 30ai after the first external plug 1à 
+to integratingafter above extended and with a bent off ten hybrid 
+integrated circuit 10 installed and to this fastened cut 2âs from the
+upper end is formed. In this way needs for the integrated of 
+hybrid-vertical section 2â2 is inward bent. Circuit 10 even no 
+flange section for the assembly the curved section 2âj it is to be 
+been as connection section 55 of the integrated hybrid integrated 
+circuit 10 intended, arranged which at the associated connecting 
+connection from which a simplified integrated hybrid integrated 
+circuit 22h is attached by soldering, which results on the obe 10.</p>
+    <p>ren second schaltungsplatte 16 is formed. The 
+distance ler after with this remark example a vertika outside pointing
+section of the horizontal section and a horizontal allocation p of the
+on 2â is as connection section arranges assigned the 2â and 24b on 
+the basis of the plugs 1â and with this, conclusion-donated in the 
+interior o, connected is defined koemmlichen pin adjustment 
+specifications.</p>
+    <p>Everyone of the lower connector pins 24b is einstueckig 
+thereby can the first interior plug 12b, which is connected with by a 
+horizontal section 24bt formed the first external plugs 1à, 
+conventionally in horizontal direction by the beginning 30b2 in 
+trained be, whereby natural advantages become achievement that and 
+preparation managing extended furthermore.</p>
+    <p>with a vertical section 24bi the external plug 
+conventional in vertika not whom ler direction of the internal edge of
+the horizontal det there he heavyweighty and voluminoes is place the 
+of section 24bi along the internal surface of the upright will sen the
+first external plug 1à in appropriate DE 40 16 532 AI allocation to 
+the compact easy-weighty box external plug 1à exhibits, formed 
+well-behaved integrated hybrid integrated circuit 10. The after 
+the assembly will a structure of the integrated hybrid of ker 1à and 
+the frame part 36b easy-weighty in accordance with epoxy synthetic 
+resin can after this training form of the kompak 38 into a section 
+between the first Aussenstekte by the hole eingeschaltung 10 be 
+ensured. , becomes following that squirts 5 by the recesses 3à 
+and 32b gebil with reference to Fig. 8 is det, the compound of 
+the he-assembled first external plug 1à, its sten over in this way 
+external plug 1à to the integrated to hybrid-assemble surely 
+condition in Fig. 5 shown is, and circuit 10 and in satisfactory
+Weider assembly of the integrated hybrid integrated circuit 10 SE the 
+soldering sections between the Anschlulstiften 2â anzuheften 
+described. 10 and 24b and associated VerbindungsanschluessenWie 
+with reference to the Fig. Â 22g and 22h to fix already above, 
+whereby in perfect way that and 4B mention, is shielded the upper and 
+lower edges X inside of the integrated hybrid integrated circuit 10 
+and Y of the common schaltungsplatte 22, on becomes. Accordingly
+the section between the ground electrode the pre-determined circuit 
+elements 22d mon sten external plugs 1à and the frame part 36b with 
+tiert are in such a manner cut off, that first and 15 are formed for 
+the epoxy synthetic resin 38 filled second schaltungsplatten 1ã and 
+16b in one open a section between the frame part 3ã and the condition
+on the same level. As in Fig. 8 side panel 18 in the same 
+way with is epoxy-shown, is filled the associated pin retainers 30a 
+and 30b the synthetic resin 38, in order to protect the flexible 
+schaltungsplatte 22f at first and the second schaltungsplatte 1ã and 
+and to shield the inside the integrated Hybrid-16b in the open 
+condition by means of an adhesive befe 20 circuit 10, before the 
+framework 20 is tiert monstigt..</p>
+    <p>As described before, the associated on is as from the 
+above description arises, becomes the conclusion-donated 2â and 24b 
+already at this connector pin second interior plugs 1â, which 
+installs einstueckig at other retainers the 30a and 3flb. In 
+this way who final section of the housing-similar integrated Hyden the
+connector pins 2â and 24b is formed to the associated 25 
+bridschaltung 10, einstueckig connected with the gehaeu 
+Verbindungsanschluesse 22g and 22h first and the seaehnlichen 
+integrated circuit 10 for planning second schaltungsplatte 1ã and 16b
+in open of the connecting connections 2ì and 22j, wostand soldered 
+on. Particularly precise soldering is out needed with by the 
+projections/leads 16c and IN the pair, since the number of the 
+connecting connections 22g of lower and upper schaltungsplatte 1ã and
+16b is large and 22h. Since with this remark example the 30 
+housings the second external plug 14b, which is connected first and 
+the second schaltungsplatte 1ã and 16b ever solvable with the second 
+interior plug 1â, is formed, but lie in the open condition in the 
+same level, a housing 14bi exhibits, whose distal end into eikann 
+soldering are accomplished reliably, in order nen area manages, which 
+between the projections/leads 16c the workability to improve in this 
+way and and 16d in the group is formed, as well as numerous Aneine 
+easy assembly to ensure. 35 conclusion-donated 14b2 and 1% in a 
+row at the thereafterwards becomes, while the first schaltungsplatte 
+1ã upper and lower section of the housing 14bi is regarded as in its 
+position, which second circuit a sliding contact with the plate 
+described before 16b raised and into a situation is installed up and 
+connecting connections 2ì and 22j, parallel to the first 
+schaltungsplatte 1ã moved. As it is to be held that the second 
+external plug 14b in Fig. 8 shown, is then the connector pin 
+retainers with a Tuning and/or a rigging device 44 as (still 30a and 
+30b in vertical direction coupled. If late to describe becoming)
+external work egg of connector pin retainers 30a and 30b in 
+tungsvorrichtung over a feeder line 42 in vertical direction, the 
+first form of an external main line cable connected and the second 
+schaltungsplatte 1ã and 16b are in this way coupled are parallel, as 
+in Fig. 1 to each other shown held. 45 different ones 
+electronic parts are on the before coupling become the frame parts 3ã
+and lower first schaltungsplatte 1ã like above beschrie-36b, which 
+serve for it, a pre-determined distance zwi ben and in Fig. 9 
+shown and installed, sees 1ã of details said first and the second 
+circuit plate, is in accordance with Fig. to keep 9 
+Schaltungsund 16b and an interior outward network, differently 
+expressed, numerous Bus Leitunabzuschirmen, whereby they integrated 
+the mechanical firmness of the 50 towards than group of signal lines 
+on the conductive layer hybrid integrated circuit 10 strengthen, in a 
+22c, on the isolating layer 22b of the first scarf-upright condition 
+at the front and rear off tungsplatte 1ã in an educated manner, in 
+order to define a pre-determined Strukschnitt of the lower first 
+circuit plate 1ã mon tur. A IC chip 22di with a function, 
+tiert, as in Fig. 5 shown. A frame part 3ã is small those
+equivalent to the one IC package with fuegig from the flexible 
+schaltungsplatte 22f inward 55 of a function as CCU is shifted 
+arranged, those for planning. The other frame part 36b is 
+function of an engine monitoring unit is necessary (e.g. of the 
+connecting connections 22g and 22h geringfue MC 6801 of the company 
+Motorola Inc.), is directly than gig inward shifted arranged free chip
+on the insulating layer 22b first Schal-Die assembled arrangement in 
+the Befe tungsplatte 1ã fastens the CCU 22di is directly stigungsloch
+34 of the plug housing 28 under Beibehal EO on a pre-determined group 
+the condition of the parts of 30a and 30b coupled of buses tung by 
+associated bond wires 22ds connected. Hinzubefestigt. In 
+the fastened condition is the first outside point is on the fact that 
+the IC chip 22di is attached to ROM a plug 1à einstueckig on the 
+integrated hybrid scarf, which becomes installed a pre-determined 
+Kontrollprotung 10 thereafter, as described above, gram stores, 
+although this is not represented to equivalent the side plate 18 at 
+the integrated hybrid integrated circuit 65 a IC chip 22di of the one 
+function exhibits, which 10 attached and the framework 20 fastens on 
+it, in order to the one IC building group is, with by the integrated 
+hybrid integrated circuit 10 to arrange, separate-like data is 
+processed, those the CCU in Flg, 1 is shown, and einstueckig needs the
+first 22di, around a control sequence to accomplish DE 40 16 532
+AI (e.g. aPD28C64 of the company NEC Corp.) unmittel is with the
+operating condition of the data posting without as free chip on the 
+isolating layer 22b that is fastened the second Aussensteeker 14b with
+that above mention first schaltungsplatte 1ã. To refer to ten 
+arrangement is with the interior plug 22b connected, whereupon, the IC
+chip 22d2 as not volatile and/or lei and data as memory contents, 
+which are stored in that store-read-independent program memory element
+fun 5 ment22d2, by means of adjust-craved and directly on a 
+pre-determined group of the device 44 with the desired data entering 
+US lines over associated bond wires 22da mon wrote again and/or 
+overwritten, whereby the co-ordination and/or tiert rigging device 44 
+over the connecting cable 42 with the memory element 22d2 is is with 
+pre-determined Bil of the integrated circuit 10 is connected. 
+With this a hochpegliges Sistanten will writeserve that and/or 
+routine listings, pre-set values, Kon 10 new registration procedure 
+for the definition of limit values or such egg gnal from the rigging 
+device 44 on provide and stores these. Although not adjusting 
+connecting connection given. Thereby posed, different circuit 
+elements are, as a control connection of the bus switching off circuit
+for example power transistors, connecting through 22d on a low level 
+are set, and a Zwielemente, voltage regulator, condensers, Widerstaen 
+15 more schenschalter is opened in the bus switching off circuit 22d4 
+de and diodes on the second schaltungsplatte I6b, in order in this way
+the bus in one installs open condition to adjust. In this way 
+can in accordance with Fig. 10 the circuit network new writing 
+data of the rigging device 44 to-(Schaltungsstruktur), which is 
+casually on the part of the bus switching off circuit 22d formed on 
+the conductive layer 22c on, from a first bus 22ci for the 20 a 
+transmission exists being prevented on other circuit than Spei 
+connection of the memory element 22d2 and the CCU 22di, cherelement 
+22d4, which than free chips are installed, a second Bus Lei if the 
+hochpeglige signal on the new intervening 22C2 for the connection of 
+the memory element 22d2 and bezustandeinstell Verbindungsanschluss 
+delivered the numerous connecting connections 2ì and 22j, the 
+read-only gift connection incoming goods of the Speizweiten of 
+interior plug 22b, and from a third bus 25 cherelements 22d2 on a low 
+level is set. Line 22cs for the connection of the CCU 22di and 
+the moreover places the rigging device 44 chip-numerous connecting 
+connections the 22g and 22h of the he release connection CE on a high 
+level and sten external plug the 1à by an output circuit output 
+release connection OE on a low Pe-22ds over a circuit from different 
+circuit gel by the pair Schreibverbindungsanschiuesse. On 
+elements, 30 this way a writing condition Speicher-Eine bus switching 
+off circuit 22d4, which functions as signal off of element 22d2 
+adjusted switching circuit, is described, with the integrated Hy-22c 
+as circuit network is inserted in the conductive layer like before, in
+order not to connect the Spei bridschaltung this remark example 
+cherelement a 22d2 and the CCU 22di, i.e. volatile programmable IC 
+chip than storing flax the second bus 22ci, like into Fig. 10 
+shown, 35 ment22d2 for supply pre-determined data around reliably to 
+avoid that if data in CCU 22di in such a manner used that in the 
+memory net 22d2 is to be written Speicherdas, the new element 22d2 
+stored data einbzw, to rewriting data arbitrarily again to other 
+Schaltungselemen it can be written. In this way can ten to be 
+transferred, and data in this circuit itself if data are unnecessarily
+again written into the memory element 22d2 elements during the 
+development are again written the bus switching off circuit 22d4 cover
+a ago to have, a new registration desire easily fulfill koemmliche 
+well-known arrangement, which becomes a CMOS, and which degree of 
+freedom with the development knows analog switches used, which as 
+so-called three is to a considerable degree improved, condition 
+buffers serves, and a detailed description the bus for the connection 
+of the Speicheretderselben is omitted there. 45 ments 22d2 and 
+the CCU 22dt with Dateneinschreib-Wenn with the Schaltungsanord 
+described above procedure on the part of the bus switching off circuit
+22dt in nung the first schaltungsplatte 1ã in the memory an open 
+condition is adjusted to write a data element 22d2 stored data again 
+during the Entwick posting information exit from the Einlung are, the 
+second outside placing device 44 not on other circuits except plugs 
+14b with the associated second interior plug 50 the memory element 
+22d2 are not given. Accordingly 1â can connected, as shown in 
+Fig, 5, and which is prevented reliably adjusting pre that in the CCU 
+22d2 the direction will ben again to write 44 will in data writing 
+operating and other circuit elements stored data was entitled brought,
+around thereby into the memory element by the data writing information
+ueberschrie-22d2 data.</p>
+    <p>The second interior plug Iâ points the connecting 55 with
+this remark example can, as beanschluesse above 2ì and 22j in 
+appropriate allocation wrote too, the data writing procedure to 
+durchgeden connector pins 24c and 24d of the second outside leads to 
+become, by only the second external plug of plug I4b up, as described 
+above. As in Fig. attached to the second interior plug, 
+belongs to these connecting connections around the integrated circuit 
+10 with the Einstellvorrich-22j a write condition adjusting connecting
+connection is represented to 11 14b to connect for EO tung 44. 
+Datenneuder can be simulated over an inverter with the bonding 
+wire 22da en writing procedure by a very simple Anbunden is easy 
+accordingly, which with a writing making possible order is 
+accomplished, the writing release connection incoming goods of the 
+Speicherele if the control sequence of the integrated circuit ments 
+22d2 over the second bus 22c2 verbun 10 is, while in the Speicherden 
+it is and a pair of writing connecting connections, 65 element 22d2 
+stored data again written with the bond wires the 22d3 connected, 
+which become, can with this remark example a in each case with a chip 
+enable connection the CE is and to placing device 44 into a simulation
+mode output release connection OE is in such a manner connected be 
+adjusted that the control sequence on the Ba DE 40 16 532 AI sis
+the since modifications stored in the memory element 22d2 in the 
+context of the invention vorgenom ten is simulated. If in the 
+memory element men become.</p>
+    <p>22d2 stored data to supervise are, the with to the above 
+remark example the inte rigging device 44 in similar way into an over 
+grierte hybrid integrated circuit 10 in their impact as to be awake-be
+entitled were adjusted, around the data to ueberwa 5 engine monitoring
+unit exemplarily represented. The Erfin chen and/or to control. 
+In this way fertilizes is however on that limited for example 
+structure (the regulation) does not know the memory element can the 
+integrated circuit 10 as parliamentary groupal grain 22d2 during the 
+development to storing data ponente to serve, e.g. as automatic 
+Fahrzeugge with a large degree of freedom be made more 
+schwindigkeitsregler, than all wheel automatic guidance controls or 
+than rain if the 10 which can be stored into the memory element 22d 
+more ler for an automatic transmission. Data are certain the 
+with the above example according to the development, the integrated 
+Hy-memory element 22d2 on the isolating layer 22b bridschaltung as 
+example with a pair from a obeder first schaltungsplatte 1ã than free
+chip in ren schaltungsplatte a 16b and lower switching status were 
+installed, with which in plate 1ã describes these data independently.
+The invention is not however on the memory element 22d2 is 
+written. Since 15 this structure limits. For example 
+intediesem case the second interior plugs 1â mentioned above the 
+grierte circuit cannot do 10 also three parallel arranged as is the 
+used fixed, that schaltungsplatten to exhibit, synthetic resin 
+mentioned before into the inside second with the above remark example 
+is filled in the Speiinnensteckers 1â, and that second Innenstek 
+cherdaten the memory element 22d2 a goal of the Simulieker 1â 
+completely one buries. After the inte 20 rung, the monitoring or
+the Datenneueinschreigrierte hybrid integrated circuit 10 in this way 
+as counter bung by means of the rigging device 44. The invention
+stood is finished, i.e. if it is as commercial however on that not 
+limited for example can product is available, the integrated hybrid 
+scarf has the invention in similar way application in one tung 10 an 
+outside manifestation, as if the second case find, with which the 
+supervisory routine IC interior plugs of a 1â would be missing. 
+Thereby 25 chips as CCU 22di is externally processed, can 
+compared with a case, with which with the above training form the 
+adjust-before-used is not second interior plug 1â a part of the aeu 
+direction 44 a device, which forms manifestation by the Anschlusslei 
+whose, the effect reached who tung 42 to be attached is, the invention
+is however that a decrease of the product value does not limit vermie 
+to. For example can also a Emuden becomes. thus lator to 
+be attached and control contents of the since the integrated circuit 
+10 of this training integrated circuit 10 can above is by this 
+emulator form as described arranged, become are emulated.</p>
+    <p>second interior plugs 1â and the second external plug 
+with the above training form are connected the CCU 22di 14b, in order 
+to connect the integrated flat and directly in such a manner the 
+memory element 22dz as circuit elements tung to 10 and the rigging 
+device 44 on 35 on the isolating layer 22 as free that the rigging 
+device 44 installs chips. The invention is not however limited 
+to these at emulation of a control sequence of the CCU 22di on the 
+order. For example can which he to basis stored of the data in 
+the programmable memory element identification in similar way with a 
+case use 22d2 make can and in in company find, with which the CCU 22di
+and the memory element housing and/or paketfoermiben rather way an 
+adjustment procedure by new A cry 22d2 as circuit elements, simulating
+and in the program ge ICs exhibit a supervising that and cannot be 
+fastened solvable on mierbaren memory element 22d stored data a 
+pre-determined bus by soldering, accomplished can. If with the 
+above remark example the Ent knows form in the memory element 22d2 
+stored data 45 is in this way in accordance with this training coil of
+the integrated circuit 10 final and during the development in simple 
+way the einge data which can be stored in the Speicherslement 22d is 
+certain, the art-written mentioned above, can the control sequence of 
+a Ope resin is injected into the second interior plug 1â and ration 
+of the CCU 22di easily based on the new Inge the second interior plug 
+1â completely to be buried, schriebenen data simulated and not be 
+able the invention is however on this structure beneueingeschriebenen 
+data in simple way over. For example can the second interior 
+plug is awake to become. Therefore in the large measure of the 
+1â for a later use, degree of freedom can be maintained with the 
+development be improved without with synthetic resin to be buried. 
+If this training form are the Schaltungsstruk second interior 
+plugs 1â at a vehicle in one tur the buses 22ci, 22C2 and 22cs, which
+with the useful condition is installed, can the control in development
+is used, directly to be used, 55 stop of the CCU 22di be again written
+later, around the integrated circuit 10 than product itself if the 
+integrated circuit 10 of a Aktuaristellen. Thereby the costs of 
+corroding egg can sierung their version are subject and control 
+contents of ner circuit structure to be substantially reduced. 
+Since one changes for the CCU 22di. A circuit structure, 
+which is actually put during updating and/or actualization of the 
+version the Indian development into operation, knows with a per EO 
+accordingly tegrierten circuit 10 to be easily reached, is dukt used, 
+can the product as during if the control enterprise the integrated 
+circuit 10 development without errors be operated, and normally made 
+and their Kontrolleine stable impact of the product cannot have to be 
+examined is ensured and memory contents, can it become. 
+Differently expressed, the reliability can be ensured easily by 
+this second interior plug 1â examined the product. 65 becomes.</p>
+    <p>The represented invention is not on the arrangement with 
+the above remark example limited rather can different changes 
+and </p>
+  </description>
+  <claims id="claims_eng" lang="eng" format="original" date-changed="20080214">
+    <claim num="1">
+      <claim-text> DE 40 16 532 AI </claim-text>
+    </claim>
+    <claim num="2">
+      <claim-text>1. Integrated circuit with a metal substrate, 
+consisting of a schaltungsplatte, on which conductive 5 a layer is 
+formed in a desired structure on the metal substrate over an isolating
+layer; a circuit element on the isolating layer is installed; 
+and a plug mechanism for the connection of at least the circuit 
+element and an external device; by the fact characterized that 
+the circuit element (22d2) is installed not solvable onto 15 of the 
+isolating layer (22b) and does not possess volatile memory contents, 
+which are again writable by an external operation, and that the plug 
+mechanism exhibits a first plug on 20 order (12) for the connection of
+at least the circuit element (22d2) with one section which can be 
+controlled and a second plug arrangement (14) for connecting the 
+circuit element (22dz) and an external Verarbeitungsvorrich 25 tung 
+(44) over another way than the first plug arrangement (12) for 
+processing memory contents of the circuit element (22d2).</claim-text>
+    </claim>
+    <claim num="3">
+      <claim-text>2. Integrated circuit according to requirement 1, by
+the fact 30 characterized that the conductive layer (22c) a first 
+group of signal lines (22ci) for the connection of the circuit element
+(22d2) with another circuit element (22di), and a second group of 
+signal lines (22C2) for the connection 35 of the circuit element 
+(22d2) with the second plug arrangement (14) exhibits, and the fact 
+that a signal shutdown system (22d4 for switching the data 
+communication off on the other circuit element (22di) is operatable, 
+if memory contents of the circuit element (22d2) 40 are to be written,
+in a place on the first group of signal lines (22ci) and near the 
+circuit element (22cJ2) is arranged.</claim-text>
+    </claim>
+    <claim num="4">
+      <claim-text>3. Integrated circuit according to requirement 1, 
+thereby 45 characterized that the second plug arrangement (14) for 
+sealing in relation to an external section after conclusion of the 
+development of the circuit element (22d2) with a synthetic resin is 
+filled so</claim-text>
+    </claim>
+    <claim num="5">
+      <claim-text>4. Integrated circuit according to requirement 1, by
+it characterized that the second plug arrangement (14) to a section is
+fastened, which is in such a manner installed that it is connectable 
+with the external processing device (44)</claim-text>
+    </claim>
+    <claim num="6">
+      <claim-text>5. Integrated circuit according to requirement 1, by
+it characterized that the circuit element, which is connected with the
+external processing device (44) by the second plug arrangement (14) a 
+memory element (22d2) exhibits the A &gt; was correct data 
+stores</claim-text>
+    </claim>
+    <claim num="7">
+      <claim-text>6. Integrated circuit according to requirement 5, by
+the fact characterized that the external processing device (44) 
+exhibits a co-ordination and/or a rigging device to the renewed 
+writing of the memory in it stop of the memory element (22d2).</claim-text>
+    </claim>
+    <claim num="8">
+      <claim-text>7. Integrated circuit according to requirement 5, by
+it characterized that the external processing pre direction (44) a 
+rigging device for supervising memory contents of the memory element 
+(22d2J exhibits.</claim-text>
+    </claim>
+    <claim num="9">
+      <claim-text>8. Integrated circuit according to requirement 1, by
+the fact characterized that the circuit element connected by the 
+second plug arrangement (14) with the external processing device (44) 
+exhibits a CCU (22di) with a pre-determined supervisory routine.</claim-text>
+    </claim>
+    <claim num="10">
+      <claim-text>9. Integrated circuit according to requirement 8, by
+it characterized that the external processing device (44) a rigging 
+device to the renewed writing of control contents for the CCU (22di) 
+exhibits.</claim-text>
+    </claim>
+    <claim num="11">
+      <claim-text>10. Integrated circuit according to requirement 8, 
+by it characterized that the external processing device (44) an 
+emulator for emulating control contents of the CCU (22di) 
+exhibits</claim-text>
+    </claim>
+    <claim num="12">
+      <claim-text>11. Integrated circuit according to requirement 1, 
+by the fact characterized that the first plug arrangement (12) a first
+external plug (1à), which einstuekkig at an end the integrated 
+circuit (10) is installed and a first interior plug (12b) exhibits 
+solvable at the first external plug (1à) attached and with the 
+section which can be controlled is connected.</claim-text>
+    </claim>
+    <claim num="13">
+      <claim-text>12. Integrated circuit according to requirement 1, 
+by it characterized that the second plug arrangement (14) a second 
+interior plug (1â), which is installed einstuekkig at the other end 
+of the integrated circuit (10), and exhibits a second external plug 
+(14b), which is connected solvable attached at the second interior 
+plug (1â) and with the external processing device (44)</claim-text>
+    </claim>
+  </claims>
+  <claims id="claims_ger" lang="ger" format="original" date-changed="20080214">
+    <claim num="1">
+      <claim-text> DE 40 16 532 AI </claim-text>
+    </claim>
+    <claim num="2">
+      <claim-text>1.  Integrierte Schaltung mit einem Metallsubstrat, bestehend aus einer Schaltungsplatte, auf der eine leitfähige 5 Schicht in einer gewünschten Struktur auf dem Metallsubstrat über einer isolierenden Schicht gebildet ist; einem Schaltungselement das auf der isolierenden Schicht montiert ist; und einer Steckereinrichtung zur Verbindung von wenigstens dem Schaltungselement und einer externen Vorrichtung; dadurch gekennzeichnet, daß das Schaltungselement (22d2) nicht lösbar auf 15 der isolierenden Schicht (22b) montiert ist und einen nicht flüchtigen Speicherinhalt besitzt, der durch eine externe Operation neu einschreibbar ist, und daß die Steckereinrichtung eine erste Steckeran- 20 Ordnung (12) zur Verbindung von wenigstens dem Schaltungselement (22d2) mit einem zu kontrollierenden Abschnitt und eine zweite Steckeranordnung (14) zum Verbinden des Schaltungselements (22dz) und einer externen Verarbeitungsvorrich- 25 tung (44) über einen anderen Weg als die erste Steckeranordnung (12) für das Verarbeiten des Speicherinhalts des Schaltungselements (22d2) aufweist.</claim-text>
+    </claim>
+    <claim num="3">
+      <claim-text>2.  Integrierte Schaltung nach Anspruch 1, dadurch 30 gekennzeichnet, daß die leitfähige Schicht (22c) eine erste Signalleitungsgruppe (22ci) für die Verbindung des Schaltungselements (22d2) mit einem anderen Schaltungselement (22di), und eine zweite Signalleitungsgruppe (22C2) zur Verbindung des 35 Schaltungselements (22d2) mit der zweiten Steckeranordnung (14) aufweist, und daß eine Signalabschalteinrichtung (22d4 die für das Abschalten der Datenübertragung auf das andere Schaltungselement (22di) betätigbar ist, wenn 40 ein Speicherinhalt des Schaltungselements (22d2) einzuschreiben ist, an einer Stelle auf der ersten Signalleitungsgruppe (22ci) und nahe dem Schaltungselement (22cJ2) angeordnet ist.</claim-text>
+    </claim>
+    <claim num="4">
+      <claim-text>3.  Integrierte Schaltung nach Anspruch 1, dadurch 45 gekennzeichnet daß die zweite Steckeranordnung (14) zur Abdichtung gegenüber einem Außenabschnitt nach Abschluß der Entwicklung des Schaltungselements (22d2) mit einem Kunstharz gefüllt ist          so</claim-text>
+    </claim>
+    <claim num="5">
+      <claim-text>4.  Integrierte Schaltung nach Anspruch 1, dadurch gekennzeichnet daß die zweite Steckeranordnung (14) an einem Abschnitt befestigt ist, der derart montiert ist, daß er mit der externen Verarbeitungsvorrichtung (44) verbindbar ist</claim-text>
+    </claim>
+    <claim num="6">
+      <claim-text>5.  Integrierte Schaltung nach Anspruch 1, dadurch gekennzeichnet daß das Schaltungselement, das mit der externen Verarbeitungsvorrichtung (44) über die zweite Steckeranordnung (14) verbunden ist, ein Speicherelement (22d2) aufweist das vorbe- a&gt; stimmte Daten speichert</claim-text>
+    </claim>
+    <claim num="7">
+      <claim-text>6.  Integrierte Schaltung nach Anspruch 5, dadurch gekennzeichnet, daß die externe Verarbeitungsvorrichtung (44) eine Abstimm- bzw. Einstellvorrichtung zum erneuten Einschreiben des Speicherin- es halts des Speicherelements (22d2) aufweist.</claim-text>
+    </claim>
+    <claim num="8">
+      <claim-text>7.  Integrierte Schaltung nach Anspruch 5, dadurch gekennzeichnet daß die externe Verarbeitungsvor- richtung (44) eine Einstellvorrichtung zum Überwachen des Speicherinhalts des Speicherelements (22d2J aufweist.</claim-text>
+    </claim>
+    <claim num="9">
+      <claim-text>8.  Integrierte Schaltung nach Anspruch 1, dadurch gekennzeichnet, daß das über die zweite Steckeranordnung (14) mit der externen Verarbeitungsvorrichtung (44) verbundene Schaltungselement eine CPU (22di) mit einem vorbestimmten Kontrollprogramm aufweist.</claim-text>
+    </claim>
+    <claim num="10">
+      <claim-text>9.  Integrierte Schaltung nach Anspruch 8, dadurch gekennzeichnet daß die externe Verarbeitungsvorrichtung (44) eine Einstellvorrichtung zum erneuten Einschreiben eines Kontrollinhalts für die CPU (22di) aufweist.</claim-text>
+    </claim>
+    <claim num="11">
+      <claim-text>10. Integrierte Schaltung nach Anspruch 8, dadurch gekennzeichnet daß die externe Verarbeitungsvorrichtung (44) einen Emulator zum Emulieren eines Kontrollinhalts der CPU (22di) aufweist</claim-text>
+    </claim>
+    <claim num="12">
+      <claim-text>11. Integrierte Schaltung nach Anspruch 1, dadurch gekennzeichnet, daß die erste Steckeranordnung (12) einen ersten Außenstecker (12a), der einstükkig an einem Ende der integrierten Schaltung (10) montiert ist, und einen ersten Innenstecker (12b) aufweist der lösbar an dem ersten Außenstecker (12a) angebracht und mit dem zu kontrollierenden Abschnitt verbunden ist.</claim-text>
+    </claim>
+    <claim num="13">
+      <claim-text>12. Integrierte Schaltung nach Anspruch 1, dadurch gekennzeichnet daß die zweite Steckeranordnung (14) einen zweiten Innenstecker (14a), der einstükkig an dem anderen Ende der integrierten Schaltung (10) montiert ist, und einen zweiten Außenstecker (14b) aufweist, der lösbar an dem zweiten Innenstecker (14a) angebracht und mit der externen Verarbeitungsvorrichtung (44) verbunden ist</claim-text>
+    </claim>
+  </claims>
+</lexisnexis-patent-document>
