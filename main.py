@@ -301,6 +301,7 @@ class Parser(object):
         self.process_file(text_file, fact_file, sect_file, fact_type='BASIC')
         (text, section_tags) = load_data(text_file, sect_file)
         TARGET_FIELDS = ['FH_TITLE', 'FH_DATE', 'FH_ABSTRACT', 'FH_SUMMARY',
+                         'FH_TECHNICAL_FIELD', 'FH_BACKGROUND_ART',
                          'FH_DESC_REST', 'FH_FIRST_CLAIM']
         USED_FIELDS = TARGET_FIELDS + ['FH_DESCRIPTION']
         FH_DATA = {}
@@ -310,14 +311,20 @@ class Parser(object):
         for f in TARGET_FIELDS:
             if FH_DATA.has_key(f) and FH_DATA[f] is not None:
                 ONTO_FH.write("%s:\n" % f)
-                ONTO_FH.write(FH_DATA[f][2])
+                data_to_write = FH_DATA[f][2]
+                if self.language == 'CHINESE':
+                    data_to_write = restore_sentences(f, data_to_write)
+                ONTO_FH.write(data_to_write)
                 ONTO_FH.write("\n")
         ONTO_FH.write("END\n")
 
     def _add_usable_sections(self, section_tags, text, FH_DATA):
         mappings = { 'META-TITLE': 'FH_TITLE', 'META-DATE': 'FH_DATE',
                      'ABSTRACT': 'FH_ABSTRACT', 'SUMMARY': 'FH_SUMMARY',
-                     'DESCRIPTION': 'FH_DESCRIPTION' }
+                     'DESCRIPTION': 'FH_DESCRIPTION',
+                     'TECHNICAL_FIELD': 'FH_TECHNICAL_FIELD',
+                     'BACKGROUND_ART': 'FH_BACKGROUND_ART'
+                     }
         for tag in section_tags:
             (p1, p2, tagtype) = (tag.start_index, tag.end_index, tag.attr('TYPE'))
             if mappings.get(tagtype) is not None:
@@ -337,12 +344,35 @@ class Parser(object):
                     FH_DATA['FH_FIRST_CLAIM'] = (p1, p2, text[int(p1):int(p2)].strip())
         desc = FH_DATA['FH_DESCRIPTION']
         summ = FH_DATA['FH_SUMMARY']
+        tech = FH_DATA['FH_TECHNICAL_FIELD']
+        back = FH_DATA['FH_BACKGROUND_ART']
         if desc and summ:
             FH_DATA['FH_DESC_REST'] = (summ[1], desc[1], text[summ[1]:desc[1]].strip())
-        elif desc and not summ:
+        elif desc and tech and back:
+            FH_DATA['FH_DESC_REST'] = (back[1], desc[1], text[back[1]:desc[1]].strip())
+        elif desc and  back:
+            FH_DATA['FH_DESC_REST'] = (back[1], desc[1], text[back[1]:desc[1]].strip())
+        elif desc and tech:
+            FH_DATA['FH_DESC_REST'] = (tech[1], desc[1], text[tech[1]:desc[1]].strip())
+        elif desc:
             FH_DATA['FH_DESC_REST'] = (desc[0], desc[1], text[desc[0]:desc[1]].strip())
 
+
+def restore_sentences(f, data_to_write):
+    return_data = ""
+    empty_line = False
+    for line in data_to_write.split("\n"):
+        line = line.strip()
+        if line:
+            emtpy_line = False
+            return_data += line
+        else:
+            if not empty_line:
+                return_data += "\n"
+            emtpy_line = True
+    return return_data
     
+            
 if __name__ == '__main__':
 
     try:

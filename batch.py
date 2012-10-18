@@ -1,3 +1,9 @@
+"""
+
+Example batch script. This one want as input a directory that has txt and fact files.
+
+"""
+
 import os, sys, glob
 
 from main import Parser
