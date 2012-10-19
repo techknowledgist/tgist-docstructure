@@ -364,7 +364,7 @@ class Parser(object):
 def restore_sentences(f, data_to_write):
     """Chinese data seem to be created using OCS and have <br> all over the place, often
     splitting segments. Since the segmenter takes one line at the time, we spend some time
-    here gluing together theparts of sentences."""
+    here glueing together the parts of sentences."""
     return_data = ""
     empty_line = False
     for line in data_to_write.split("\n"):
@@ -376,9 +376,26 @@ def restore_sentences(f, data_to_write):
             if not empty_line:
                 return_data += "\n"
             emtpy_line = True
-    return return_data
+    return split_chinese_paragraph(return_data)
 
 
+def split_chinese_paragraph(text):
+
+    """Splits a chinese text string. Simply scans for split
+    characters, currently just the chinese period."""
+    chinese_split_chars = [u'\u3002'] # just the period
+    sentences = []
+    collected = []
+    for c in text:
+        collected.append(c)
+        if c in chinese_split_chars:
+            sentences.append(u''.join(collected))
+            collected = []
+    if collected:
+        sentences.append(u''.join(collected))
+    return u"\n".join(sentences)
+
+        
 def restore_proper_capitalization(text):
     """Up to 1991, German titles are all caps, which causes the tagger to recognize them
     as a string of proper nouns. The quickest fix to get decent tagging was to go to
