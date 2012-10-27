@@ -138,7 +138,13 @@ class Parser(object):
         Takes an xml file and creates sect file, while generating some intermediate data."""
         create_fact_file(xml_file, text_file, tags_file, fact_file)
         self.process_file(text_file, fact_file, sect_file, fact_type='BASIC', verbose=verbose)
-
+        # set this to True if you want to debug intermediary files, the default is to
+        # clean them up
+        save_intermediary_files = False
+        if not save_intermediary_files:
+            for file in (text_file, tags_file, fact_file):
+                os.remove(file)
+        
     def process_directory(self, path):
         """
         Processes all files in a directory with text and fact files. Takes all .txt files,
@@ -317,6 +323,8 @@ class Parser(object):
                 ONTO_FH.write(data_to_write)
                 ONTO_FH.write("\n")
         ONTO_FH.write("END\n")
+        for file in (text_file, tags_file, fact_file, sect_file):
+            os.remove(file)
 
     def _add_usable_sections(self, section_tags, text, FH_DATA):
         mappings = { 'META-TITLE': 'FH_TITLE', 'META-DATE': 'FH_DATE',
