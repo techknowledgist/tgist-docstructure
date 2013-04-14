@@ -8,8 +8,6 @@ Usage:
    % python main.py [OPTIONS] XML_FILE TEXT_FILE TAGS_FILE FACT_FILE STRUCTURE_FILE
    % python main.py [-c COLLECTION] [-l LANGUAGE] FILE_LIST
    % python main.py [-c COLLECTION] [-l LANGUAGE] DIRECTORY
-   % python main.py -o [-l LANGUAGE] XML_FILE \
-                       TEXT_FILE TAGS_FILE FACT_FILE STRUCTURE_FILE ONTO_FILE
    % python main.py -t
 
 In the first form, input is taken from TEXT_FILE, which contains the bare text, and
@@ -48,10 +46,7 @@ are created. Both these forms have the -l and -c options, but the -h option will
 ignored. In both cases, whether the oprions are specified or not, the language and
 collection are assumed to be the saem for all files in the list or directory.
 
-In the fifth form, an XML file is taken and an input file for ontology creation is
-generated. This is currentyl only relevant for patents. 
-
-Finally, in the sixth form, a simple sanity check is run, where four files (one pubmed,
+Finally, in the fifth form, a simple sanity check is run, where four files (one pubmed,
 one mockup Elsevier, one mockup WOS and one patent) are processed and the diffs between
 the resulting .sect files and the regression files are printed to the standard
 output.
@@ -298,76 +293,6 @@ class Parser(object):
         key = open(key_file).readlines()
         results.append((filename, sect_file, response, key_file, key))
         
-    def create_ontology_creation_input(self, xml_file, text_file, tags_file,
-                                       fact_file, sect_file, onto_file):
-        """Create input files that can be used by the ontology creation process. It is
-        currently only guaranteed to work for English patents."""
-        create_fact_file(xml_file, text_file, tags_file, fact_file)
-        self.collection = 'LEXISNEXIS'
-        self.process_file(text_file, fact_file, sect_file, fact_type='BASIC')
-        (text, section_tags) = load_data(text_file, sect_file)
-        TARGET_FIELDS = ['FH_TITLE', 'FH_DATE', 'FH_ABSTRACT', 'FH_SUMMARY',
-                         'FH_TECHNICAL_FIELD', 'FH_BACKGROUND_ART',
-                         'FH_DESC_REST', 'FH_FIRST_CLAIM']
-        USED_FIELDS = TARGET_FIELDS + ['FH_DESCRIPTION']
-        FH_DATA = {}
-        for f in USED_FIELDS: FH_DATA[f] = None
-        self._add_usable_sections(section_tags, text, FH_DATA)
-        ONTO_FH = open_write_file(onto_file)
-        for f in TARGET_FIELDS:
-            if FH_DATA.has_key(f) and FH_DATA[f] is not None:
-                ONTO_FH.write("%s:\n" % f)
-                data_to_write = FH_DATA[f][2]
-                if self.language == 'CHINESE':
-                    data_to_write = restore_sentences(f, data_to_write)
-                ONTO_FH.write(data_to_write)
-                ONTO_FH.write("\n")
-        ONTO_FH.write("END\n")
-        for file in (text_file, tags_file, fact_file, sect_file):
-            os.remove(file)
-
-    def _add_usable_sections(self, section_tags, text, FH_DATA):
-        mappings = { 'META-TITLE': 'FH_TITLE', 'META-DATE': 'FH_DATE',
-                     'ABSTRACT': 'FH_ABSTRACT', 'SUMMARY': 'FH_SUMMARY',
-                     'DESCRIPTION': 'FH_DESCRIPTION',
-                     'TECHNICAL_FIELD': 'FH_TECHNICAL_FIELD',
-                     'BACKGROUND_ART': 'FH_BACKGROUND_ART'
-                     }
-        for tag in section_tags:
-            (p1, p2, tagtype) = (tag.start_index, tag.end_index, tag.attr('TYPE'))
-            if mappings.get(tagtype) is not None:
-                mapped_type = mappings[tagtype]
-                # skip the title or abstract if it is in English and the language set is
-                # German or Chinese
-                # TODO: needs to be generalized to all languages
-                if self.language != 'ENGLISH' and tagtype in ('META-TITLE', 'ABSTRACT'):
-                    if tag.attr('LANGUAGE') == 'eng':
-                        continue
-                # only add the content if there wasn't any already, this is a bit ad hoc
-                # but will have a preference for the first occurrence of the same content
-                if FH_DATA.has_key(mapped_type) and FH_DATA[mapped_type] is None:
-                    section_text = text[int(p1):int(p2)].strip()
-                    if mapped_type == 'FH_TITLE' and self.language == 'GERMAN':
-                        section_text = restore_proper_capitalization(section_text)
-                    FH_DATA[mapped_type] = (p1, p2, section_text)
-            elif tagtype == 'CLAIM':
-                if tag.attr('CLAIM_NUMBER') == '1':
-                    FH_DATA['FH_FIRST_CLAIM'] = (p1, p2, text[int(p1):int(p2)].strip())
-        desc = FH_DATA['FH_DESCRIPTION']
-        summ = FH_DATA['FH_SUMMARY']
-        tech = FH_DATA['FH_TECHNICAL_FIELD']
-        back = FH_DATA['FH_BACKGROUND_ART']
-        if desc and summ:
-            FH_DATA['FH_DESC_REST'] = (summ[1], desc[1], text[summ[1]:desc[1]].strip())
-        elif desc and tech and back:
-            FH_DATA['FH_DESC_REST'] = (back[1], desc[1], text[back[1]:desc[1]].strip())
-        elif desc and  back:
-            FH_DATA['FH_DESC_REST'] = (back[1], desc[1], text[back[1]:desc[1]].strip())
-        elif desc and tech:
-            FH_DATA['FH_DESC_REST'] = (tech[1], desc[1], text[tech[1]:desc[1]].strip())
-        elif desc:
-            FH_DATA['FH_DESC_REST'] = (desc[0], desc[1], text[desc[0]:desc[1]].strip())
-
 
 def restore_sentences(f, data_to_write):
     """Chinese data seem to be created using OCS and have <br> all over the place, often
@@ -386,9 +311,7 @@ def restore_sentences(f, data_to_write):
             emtpy_line = True
     return split_chinese_paragraph(return_data)
 
-
 def split_chinese_paragraph(text):
-
     """Splits a chinese text string. Simply scans for split
     characters, currently just the chinese period."""
     chinese_split_chars = [u'\u3002'] # just the period
@@ -402,7 +325,6 @@ def split_chinese_paragraph(text):
     if collected:
         sentences.append(u''.join(collected))
     return u"\n".join(sentences)
-
         
 def restore_proper_capitalization(text):
     """Up to 1991, German titles are all caps, which causes the tagger to recognize them
@@ -412,11 +334,10 @@ def restore_proper_capitalization(text):
 
 
 
-
 if __name__ == '__main__':
 
     try:
-        (opts, args) = getopt.getopt(sys.argv[1:], 'htoc:l:')
+        (opts, args) = getopt.getopt(sys.argv[1:], 'htc:l:')
     except getopt.GetoptError, err:
         print str(err)
         usage()
@@ -426,19 +347,12 @@ if __name__ == '__main__':
     for opt, val in opts:
         if opt == '-t': parser.test_mode = True
         if opt == '-h': parser.html_mode = True
-        if opt == '-o': parser.onto_mode = True
         if opt == '-c': parser.collection = val
         if opt == '-l': parser.language = val
     
     # run some simple tests
     if parser.test_mode:
         parser.run_tests()
-
-    # create ontology input
-    elif parser.onto_mode:
-        xml_file, txt_file, tags_file, fact_file, sect_file, onto_file = args
-        parser.create_ontology_creation_input(xml_file, txt_file, tags_file,
-                                              fact_file, sect_file, onto_file)
 
     # process a text file and a fact file, creating a sect file
     elif len(args) == 3:
@@ -466,4 +380,3 @@ if __name__ == '__main__':
         sect_file = "doc.sections"
         parser.collection = 'PUBMED'
         parser.process_file(text_file, fact_file, sect_file, verbose=False)
-        
