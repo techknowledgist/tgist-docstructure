@@ -254,9 +254,18 @@ class Parser(object):
         for collection, filename in files:
             self.run_test(collection, filename, results)
         for filename, sect_file, response, key_file, key in results:
-            print "\n==> %s" % filename
-            for line in difflib.unified_diff(response, key, fromfile=sect_file, tofile=key_file):
-                sys.stdout.write(line)
+            print "\n[%s]" % filename,
+            diff = difflib.unified_diff(response, key, fromfile=sect_file, tofile=key_file)
+            differences = count_iterable(diff)
+            if differences == 0:
+                print "... \033[0;32mPassed\033[0m"
+            else:
+                print "... \033[0;31mFailed\033[0m"
+                print "\n   Differences in"
+                print '     ', sect_file
+                print '     ', key_file
+            #for line in difflib.unified_diff(response, key, fromfile=sect_file, tofile=key_file):
+            #    sys.stdout.write(line)
         print
 
     def run_test(self, collection, filename, results):
@@ -331,7 +340,9 @@ def restore_proper_capitalization(text):
     initial caps for all words. Do not do anything is the text is not all upper."""
     return text.lower().title() if text.isupper() else text
 
-
+def count_iterable(i):
+    """Returns the length of an iterable."""
+    return sum(1 for e in i)
 
 if __name__ == '__main__':
 

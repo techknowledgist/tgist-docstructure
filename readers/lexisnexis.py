@@ -27,12 +27,13 @@ def read_tags(text_file, fact_file, fact_type):
     (text, tags) = load_data(text_file, fact_file, fact_type)
     if fact_type == 'BAE':
         structures = tags_with_name(tags, 'STRUCTURE')
-        return read_tags_bae(text, structures)
+        tag_dictionary = read_tags_bae(structures)
     else:
-        return read_tags_basic(text, tags)
+        tag_dictionary = read_tags_basic(tags)
+    return (text, tag_dictionary)
 
 
-def read_tags_bae(text, structures):
+def read_tags_bae(structures):
 
     def is_claim(text, claims_section):
         return text.attributes["TYPE"] == "TEXT" \
@@ -44,21 +45,45 @@ def read_tags_bae(text, structures):
     tags['paragraphs'] = tags_with_type(structures, 'TEXT')
     tags['abstracts'] =  tags_with_type(structures, 'ABSTRACT')
     tags['summaries'] = tags_with_type(structures, 'SUMMARY')
+    # TODO: exact BAE type to be determined
+    tags['related_applications'] = tags_with_type(structures, 'RELATED_APPLICATIONS')
     tags['sections'] = tags_with_type(structures, 'TEXT_CHUNK')
     tags['claims_sections'] = tags_with_type(structures, 'CLAIMS')
+
     if tags['claims_sections']:
         claims_section = tags['claims_sections'][0]
-        tags['claims'] = [c for c in structures if is_claim(c, claims_section)]
-        tags['claims'] = sorted(tags['claims'], key = lambda x: x.start_index)
+        paragraphs = []
+        claims = []
+        for p in tags['paragraphs']:
+            if is_claim(p, claims_section):
+                claims.append(p)
+            else:
+                paragraphs.append(p)
+        tags['paragraphs'] = paragraphs
+        tags['claims'] = claims
     else:
         tags['claims'] = []
-    return (text, tags)
+
+    # TODO: with this, we basically restore the original tags, this is rather brittle
+    # though and I should think of a better way to do this
+    for t in tags['abstracts']: t.name = 'abstract'
+    for t in tags['headers']: t.name = 'heading'
+    for t in tags['paragraphs']: t.name = 'p'
+    for t in tags['summaries']: t.name = 'summary'
+    for t in tags['sections']: t.name = 'description'
+    for t in tags['claims_sections']: t.name = 'claims'
+    for t in tags['claims']: t.name = 'claim'
+    for t in tags['related_applications']: t.name = 'related-apps'
+    #for t in tags['']: t.name = ''
+
+    return tags
 
 
-def read_tags_basic(text, taglist):
+def read_tags_basic(taglist):
+
     tags = {}
 
-    # the follwoing are used in English patents, and many of them also in chinese and
+    # the following are used in English patents, and many of them also in chinese and
     # german patents
     tags['meta_tags'] = meta_tags(taglist)
     taglist = [t for t in taglist if t.name != 'date']
@@ -66,6 +91,7 @@ def read_tags_basic(text, taglist):
     tags['paragraphs'] = tags_with_name(taglist, 'p')
     tags['abstracts'] =  tags_with_name(taglist, 'abstract')
     tags['summaries'] = tags_with_name(taglist, 'summary')
+    tags['related_applications'] = tags_with_name(taglist, 'related-apps')
     tags['sections'] = tags_with_name(taglist, 'description')
     tags['claims_sections'] = tags_with_name(taglist, 'claims')
     tags['claims'] = tags_with_name(taglist, 'claim')
@@ -77,7 +103,9 @@ def read_tags_basic(text, taglist):
     tags['technical-field'] = tags_with_name(taglist, 'technical-field')
     tags['background-art'] = tags_with_name(taglist, 'background-art')
 
-    return (text, tags)
+    #for t in tags['abstracts']: print t
+
+    return tags
 
 
 def meta_tags(taglist):
