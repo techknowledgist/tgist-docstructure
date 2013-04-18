@@ -45,11 +45,11 @@ def read_tags_bae(structures):
     tags['paragraphs'] = tags_with_type(structures, 'TEXT')
     tags['abstracts'] =  tags_with_type(structures, 'ABSTRACT')
     tags['summaries'] = tags_with_type(structures, 'SUMMARY')
-    # TODO: exact BAE type to be determined
     tags['related_applications'] = tags_with_type(structures, 'RELATED_APPLICATIONS')
     tags['sections'] = tags_with_type(structures, 'TEXT_CHUNK')
     tags['claims_sections'] = tags_with_type(structures, 'CLAIMS')
 
+    # move the paragraphs that are really claims
     if tags['claims_sections']:
         claims_section = tags['claims_sections'][0]
         paragraphs = []
@@ -64,8 +64,8 @@ def read_tags_bae(structures):
     else:
         tags['claims'] = []
 
-    # TODO: with this, we basically restore the original tags, this is rather brittle
-    # though and I should think of a better way to do this
+    # TODO: with this, we basically restore the original tags, this is potentilly rather
+    # brittle though and I should think of a better way to do this
     for t in tags['abstracts']: t.name = 'abstract'
     for t in tags['headers']: t.name = 'heading'
     for t in tags['paragraphs']: t.name = 'p'

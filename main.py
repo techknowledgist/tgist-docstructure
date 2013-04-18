@@ -21,7 +21,7 @@ In the second form, the input is an xml file and three intermediate files are cr
 text file, tags file and facts file. As with form 1, the text file and the fact file are
 then used to create the sect file. Both forms have the same options, all optional:
 
-   [-h] [-c COLLECTION] [-l LANGUAGE]
+   [-h] [--debug] [-c COLLECTION] [-l LANGUAGE]
 
 If the -h option is specified, html versions of the fact file and the sect file will be
 created and saved as FACT_FILE.html and SECT_FILE.html.
@@ -64,6 +64,8 @@ import elsevier1, elsevier2, pubmed, wos, lexisnexis, utils.view
 from readers.common import load_data, open_write_file
 from utils.xml import transform_tags_file
 from utils.misc import run_shell_commands
+
+DEBUG = True
 
 
 def usage():
@@ -132,10 +134,8 @@ class Parser(object):
         Takes an xml file and creates sect file, while generating some intermediate data."""
         create_fact_file(xml_file, text_file, tags_file, fact_file)
         self.process_file(text_file, fact_file, sect_file, fact_type='BASIC', verbose=verbose)
-        # set this to True if you want to debug intermediary files, the default is to
-        # clean them up
-        save_intermediary_files = False
-        if not save_intermediary_files:
+        # cleanup intermediary files, to keep them, use the --debug option
+        if not DEBUG:
             for file in (text_file, tags_file, fact_file):
                 os.remove(file)
 
@@ -236,9 +236,9 @@ class Parser(object):
 
     def run_tests(self):
         """
-        Runs a regression test on a couple of files. For all these files, there needs to be a
-        sect file in data/regression. Prints a diff of the output of the document parser
-        relative to a file in the data/regression directory."""
+        Runs a regression test on a couple of files. For all these files, there needs to
+        be a sect file in data/regression and xml or txt/fact files in data/in in one of
+        the four source directories."""
         files = (
             ('pubmed', 'f401516f-bd40-11e0-9557-52c9fc93ebe0-001-gkp847'),
             ('pubmed', 'pubmed-mm-test'),
@@ -347,7 +347,7 @@ def count_iterable(i):
 if __name__ == '__main__':
 
     try:
-        (opts, args) = getopt.getopt(sys.argv[1:], 'htc:l:')
+        (opts, args) = getopt.getopt(sys.argv[1:], 'htc:l:', ['debug'])
     except getopt.GetoptError, err:
         print str(err)
         usage()
@@ -359,6 +359,7 @@ if __name__ == '__main__':
         if opt == '-h': parser.html_mode = True
         if opt == '-c': parser.collection = val
         if opt == '-l': parser.language = val
+        if opt == '--debug': DEBUG = True
 
     # run some simple tests
     if parser.test_mode:

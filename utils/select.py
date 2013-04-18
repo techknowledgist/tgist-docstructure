@@ -64,4 +64,8 @@ if __name__ == '__main__':
     reader = SectionReader(text_file, sect_file)
     #print reader.section_types()
     #reader.print_sections()
-    print reader.get_sections(sectiontype)
+    for section in reader.get_sections(sectiontype):
+        print ">" * 70
+        print section
+        print "=" * 70
+        print
