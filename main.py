@@ -65,7 +65,7 @@ from readers.common import load_data, open_write_file
 from utils.xml import transform_tags_file
 from utils.misc import run_shell_commands
 
-DEBUG = True
+DEBUG = False
 
 
 def usage():
@@ -129,15 +129,18 @@ class Parser(object):
             print 'WARNING:', sys.exc_value
 
     def process_xml_file(self, xml_file, text_file, tags_file, fact_file, sect_file,
-                         verbose=False):
+                         verbose=False, debug=True):
         """
         Takes an xml file and creates sect file, while generating some intermediate data."""
+        if debug:
+            global DEBUG
+            DEBUG = True
         create_fact_file(xml_file, text_file, tags_file, fact_file)
         self.process_file(text_file, fact_file, sect_file, fact_type='BASIC', verbose=verbose)
         # cleanup intermediary files, to keep them, use the --debug option
         if not DEBUG:
-            for file in (text_file, tags_file, fact_file):
-                os.remove(file)
+            for filename in (text_file, tags_file, fact_file):
+                os.remove(filename)
 
     def process_directory(self, path):
         """
