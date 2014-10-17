@@ -1,6 +1,6 @@
 """
 
-Main executable for the document structure parser. 
+Main executable for the document structure parser.
 
 Usage:
 
@@ -21,14 +21,14 @@ In the second form, the input is an xml file and three intermediate files are cr
 text file, tags file and facts file. As with form 1, the text file and the fact file are
 then used to create the sect file. Both forms have the same options, all optional:
 
-   [-h] [-c COLLECTION] [-l LANGUAGE]
-   
+   [-h] [--debug] [-c COLLECTION] [-l LANGUAGE]
+
 If the -h option is specified, html versions of the fact file and the sect file will be
 created and saved as FACT_FILE.html and SECT_FILE.html.
 
-The [-h COLLECTION] argument specifies the collection that the input document was
-taken from. This can be used to overrule the default behaviour, which is to scan the fact
-file and find the following line:
+The [-c COLLECTION] argument specifies the collection that the input document was taken
+from. This can be used to overrule the default behaviour, which is to scan the fact file
+and find the following line:
 
    DOCUMENT COLLECTION="$COLLECTION"
 
@@ -65,6 +65,8 @@ from readers.common import load_data, open_write_file
 from utils.xml import transform_tags_file
 from utils.misc import run_shell_commands
 
+DEBUG = False
+
 
 def usage():
     print "\nUsage:"
@@ -78,7 +80,7 @@ def usage():
           + 'TAGS_FILE FACT_FILE STRUCTURE_FILE ONTO_FILE'
     print '  % python main.py -t'
 
-    
+
 def create_fact_file(xml_file, text_file, tags_file, fact_file):
     """Given an xml file, first create text and tags files using the xslt standoff scripts and
     then create a fact file."""
@@ -105,7 +107,6 @@ class Parser(object):
 
     def __str__(self):
         return "<Parser for %s on %s>" % (self.language, self.collection)
-    
 
     def process_file(self, text_file, fact_file, sect_file, fact_type='BAE', verbose=False):
         """
@@ -128,18 +129,19 @@ class Parser(object):
             print 'WARNING:', sys.exc_value
 
     def process_xml_file(self, xml_file, text_file, tags_file, fact_file, sect_file,
-                         verbose=False):
+                         verbose=False, debug=True):
         """
         Takes an xml file and creates sect file, while generating some intermediate data."""
+        if debug:
+            global DEBUG
+            DEBUG = True
         create_fact_file(xml_file, text_file, tags_file, fact_file)
         self.process_file(text_file, fact_file, sect_file, fact_type='BASIC', verbose=verbose)
-        # set this to True if you want to debug intermediary files, the default is to
-        # clean them up
-        save_intermediary_files = False
-        if not save_intermediary_files:
-            for file in (text_file, tags_file, fact_file):
-                os.remove(file)
-        
+        # cleanup intermediary files, to keep them, use the --debug option
+        if not DEBUG:
+            for filename in (text_file, tags_file, fact_file):
+                os.remove(filename)
+
     def process_directory(self, path):
         """
         Processes all files in a directory with text and fact files. Takes all .txt files,
@@ -180,12 +182,12 @@ class Parser(object):
         Returns the factory needed given the collection parameter and specifications in the
         fact file and, if needed, some characteristics gathered from the text file."""
         self._determine_collection(fact_file)
-        if self.collection == 'PUBMED': 
+        if self.collection == 'PUBMED':
             self.factory = pubmed.BiomedNxmlSectionFactory(
                 text_file, fact_file, sect_file, fact_type, self.language, verbose)
         elif self.collection == 'WEB_OF_SCIENCE':
             self.factory = wos.WebOfScienceSectionFactory(
-                text_file, fact_file, sect_file, fact_type, self.language, verbose) 
+                text_file, fact_file, sect_file, fact_type, self.language, verbose)
         elif self.collection == 'LEXISNEXIS':
             self.factory = lexisnexis.PatentSectionFactory(
                 text_file, fact_file, sect_file, fact_type, self.language, verbose)
@@ -211,7 +213,7 @@ class Parser(object):
         else:
             return elsevier2.ComplexElsevierSectionFactory(
                 text_file, fact_file, sect_file, fact_type, self.language, verbose)
-    
+
     def _determine_collection(self, fact_file):
         """
         Loop through the fact file in order to find the line that specifies the collection."""
@@ -237,9 +239,9 @@ class Parser(object):
 
     def run_tests(self):
         """
-        Runs a regression test on a couple of files. For all these files, there needs to be a
-        sect file in data/regression. Prints a diff of the output of the document parser
-        relative to a file in the data/regression directory."""
+        Runs a regression test on a couple of files. For all these files, there needs to
+        be a sect file in data/regression and xml or txt/fact files in data/in in one of
+        the four source directories."""
         files = (
             ('pubmed', 'f401516f-bd40-11e0-9557-52c9fc93ebe0-001-gkp847'),
             ('pubmed', 'pubmed-mm-test'),
@@ -255,10 +257,19 @@ class Parser(object):
         for collection, filename in files:
             self.run_test(collection, filename, results)
         for filename, sect_file, response, key_file, key in results:
-            print "\n==> %s" % filename
-            for line in difflib.unified_diff(response, key, fromfile=sect_file, tofile=key_file):
-                sys.stdout.write(line)
-        print 
+            print "\n[%s]" % filename,
+            diff = difflib.unified_diff(response, key, fromfile=sect_file, tofile=key_file)
+            differences = count_iterable(diff)
+            if differences == 0:
+                print "... \033[0;32mPassed\033[0m"
+            else:
+                print "... \033[0;31mFailed\033[0m"
+                print "\n   Differences in"
+                print '     ', sect_file
+                print '     ', key_file
+            #for line in difflib.unified_diff(response, key, fromfile=sect_file, tofile=key_file):
+            #    sys.stdout.write(line)
+        print
 
     def run_test(self, collection, filename, results):
         # reset the collection every iteration, we are not using the collection argument
@@ -269,7 +280,7 @@ class Parser(object):
             self.run_test_with_basic_input(collection, filename, results)
         else:
             self.run_test_with_bae_input(collection, filename, results)
-        
+
     def run_test_with_basic_input(self, collection, filename, results):
         self.collection = 'LEXISNEXIS'
         xml_file = "data/in/%s/%s" % (collection, filename)
@@ -282,7 +293,7 @@ class Parser(object):
         response = open(sect_file).readlines()
         key = open(key_file).readlines()
         results.append((filename, sect_file, response, key_file, key))
-    
+
     def run_test_with_bae_input(self, collection, filename, results):
         text_file = "data/in/%s/%s.txt" % (collection, filename)
         fact_file = "data/in/%s/%s.fact" % (collection, filename)
@@ -292,7 +303,7 @@ class Parser(object):
         response = open(sect_file).readlines()
         key = open(key_file).readlines()
         results.append((filename, sect_file, response, key_file, key))
-        
+
 
 def restore_sentences(f, data_to_write):
     """Chinese data seem to be created using OCS and have <br> all over the place, often
@@ -325,19 +336,23 @@ def split_chinese_paragraph(text):
     if collected:
         sentences.append(u''.join(collected))
     return u"\n".join(sentences)
-        
+
 def restore_proper_capitalization(text):
     """Up to 1991, German titles are all caps, which causes the tagger to recognize them
     as a string of proper nouns. The quickest fix to get decent tagging was to go to
     initial caps for all words. Do not do anything is the text is not all upper."""
     return text.lower().title() if text.isupper() else text
 
+def count_iterable(i):
+    """Returns the length of an iterable."""
+    return sum(1 for e in i)
+
 
 
 if __name__ == '__main__':
 
     try:
-        (opts, args) = getopt.getopt(sys.argv[1:], 'htc:l:')
+        (opts, args) = getopt.getopt(sys.argv[1:], 'htc:l:', ['debug'])
     except getopt.GetoptError, err:
         print str(err)
         usage()
@@ -346,10 +361,11 @@ if __name__ == '__main__':
     parser = Parser()
     for opt, val in opts:
         if opt == '-t': parser.test_mode = True
-        if opt == '-h': parser.html_mode = True
-        if opt == '-c': parser.collection = val
-        if opt == '-l': parser.language = val
-    
+        elif opt == '-h': parser.html_mode = True
+        elif opt == '-c': parser.collection = val
+        elif opt == '-l': parser.language = val
+        elif opt == '--debug': DEBUG = True
+
     # run some simple tests
     if parser.test_mode:
         parser.run_tests()
@@ -362,7 +378,7 @@ if __name__ == '__main__':
     # process an xml file, creating txt file, tags file, fact file and sect file
     elif len(args) == 5:
         xml_file, txt_file, tags_file, fact_file, sect_file = args
-        parser.process_xml_file(xml_file, txt_file, tags_file, fact_file, sect_file, 
+        parser.process_xml_file(xml_file, txt_file, tags_file, fact_file, sect_file,
                                 verbose=False)
 
     # process multiple files listed in an input file or the contents of a directory
