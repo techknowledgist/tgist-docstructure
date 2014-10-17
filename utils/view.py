@@ -55,8 +55,10 @@ def createHTML(text_file, sect_file, html_file):
         if starts.has_key(p):
             (end, label) = starts[p]
             stack.append((p, end))
+            section_type = starts[p][1]
+            section_type = ' | '.join(section_type.split('|'))
             fh_html.write("\n<div class=section>\n")
-            fh_html.write("\n<div class=header>%s</div>\n" % starts[p][1])
+            fh_html.write("\n<div class=header>%s</div>\n" % section_type)
             fh_html.write("<p class=offset>%d</p>\n" % p)
         # write the actual character
         if char == "\n":

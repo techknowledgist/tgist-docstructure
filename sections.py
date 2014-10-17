@@ -30,10 +30,14 @@ class Section(object):
         offsets = "id=%d pid=%s start=%d end=%d" % (self.id, self.parent_id, p1, p2)
         types = "types='%s'" % '|'.join(self.types)
         header = " header='%s'" % self.header if self.header else ''
-        return "<%s %s%s>" % (offsets, types, header) # + str(self.subsumers)
+        tagname = 'nil' if self.tag is None else self.tag.name
+        return "<%s %s %s%s>" % (tagname, offsets, types, header) # + str(self.subsumers)
     
     def __len__(self):
         return self.end_index - self.start_index
+
+    def is_claim(self):
+        return False
 
     def get_language(self):
         if self.tag is None:
@@ -67,12 +71,22 @@ class Section(object):
         return "%s %s\n%s...\n" % (types, offsets, text_string)
     
 
+class ClaimSection(Section):
+
+    def __init__(self):
+        Section.__init__(self)
+        self.claim_number = -1
+        self.parent_claims = []
+
+    def is_claim(self):
+        return True
+
 
 class SectionFactory(object):
     """
     Abstract class that contains shared code for the section factories for all data
-    types. Provodes a unified interface for the code that calls the section creation
-    code. Themain method called by outside code is make_sections(), which should be
+    types. Provides a unified interface for the code that calls the section creation
+    code. The main method called by outside code is make_sections(), which should be
     implemented on all subclasses."""
     
     def __init__(self, text_file, fact_file, sect_file, fact_type, language, verbose=False):
@@ -108,6 +122,11 @@ class SectionFactory(object):
         sec_string = "SECTION ID=%d" % (section.id)
         if section.parent_id is not None:
             sec_string += " PARENT_ID=%d" % section.parent_id
+        if section.tag is not None:
+            if section.tag.fact_type == 'BAE':
+                sec_string += " STRUCT=\"" + section.tag.attributes.get('TYPE', 'None') + "\""
+            else:
+                sec_string += " STRUCT=\"" + section.tag.name + "\""
         if len(section.types) > 0:
             sec_string += " TYPE=\"" + "|".join(section.types).upper() + "\""
         if language is not None:
@@ -228,7 +247,7 @@ def make_section(text_file, tag, text, section_type=None):
     type."""
     if tag is None:
         return None
-    section = Section()
+    section = ClaimSection() if section_type == 'Claim' else Section()
     if section_type is not None:
         section.types = [section_type]
     section.filename = text_file
