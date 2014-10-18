@@ -26,41 +26,44 @@ then used to create the sect file. Both forms have the same options, all optiona
 If the -h option is specified, html versions of the fact file and the sect file will be
 created and saved as FACT_FILE.html and SECT_FILE.html.
 
-The [-c COLLECTION] argument specifies the collection that the input document was taken
-from. This can be used to overrule the default behaviour, which is to scan the fact file
-and find the following line:
+The [-c COLLECTION] argument specifies the collection that the input document
+was taken from. This can be used to overrule the default behaviour, which is to
+scan the fact file and find the following line:
 
    DOCUMENT COLLECTION="$COLLECTION"
 
-In this line, $COLLECTION is in ('WEB_OF_SCIENCE', 'LEXISNEXIS', 'PUBMED', 'ELSEVIER').
+In this line, $COLLECTION is one of WEB_OF_SCIENCE, LEXISNEXIS, PUBMED,
+ELSEVIER, and CNKI.
 
-Simliarly, with [-l LANGUAGE} the language can be handed in as an argument. Values are
-'ENGLISH', 'GERMAN' and 'CHINESE'. As with the collection, the default behaviour is to
-scan the fact file if there is one, searching for
+Simliarly, with [-l LANGUAGE} the language can be handed in as an
+argument. Values are 'ENGLISH', 'GERMAN' and 'CHINESE'. As with the collection,
+the default behaviour is to scan the fact file if there is one, searching for
 
    DOCUMENT LANGUAGE="ENGLISH|CHINESE|GERMAN"
 
-In the third form, the input and output files are specified in the file FILE_LIST. In the
-fourth form, all pairs of .txt and .fact files in DIRECTORY are processed and .sect files
-are created. Both these forms have the -l and -c options, but the -h option will be
-ignored. In both cases, whether the oprions are specified or not, the language and
-collection are assumed to be the saem for all files in the list or directory.
+In the third form, the input and output files are specified in the file
+FILE_LIST. In the fourth form, all pairs of .txt and .fact files in DIRECTORY
+are processed and .sect files are created. Both these forms have the -l and -c
+options, but the -h option will be ignored. In both cases, whether the oprions
+are specified or not, the language and collection are assumed to be the saem for
+all files in the list or directory.
 
-Finally, in the fifth form, a simple sanity check is run, where four files (one pubmed,
-one mockup Elsevier, one mockup WOS and one patent) are processed and the diffs between
-the resulting .sect files and the regression files are printed to the standard
-output.
+Finally, in the fifth form, a simple sanity check is run, where four files (one
+pubmed, one mockup Elsevier, one mockup WOS and one patent) are processed and
+the diffs between the resulting .sect files and the regression files are printed
+to the standard output.
 
-If the code fails the regression test, the coder is responsible for checking why that
-happened and do one of two things: (i) change the code if a bug was introduced, (ii)
-update the files in data/regression if code changes introduced legitimate changes to the
-output.
+If the code fails the regression test, the coder is responsible for checking why
+that happened and do one of two things: (i) change the code if a bug was
+introduced, (ii) update the files in data/regression if code changes introduced
+legitimate changes to the output.
 
 """
 
 
 import os, sys, codecs, re, getopt, difflib
-import elsevier1, elsevier2, pubmed, wos, lexisnexis, utils.view
+import elsevier1, elsevier2, pubmed, wos, lexisnexis, cnki
+import utils.view
 from readers.common import load_data, open_write_file
 from utils.xml import transform_tags_file
 from utils.misc import run_shell_commands
@@ -117,14 +120,13 @@ class Parser(object):
         self._create_factory(text_file, fact_file, sect_file, fact_type, verbose)
         try:
             self.factory.make_sections()
-            f = codecs.open(self.factory.sect_file, "w", encoding='utf-8')
-            self.factory.print_sections(f)
-            f.close()
+            self.factory.print_sections()
             if self.html_mode:
                 fact_file_html = 'data/html/' + os.path.basename(fact_file) + '.html'
                 sect_file_html = 'data/html/' + os.path.basename(sect_file) + '.html'
                 utils.view.createHTML(text_file, fact_file, fact_file_html)
                 utils.view.createHTML(text_file, sect_file, sect_file_html)
+            self.factory.print_hierarchy()
         except UserWarning:
             print 'WARNING:', sys.exc_value
 
@@ -190,6 +192,9 @@ class Parser(object):
                 text_file, fact_file, sect_file, fact_type, self.language, verbose)
         elif self.collection == 'LEXISNEXIS':
             self.factory = lexisnexis.PatentSectionFactory(
+                text_file, fact_file, sect_file, fact_type, self.language, verbose)
+        elif self.collection == 'CNKI':
+            self.factory = cnki.CnkiSectionFactory(
                 text_file, fact_file, sect_file, fact_type, self.language, verbose)
         elif self.collection == 'ELSEVIER':
             self.factory = self._create_elsevier_factory(

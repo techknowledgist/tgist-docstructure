@@ -1,12 +1,13 @@
+import codecs
 from exceptions import UserWarning
 
 
 class Section(object):
     """
     Represents a semantically-typed section in a document. Should be used by all
-    SectionFactories because the code to write to the output uses this class. The section
-    does not include the header, but self.header does contain the string of the header, if
-    there is one. """
+    SectionFactories because the code to write to the output uses this
+    class. The section does not include the header, but self.header does contain
+    the string of the header, if there is one. """
 
     SECTION_ID = 0
     
@@ -109,15 +110,14 @@ class SectionFactory(object):
 
     def make_sections(self):
         """
-        Creates a list of Section instances in self.sections. Each subclass should implement
-        this method. """
+        Creates a list of Section instances in self.sections. Each subclass
+        should implement this method. """        
         raise UserWarning, "make_sections() not implemented for %s " % self.__class__.__name__
 
     def section_string(self, section, suppress_empty=True):
         """
-        Called by print_sections. Returns a human-readable string with relevant information about
-        a particular section.
-        """
+        Called by print_sections. Returns a human-readable string with relevant
+        information about a particular section."""
         language = section.get_language()
         sec_string = "SECTION ID=%d" % (section.id)
         if section.parent_id is not None:
@@ -162,14 +162,17 @@ class SectionFactory(object):
             ret_string += str(claim)
         return ret_string
     
-    def print_sections(self, fh):
-        """ Prints section data to a file handle. """
+    def print_sections(self, fh=None):
+        """ Prints section data to a file handle or the sections file. """
+        if fh is None:
+            fh = codecs.open(self.sect_file, "w", encoding='utf-8')
         for section in self.sections:
             try:
                 fh.write(self.section_string(section))
             except TypeError:
                 pass
-
+        fh.close()
+        
     def print_hierarchy(self):
         print "Number of sections:", len(self.sections)
         for s in self.sections:

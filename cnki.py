@@ -1,8 +1,8 @@
 import sys, re
 
 import normheader
-from readers.lexisnexis import read_tags
-from sections import SectionFactory, make_section, link_sections
+from readers.cnki import read_tags
+from sections import SectionFactory, make_section
 
 
 # Used to detect paragraphs that are headers. Will probably overgeneralize if we are not
@@ -276,7 +276,7 @@ class TopNode(Node):
 
 
 
-class PatentSectionFactory(SectionFactory):
+class CnkiSectionFactory(SectionFactory):
 
     def make_sections(self, separate_headers=True):
         """Read the text and the tags and create a list of sections. First creates a
@@ -309,10 +309,6 @@ class PatentSectionFactory(SectionFactory):
             for ref in claim_refs:
                 claim_id = int(ref.split()[-1])
                 claim.parent_claims.append(claim_id)
-
-        # link the sections by finding subsumed and subsuming sections
-        # question: is this needed?
-        link_sections(self.sections)
 
 
 def text_is_header(text):
