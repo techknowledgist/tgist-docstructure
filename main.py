@@ -126,7 +126,7 @@ class Parser(object):
                 sect_file_html = 'data/html/' + os.path.basename(sect_file) + '.html'
                 utils.view.createHTML(text_file, fact_file, fact_file_html)
                 utils.view.createHTML(text_file, sect_file, sect_file_html)
-            self.factory.print_hierarchy()
+            #self.factory.print_hierarchy()
         except UserWarning:
             print 'WARNING:', sys.exc_value
 
